@@ -1,0 +1,11 @@
+html {
+   scroll-behavior: smooth;
+   font-size: clamp(10px, 1vw, 24px);
+}
+
+body{
+   background-color: #FFFFFF;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
