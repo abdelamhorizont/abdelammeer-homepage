@@ -1,1 +1,1 @@
-my gatsby + netlify + decap cms starter template
+www.abdelammeer.com
