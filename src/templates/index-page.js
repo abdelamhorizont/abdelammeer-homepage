@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby";
 import { getImage, GatsbyImage } from "gatsby-plugin-image";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion"
 
-import Layout from "../components/layout/Layout";
+import Layout from "../components/layout/layout";
 
 import '../styles/reset.css'
 import '../styles/global.scss'

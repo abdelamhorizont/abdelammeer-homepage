@@ -1,20 +1,32 @@
-// @import url("//webfonts3.radimpesko.com/RP-W-885abb7b-ce87-49d3-8a21-24592c375f92");
+@font-face {
+   font-family: Signifier;
+   src: url('../assets/fonts/signifier-web-thin.woff2');
+}
 
 @font-face {
-   font-family: "Magister";
-   src: url('../assets/fonts/Magister-Regular.woff');
+   font-family: Kleukens;
+   src: url('../assets/fonts/Kleukens/Kleukens-EgyptienneFSLWeb-Light.woff');
+}
+
+@font-face {
+   font-family: "PPAgrandir";
+   src: url('../assets/fonts/PPAgrandir/PPAgrandir-Variable.woff2') format("woff2-variations");
+   // src: url("path/to/font/file/myvariablefont.woff2") format("woff2-variations");
+   font-weight: 0 950;
+   // font-stretch: 225% 125%;
+   font-variation-settings: "wdth" 125;
+   font-optical-sizing: auto;
+   font-variation-settings: "opsz" 36;
+}
+
+html {
+   // background-color: lightgray;
+   color: black;
+   // font-family: Signifier;
+   font-family: PPAgrandir;
 
 }
 
-body {
-   font-family: "Union";
-   font-style:   normal;
-   font-weight:  400;
-   font-stretch: normal;
-   
-   line-height: 1.25rem;
-   // li:hover{
-   //    font-family: "ABCWhyte-Italic";
-   // }
-
+p {
+   color: aqua;
 }

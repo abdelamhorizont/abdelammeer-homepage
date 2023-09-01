@@ -6,7 +6,7 @@ import { withPrefix, Link } from "gatsby";
 
 import Projectlist from "../projectlist/projectlist";
 
-// import './layout.scss'
+import './layout.scss'
 
 const Layout = ({ children }) => {
   const { title, description } = useSiteMetadata();
@@ -23,36 +23,35 @@ const Layout = ({ children }) => {
         <meta property="og:type" content="business.business" />
         <meta property="og:title" content={title} />
         <meta property="og:url" content="/" />
-        <link href="//webfonts3.radimpesko.com/RP-W-885abb7b-ce87-49d3-8a21-24592c375f92" rel="stylesheet" />
         <meta
           property="og:image"
           content={`${withPrefix("/")}img/og-image.jpg`}
         />
       </Helmet>
 
-      <div className="nav">
-        <div className="nav-bar" >
+      <header>
+        <nav>
+          <ul className="nav-meta">
+            <li id="about-buttons">
+              <Link className="rounded-button" to="/">about</Link>
+              <Link className="rounded-button" to="/">@</Link>
+            </li>
+            <li className="rounded-button" id='logo'><Link to="/">abdelammeer</Link></li>
+            <li className="rounded-button" id='color-mode'>
+              <button>🌈</button>
+              <button>💡</button>
+            </li>
+          </ul>
 
-          <div className="logo">
-            <Link to="/" className="title"><h1>anima ona</h1></Link>
-            <div className="subtitle"><h2>studio for research, art and design</h2></div>
-          </div>
+          <ul className="nav-sites">
+            <li id='blog'><Link to="/blog/blog">garden</Link></li>
+            {/* <li id='space'><Link to="/space/space"><span>s</span><span>p</span><span>a</span><span>c</span><span>e</span></Link></li> */}
+            <li id='space'><Link to="/space/space">space</Link></li>
+            <li id='work'><Link to="/work/work">work</Link></li>
+          </ul>
 
-          <div className="nav-links">
-            <Link to="/contact">Contact</Link>
-            <Link to="/about">About</Link>
-
-            <div className="menu-button">
-              <button style={{ display: aboutOpen && 'none' }} onClick={() => setAboutOpen(true)}>About</button>
-              <button style={{ display: !aboutOpen && 'none' }} onClick={() => setAboutOpen(false)}>Close</button>
-            </div>
-
-          </div>
-        </div>
-
-        <Projectlist />
-        
-      </div>
+        </nav>
+      </header>
 
       <div>{children}</div>
 
