@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { graphql, Link } from "gatsby";
 
-import Layout from "../components/layout/Layout";
+import Layout from "../components/layout/layout";
 import TextSection, { HTMLContent } from "../components/content/text-section";
 import ImageSection from "../components/content/image-section";
 
