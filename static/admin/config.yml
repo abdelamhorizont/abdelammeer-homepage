@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: abdelamhorizont/anima-ona # replace this with your repo info
+  repo: abdelamhorizont/abdelammeer-homepage # replace this with your repo info
   use_graphql: true
   # name: git-gateway
   branch: master
@@ -119,6 +119,30 @@ collections:
               name: "templateKey",
               widget: "hidden",
               default: "index-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Video",
+              name: "video",
+              widget: "object",
+              fields: 
+              [
+                { label: "Video File", name: "videoFile", widget: file, required: false },
+                { label: "Fallback Image", name: "fallbackImage", widget: image, required: false }
+              ]
+            }
+          - { label: "Landing Video", name: "landingvideo", widget: "image" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Subheading", name: "subheading", widget: "string" }
+      - file: "src/pages/blog/index.md"
+        label: "Blog Page"
+        name: "blog"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "blog-page",
             }
           - { label: "Title", name: "title", widget: "string" }
           - {

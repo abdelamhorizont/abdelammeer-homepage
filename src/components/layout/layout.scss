@@ -18,6 +18,10 @@ main {
 }
 
 .layout {
+    p {
+        font-size: 4rem;
+        color: black;
+    }
 
     header {
         width: 100%;
@@ -29,11 +33,11 @@ main {
         display: grid;
         grid-template-columns: 1fr auto 1fr;
 
-        #about-buttons{
+        #about-buttons {
             justify-self: flex-start;
         }
 
-        #color-mode{
+        #color-mode {
             justify-self: flex-end;
         }
 
@@ -48,7 +52,7 @@ main {
             display: flex;
         }
 
-        
+
     }
 
     .nav-sites {
@@ -61,7 +65,7 @@ main {
             a {
                 color: aliceblue;
             }
-        
+
         }
 
     }
@@ -88,7 +92,8 @@ main {
         #work {
             background-color: rgb(0, 255, 0);
         }
-
     }
+
+
 
 }

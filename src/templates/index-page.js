@@ -36,11 +36,6 @@ export const pageQuery = graphql`
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)
           }
         }
-        video {
-          videoFile {
-            publicURL
-          }
-        }
         heading
         subheading
       }
