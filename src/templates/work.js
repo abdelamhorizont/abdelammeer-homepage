@@ -56,7 +56,7 @@ const Blog = () => {
 
   return (
     <div className="about-page">
-      blogooo
+      Work work work work work
     </div>
   )
 }
