@@ -1,10 +1,10 @@
 ---
 templateKey: work-post
-title: "Archaeology of a city mine "
-date: 2022-10-01T10:38:37.776Z
 featuredimage: img/dscf0001_1.jpeg
-cover-image: /img/dscf0034_1.jpeg
+cover-image: /img/download.png
 featuredpost: true
+title: Non Artificial Maybe Intelligence
+date: 2022-10-01T10:38:37.776Z
 tags:
   - Exhibition
   - Space
