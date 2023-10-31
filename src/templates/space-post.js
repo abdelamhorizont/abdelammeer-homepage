@@ -7,7 +7,7 @@ import ImageSection from "../components/content/image-section";
 
 // import '../styles/work-post.scss'
 
-const WorkPost = ({ data }) => {
+const SpacePost = ({ data }) => {
   // const { markdownRemark: post } = data;
 
   return (
@@ -33,7 +33,7 @@ const WorkPost = ({ data }) => {
 
 
 
-export default WorkPost;
+export default SpacePost;
 
 // export const pageQuery = graphql`
 //   query BlogPostByID($id: String!) {

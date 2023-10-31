@@ -14,7 +14,7 @@ import '../styles/typo.scss'
 
 import '../styles/index.scss'
 
-const AboutPage = () => {
+const Blog = () => {
 //   const data = useStaticQuery(graphql`
 //   query {
 //   allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "blog-page"}}}) {
@@ -63,7 +63,7 @@ const AboutPage = () => {
 
 
 
-export default AboutPage;
+export default Blog;
 
 // export const aboutPageQuery = graphql`
 //   query AboutPage($id: String!) {

@@ -252,27 +252,42 @@ collections:
           - { label: "Heading", name: "heading", widget: "string" }
           - { label: "Subheading", name: "subheading", widget: "string" }
       - file: "src/pages/blog/index.md"
-        label: "Blog Page"
+        label: "Blog"
         name: "blog"
         fields:
           - {
               label: "Template Key",
               name: "templateKey",
               widget: "hidden",
-              default: "blog-page",
+              default: "blog",
             }
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Subheading", name: "subheading", widget: "string" }
+      - file: "src/pages/work/index.md"
+        label: "Work"
+        name: "work"
+        fields:
           - {
-              label: "Video",
-              name: "video",
-              widget: "object",
-              fields: 
-              [
-                { label: "Video File", name: "videoFile", widget: file, required: false },
-                { label: "Fallback Image", name: "fallbackImage", widget: image, required: false }
-              ]
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "work",
             }
-          - { label: "Landing Video", name: "landingvideo", widget: "image" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Subheading", name: "subheading", widget: "string" }
+      - file: "src/pages/space/index.md"
+        label: "Space"
+        name: "space"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "space",
+            }
+          - { label: "Title", name: "title", widget: "string" }
           - { label: "Heading", name: "heading", widget: "string" }
           - { label: "Subheading", name: "subheading", widget: "string" }
       - file: "src/pages/about/index.md"
