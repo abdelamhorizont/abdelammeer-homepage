@@ -17,7 +17,7 @@ const IndexPage = ({ data }) => {
   return (
     <motion.div>
       <Layout>
-        {/* cookies */}
+        {/* cookie */}
       </Layout>
     </motion.div>
   )
