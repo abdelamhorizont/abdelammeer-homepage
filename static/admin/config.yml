@@ -251,7 +251,7 @@ collections:
             }
           - { label: "Heading", name: "heading", widget: "string" }
           - { label: "Subheading", name: "subheading", widget: "string" }
-      - file: "src/pages/blog-page/index.md"
+      - file: "src/pages/blog.md"
         label: "Blog"
         name: "blog"
         fields:
