@@ -6,42 +6,41 @@ import Project from '../project/project'
 
 
 export default function Projectlist( ) {
-  const data = useStaticQuery(graphql`
-query {
-  allMarkdownRemark(
-    filter: {frontmatter: {templateKey: {eq: "work-post"}}}
-    sort: {fields: frontmatter___date, order: DESC}
-    ) {
-    edges {
-      node {
-        fields {
-          slug
-        }
-        frontmatter {
-          title
-          date(formatString: "YYYY")
-          featuredimage
-          cover_image {
-            childImageSharp {
-              gatsbyImageData
-            }
-          }
-          tags
-        }
-      }
-     }
-   }
-  }
-`)
+//   const data = useStaticQuery(graphql`
+// query {
+//   allMarkdownRemark(
+//     filter: {frontmatter: {templateKey: {eq: "work-post"}}}
+//     sort: {fields: frontmatter___date, order: DESC}
+//     ) {
+//     edges {
+//       node {
+//         fields {
+//           slug
+//         }
+//         frontmatter {
+//           title
+//           date(formatString: "YYYY")
+//           cover_image {
+//             childImageSharp {
+//               gatsbyImageData
+//             }
+//           }
+//           tags
+//         }
+//       }
+//      }
+//    }
+//   }
+// `)
 
   const [activeTag, setactiveTag] = useState('All')
 
   const tags = ["All", "Object", "Space", "Research", "Exhibition"]
-  const projectlist = data.allMarkdownRemark.edges 
+  // const projectlist = data.allMarkdownRemark.edges 
 
   return (
     <div className='menu'>
-      <div className='tags'>
+      {/* <div className='tags'>
         {
           tags.map(tag => {
             return (
@@ -69,7 +68,7 @@ query {
             )
           })
         }
-      </ul>
+      </ul> */}
     </div>
   )
 }

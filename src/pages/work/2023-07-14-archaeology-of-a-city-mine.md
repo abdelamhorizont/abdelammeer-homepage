@@ -1,6 +1,5 @@
 ---
 templateKey: work-post
-featuredimage: /img/download.png
 cover-image: /img/download.png
 featuredpost: true
 title: Non Artificial Maybe Intelligence

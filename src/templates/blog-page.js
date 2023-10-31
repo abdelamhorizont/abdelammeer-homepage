@@ -15,44 +15,44 @@ import '../styles/typo.scss'
 import '../styles/index.scss'
 
 const AboutPage = () => {
-  const data = useStaticQuery(graphql`
-  query {
-  allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "blog-page"}}}) {
-    edges {
-      node {
-        html
-        frontmatter {
-          title
-          anima_ona_image {
-            caption
-            image {
-              childImageSharp {
-                gatsbyImageData
-              }
-            }
-          }
-          listedInfos {
-            column {
-              title
-              list {
-                listElement {
-                  year
-                  title
-                  location
-                  link {
-                    link
-                    linkText
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-  `)
+//   const data = useStaticQuery(graphql`
+//   query {
+//   allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "blog-page"}}}) {
+//     edges {
+//       node {
+//         html
+//         frontmatter {
+//           title
+//           anima_ona_image {
+//             caption
+//             image {
+//               childImageSharp {
+//                 gatsbyImageData
+//               }
+//             }
+//           }
+//           listedInfos {
+//             column {
+//               title
+//               list {
+//                 listElement {
+//                   year
+//                   title
+//                   location
+//                   link {
+//                     link
+//                     linkText
+//                   }
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+//   `)
 
   return (
     <div className="about-page">

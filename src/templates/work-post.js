@@ -8,12 +8,12 @@ import ImageSection from "../components/content/image-section";
 // import '../styles/work-post.scss'
 
 const BlogPost = ({ data }) => {
-  const { markdownRemark: post } = data;
+  // const { markdownRemark: post } = data;
 
   return (
     <Layout>
 
-      {
+      {/* {
         post.frontmatter?.variable_content?.map((content) => {
           if (content.type == 'text-section') {
             return (
@@ -25,7 +25,7 @@ const BlogPost = ({ data }) => {
             )
           }
         })
-      }
+      } */}
 
     </Layout>
   )
@@ -35,51 +35,49 @@ const BlogPost = ({ data }) => {
 
 export default BlogPost;
 
-export const pageQuery = graphql`
-  query BlogPostByID($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      id
-      html
-      frontmatter {
-        date(formatString: "YYYY")
-        title
-        description
-        featuredimage
-        variable_content {
-          type
-          columns
-          text
-          images {
-            image {
-              image {
-                childImageSharp {
-                  gatsbyImageData
-                }
-              }
-              caption
-            }
-          }
-        }
-        projectInfos
-      }
-    }
-    allMarkdownRemark(
-      filter: {frontmatter: {templateKey: {eq: "work-post"}}}
-      sort: {fields: frontmatter___date, order: DESC}
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            date(formatString: "YYYY")
-            tags
-            featuredimage
-          }
-        }
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query BlogPostByID($id: String!) {
+//     markdownRemark(id: { eq: $id }) {
+//       id
+//       html
+//       frontmatter {
+//         date(formatString: "YYYY")
+//         title
+//         description
+//         variable_content {
+//           type
+//           columns
+//           text
+//           images {
+//             image {
+//               image {
+//                 childImageSharp {
+//                   gatsbyImageData
+//                 }
+//               }
+//               caption
+//             }
+//           }
+//         }
+//         projectInfos
+//       }
+//     }
+//     allMarkdownRemark(
+//       filter: {frontmatter: {templateKey: {eq: "work-post"}}}
+//       sort: {fields: frontmatter___date, order: DESC}
+//     ) {
+//       edges {
+//         node {
+//           fields {
+//             slug
+//           }
+//           frontmatter {
+//             title
+//             date(formatString: "YYYY")
+//             tags
+//           }
+//         }
+//       }
+//     }
+//   }
+// `

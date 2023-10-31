@@ -17,7 +17,6 @@ exports.createPages = ({ actions, graphql }) => {
             }
             frontmatter {
               templateKey
-              featuredimage
               tags
             }
           }
