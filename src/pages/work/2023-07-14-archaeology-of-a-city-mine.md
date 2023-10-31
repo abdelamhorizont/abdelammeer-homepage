@@ -1,6 +1,6 @@
 ---
 templateKey: work-post
-featuredimage: img/dscf0001_1.jpeg
+featuredimage: /img/download.png
 cover-image: /img/download.png
 featuredpost: true
 title: Non Artificial Maybe Intelligence
