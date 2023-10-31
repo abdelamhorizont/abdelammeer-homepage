@@ -1,11 +1,11 @@
 ---
 templateKey: index-page
-title: anima ona
+title: abdel am meer
 image: /img/bildschirmfoto-2023-04-30-um-15.18.47.jpg
 video:
   fallbackImage: ""
   videoFile: ""
 landingvideo: /img/bildschirmfoto-2023-04-30-um-15.18.47.jpg
-heading: anima ona
-subheading: studio for research, art and design
+heading: abdel am meer
+subheading: communication design
 ---
