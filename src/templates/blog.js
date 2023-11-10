@@ -30,9 +30,18 @@ const Blog = () => {
   }
     `)
 
+  const { frontmatter } = data.allMarkdownRemark
+
   return (
-    <div className="about-page">
+    <div className="blog-page">
       <Layout>
+        { 
+          data.allMarkdownRemark.edges.map(edge => {
+            return(
+              <h1>{edge.node.frontmatter.title}</h1>
+            )
+          })
+        }
         blogooo
       </Layout>
     </div>
