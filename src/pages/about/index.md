@@ -1,6 +1,6 @@
 ---
 templateKey: about-page
-title: about anima ona
+title: "about "
 path: /about
 image:
   image: /img/anima_ona_2100x.webp
