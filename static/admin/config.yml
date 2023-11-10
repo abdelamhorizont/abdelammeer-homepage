@@ -103,6 +103,7 @@ collections:
           name: "tags",
           widget: "select",
           multiple: true,
+          required: false,  
           options: ["All", "Object", "Space", "Research", "Exhibition"],
         }
 
@@ -193,6 +194,7 @@ collections:
           name: "tags",
           widget: "select",
           multiple: true,
+          required: false,  
           options: ["All", "Object", "Space", "Research", "Exhibition"],
         }
 
@@ -222,6 +224,7 @@ collections:
           name: "tags",
           widget: "select",
           multiple: true,
+          required: false,  
           options: ["All", "Object", "Space", "Research", "Exhibition"],
         }
 

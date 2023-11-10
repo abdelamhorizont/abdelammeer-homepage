@@ -15,44 +15,20 @@ import '../styles/typo.scss'
 import '../styles/index.scss'
 
 const Blog = () => {
-  //   const data = useStaticQuery(graphql`
-  //   query {
-  //   allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "blog-page"}}}) {
-  //     edges {
-  //       node {
-  //         html
-  //         frontmatter {
-  //           title
-  //           anima_ona_image {
-  //             caption
-  //             image {
-  //               childImageSharp {
-  //                 gatsbyImageData
-  //               }
-  //             }
-  //           }
-  //           listedInfos {
-  //             column {
-  //               title
-  //               list {
-  //                 listElement {
-  //                   year
-  //                   title
-  //                   location
-  //                   link {
-  //                     link
-  //                     linkText
-  //                   }
-  //                 }
-  //               }
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-  //   `)
+  const data = useStaticQuery(graphql`
+    query {
+    allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "blog-page"}}}) {
+      edges {
+        node {
+          html
+          frontmatter {
+            title
+          }
+        }
+      }
+    }
+  }
+    `)
 
   return (
     <div className="about-page">
@@ -95,3 +71,44 @@ export default Blog;
 //     }
 //   }
 // `;
+
+//old query (inside component)
+
+// const data = useStaticQuery(graphql`
+// query {
+// allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "blog-page"}}}) {
+//   edges {
+//     node {
+//       html
+//       frontmatter {
+//         title
+//         anima_ona_image {
+//           caption
+//           image {
+//             childImageSharp {
+//               gatsbyImageData
+//             }
+//           }
+//         }
+//         listedInfos {
+//           column {
+//             title
+//             list {
+//               listElement {
+//                 year
+//                 title
+//                 location
+//                 link {
+//                   link
+//                   linkText
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// }
+// `)
