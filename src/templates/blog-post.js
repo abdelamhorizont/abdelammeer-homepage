@@ -13,6 +13,8 @@ const BlogPost = ({ data }) => {
   return (
     <Layout>
 
+      <h1>{data.markdownRemark.frontmatter.title}</h1>
+
       {/* {
         post.frontmatter?.variable_content?.map((content) => {
           if (content.type == 'text-section') {
@@ -34,6 +36,17 @@ const BlogPost = ({ data }) => {
 
 
 export default BlogPost;
+
+export const pageQuery = graphql`
+  query BlogPostByID($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      id
+      frontmatter {
+        title
+      }
+    }
+  }
+`
 
 // export const pageQuery = graphql`
 //   query BlogPostByID($id: String!) {

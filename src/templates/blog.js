@@ -12,17 +12,19 @@ import '../styles/reset.css'
 import '../styles/global.scss'
 import '../styles/typo.scss'
 
-import '../styles/index.scss'
+import '../styles/blog.scss'
 
 const Blog = () => {
   const data = useStaticQuery(graphql`
     query {
-    allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "blog-page"}}}) {
+    allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "blog-post"}}}) {
       edges {
         node {
-          html
           frontmatter {
             title
+          }
+          fields {
+            slug
           }
         }
       }
@@ -30,27 +32,45 @@ const Blog = () => {
   }
     `)
 
-  const { frontmatter } = data.allMarkdownRemark
+  // const { frontmatter } = data.allMarkdownRemark
+  console.log(data.allMarkdownRemark)
 
   return (
     <div className="blog-page">
       <Layout>
-        { 
+        {
           data.allMarkdownRemark.edges.map(edge => {
-            return(
-              <h1>{edge.node.frontmatter.title}</h1>
+            console.log(edge);
+            return (
+              <Link
+              to={edge.node.fields.slug}>
+                <h1>{edge.node.frontmatter.title}</h1>
+              </Link>
             )
           })
         }
-        blogooo
       </Layout>
     </div>
   )
 }
 
 
-
 export default Blog;
+
+// export const pageQuery = graphql`
+//   query BlogPageTemplate {
+//     allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "blog-post"}}}) {
+//       edges {
+//         node {
+//           frontmatter {
+//             title
+//             templateKey
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
 
 // export const aboutPageQuery = graphql`
 //   query AboutPage($id: String!) {

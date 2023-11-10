@@ -1,6 +1,6 @@
 backend:
   # name: github
-  repo: abdelamhorizont/abdelammeer-homepage 
+  repo: abdelamhorizont/abdelammeer-homepage
   use_graphql: true
   name: git-gateway
   branch: main
@@ -30,7 +30,27 @@ collections:
         }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "date" }
-      - { label: "Cover Image", name: "cover-image", widget: image }
+      # - { label: "Cover Image", name: "cover-image", widget: image }
+      - {
+          label: "Cover",
+          name: "cover",
+          widget: "object",
+          fields:
+            [
+              {
+                label: "Video File",
+                name: "videoFile",
+                widget: file,
+                required: false,
+              },
+              {
+                label: "Fallback Image",
+                name: "fallbackImage",
+                widget: image,
+                required: false,
+              },
+            ],
+        }
       - {
           label: "Content",
           name: "variable-content",
@@ -96,14 +116,14 @@ collections:
           label: "Project Infos",
           name: "projectInfos",
           widget: "markdown",
-          required: false,      
-        } 
+          required: false,
+        }
       - {
           label: "Tags",
           name: "tags",
           widget: "select",
           multiple: true,
-          required: false,  
+          required: false,
           options: ["All", "Object", "Space", "Research", "Exhibition"],
         }
 
@@ -123,6 +143,26 @@ collections:
       - { label: "Publish Date", name: "date", widget: "date" }
       - { label: "Cover Image", name: "cover-image", widget: image }
       - {
+          label: "Video",
+          name: "video",
+          widget: "object",
+          fields:
+            [
+              {
+                label: "Video File",
+                name: "videoFile",
+                widget: file,
+                required: false,
+              },
+              {
+                label: "Fallback Image",
+                name: "fallbackImage",
+                widget: image,
+                required: false,
+              },
+            ],
+        }
+      - {
           label: "Content",
           name: "variable-content",
           widget: "list",
@@ -187,14 +227,14 @@ collections:
           label: "Project Infos",
           name: "projectInfos",
           widget: "markdown",
-          required: false,      
-        } 
+          required: false,
+        }
       - {
           label: "Tags",
           name: "tags",
           widget: "select",
           multiple: true,
-          required: false,  
+          required: false,
           options: ["All", "Object", "Space", "Research", "Exhibition"],
         }
 
@@ -212,19 +252,24 @@ collections:
         }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "date" }
-      - { label: "Cover Image", name: "cover-image", widget: image, required: false }
+      - {
+          label: "Cover Image",
+          name: "cover-image",
+          widget: image,
+          required: false,
+        }
       - {
           label: "Project Infos",
           name: "projectInfos",
           widget: "markdown",
-          required: false,      
-        } 
+          required: false,
+        }
       - {
           label: "Tags",
           name: "tags",
           widget: "select",
           multiple: true,
-          required: false,  
+          required: false,
           options: ["All", "Object", "Space", "Research", "Exhibition"],
         }
 
@@ -246,11 +291,21 @@ collections:
               label: "Video",
               name: "video",
               widget: "object",
-              fields: 
-              [
-                { label: "Video File", name: "videoFile", widget: file, required: false },
-                { label: "Fallback Image", name: "fallbackImage", widget: image, required: false }
-              ]
+              fields:
+                [
+                  {
+                    label: "Video File",
+                    name: "videoFile",
+                    widget: file,
+                    required: false,
+                  },
+                  {
+                    label: "Fallback Image",
+                    name: "fallbackImage",
+                    widget: image,
+                    required: false,
+                  },
+                ],
             }
           - { label: "Heading", name: "heading", widget: "string" }
           - { label: "Subheading", name: "subheading", widget: "string" }
@@ -305,8 +360,8 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - {
-              label: "Anima Ona Image",
-              name: "anima-ona-image",
+              label: "About Image",
+              name: "about-image",
               widget: "object",
               fields:
                 [
@@ -335,30 +390,65 @@ collections:
                   name: "column",
                   widget: "object",
                   fields:
-                  [
-                    { label: "Title", name: "title", widget: "string", required: false},
-                    {
-                      label: "List", 
-                      name: "list",
-                      widget: "list",
-                      field:
-                        {
-                          label: "List Element",
-                          name: "listElement",
-                          widget: "object",
-                          fields: 
-                           [
-                            { label: "Year", name: "year", widget: "string", required: false},
-                            { label: "Title", name: "title", widget: "string", required: false},
-                            { label: "Location", name: "location", widget: "string", required: false},
-                            { label: "Link", name: "link", widget: "object", fields: [
-                              { label: "Link", name: "link", widget: "string", required: false},
-                              { label: "Link Text", name: "linkText", widget: "string", required: false},
-                            ]},
-                          ]
-                        }
-                    }
-                  ]
-                }
-                
+                    [
+                      {
+                        label: "Title",
+                        name: "title",
+                        widget: "string",
+                        required: false,
+                      },
+                      {
+                        label: "List",
+                        name: "list",
+                        widget: "list",
+                        field:
+                          {
+                            label: "List Element",
+                            name: "listElement",
+                            widget: "object",
+                            fields:
+                              [
+                                {
+                                  label: "Year",
+                                  name: "year",
+                                  widget: "string",
+                                  required: false,
+                                },
+                                {
+                                  label: "Title",
+                                  name: "title",
+                                  widget: "string",
+                                  required: false,
+                                },
+                                {
+                                  label: "Location",
+                                  name: "location",
+                                  widget: "string",
+                                  required: false,
+                                },
+                                {
+                                  label: "Link",
+                                  name: "link",
+                                  widget: "object",
+                                  fields:
+                                    [
+                                      {
+                                        label: "Link",
+                                        name: "link",
+                                        widget: "string",
+                                        required: false,
+                                      },
+                                      {
+                                        label: "Link Text",
+                                        name: "linkText",
+                                        widget: "string",
+                                        required: false,
+                                      },
+                                    ],
+                                },
+                              ],
+                          },
+                      },
+                    ],
+                },
             }
