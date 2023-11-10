@@ -5,15 +5,18 @@ import Layout from "../components/layout/Layout";
 import TextSection, { HTMLContent } from "../components/content/text-section";
 import ImageSection from "../components/content/image-section";
 
-// import '../styles/work-post.scss'
+import '../styles/blog.scss'
 
 const BlogPost = ({ data }) => {
   // const { markdownRemark: post } = data;
 
   return (
     <Layout>
+      <div className="blog-post">
+        <h1>{data.markdownRemark.frontmatter.title}</h1>
 
-      <h1>{data.markdownRemark.frontmatter.title}</h1>
+      </div>
+
 
       {/* {
         post.frontmatter?.variable_content?.map((content) => {
