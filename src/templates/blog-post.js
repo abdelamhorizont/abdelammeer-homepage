@@ -26,7 +26,7 @@ const BlogPost = ({ data }) => {
         <h1>{data.markdownRemark.frontmatter.title}</h1>
 
       </div>
-
+{/* */}
 
       {/* {
         post.frontmatter?.variable_content?.map((content) => {
