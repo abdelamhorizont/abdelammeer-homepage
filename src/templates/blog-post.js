@@ -64,6 +64,22 @@ export const pageQuery = graphql`
             }
           }
         }
+        description
+        variable_content {
+          type
+          columns
+          text
+          images {
+            image {
+              image {
+                childImageSharp {
+                  gatsbyImageData
+                }
+              }
+              caption
+            }
+          }
+        }
       }
     }
   }

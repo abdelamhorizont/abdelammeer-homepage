@@ -19,6 +19,12 @@ collections:
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
+    media_folder: ''
+    public_folder: ''
+    media_library:
+      allow_multiple: true
+      config:
+        multiple: true
     create: true
     slug: "{{slug}}"
     fields:
@@ -30,7 +36,6 @@ collections:
         }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "date" }
-      # - { label: "Cover Image", name: "cover-image", widget: image }
       - {
           label: "Cover",
           name: "cover",
@@ -50,6 +55,12 @@ collections:
                 required: false,
               },
             ],
+        }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "markdown",
+          required: false,
         }
       - {
           label: "Content",
@@ -86,6 +97,7 @@ collections:
                                 name: "image",
                                 widget: "image",
                                 required: false,
+                                allow_multiple: true
                               },
                               {
                                 label: "Caption",
@@ -111,12 +123,6 @@ collections:
                   },
               },
             ],
-        }
-      - {
-          label: "Project Infos",
-          name: "projectInfos",
-          widget: "markdown",
-          required: false,
         }
       - {
           label: "Tags",
