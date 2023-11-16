@@ -217,4 +217,9 @@ projectInfos: >-
   \
 
   What and who and how and why? We will examine various AI tools, models and training Data, define possibilities, limitations and risks and use these technologies to comment on the very same ones through the lenses of history, politics, society, culture and science. We will approach this with stupidity as a high order maybe-intelligence.
+Description: What and who and how and why? We will examine various AI tools,
+  models and training Data, define possibilities, limitations and risks and use
+  these technologies to comment on the very same ones through the lenses of
+  history, politics, society, culture and science. We will approach this with
+  stupidity as a high order maybe-intelligence.
 ---
