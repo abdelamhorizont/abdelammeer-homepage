@@ -201,8 +201,25 @@ variable-content:
 
 
           <https://vimeo.com/287094397>
+  - type: image-section
+    images:
+      - image:
+          image: ai-dungeon.png
+          caption: Ai Dungeon
+      - image:
+          image: ai-questions.png
+          caption: Questions
+      - image:
+          image: bildschirmfoto-2023-04-06-um-17.26.17.png
+          caption: Quick Draw
+    columns: "3"
 projectInfos: >-
   \
 
   What and who and how and why? We will examine various AI tools, models and training Data, define possibilities, limitations and risks and use these technologies to comment on the very same ones through the lenses of history, politics, society, culture and science. We will approach this with stupidity as a high order maybe-intelligence.
+Description: What and who and how and why? We will examine various AI tools,
+  models and training Data, define possibilities, limitations and risks and use
+  these technologies to comment on the very same ones through the lenses of
+  history, politics, society, culture and science. We will approach this with
+  stupidity as a high order maybe-intelligence.
 ---
