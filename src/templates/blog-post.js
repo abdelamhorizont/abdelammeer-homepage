@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { graphql, Link } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+
 
 import Layout from "../components/layout/Layout";
 import TextSection, { HTMLContent } from "../components/content/text-section";
@@ -9,10 +11,18 @@ import '../styles/blog.scss'
 
 const BlogPost = ({ data }) => {
   // const { markdownRemark: post } = data;
+  const myimage = getImage(data.markdownRemark.frontmatter.cover?.fallbackImage)
 
   return (
     <Layout>
       <div className="blog-post">
+        <div className="image-wrapper">
+          <GatsbyImage
+            image={myimage}
+            alt={''}
+          />
+        </div>
+
         <h1>{data.markdownRemark.frontmatter.title}</h1>
 
       </div>
@@ -46,6 +56,14 @@ export const pageQuery = graphql`
       id
       frontmatter {
         title
+        templateKey
+        cover {
+          fallbackImage {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+        }
       }
     }
   }
