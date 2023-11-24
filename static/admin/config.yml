@@ -78,6 +78,12 @@ collections:
                 fields:
                   [
                     {
+                      label: "Column",
+                      name: "column",
+                      widget: "select",
+                      options: ["1", "2", "3"],
+                    },
+                    {
                       label: "Column Start",
                       name: "column-start",
                       widget: "select",
