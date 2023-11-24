@@ -6,6 +6,18 @@ cover-image: /img/download.png
 cover:
   fallbackImage: /img/download.png
 variable-content:
+  - type: image-section
+    images:
+      - image:
+          image: ai-dungeon.png
+          caption: Ai Dungeon
+      - image:
+          image: ai-questions.png
+          caption: Questions
+      - image:
+          image: bildschirmfoto-2023-04-06-um-17.26.17.png
+          caption: Quick Draw
+    columns: "3"
   - type: text-section
     text: >-
       ## Resources
@@ -201,18 +213,6 @@ variable-content:
 
 
           <https://vimeo.com/287094397>
-  - type: image-section
-    images:
-      - image:
-          image: ai-dungeon.png
-          caption: Ai Dungeon
-      - image:
-          image: ai-questions.png
-          caption: Questions
-      - image:
-          image: bildschirmfoto-2023-04-06-um-17.26.17.png
-          caption: Quick Draw
-    columns: "3"
 projectInfos: >-
   \
 
