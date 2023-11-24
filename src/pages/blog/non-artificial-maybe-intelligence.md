@@ -195,7 +195,7 @@ title: (Non) Artificial (Maybe) Intelligence
 type: "Seminar "
 date: 2022-10-01T08:43:10.878Z
 cover:
-  fallbackImage: /img/download.png
+  fallbackImage: download.png
 Description: What and who and how and why? We will examine various AI tools,
   models and training Data, define possibilities, limitations and risks and use
   these technologies to comment on the very same ones through the lenses of
