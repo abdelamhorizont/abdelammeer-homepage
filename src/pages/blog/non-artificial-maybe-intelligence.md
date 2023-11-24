@@ -25,18 +25,12 @@ variable-content:
       Introduction to A.I., data, models and machine learning algorithms
 
 
-      <https://nooscope.ai/>
-
-
-
+      <https://nooscope.ai/>\
 
       <https://kim.hfg-karlsruhe.de/>
 
 
       research group on artificial intelligence and media philosophy KIM (from German: *Künstliche Intelligenz und Medienphilosophie*) at hfg karlsruhe
-
-
-       
 
 
       "LessWrong is an online forum and community dedicated to improving human reasoning and decision-making" - about page
@@ -45,14 +39,10 @@ variable-content:
       <https://www.lesswrong.com/tag/ai>
 
 
-
-
       AI Alignment Forum
 
 
       <https://www.alignmentforum.org/>
-
-
 
 
       "arXiv® is a curated research-sharing platform " - about page
@@ -61,14 +51,10 @@ variable-content:
       <https://arxiv.org/list/cs.AI/recent>
 
 
-
-
       Tactical Tech, Berlin-based non-profit organisation
 
 
       <https://tacticaltech.org/>
-
-
 
 
       Excavating AI
@@ -81,8 +67,6 @@ variable-content:
 
 
       <https://excavating.ai/>
-
-
 
 
       Machine Unlearning: Decolonial Thinking in the Age of AI
@@ -169,7 +153,7 @@ variable-content:
           <https://teachablemachine.withgoogle.com/>
   - type: text-section
     text: >-
-      ### Projects
+      ## Projects
 
 
       Deep Fakes
@@ -181,15 +165,10 @@ variable-content:
       <https://thisxdoesnotexist.com/>
 
 
-          
-
-
       COCO
 
 
       <https://cocodataset.org/#explore>
-
-
 
 
       Neural Networks, mathematical explanation
@@ -198,14 +177,10 @@ variable-content:
       <https://www.youtube.com/watch?v=aircAruvnKk&list=RDCMUCYO_jab_esuFRV4b17AJtAw&start_radio=1&rv=aircAruvnKk&t=0>
 
 
-
-
        Image Classification with ml5 
 
 
       <https://www.youtube.com/watch?v=QEzRxnuaZCk&list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y&index=5>
-
-
 
 
       Eyeo 2018 - Rebecca Fiebrink:
@@ -217,8 +192,8 @@ projectInfos: >-
 
   What and who and how and why? We will examine various AI tools, models and training Data, define possibilities, limitations and risks and use these technologies to comment on the very same ones through the lenses of history, politics, society, culture and science. We will approach this with stupidity as a high order maybe-intelligence.
 title: (Non) Artificial (Maybe) Intelligence
-type: Seminar HfG Karlsruhe
-date: 2023-11-10T09:43:10.878Z
+type: "Seminar "
+date: 2022-10-01T08:43:10.878Z
 cover:
   fallbackImage: /img/download.png
 Description: What and who and how and why? We will examine various AI tools,
