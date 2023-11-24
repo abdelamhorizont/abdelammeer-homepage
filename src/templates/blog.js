@@ -41,8 +41,6 @@ const Blog = () => {
   }
     `)
 
-  // const { frontmatter } = data.allMarkdownRemark
-
   return (
     <Layout>
       <div className="blog-page">
