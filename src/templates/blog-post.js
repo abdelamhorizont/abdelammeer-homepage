@@ -80,7 +80,8 @@ export const pageQuery = graphql`
         Description
         variable_content {
           type
-          columns
+          column-start
+          column-end
           text
           images {
             image {
