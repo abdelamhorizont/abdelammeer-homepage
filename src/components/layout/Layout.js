@@ -31,25 +31,23 @@ const Layout = ({ children }) => {
 
       <header>
         <nav>
-          <ul className="nav-meta">
-            <li id="about-buttons">
-              <Link className="rounded-button" to="/">about</Link>
-              <Link className="rounded-button" to="/">@</Link>
-            </li>
-            <li className="rounded-button" id='logo'><Link to="/">abdelammeer</Link></li>
-            <li className="rounded-button" id='color-mode'>
-              <button>🌈</button>
-              <button>💡</button>
-            </li>
-          </ul>
+          <div className="nav-group" >
+            <ul className="nav-meta">
+              <li id='logo'><Link to="/">abdelammeer</Link></li>
+              <li><Link to="/">about</Link></li>
+              <li><Link to="/">@</Link></li>
+            </ul>
+            <ul className="nav-sites">
+              <li id='blog'><Link to="/blog">blog</Link></li>
+              <li id='space'><Link to="/space">space</Link></li>
+              <li id='work'><Link to="/work">work</Link></li>
+            </ul>
+          </div>
 
-          <ul className="nav-sites">
-            <li id='blog'><Link to="/blog">blog</Link></li>
-            {/* <li id='space'><Link to="/space/space"><span>s</span><span>p</span><span>a</span><span>c</span><span>e</span></Link></li> */}
-            <li id='space'><Link to="/space">space</Link></li>
-            <li id='work'><Link to="/work">work</Link></li>
+          <ul className='color-modes'>
+            <li><button>🌈</button></li>
+            <li><button>💡</button></li>
           </ul>
-
         </nav>
       </header>
 

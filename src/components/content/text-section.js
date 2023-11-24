@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import ReactMarkdown from 'react-markdown'
 
 
-// import './content.scss'
+import './content.scss'
 import 'swiper/css'
 import 'swiper/scss/pagination';
 

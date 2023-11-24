@@ -38,17 +38,20 @@ const Blog = () => {
   return (
     <div className="blog-page">
       <Layout>
+        <div className="project-list">
         {
           data.allMarkdownRemark.edges.map(edge => {
-            console.log(edge);
             return (
+              <div className="project-preview">
               <Link
-              to={edge.node.fields.slug}>
+                to={edge.node.fields.slug}>
                 <h1>{edge.node.frontmatter.title}</h1>
               </Link>
+              </div>
             )
           })
         }
+        </div>
       </Layout>
     </div>
   )

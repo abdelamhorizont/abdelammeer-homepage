@@ -10,37 +10,50 @@ import ImageSection from "../components/content/image-section";
 import '../styles/blog.scss'
 
 const BlogPost = ({ data }) => {
-  // const { markdownRemark: post } = data;
-  const myimage = getImage(data.markdownRemark.frontmatter.cover?.fallbackImage)
+  const { markdownRemark: post } = data;
+  const myimage = getImage(post.frontmatter.cover?.fallbackImage)
 
   return (
     <Layout>
       <div className="blog-post">
-        <div className="image-wrapper">
-          <GatsbyImage
-            image={myimage}
-            alt={''}
-          />
+        <div className='blogpostcover'>
+
+          {<h2> 2022/2023 </h2>}
+
+          <h1 className="headline">{post.frontmatter.title}</h1>
+
+          {<h2> Seminar HfG Karlsruhe </h2>}
+
+          <div className="cover-image">
+            <GatsbyImage
+              image={myimage}
+              alt={''}
+            />
+            <p>created by Kristian Vrhar on stable diffusion</p>
+          </div>
         </div>
 
-        <h1>{data.markdownRemark.frontmatter.title}</h1>
+        <div className="blog-post-content">
+          <div className="description">
+          <TextSection content={post.frontmatter.Description} columns={'2'} />
+          </div>
 
-      </div>
-{/* bl */}
-
-      {/* {
-        post.frontmatter?.variable_content?.map((content) => {
-          if (content.type == 'text-section') {
-            return (
-              <TextSection content={content.text} columns={'2'} />
-            )
-          } else if (content.type == 'image-section') {
-            return (
-              <ImageSection content={content} columns={content.columns} />
-            )
+          {
+            post.frontmatter?.variable_content?.map((content) => {
+              if (content.type == 'text-section') {
+                return (
+                  <TextSection content={content.text} columns={'2'} />
+                )
+              } else if (content.type == 'image-section') {
+                return (
+                  <ImageSection content={content} columns={content.columns} />
+                )
+              }
+            })
           }
-        })
-      } */}
+        </div>
+      </div>
+
 
     </Layout>
   )
@@ -64,7 +77,7 @@ export const pageQuery = graphql`
             }
           }
         }
-        description
+        Description
         variable_content {
           type
           columns

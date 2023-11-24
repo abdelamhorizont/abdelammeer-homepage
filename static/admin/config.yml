@@ -35,6 +35,8 @@ collections:
           default: "blog-post",
         }
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "string" }
+      - { label: "Type", name: "type", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "date" }
       - {
           label: "Cover",

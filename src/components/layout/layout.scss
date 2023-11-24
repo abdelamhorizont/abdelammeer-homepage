@@ -1,101 +1,67 @@
-main {
-    div {
-        a {
-            display: none;
-        }
-    }
-}
-
-.rounded-button {
-    padding: 0.3rem 1rem;
-    // border-radius: 1rem;
-    background-color: lavenderblush;
-    color: black;
-
-    a {
-        color: black;
-    }
-}
-
-.heightfill{
+.heightfill {
     height: 80vh;
 }
 
 .layout {
-    p {
-        font-size: 4rem;
-        color: black;
-    }
+    nav {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        z-index: 10;
+        padding: 0.3rem;
 
-    header {
-        width: 100%;
-    }
+        width: calc(100vw - 0.6rem);
 
-
-    .nav-meta {
-        width: 100vw;
-        display: grid;
-        grid-template-columns: 1fr auto 1fr;
-
-        #about-buttons {
-            justify-self: flex-start;
+        ul {
+            li {
+                border-radius: 1rem;
+                padding: 0.2rem 0.5rem;
+            }
         }
 
-        #color-mode {
-            justify-self: flex-end;
-        }
-
-        li#logo {
-            display: flex;
-            justify-content: center;
-            width: 80vw;
-
-        }
-
-        #about-buttons {
+        .nav-group{
             display: flex;
         }
+    }
 
+    .nav-meta, .color-modes {
+        display: flex;
 
+        li {
+            background-color: white;
+        }
     }
 
     .nav-sites {
         text-transform: uppercase;
-
-        li {
-            width: 100%;
-            padding: 0.3rem;
-
-            a {
-                color: aliceblue;
-            }
-
-        }
-
-    }
-
-    ul {
         display: flex;
-        justify-content: space-between;
 
         li {
-            // border-radius: 1rem;
-
-            display: flex;
-            justify-content: center;
+            font-weight: 100;
+            font-style: italic;
+            font-synthesis: none;
+            font-stretch: 175%;
+            text-align: center;
+            transition: all 0.5s ease;
         }
+
+        li:hover {
+            font-weight: 900;
+        }
+
 
         #space {
-            background-color: rgb(255, 0, 0);
+            background-color: rgb(254, 214, 54);
         }
 
         #blog {
-            background-color: blue;
+            background-color: rgb(134, 134, 255);
         }
 
         #work {
-            background-color: rgb(0, 255, 0);
+            background-color: rgb(68, 180, 68);
         }
+
     }
 
 }
