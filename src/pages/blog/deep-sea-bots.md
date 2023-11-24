@@ -5,7 +5,7 @@ date: 2021-09-15T08:43:34.318Z
 cover-image: /img/bildschirmfoto-2021-09-12-um-15.09.31.png
 type: Diploma
 cover:
-  fallbackImage: /img/bildschirmfoto-2021-09-12-um-15.09.31.png
+  fallbackImage: bildschirmfoto-2021-09-12-um-15.09.31.png
 Description: >-
   This installation is an interactive exploration of what kind of an appearance
   an artificial intelligence might choose, what questions it might ask and
