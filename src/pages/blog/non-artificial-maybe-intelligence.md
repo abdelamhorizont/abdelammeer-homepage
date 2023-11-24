@@ -14,6 +14,9 @@ variable-content:
           image: bildschirmfoto-2023-04-06-um-17.26.17.png
           caption: Quick Draw
     columns: "3"
+    column-start: "1"
+    column-end: "12"
+    column: "1"
   - type: text-section
     text: >-
       ## Resources
