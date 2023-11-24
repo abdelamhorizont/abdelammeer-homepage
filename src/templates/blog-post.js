@@ -18,18 +18,16 @@ const BlogPost = ({ data }) => {
       <div className="blog-post">
         <div className='blogpostcover'>
 
-          {<h2> 2022/2023 </h2>}
-
+          <h2> {post.frontmatter.date} </h2>
           <h1 className="headline">{post.frontmatter.title}</h1>
-
-          {<h2> Seminar HfG Karlsruhe </h2>}
+          <h2> {post.frontmatter.type} </h2>
 
           <div className="cover-image">
             <GatsbyImage
               image={myimage}
               alt={''}
             />
-            <p>created by Kristian Vrhar on stable diffusion</p>
+            <p className="caption">created by Kristian Vrhar on stable diffusion</p>
           </div>
         </div>
 
@@ -40,13 +38,15 @@ const BlogPost = ({ data }) => {
 
           {
             post.frontmatter?.variable_content?.map((content) => {
+              console.log(content.end);
+
               if (content.type == 'text-section') {
                 return (
-                  <TextSection content={content.text} columns={'2'} />
+                  <TextSection content={content.text} columnStart={content.column_start} columnEnd={content.column_end} />
                 )
               } else if (content.type == 'image-section') {
                 return (
-                  <ImageSection content={content} columns={content.columns} />
+                  <ImageSection content={content} columnStart={content.column_start} columnEnd={content.column_end} />
                 )
               }
             })
@@ -69,6 +69,8 @@ export const pageQuery = graphql`
       id
       frontmatter {
         title
+        type
+        date(formatString: "YYYY")
         templateKey
         cover {
           fallbackImage {
@@ -80,6 +82,8 @@ export const pageQuery = graphql`
         Description
         variable_content {
           type
+          column_end
+          column_start
           text
           images {
             image {
