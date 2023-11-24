@@ -1,10 +1,6 @@
 ---
 templateKey: blog-post
-title: (Non) Artificial (Maybe) Intelligence
-date: 2023-11-10T09:43:10.878Z
 cover-image: /img/download.png
-cover:
-  fallbackImage: /img/download.png
 variable-content:
   - type: image-section
     images:
@@ -217,6 +213,11 @@ projectInfos: >-
   \
 
   What and who and how and why? We will examine various AI tools, models and training Data, define possibilities, limitations and risks and use these technologies to comment on the very same ones through the lenses of history, politics, society, culture and science. We will approach this with stupidity as a high order maybe-intelligence.
+title: (Non) Artificial (Maybe) Intelligence
+type: Seminar HfG Karlsruhe
+date: 2023-11-10T09:43:10.878Z
+cover:
+  fallbackImage: /img/download.png
 Description: What and who and how and why? We will examine various AI tools,
   models and training Data, define possibilities, limitations and risks and use
   these technologies to comment on the very same ones through the lenses of
