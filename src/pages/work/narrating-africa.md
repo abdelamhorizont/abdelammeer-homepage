@@ -1,25 +1,22 @@
 ---
-templateKey: work-post
-title: NARRATING AFRICA
-type: Exhibition Design
-location: Literaturmuseum der Moderne Marbach
+title: NARRATING NAMIBIA
+type: Reader
+location: Windhoek, Marbach
 collaborators: SONJA SCHWARZ
-date: 2019-09-01T13:57:21.125Z
+date: 2021-05-01T14:00:38.386Z
 cover:
-  fallbackImage: /img/narrating-africa-1.jpg
+  fallbackImage: /img/narrating-namibia-1.jpg
 Description: >-
-  "How do we tell stories about Africa: about a continent and its diversity?
-  Which images and stereotypes, which colonial and national ideologies determine
-  literature about Africa and are shaped, disseminated or dismantled by it? In
-  an open space exhibition, we discuss this with texts, archival finds, lecture
-  performances, and conversations with partners from Namibia and writers from
-  Africa and Europe, among others."\
+  ‘Narrating Africa is an impossible task due to the cultural, linguistic
+  diversity’ and at the same time an ‘interesting’ and ‘brave topic’, reflects
+  Namibian writer Rémy Ngamije. The Deutsches Literaturarchiv Marbach – together
+  with partners from universities and institutions in Germany, Switzerland and
+  Namibia – takes on this challenge by asking questions such as ‘How do we
+  narrate Africa as a continent and its diversity? Which images and stereo
+  types, which colonial and national ideologies can we find in literature about
+  Africa and how does literature shape, continue or do away with them in turn?’\
 
   \
 
-  <https://www.dla-marbach.de/museen/wechselausstellungen/africa-digital/>\
-
-  \
-
-  in collaboration with the Literaturmuseum der Moderne Marbach we designed the exhibition "Narrating Africa", for which we developed a system to transfer content from different curators into one exhibition space. The design concept offers the possibility to add content to the exhibition step by step over a longer period of time and to link it with each other by commenting on it. The table tops are covered with magnetic ferrofoil printed image motifs and quotations and are supplemented by expandable cards and leporellos, which, equipped with magnets, adhere to the table but can also be held in the hands. The visitor is invited to settle down on seat cushions, to open and discover the various contents and to surrender to an unusual sense of space. The visual language can be found on accompanying media such as posters, postcards, the program or the website.
+  STEPTHREE focuses on literary texts and cultural objects that narrate Namibia. The selection of texts portrays the multilingual Namibian society. Together, texts and objects represent snapshots of Namibian literature and culture. Scholars and writers discuss and contextualise their meaning and narration, but also raise further questions. Come and see for yourself.
 ---
