@@ -10,6 +10,7 @@
     
     .project-preview{
         display: flex;
+        align-items: flex-end;
         width: 100%;
         margin: 1rem 0rem;
     }
@@ -32,6 +33,7 @@
     }
 
     .preview-image{
+        align-self: flex-end;
         height: 4rem;
         width: auto;
         margin: 0rem 0.5rem;
@@ -137,6 +139,7 @@
 .blog-post-content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
 
     .description {
         grid-column: span 9;
@@ -148,22 +151,17 @@
         }
     }
 
-    // .html-content {
-    //     margin-bottom: 3.5rem;
-
-    //     h2{
-    //         margin-bottom: 1.5rem;
-    //         font-size: 1.5rem;
-    //         // font-weight: bold;
-    //     }
-    // }
-
     .image-section {
         width: 100%;
         display: flex;
         gap: 1rem;
     }
 
+    .text-section {
+       max-width: 100%;
+        display: flex;
+        gap: 1rem;
+    }
 }
 
 p.caption {
