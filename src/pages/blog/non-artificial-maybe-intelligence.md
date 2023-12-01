@@ -83,7 +83,7 @@ variable-content:
 
       <https://www.youtube.com/watch?v=QEzRxnuaZCk&list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y&index=5>
     column-start: "1"
-    column-end: "4"
+    column-end: "5"
   - type: text-section
     text: >-
       ## AI Tools
@@ -143,8 +143,8 @@ variable-content:
       <https://quickdraw.withgoogle.com/?locale=en_US>\
 
       Quickdraw
-    column-start: "4"
-    column-end: "8"
+    column-start: "5"
+    column-end: "9"
   - type: text-section
     text: |-
       ## Projects
@@ -155,7 +155,7 @@ variable-content:
 
       Eyeo 2018 - Rebecca Fiebrink:\
       <https://vimeo.com/287094397>
-    column-start: "8"
+    column-start: "9"
     column-end: "13"
 projectInfos: >-
   \
