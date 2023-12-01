@@ -73,6 +73,12 @@ collections:
                 widget: image,
                 required: false,
               },
+              {
+                label: "Caption",
+                name: "caption",
+                widget: "string",
+                required: false,
+              },
             ],
         }
       - {
@@ -215,6 +221,32 @@ collections:
                       label: "Text",
                       name: "text",
                       widget: "markdown",
+                      required: false,
+                    },
+                  ],
+              },
+              {
+                label: "Video Section",
+                name: "video-section",
+                widget: "object",
+                fields:
+                  [
+                    {
+                      label: "Video File",
+                      name: "videoFile",
+                      widget: file,
+                      required: false,
+                    },
+                    {
+                      label: "Fallback Image",
+                      name: "fallbackImage",
+                      widget: image,
+                      required: false,
+                    },
+                    {
+                      label: "Caption",
+                      name: "caption",
+                      widget: "string",
                       required: false,
                     },
                   ],
@@ -369,6 +401,32 @@ collections:
                               },
                             ],
                         },
+                    },
+                    {
+                      label: "Video Section",
+                      name: "video-section",
+                      widget: "object",
+                      fields:
+                        [
+                          {
+                            label: "Video File",
+                            name: "videoFile",
+                            widget: file,
+                            required: false,
+                          },
+                          {
+                            label: "Fallback Image",
+                            name: "fallbackImage",
+                            widget: image,
+                            required: false,
+                          },
+                          {
+                            label: "Caption",
+                            name: "caption",
+                            widget: "string",
+                            required: false,
+                          },
+                        ],
                     },
                   ],
               },

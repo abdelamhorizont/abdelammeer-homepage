@@ -56,7 +56,9 @@ const Blog = () => {
 
   return (
     <div className="about-page">
-      Work work work work work
+      <Layout>
+        
+      </Layout>
     </div>
   )
 }
