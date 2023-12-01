@@ -33,7 +33,6 @@ const ImageSection = ({ content, columnStart, columnEnd }) => {
 
   return (
     <div style={columnStart ? gridCols : gridColsFallback} className={`html-content`}>
-      {/* <div style={{ gridColumn: "span 12" }} className={`html-content`}> */}
       <div className="image-section">
         {
           content?.images?.map((image, i) => {

@@ -154,7 +154,13 @@
     .image-section {
         width: 100%;
         display: flex;
+        flex: 1 1 0;
+        
         gap: 1rem;
+
+        div{
+            flex-basis: 100%;
+        }
     }
 
     .text-section {
