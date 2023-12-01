@@ -18,7 +18,7 @@ const TextSection = ({ content, columnStart, columnEnd }) => {
   }
  
   const gridColsFallback = {
-    gridColumn: "span 6"
+    gridColumn: "span 7"
   }
 
   return (
