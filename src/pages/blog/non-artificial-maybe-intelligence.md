@@ -132,6 +132,9 @@ variable-content:
       Teachable Machine
 
 
+      <https://www.youtube.com/watch?v=ky5ZB-mqZKM>AI influencers are getting filthy rich... let's build one
+
+
       ### G﻿ames
 
 
