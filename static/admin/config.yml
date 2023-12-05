@@ -454,7 +454,7 @@ collections:
                         },
                         {
                           label: "Video",
-                          name: "image",
+                          name: "video",
                           widget: "object",
                           fields:
                             [
