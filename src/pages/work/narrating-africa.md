@@ -1,4 +1,5 @@
 ---
+templateKey: work-post
 title: NARRATING NAMIBIA
 type: Reader
 location: Windhoek, Marbach

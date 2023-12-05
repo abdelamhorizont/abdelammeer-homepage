@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
             <ul className="nav-meta">
               <li id='logo'><Link to="/">abdelammeer</Link></li>
               <li><Link to="/">about</Link></li>
-              <li><Link to="/">@</Link></li>
+              <li><a href="mailto:hello@abdelammeer.com">@</a></li>
             </ul>
             <ul className="nav-sites">
               <li id='blog'><Link to="/blog">blog</Link></li>
@@ -57,9 +57,9 @@ const Layout = ({ children }) => {
 
       <div className="footer">
         <div className="contact">
-          <div className="mail"><a href="mailto:platzhalter@gmail.com">mail adress</a></div>
           <div className="insta-link"><a href='https://www.instagram.com/' target="blank">Instagram</a></div>
         </div>
+        
         <div className="nav-links-footer">
           <Link to="/imprint">Imprint</Link>
           <Link to="/privacy-policy">Privacy Policy</Link>
