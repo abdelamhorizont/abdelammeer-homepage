@@ -429,7 +429,8 @@ collections:
                       label: "Images",
                       name: "images",
                       widget: "list",
-                      field:
+                      types:
+                      [
                         {
                           label: "Image",
                           name: "image",
@@ -451,6 +452,28 @@ collections:
                               },
                             ],
                         },
+                        {
+                          label: "Video",
+                          name: "image",
+                          widget: "object",
+                          fields:
+                            [
+                              {
+                                label: "Image",
+                                name: "image",
+                                widget: "image",
+                                required: false,
+                                allow_multiple: true,
+                              },
+                              {
+                                label: "Caption",
+                                name: "caption",
+                                widget: "string",
+                                required: false,
+                              },
+                            ],
+                        },
+                      ]
                     },
                   ],
               },
