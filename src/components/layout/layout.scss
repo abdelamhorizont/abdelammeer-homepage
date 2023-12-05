@@ -51,15 +51,20 @@
 
 
         #space {
-            background-color: rgb(254, 214, 54);
-        }
-
-        #blog {
             background-color: rgb(134, 134, 255);
+            // background-image: linear-gradient(rgb(134, 134, 255), yellow);
         }
-
-        #work {
+        
+        #blog {
+            // background-image: linear-gradient( rgb(149, 182, 0), rgb(134, 134, 255));
             background-color: rgb(68, 180, 68);
+
+        }
+        
+        #work {
+            background-color: rgb(254, 214, 54);
+            // background-image: linear-gradient( rgb(254, 214, 54), rgb(255, 6, 6),);
+
         }
 
     }

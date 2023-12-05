@@ -313,6 +313,49 @@ collections:
                 widget: image,
                 required: false,
               },
+              {
+                label: "Images",
+                name: "images",
+                widget: "list",
+                required: false,
+                field:
+                  {
+                    label: "Image",
+                    name: "image",
+                    widget: "object",
+                    fields:
+                      [
+                        {
+                          label: "Image",
+                          name: "image",
+                          widget: "list",
+                          required: false,
+                          types:
+                            [
+                              {
+                                label: "Image",
+                                name: "image",
+                                widget: "image",
+                                required: false,
+                                allow_multiple: true,
+                              },
+                              {
+                                label: "Video File",
+                                name: "videoFile",
+                                widget: file,
+                                required: false,
+                              },
+                            ],
+                        },
+                        {
+                          label: "Caption",
+                          name: "caption",
+                          widget: "string",
+                          required: false,
+                        },
+                      ],
+                  },
+              },
             ],
         }
       - {
@@ -401,32 +444,6 @@ collections:
                               },
                             ],
                         },
-                    },
-                    {
-                      label: "Video Section",
-                      name: "video-section",
-                      widget: "object",
-                      fields:
-                        [
-                          {
-                            label: "Video File",
-                            name: "videoFile",
-                            widget: file,
-                            required: false,
-                          },
-                          {
-                            label: "Fallback Image",
-                            name: "fallbackImage",
-                            widget: image,
-                            required: false,
-                          },
-                          {
-                            label: "Caption",
-                            name: "caption",
-                            widget: "string",
-                            required: false,
-                          },
-                        ],
                     },
                   ],
               },

@@ -5,7 +5,7 @@
 
     .project-list {
         padding: 0rem 0.5rem;
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
 
     .project-preview {
@@ -15,26 +15,31 @@
         margin: 1rem 0rem;
     }
 
-    h1 {
-        font-size: 5rem;
-        font-weight: 90;
-        line-height: 4.5rem;
-        font-family: "PPAgrandir";
+    h1{
         display: inline;
+        font-family: "Arial";
+        font-size: 5rem;
+        line-height: 3rem;
+
+        background-color: rgb(254, 214, 54);
     }
 
     h2 {
         display: inline;
-
-        font-size: 1.8rem;
+        grid-column: span 1;
         font-family: Kleukens;
-        margin: 0rem 0.5rem;
-        // vertical-align: top;
+        font-size: 1rem;
+        background-color: rgb(254, 214, 54);
+    }
+
+    .collaborators{
+        // grid-column: span 2;
+        display: inline;
     }
 
     .preview-image {
         align-self: flex-end;
-        height: 4rem;
+        height: 40vh;
         width: auto;
         margin: 0rem 0.5rem;
 
@@ -55,6 +60,7 @@
 
 }
 
+
 .workpostcover {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -66,51 +72,37 @@
         
         padding: 1rem;
         grid-column: 1/13;
+        gap: 1rem;
 
         display: grid;
         grid-template-columns: repeat(12, 1fr);
+
     }
 
     .headline {
-        // width: 80vw;
-        grid-column: 2/11;
-        // margin-bottom: 1.5rem;
-
-        font-family: "PPAgrandir";
-        font-weight: 0;
-        // font-style: italic;
-        font-stretch: 75%;
-
-
-        font-size: 3rem;
-        line-height: 3rem;
-        // margin-bottom: 3.5rem;
-
+        grid-column: 2/10;
 
     }
 
     h1{
-        background-color: rgb(68, 180, 68);
-        border-radius: 1rem;
         display: inline;
-        // padding: 1rem;
-
+        font-size: 3rem;
+        line-height: 3rem;
+        background-color: rgb(254, 214, 54);
     }
 
     h2 {
+        display: inline;
         grid-column: span 1;
         font-family: Kleukens;
-        font-size: 1.5rem;
-        background-color: rgb(68, 180, 68);
-        display: inline;
-
-        // padding: 1rem;
-
+        font-size: 1rem;
+        background-color: rgb(254, 214, 54);
     }
 
-    // h2:first-child {
-    //     text-align: right;
-    // }
+
+    .collaborators{
+        grid-column: span 2;
+    }
 
     .subhead {
         grid-column: 1/13;

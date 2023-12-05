@@ -29,8 +29,10 @@ const WorkPost = ({ data }) => {
           <div className="cover-title">
             <div><h2> {post.frontmatter.date} </h2></div>
             <div className="headline"><h1>{post.frontmatter.title}</h1></div>
-            <div><h2> {post.frontmatter?.collaborators} </h2></div>
             <div><h2> {post.frontmatter.type} </h2></div>
+            {post.frontmatter?.collaborators &&
+              <div className="collaborators"><h2>with {post.frontmatter?.collaborators} </h2></div>
+            }
           </div>
         </div>
 
