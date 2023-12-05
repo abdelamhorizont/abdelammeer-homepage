@@ -8,6 +8,16 @@ collaborators: Jasmina Begovič, Raphael Berg
 date: 2019-10-01T13:52:54.513Z
 cover:
   fallbackImage: /img/1.jpg
+  images:
+    - type: image
+      image: /img/img_0307.jpg
+      caption: Flags
+    - type: video
+      videoFile: /img/16.mp4
+      caption: objects
+    - type: image
+      image: /img/7
+      caption: Detail
 Description: >-
   In 2019, the current corporate design of ABK Stuttgart was introduced. The
   extensive design and implementation of the corporate identity was undertaken
