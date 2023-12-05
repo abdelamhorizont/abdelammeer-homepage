@@ -4,7 +4,7 @@ title: ABK Stuttgart
 subtitle: ""
 type: Corporate Design
 location: ABK Stuttgart
-collaborators: JASMINA BEGOVIĆ, RAPHAEL BERG
+collaborators: Jasmina Begovič, Raphael Berg
 date: 2019-10-01T13:52:54.513Z
 cover:
   fallbackImage: /img/1.jpg
