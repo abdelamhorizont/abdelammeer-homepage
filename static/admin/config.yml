@@ -327,8 +327,8 @@ collections:
                       fields:
                         [
                           {
-                            label: "Image",
-                            name: "image",
+                            label: "Image File",
+                            name: "imageFile",
                             widget: "image",
                             required: false,
                             allow_multiple: true,
@@ -438,8 +438,8 @@ collections:
                           fields:
                             [
                               {
-                                label: "Image",
-                                name: "image",
+                                label: "Image File",
+                                name: "imageFile",
                                 widget: "image",
                                 required: false,
                                 allow_multiple: true,
@@ -459,9 +459,9 @@ collections:
                           fields:
                             [
                               {
-                                label: "Image",
-                                name: "image",
-                                widget: "image",
+                                label: "Video File",
+                                name: "videoFile",
+                                widget: "file",
                                 required: false,
                                 allow_multiple: true,
                               },
