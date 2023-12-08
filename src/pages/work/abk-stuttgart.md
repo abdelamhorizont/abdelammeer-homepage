@@ -12,12 +12,26 @@ cover:
     - type: image
       image: /img/img_0307.jpg
       caption: Flags
+      imageFile: /img/img_0307.jpg
     - type: video
       videoFile: /img/16.mp4
       caption: objects
     - type: image
       image: /img/7
-      caption: Detail
+      caption: Text Detail
+      imageFile: /img/8
+    - type: image
+      imageFile: /img/3
+      caption: Embossement Detail
+    - type: image
+      imageFile: /img/4
+      caption: Business Cards
+    - type: image
+      imageFile: /img/14b
+      caption: Documentation, Design Guidelines
+    - type: image
+      imageFile: /img/11
+      caption: Stamp
 Description: >-
   In 2019, the current corporate design of ABK Stuttgart was introduced. The
   extensive design and implementation of the corporate identity was undertaken
