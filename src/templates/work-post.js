@@ -19,13 +19,31 @@ const WorkPost = ({ data }) => {
         <div className='workpostcover'>
 
           <div className="cover-image">
-            <GatsbyImage
+            {/* <ImageSection type={"image"} content={myimage} columnStart={1} columnEnd={12} /> */}
+
+            {/* <GatsbyImage
               image={myimage}
               alt={''}
-            />
+            /> */}
+
             {/* <p className="caption">created by Kristian Vrhar on stable diffusion</p> */}
 
-            
+            <ImageSection type={"carousel"} content={post.frontmatter.cover?.images} columnStart={1} columnEnd={12} />
+
+            {/* {
+              post.frontmatter.cover?.images &&
+              post.frontmatter.cover?.images.map((image) => {
+                const myimg = getImage(image.imageFile)
+
+                return (
+                  <GatsbyImage
+                    image={myimg}
+                    alt={''}
+                  />
+                )
+              })
+            } */}
+
           </div>
 
           <div className="cover-title">
@@ -46,15 +64,13 @@ const WorkPost = ({ data }) => {
 
           {
             post.frontmatter?.variable_content?.map((content) => {
-              console.log(content.end);
-
               if (content.type == 'text-section') {
                 return (
                   <TextSection content={content.text} columnStart={content.column_start} columnEnd={content.column_end} />
                 )
               } else if (content.type == 'image-section') {
                 return (
-                  <ImageSection content={content} columnStart={content.column_start} columnEnd={content.column_end} />
+                  <ImageSection content={content} type={"grid"} columnStart={content.column_start} columnEnd={content.column_end} />
                 )
               }
             })
@@ -84,6 +100,20 @@ export const pageQuery = graphql`
             childImageSharp {
               gatsbyImageData
             }
+          }
+          images {
+            imageFile {
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
+            videoFile {
+              publicURL
+            }
+            caption
+          }
+          videoFile {
+            publicURL
           }
         }
         collaborators

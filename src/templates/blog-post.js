@@ -46,7 +46,7 @@ const BlogPost = ({ data }) => {
                 )
               } else if (content.type == 'image-section') {
                 return (
-                  <ImageSection content={content} columnStart={content.column_start} columnEnd={content.column_end} />
+                  <ImageSection content={content} type={"grid"} columnStart={content.column_start} columnEnd={content.column_end} />
                 )
               }
             })
