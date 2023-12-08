@@ -34,6 +34,7 @@ const WorkPost = ({ data }) => {
               <div className="collaborators"><h2>with {post.frontmatter?.collaborators} </h2></div>
             }
           </div>
+          
         </div>
 
         <div className="work-post-content">

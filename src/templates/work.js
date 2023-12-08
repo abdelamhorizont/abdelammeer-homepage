@@ -62,6 +62,7 @@ const Work = () => {
                       alt={''}
                       className="preview-image"
                     />
+                    
                     <h1 className="headline">{edge.node.frontmatter.title}</h1>
                     <h2>{edge.node.frontmatter.type}</h2>
                     {edge.node.frontmatter?.collaborators &&
