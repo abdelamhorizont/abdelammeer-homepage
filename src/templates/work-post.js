@@ -24,6 +24,8 @@ const WorkPost = ({ data }) => {
               alt={''}
             />
             {/* <p className="caption">created by Kristian Vrhar on stable diffusion</p> */}
+
+            
           </div>
 
           <div className="cover-title">
@@ -34,7 +36,7 @@ const WorkPost = ({ data }) => {
               <div className="collaborators"><h2>with {post.frontmatter?.collaborators} </h2></div>
             }
           </div>
-          
+
         </div>
 
         <div className="work-post-content">

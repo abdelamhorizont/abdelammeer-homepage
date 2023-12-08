@@ -49,7 +49,8 @@ const ImageSection = ({ content, columnStart, columnEnd }) => {
         }
 
       </div>
-
+        
+        {/* hallo */}
       {
         // <div className="swiper-modal" style={{ display: imgClick ? 'flex' : 'none' }}>
         //   {/* <div className="background-blur"></div> */}
