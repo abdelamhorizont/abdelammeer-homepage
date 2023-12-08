@@ -10,6 +10,9 @@ cover:
   fallbackImage: /img/1.jpg
   images:
     - type: image
+      imageFile: /img/1.jpg
+      caption: Overview
+    - type: image
       image: /img/img_0307.jpg
       caption: Flags
       imageFile: /img/img_0307.jpg
