@@ -7,7 +7,13 @@ location: ABK Stuttgart
 cover:
   fallbackImage: /img/bildschirmfoto-2021-09-12-um-15.09.31.png
   videoFile: /img/anglerfisch.mp4
-variable-content: []
+variable-content:
+  - type: image-section
+    column-start: "1"
+    column-end: "13"
+    images:
+      - type: video
+        videoFile: /img/legehenne.mp4
 projectInfos: text
 date: 2021-09-15T12:45:55.318Z
 Description: >-
