@@ -31,6 +31,9 @@ const Work = () => {
                   gatsbyImageData
                 }
               }
+              videoFile {
+                publicURL
+              }
             }
           }
           fields {
