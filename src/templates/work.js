@@ -51,25 +51,25 @@ const Work = () => {
               const myimage = getImage(edge.node.frontmatter.cover?.fallbackImage)
 
               return (
-                <div className="project-preview">
                   <Link
-                    to={edge.node.fields.slug}>
-
-                    <h2>{edge.node.frontmatter.date}</h2>
+                    to={edge.node.fields.slug}
+                    className="project-preview">
 
                     <GatsbyImage
                       image={myimage}
                       alt={''}
                       className="preview-image"
                     />
-                    
-                    <h1 className="headline">{edge.node.frontmatter.title}</h1>
-                    <h2>{edge.node.frontmatter.type}</h2>
-                    {edge.node.frontmatter?.collaborators &&
-                      <div className="collaborators"><h2>with {edge.node.frontmatter?.collaborators} </h2></div>
-                    }
+
+                    <div className="project-text">
+                      <h2>{edge.node.frontmatter.date}</h2>
+                      <h1 className="headline">{edge.node.frontmatter.title}</h1>
+                      <h2>{edge.node.frontmatter.type}</h2>
+                      {edge.node.frontmatter?.collaborators &&
+                        <div className="collaborators"><h2>with {edge.node.frontmatter?.collaborators} </h2></div>
+                      }
+                    </div>
                   </Link>
-                </div>
               )
             })
           }

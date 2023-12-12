@@ -69,10 +69,10 @@ const ImageSection = ({ content, type, columnStart, columnEnd }) => {
                   swiper.params.navigation.prevEl = navigationPrevRef.current;
                 }}
                 loop
-                // initialSlide={index}
+                initialSlide={0}
                 spaceBetween={0}
                 slidesPerView={'auto'}
-                centeredSlides
+                // centeredSlides
                 className="swiper"
               // onClick={() => setimgClick(false)}
               >
@@ -109,7 +109,8 @@ const ImageSection = ({ content, type, columnStart, columnEnd }) => {
                         <GatsbyImage
                           image={myimg}
                           alt={''}
-                          style={{ height: '100%' }}
+                          // style={{ height: '100%' }}
+                          className="swiper-img"
                         />
                       </SwiperSlide>
 

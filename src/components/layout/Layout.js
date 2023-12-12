@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { Helmet } from "react-helmet";
 
 import useSiteMetadata from "../SiteMetadata";
@@ -12,9 +12,17 @@ const Layout = ({ children }) => {
   const { title, description } = useSiteMetadata();
   const [aboutOpen, setAboutOpen] = useState(false)
 
+  const [theme, setTheme] = useState('light')
+  const themeIcon = (theme == 'light' ? "🌙" : "☀️")
+
+  const toggleTheme = () => {
+    theme === 'light' ? setTheme('dark') : setTheme('light')
+  };
+
+  useMemo(() => theme, [theme])
 
   return (
-    <div className="layout">
+    <div className={`layout ${theme}`}>
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
@@ -46,7 +54,7 @@ const Layout = ({ children }) => {
 
           <ul className='color-modes'>
             <li><button>🌈</button></li>
-            <li><button>💡</button></li>
+            <li><button onClick={toggleTheme}>{themeIcon}</button></li>
           </ul>
         </nav>
       </header>

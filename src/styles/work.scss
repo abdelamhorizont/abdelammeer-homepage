@@ -1,16 +1,20 @@
 .work-page {
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     padding: 0rem 0.5rem;
 
     .project-list {
-        padding: 0rem 0.5rem;
-        margin-top: 4rem;
+        // padding: 0rem 0.5rem;
+        margin-top: 2rem;
+
+        display: grid;
+        grid-template-rows: masonry;
+        grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr));
     }
 
     .project-preview {
-        display: flex;
-        align-items: flex-end;
+        // display: flex;
+        // align-items: flex-end;
         width: 100%;
         margin: 1rem 0rem;
     }
@@ -18,7 +22,7 @@
     h1{
         display: inline;
         font-family: "Arial";
-        font-size: 5rem;
+        font-size: 3rem;
         line-height: 3rem;
 
         background-color: rgb(254, 214, 54);
@@ -38,8 +42,8 @@
     }
 
     .preview-image {
-        align-self: flex-end;
-        height: 40vh;
+        // align-self: flex-end;
+        // position: absolute;
         width: auto;
         margin: 0rem 0.5rem;
 
@@ -51,6 +55,12 @@
         img {
             object-fit: contain;
         }
+    }
+
+    .project-text{
+        position: absolute;
+        // bottom: 0;
+        width: 100%;
     }
 }
 
@@ -90,14 +100,16 @@
         font-size: 3rem;
         line-height: 3rem;
         background-color: rgb(254, 214, 54);
+        color: black;
     }
-
+    
     h2 {
         display: inline;
         grid-column: span 1;
         font-family: Kleukens;
         font-size: 1rem;
         background-color: rgb(254, 214, 54);
+        color: black;
     }
 
 

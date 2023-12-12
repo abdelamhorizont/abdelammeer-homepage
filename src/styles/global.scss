@@ -1,11 +1,31 @@
 html {
    scroll-behavior: smooth;
    font-size: clamp(10px, 1vw, 24px);
+   background-color: #232323;
+
 }
 
 body{
-   background-color: #e8e6e6;
    -webkit-appearance: none;
    -moz-appearance: none;
    appearance: none;
+}
+
+.dark{
+   background-color: #232323;
+   color: #e8e6e6;
+   
+   a{
+      color: #e8e6e6;
+   }
+}
+
+.light{
+   background-color: #e8e6e6;
+   color: #000000;
+
+   a{
+      color: #000000;
+   }
+
 }

@@ -17,7 +17,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	vertical-align: baseline;
 	text-decoration: none;
-	color: #000;
+	/* color: #000; */
 	font-weight: unset;
 	font-smooth: antialiased;
 	-webkit-font-smoothing: antialiased;
@@ -33,7 +33,7 @@ body {
 }
 
 a{
-   color: rgb(0, 0, 0);
+   /* color: rgb(0, 0, 0); */
 }
 
 ol, ul, li {
