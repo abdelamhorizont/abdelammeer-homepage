@@ -1,64 +1,82 @@
 .work-page {
     width: 100%;
+    min-height: 100vh;
+
     overflow: hidden;
-    padding: 0rem 0.5rem;
 
     .project-list {
-        // padding: 0rem 0.5rem;
+        padding: 0rem 0.5rem;
         margin-top: 2rem;
 
         display: grid;
+        grid-template-columns: 1fr 1fr;
+        // grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
         grid-template-rows: masonry;
-        grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr));
+        gap: 0.5rem;
+
+        a{
+            height:max-content;
+        }
+        
         .project-preview {
             // display: flex;
             // align-items: flex-end;
             width: 100%;
-            margin: 1rem 0rem;
-
+            height:max-content;
+            
+            // margin: 1rem 0rem;
             
             .preview-image {
                 // align-self: flex-end;
                 // position: absolute;
                 width: auto;
-                margin: 0rem 0.5rem;
-                
+                transition: all 0.25s ease;
+                // margin: 0rem 0.5rem;
+
                 div {
                     width: 100%;
                     height: 100%;
                 }
-                
+
                 img {
                     object-fit: contain;
                 }
             }
-            
-            .project-text{
-                position: absolute;
-                // bottom: 0;
-                width: 100%;
-                h1{
+
+            .project-text {
+                // position: absolute;
+                z-index: 1;
+
+                display: flex;
+                gap: 0.5rem;
+                margin: 0.5rem;
+                // margin-top: -4rem;
+                // bottom: 0rem;
+                // width: 100%;
+
+                h1 {
                     display: inline;
-                    font-family: "Arial";
+                    font-family: "Helvetica";
                     font-size: 3rem;
-                    line-height: 3rem;
-            
+                    line-height: 2.5rem;
+
                     background-color: rgb(254, 214, 54);
                 }
-            
+
                 h2 {
                     display: inline;
-                    grid-column: span 1;
+                    max-width: 8vw;
+                    // grid-column: span 1;
                     font-family: Kleukens;
-                    font-size: 1rem;
+                    font-size: 0.8rem;
                     background-color: rgb(254, 214, 54);
                 }
-            
-                .collaborators{
+
+                .collaborators {
                     // grid-column: span 2;
                     display: inline;
                 }
-                }
+            }
         }
     }
 
@@ -80,7 +98,7 @@
         position: absolute;
         bottom: 1rem;
         z-index: 1;
-        
+
         padding: 1rem;
         grid-column: 1/13;
         gap: 1rem;
@@ -95,14 +113,14 @@
 
     }
 
-    h1{
+    h1 {
         display: inline;
         font-size: 3rem;
         line-height: 3rem;
         background-color: rgb(254, 214, 54);
         color: black;
     }
-    
+
     h2 {
         display: inline;
         grid-column: span 1;
@@ -113,7 +131,7 @@
     }
 
 
-    .collaborators{
+    .collaborators {
         grid-column: span 2;
     }
 
@@ -133,6 +151,7 @@
     .cover-image {
         grid-column: 1/13;
         height: 100vh;
+
         // overflow: hidden;
         div {
             // width: 100%;

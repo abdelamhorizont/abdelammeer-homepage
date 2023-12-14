@@ -11,21 +11,70 @@ body{
    appearance: none;
 }
 
-.dark{
+.dark-theme{
    background-color: #232323;
    color: #e8e6e6;
-   
+   transition: all 1s ease;
+
    a{
       color: #e8e6e6;
+      transition: all 1s ease;
+
+   }
+
+   .work-page{
+      h1,h2{
+         color: #000000;
+      }
    }
 }
 
-.light{
+.light-theme{
    background-color: #e8e6e6;
    color: #000000;
+   transition: all 1s ease;
 
    a{
       color: #000000;
-   }
+      transition: all 1s ease;
 
+   }
+}
+
+.color-theme{
+   .work-page{
+      background-color: rgb(254, 214, 54);
+      color: #000000;
+      transition: all 1s ease;
+   
+      a{
+         color: #000000;
+         transition: all 1s ease;
+
+      }
+   }
+   
+   .blog-page{
+      background-color: rgb(68, 180, 68);
+      color: #000000;
+      transition: all 1s ease;
+
+      a{
+         color: #000000;
+         transition: all 1s ease;
+
+      }
+   }
+   
+   .space-page{
+      background-color: rgb(134, 134, 255);
+      color: #000000;
+      transition: all 1s ease;
+
+      a{
+         color: #000000;
+         transition: all 1s ease;
+
+      }
+   }
 }

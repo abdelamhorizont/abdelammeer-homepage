@@ -12,11 +12,19 @@ const Layout = ({ children }) => {
   const { title, description } = useSiteMetadata();
   const [aboutOpen, setAboutOpen] = useState(false)
 
-  const [theme, setTheme] = useState('light')
-  const themeIcon = (theme == 'light' ? "🌙" : "☀️")
+  const [theme, setTheme] = useState('light-theme')
+  const [Lighttheme, setLightTheme] = useState('light-theme')
+  const [ColorTheme, setColorTheme] = useState('color-theme')
+
+  const LightThemeIcon = (theme == 'light-theme' ? "🌙" : "☀️")
+  const ColorThemeIcon = (theme == 'color-theme' ? "☁" : "🌈")
 
   const toggleTheme = () => {
-    theme === 'light' ? setTheme('dark') : setTheme('light')
+    theme === 'light-theme' ? setTheme('dark-theme') : setTheme('light-theme')
+  };
+
+  const toggleColorTheme = () => {
+    theme != 'color-theme' ? setTheme('color-theme') : setTheme('light-theme')
   };
 
   useMemo(() => theme, [theme])
@@ -53,13 +61,13 @@ const Layout = ({ children }) => {
           </div>
 
           <ul className='color-modes'>
-            <li><button>🌈</button></li>
-            <li><button onClick={toggleTheme}>{themeIcon}</button></li>
+            <li><button onClick={toggleColorTheme}>{ColorThemeIcon}</button></li>
+            <li><button onClick={toggleTheme}>{LightThemeIcon}</button></li>
           </ul>
         </nav>
       </header>
 
-      <div>{children}</div>
+      {children}
 
       <div className="heightfill"></div>
 
