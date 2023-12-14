@@ -1,6 +1,6 @@
 ---
 templateKey: work-post
-title: NARRATING NAMIBIA
+title: Narrating Namibia
 type: Reader
 location: Windhoek, Marbach
 collaborators: SONJA SCHWARZ
