@@ -1,8 +1,10 @@
 ---
 templateKey: work-post
-title: NARRATING AFRICA
-type: Exhibition Design
-date: 2023-12-12T16:26:35.949Z
+title: Narrating Namibia
+type: Reader
+location: Windhoek, Marbach
+collaborators: SONJA SCHWARZ
+date: 2021-05-01T14:00:38.386Z
 cover:
   videoFile: ""
   fallbackImage: /img/narrating-africa-1.jpg
