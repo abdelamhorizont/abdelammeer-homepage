@@ -557,26 +557,107 @@ collections:
           default: "space-post",
         }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "date" }
       - {
-          label: "Cover Image",
-          name: "cover-image",
-          widget: image,
+          label: "Subtitle",
+          name: "subtitle",
+          widget: "string",
+          required: false,
+        }
+      - { label: "Type", name: "type", widget: "string" }
+      - {
+          label: "Location",
+          name: "location",
+          widget: "string",
           required: false,
         }
       - {
-          label: "Project Infos",
-          name: "projectInfos",
+          label: "Collaborators",
+          name: "collaborators",
+          widget: "string",
+          required: false,
+        }
+      - { label: "Date", name: "date", widget: "date" }
+      - {
+          label: "iFrame",
+          name: "iframe",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Cover",
+          name: "cover",
+          widget: "object",
+          fields:
+            [
+              {
+                label: "Video File",
+                name: "videoFile",
+                widget: file,
+                required: false,
+              },
+              {
+                label: "Fallback Image",
+                name: "fallbackImage",
+                widget: image,
+                required: false,
+              },
+              {
+                label: "Images",
+                name: "images",
+                widget: "list",
+                required: false,
+                types:
+                  [
+                    {
+                      label: "Image",
+                      name: "image",
+                      widget: "object",
+                      fields:
+                        [
+                          {
+                            label: "Image File",
+                            name: "imageFile",
+                            widget: "image",
+                            required: false,
+                            allow_multiple: true,
+                          },
+                          {
+                            label: "Caption",
+                            name: "caption",
+                            widget: "string",
+                            required: false,
+                          },
+                        ],
+                    },
+                    {
+                      label: "Video",
+                      name: "video",
+                      widget: "object",
+                      fields:
+                        [
+                          {
+                            label: "Video File",
+                            name: "videoFile",
+                            widget: file,
+                            required: false,
+                          },
+                          {
+                            label: "Caption",
+                            name: "caption",
+                            widget: "string",
+                            required: false,
+                          },
+                        ],
+                    },
+                  ],
+              },
+            ],
+        }
+      - {
+          label: "description",
+          name: "Description",
           widget: "markdown",
           required: false,
-        }
-      - {
-          label: "Tags",
-          name: "tags",
-          widget: "select",
-          multiple: true,
-          required: false,
-          options: ["All", "Object", "Space", "Research", "Exhibition"],
         }
 
   - name: "pages"
