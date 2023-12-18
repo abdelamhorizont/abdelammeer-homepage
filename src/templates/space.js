@@ -57,7 +57,21 @@ const Blog = () => {
   return (
     <Layout>
       <div className="space-page">
-        <iframe src="https://ocean-view.netlify.app/" frameborder="0"></iframe>
+        <div className="project-list">
+          <div className="project-preview">
+
+            <div className="project-text">
+              <h1 className="headline">Ocean View</h1>
+              <h2>2023</h2>
+              {/* <h2>{edge.node.frontmatter.type}</h2>
+              {edge.node.frontmatter?.collaborators &&
+                <h2 className="collaborators">with {edge.node.frontmatter?.collaborators} </h2>
+              } */}
+            </div>
+
+            <iframe src="https://ocean-view.netlify.app/" frameborder="0"></iframe>
+          </div>
+        </div>
 
       </div>
     </Layout>
