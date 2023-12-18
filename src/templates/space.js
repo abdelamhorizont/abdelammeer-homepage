@@ -14,63 +14,68 @@ import '../styles/typo.scss'
 
 import '../styles/space.scss'
 
-const Blog = () => {
-  //   const data = useStaticQuery(graphql`
-  //   query {
-  //   allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "blog-page"}}}) {
-  //     edges {
-  //       node {
-  //         html
-  //         frontmatter {
-  //           title
-  //           anima_ona_image {
-  //             caption
-  //             image {
-  //               childImageSharp {
-  //                 gatsbyImageData
-  //               }
-  //             }
-  //           }
-  //           listedInfos {
-  //             column {
-  //               title
-  //               list {
-  //                 listElement {
-  //                   year
-  //                   title
-  //                   location
-  //                   link {
-  //                     link
-  //                     linkText
-  //                   }
-  //                 }
-  //               }
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-  //   `)
+const Space = () => {
+  const data = useStaticQuery(graphql`
+  query {
+  allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "space-post"}}}) {
+    edges {
+      node {
+        frontmatter {
+          title
+          type
+          date(formatString: "YYYY")
+          collaborators
+          iframe
+          cover {
+            fallbackImage {
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
+            videoFile {
+              publicURL
+            }
+          }
+        }
+        fields {
+          slug
+        }
+      }
+    }
+  }
+}
+  `)
 
   return (
     <Layout>
       <div className="space-page">
         <div className="project-list">
-          <div className="project-preview">
 
-            <div className="project-text">
-              <h1 className="headline">Ocean View</h1>
-              <h2>2023</h2>
-              {/* <h2>{edge.node.frontmatter.type}</h2>
-              {edge.node.frontmatter?.collaborators &&
-                <h2 className="collaborators">with {edge.node.frontmatter?.collaborators} </h2>
-              } */}
-            </div>
+          {
+            data.allMarkdownRemark.edges.map(edge => {
+              const myimage = getImage(edge.node.frontmatter.cover?.fallbackImage)
 
-            <iframe src="https://ocean-view.netlify.app/" frameborder="0"></iframe>
-          </div>
+              return (
+                <Link to={edge.node.fields.slug}>
+                  <div className="project-preview">
+
+                    <div className="project-text">
+                      <h1 className="headline">{edge.node.frontmatter.title}</h1>
+                      <h2>{edge.node.frontmatter.date}</h2>
+                      <h2>{edge.node.frontmatter.type}</h2>
+
+                      {edge.node.frontmatter?.collaborators &&
+                        <h2 className="collaborators">with {edge.node.frontmatter?.collaborators} </h2>
+                      }
+                    </div>
+
+                    <iframe src={edge.node.frontmatter.iframe} frameborder="0"></iframe>
+                  </div>
+                </Link>
+              )
+            })
+          }
+
         </div>
 
       </div>
@@ -80,33 +85,5 @@ const Blog = () => {
 
 
 
-export default Blog;
+export default Space;
 
-// export const aboutPageQuery = graphql`
-//   query AboutPage($id: String!) {
-//     markdownRemark(id: { eq: $id }) {
-//       html
-//       frontmatter {
-//         title
-//       }
-//     }
-//     allMarkdownRemark(
-//       filter: {frontmatter: {templateKey: {eq: "work-post"}}}
-//       sort: {fields: frontmatter___date, order: DESC}
-//     ) {
-//       edges {
-//         node {
-//           fields {
-//             slug
-//           }
-//           frontmatter {
-//             title
-//             date(formatString: "YYYY")
-//             tags
-//             featuredimage
-//           }
-//         }
-//       }
-//     }
-//   }
-// `;
