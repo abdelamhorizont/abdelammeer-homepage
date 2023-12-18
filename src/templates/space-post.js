@@ -35,49 +35,56 @@ const SpacePost = ({ data }) => {
 
 export default SpacePost;
 
-// export const pageQuery = graphql`
-//   query BlogPostByID($id: String!) {
-//     markdownRemark(id: { eq: $id }) {
-//       id
-//       html
-//       frontmatter {
-//         date(formatString: "YYYY")
-//         title
-//         description
-//         variable_content {
-//           type
-//           columns
-//           text
-//           images {
-//             image {
-//               image {
-//                 childImageSharp {
-//                   gatsbyImageData
-//                 }
-//               }
-//               caption
-//             }
-//           }
-//         }
-//         projectInfos
-//       }
-//     }
-//     allMarkdownRemark(
-//       filter: {frontmatter: {templateKey: {eq: "work-post"}}}
-//       sort: {fields: frontmatter___date, order: DESC}
-//     ) {
-//       edges {
-//         node {
-//           fields {
-//             slug
-//           }
-//           frontmatter {
-//             title
-//             date(formatString: "YYYY")
-//             tags
-//           }
-//         }
-//       }
-//     }
-//   }
-// `
+export const pageQuery = graphql`
+  query SpacePostByID($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      id
+      frontmatter {
+        templateKey
+        title
+        type
+        date(formatString: "YYYY")
+        iframe
+        collaborators
+        Description
+        cover {
+          fallbackImage {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+          images {
+            imageFile {
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
+            videoFile {
+              publicURL
+            }
+            caption
+          }
+          videoFile {
+            publicURL
+          }
+        }
+        variable_content {
+          type
+          column_end
+          column_start
+          text
+          images {
+            image {
+              image {
+                childImageSharp {
+                  gatsbyImageData
+                }
+              }
+              caption
+            }
+          }
+        }
+      }
+    }
+  }
+`

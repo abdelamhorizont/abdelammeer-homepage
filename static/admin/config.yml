@@ -577,12 +577,7 @@ collections:
           required: false,
         }
       - { label: "Date", name: "date", widget: "date" }
-      - {
-          label: "iFrame",
-          name: "iframe",
-          widget: "string",
-          required: false,
-        }
+      - { label: "iFrame", name: "iframe", widget: "string", required: false }
       - {
           label: "Cover",
           name: "cover",
@@ -600,7 +595,57 @@ collections:
                 name: "fallbackImage",
                 widget: image,
                 required: false,
-              }
+              },
+              {
+                label: "Images",
+                name: "images",
+                widget: "list",
+                required: false,
+                types:
+                  [
+                    {
+                      label: "Image",
+                      name: "image",
+                      widget: "object",
+                      fields:
+                        [
+                          {
+                            label: "Image File",
+                            name: "imageFile",
+                            widget: "image",
+                            required: false,
+                            allow_multiple: true,
+                          },
+                          {
+                            label: "Caption",
+                            name: "caption",
+                            widget: "string",
+                            required: false,
+                          },
+                        ],
+                    },
+                    {
+                      label: "Video",
+                      name: "video",
+                      widget: "object",
+                      fields:
+                        [
+                          {
+                            label: "Video File",
+                            name: "videoFile",
+                            widget: file,
+                            required: false,
+                          },
+                          {
+                            label: "Caption",
+                            name: "caption",
+                            widget: "string",
+                            required: false,
+                          },
+                        ],
+                    },
+                  ],
+              },
             ],
         }
       - {
@@ -608,6 +653,170 @@ collections:
           name: "Description",
           widget: "markdown",
           required: false,
+        }
+      - {
+          label: "Content",
+          name: "variable-content",
+          widget: "list",
+          required: false,
+          types:
+            [
+              {
+                label: "Image Section",
+                name: "image-section",
+                widget: "object",
+                fields:
+                  [
+                    {
+                      label: "Column Start",
+                      name: "column-start",
+                      widget: "select",
+                      required: false,
+                      options:
+                        [
+                          "1",
+                          "2",
+                          "3",
+                          "4",
+                          "5",
+                          "6",
+                          "7",
+                          "8",
+                          "9",
+                          "10",
+                          "11",
+                        ],
+                    },
+                    {
+                      label: "Column End",
+                      name: "column-end",
+                      widget: "select",
+                      required: false,
+                      options:
+                        [
+                          "2",
+                          "3",
+                          "4",
+                          "5",
+                          "6",
+                          "7",
+                          "8",
+                          "9",
+                          "10",
+                          "11",
+                          "12",
+                          "13",
+                        ],
+                    },
+                    {
+                      label: "Images",
+                      name: "images",
+                      widget: "list",
+                      required: false,
+                      types:
+                        [
+                          {
+                            label: "Image",
+                            name: "image",
+                            widget: "object",
+                            fields:
+                              [
+                                {
+                                  label: "Image File",
+                                  name: "imageFile",
+                                  widget: "image",
+                                  required: false,
+                                  allow_multiple: true,
+                                },
+                                {
+                                  label: "Caption",
+                                  name: "caption",
+                                  widget: "string",
+                                  required: false,
+                                },
+                              ],
+                          },
+                          {
+                            label: "Video",
+                            name: "video",
+                            widget: "object",
+                            fields:
+                              [
+                                {
+                                  label: "Video File",
+                                  name: "videoFile",
+                                  widget: "file",
+                                  required: false,
+                                  allow_multiple: true,
+                                },
+                                {
+                                  label: "Caption",
+                                  name: "caption",
+                                  widget: "string",
+                                  required: false,
+                                },
+                              ],
+                          },
+                        ],
+                    },
+                  ],
+              },
+              {
+                label: "Text Section",
+                name: "text-section",
+                widget: "object",
+                fields:
+                  [
+                    {
+                      label: "Column Start",
+                      name: "column-start",
+                      widget: "select",
+                      required: false,
+                      options:
+                        [
+                          "1",
+                          "2",
+                          "3",
+                          "4",
+                          "5",
+                          "6",
+                          "7",
+                          "8",
+                          "9",
+                          "10",
+                          "11",
+                        ],
+                    },
+                    {
+                      label: "Column End",
+                      name: "column-end",
+                      widget: "select",
+                      required: false,
+                      options:
+                        [
+                          "2",
+                          "3",
+                          "4",
+                          "5",
+                          "6",
+                          "7",
+                          "8",
+                          "9",
+                          "10",
+                          "11",
+                          "12",
+                          "13",
+                        ],
+                    },
+                    {
+                      label: "Text",
+                      name: "text",
+                      widget: "markdown",
+                      required: false,
+                    },
+                  ],
+              },
+            ],
         }
 
   - name: "pages"
