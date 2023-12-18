@@ -301,6 +301,7 @@ collections:
           widget: "object",
           fields:
             [
+              { label: "iFrame", name: "iframe", widget: "string", required: false },
               {
                 label: "Video File",
                 name: "videoFile",
@@ -577,13 +578,13 @@ collections:
           required: false,
         }
       - { label: "Date", name: "date", widget: "date" }
-      - { label: "iFrame", name: "iframe", widget: "string", required: false }
       - {
           label: "Cover",
           name: "cover",
           widget: "object",
           fields:
             [
+              { label: "iFrame", name: "iframe", widget: "string", required: false },
               {
                 label: "Video File",
                 name: "videoFile",
