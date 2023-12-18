@@ -7,5 +7,5 @@ projectInfos: test
 tags:
   - All
 type: chatbot
-iframe: www.abdelammeer.com
+iframe: abdelammeer.com
 ---
