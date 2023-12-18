@@ -13,16 +13,16 @@ const SpacePost = ({ data }) => {
   return (
     <Layout>
 
-      <div className="work-post">
-        <div className='workpostcover'>
+      <div className="space-post">
+        <div className='spacepostcover'>
 
           <div className="cover-image">
-            <ImageSection type={"carousel"} content={post.frontmatter.cover?.images} columnStart={1} columnEnd={12} />
+            <ImageSection type={"iframe"} content={post.frontmatter.cover?.iframe} columnStart={1} columnEnd={12} />
           </div>
 
           <div className="cover-title">
-            <div><h2> {post.frontmatter.date} </h2></div>
             <div className="headline"><h1>{post.frontmatter.title}</h1></div>
+            <div><h2> {post.frontmatter.date} </h2></div>
             <div><h2> {post.frontmatter.type} </h2></div>
             {post.frontmatter?.collaborators &&
               <div className="collaborators"><h2>with {post.frontmatter?.collaborators} </h2></div>
@@ -31,7 +31,7 @@ const SpacePost = ({ data }) => {
 
         </div>
 
-        <div className="work-post-content">
+        <div className="space-post-content">
           <div className="description">
             <TextSection content={post.frontmatter.Description} columns={'2'} />
           </div>
@@ -73,6 +73,7 @@ export const pageQuery = graphql`
         collaborators
         Description
         cover {
+          iframe
           fallbackImage {
             childImageSharp {
               gatsbyImageData

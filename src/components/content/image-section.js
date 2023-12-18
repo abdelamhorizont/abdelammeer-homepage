@@ -38,45 +38,50 @@ const ImageSection = ({ content, type, columnStart, columnEnd }) => {
     <div style={columnStart ? gridCols : gridColsFallback} className={`html-content`}>
       <div className="image-section">
 
-        {type == "image" ?
-          <GatsbyImage image={content} alt={''} />
-          // <p className="caption">{image?.image?.caption}</p>
-          :
-          type == "grid" ?
-            content?.images?.map((image) => {
-              const myimage = getImage(image?.image?.image)
-
-              return (
-                // <div onClick={() => handleClick(i)}>
-                <div>
-                  <GatsbyImage image={myimage} alt={''} />
-                  <p className="caption">{image?.image?.caption}</p>
-                </div>
-              )
-            })
+        {
+          type == "iframe" ?
+            <iframe src={content} frameborder="0"></iframe>
+            // <p className="caption">{image?.image?.caption}</p>
             :
-            type == "carousel" &&
-            // <div onClick={() => handleClick(i)}>
-              <Swiper
-                // onSwiper={(swiper) => swiper.slideTo(index)}
-                modules={[Navigation]}
-                navigation={{
-                  nextEl: navigationNextRef.current,
-                  prevEl: navigationPrevRef.current
-                }}
-                onBeforeInit={(swiper) => {
-                  swiper.params.navigation.nextEl = navigationNextRef.current;
-                  swiper.params.navigation.prevEl = navigationPrevRef.current;
-                }}
-                loop
-                initialSlide={0}
-                spaceBetween={0}
-                slidesPerView={'auto'}
-                // centeredSlides
-                className="swiper"
-              // onClick={() => setimgClick(false)}
-              >
-                {/* {
+            type == "image" ?
+              <GatsbyImage image={content} alt={''} />
+              // <p className="caption">{image?.image?.caption}</p>
+              :
+              type == "grid" ?
+                content?.images?.map((image) => {
+                  const myimage = getImage(image?.image?.image)
+
+                  return (
+                    // <div onClick={() => handleClick(i)}>
+                    <div>
+                      <GatsbyImage image={myimage} alt={''} />
+                      <p className="caption">{image?.image?.caption}</p>
+                    </div>
+                  )
+                })
+                :
+                type == "carousel" &&
+                // <div onClick={() => handleClick(i)}>
+                <Swiper
+                  // onSwiper={(swiper) => swiper.slideTo(index)}
+                  modules={[Navigation]}
+                  navigation={{
+                    nextEl: navigationNextRef.current,
+                    prevEl: navigationPrevRef.current
+                  }}
+                  onBeforeInit={(swiper) => {
+                    swiper.params.navigation.nextEl = navigationNextRef.current;
+                    swiper.params.navigation.prevEl = navigationPrevRef.current;
+                  }}
+                  loop
+                  initialSlide={0}
+                  spaceBetween={0}
+                  slidesPerView={'auto'}
+                  // centeredSlides
+                  className="swiper"
+                // onClick={() => setimgClick(false)}
+                >
+                  {/* {
                     content?.images?.map(image => {
                       const myimage = getImage(image?.image?.image)
                       if (image != null) {
@@ -100,29 +105,29 @@ const ImageSection = ({ content, type, columnStart, columnEnd }) => {
                     })
                   } */}
 
-                {
-                  content?.map((image) => {
-                    const myimg = getImage(image.imageFile)
+                  {
+                    content?.map((image) => {
+                      const myimg = getImage(image.imageFile)
 
-                    return (
-                      <SwiperSlide className="swiper-slide" >
-                        <GatsbyImage
-                          image={myimg}
-                          alt={''}
-                          // style={{ height: '100%' }}
-                          className="swiper-img"
-                        />
-                      </SwiperSlide>
+                      return (
+                        <SwiperSlide className="swiper-slide" >
+                          <GatsbyImage
+                            image={myimg}
+                            alt={''}
+                            // style={{ height: '100%' }}
+                            className="swiper-img"
+                          />
+                        </SwiperSlide>
 
-                    )
-                  })
-                }
+                      )
+                    })
+                  }
 
-                <div className="swiper-buttons">
-                  <div ref={navigationPrevRef} className="swiper-button-prev">  </div>
-                  <div ref={navigationNextRef} className="swiper-button-next">  </div>
-                </div>
-              </Swiper>
+                  <div className="swiper-buttons">
+                    <div ref={navigationPrevRef} className="swiper-button-prev">  </div>
+                    <div ref={navigationNextRef} className="swiper-button-next">  </div>
+                  </div>
+                </Swiper>
         }
 
 

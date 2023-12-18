@@ -96,6 +96,7 @@ export const pageQuery = graphql`
         date(formatString: "YYYY")
         templateKey
         cover {
+          iframe
           fallbackImage {
             childImageSharp {
               gatsbyImageData
