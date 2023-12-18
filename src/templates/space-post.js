@@ -8,24 +8,49 @@ import ImageSection from "../components/content/image-section";
 // import '../styles/work-post.scss'
 
 const SpacePost = ({ data }) => {
-  // const { markdownRemark: post } = data;
+  const { markdownRemark: post } = data;
 
   return (
     <Layout>
 
-      {/* {
-        post.frontmatter?.variable_content?.map((content) => {
-          if (content.type == 'text-section') {
-            return (
-              <TextSection content={content.text} columns={'2'} />
-            )
-          } else if (content.type == 'image-section') {
-            return (
-              <ImageSection content={content} columns={content.columns} />
-            )
+      <div className="work-post">
+        <div className='workpostcover'>
+
+          <div className="cover-image">
+            <ImageSection type={"carousel"} content={post.frontmatter.cover?.images} columnStart={1} columnEnd={12} />
+          </div>
+
+          <div className="cover-title">
+            <div><h2> {post.frontmatter.date} </h2></div>
+            <div className="headline"><h1>{post.frontmatter.title}</h1></div>
+            <div><h2> {post.frontmatter.type} </h2></div>
+            {post.frontmatter?.collaborators &&
+              <div className="collaborators"><h2>with {post.frontmatter?.collaborators} </h2></div>
+            }
+          </div>
+
+        </div>
+
+        <div className="work-post-content">
+          <div className="description">
+            <TextSection content={post.frontmatter.Description} columns={'2'} />
+          </div>
+
+          {
+            post.frontmatter?.variable_content?.map((content) => {
+              if (content.type == 'text-section') {
+                return (
+                  <TextSection content={content.text} columnStart={content.column_start} columnEnd={content.column_end} />
+                )
+              } else if (content.type == 'image-section') {
+                return (
+                  <ImageSection content={content} type={"grid"} columnStart={content.column_start} columnEnd={content.column_end} />
+                )
+              }
+            })
           }
-        })
-      } */}
+        </div>
+      </div>
 
     </Layout>
   )
