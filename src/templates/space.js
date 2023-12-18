@@ -12,7 +12,7 @@ import '../styles/reset.css'
 import '../styles/global.scss'
 import '../styles/typo.scss'
 
-import '../styles/index.scss'
+import '../styles/space.scss'
 
 const Blog = () => {
   //   const data = useStaticQuery(graphql`
@@ -56,7 +56,8 @@ const Blog = () => {
 
   return (
     <Layout>
-      <div className="spage-page">
+      <div className="space-page">
+        <iframe src="https://ocean-view.netlify.app/" frameborder="0"></iframe>
 
       </div>
     </Layout>

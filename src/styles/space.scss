@@ -1,4 +1,12 @@
 
-.spage-page{
+.space-page{
     min-height: 100vh;
+
+    iframe{
+        margin: 0.5rem;
+        height: 100%;
+        // width: 100vw;
+    }
+
+    
 }

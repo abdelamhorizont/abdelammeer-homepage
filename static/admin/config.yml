@@ -563,7 +563,7 @@ collections:
           widget: "string",
           required: false,
         }
-      - { label: "Type", name: "type", widget: "string" }
+      - { label: "Type", name: "type", widget: "string", required: false }
       - {
           label: "Location",
           name: "location",
@@ -600,57 +600,7 @@ collections:
                 name: "fallbackImage",
                 widget: image,
                 required: false,
-              },
-              {
-                label: "Images",
-                name: "images",
-                widget: "list",
-                required: false,
-                types:
-                  [
-                    {
-                      label: "Image",
-                      name: "image",
-                      widget: "object",
-                      fields:
-                        [
-                          {
-                            label: "Image File",
-                            name: "imageFile",
-                            widget: "image",
-                            required: false,
-                            allow_multiple: true,
-                          },
-                          {
-                            label: "Caption",
-                            name: "caption",
-                            widget: "string",
-                            required: false,
-                          },
-                        ],
-                    },
-                    {
-                      label: "Video",
-                      name: "video",
-                      widget: "object",
-                      fields:
-                        [
-                          {
-                            label: "Video File",
-                            name: "videoFile",
-                            widget: file,
-                            required: false,
-                          },
-                          {
-                            label: "Caption",
-                            name: "caption",
-                            widget: "string",
-                            required: false,
-                          },
-                        ],
-                    },
-                  ],
-              },
+              }
             ],
         }
       - {
