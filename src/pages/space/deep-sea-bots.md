@@ -7,7 +7,7 @@ title: deep sea bots
 type: chatbot
 date: 2023-10-31T15:20:54.876Z
 cover:
-  iframe: abdelammeer.com
+  iframe: https://deep-sea-bots.netlify.app/
 tags:
   - All
 ---
