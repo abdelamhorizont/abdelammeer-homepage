@@ -71,7 +71,10 @@ const Space = () => {
                       }
                     </div>
 
-                    <ImageSection type={"iframe"} content={edge.node.frontmatter.cover?.iframe} columnStart={1} columnEnd={12} />
+                    <div className="cover-image">
+                      <ImageSection type={"iframe"} content={edge.node.frontmatter.cover?.iframe} columnStart={1} columnEnd={12} />
+                    </div>
+
                   </div>
                 </Link>
               )
