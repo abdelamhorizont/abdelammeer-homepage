@@ -49,4 +49,18 @@ Description: >-
   \
 
   The Design Manual explains design principles, technical details as well as guidelines and the handling of the elements, including logo, business card, letterhead, templates for Microsoft Word, Excel and PowerPoint, certificate, folder, stamp, as well as flags and janitorial clothing.
+variable-content:
+  - type: image-section
+    column-start: "1"
+    column-end: "13"
+    images:
+      - type: image
+        imageFile: /img/11.jpg
+        caption: Logo Stamp
+      - type: image
+        imageFile: /img/7.jpg
+        caption: Logo positioning and letter paper layout
+      - type: image
+        imageFile: /img/8.jpg
+        caption: letter paper layout
 ---
