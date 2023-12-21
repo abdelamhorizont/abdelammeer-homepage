@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 
 import Layout from "../components/layout/Layout";
 import { HTMLContent } from "../components/content/text-section";
+import ImageSection from "../components/content/image-section";
 
 // import Tags from "../components/tags/tags";
 
@@ -27,6 +28,7 @@ const Space = () => {
           collaborators
           iframe
           cover {
+            iframe
             fallbackImage {
               childImageSharp {
                 gatsbyImageData
@@ -69,7 +71,7 @@ const Space = () => {
                       }
                     </div>
 
-                    <iframe src={edge.node.frontmatter.iframe} frameborder="0"></iframe>
+                    <ImageSection type={"iframe"} content={edge.node.frontmatter.cover?.iframe} columnStart={1} columnEnd={12} />
                   </div>
                 </Link>
               )
