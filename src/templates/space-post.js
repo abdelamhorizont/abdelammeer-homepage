@@ -94,22 +94,6 @@ export const pageQuery = graphql`
             publicURL
           }
         }
-        variable_content {
-          type
-          column_end
-          column_start
-          text
-          images {
-            image {
-              image {
-                childImageSharp {
-                  gatsbyImageData
-                }
-              }
-              caption
-            }
-          }
-        }
       }
     }
   }
