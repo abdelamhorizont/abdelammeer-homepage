@@ -842,7 +842,7 @@ collections:
               widget: "relation",
               collection: "blog",
               search_fields: ["title"],
-              value_field: "title",
+              value_field: ["title", "type", "date"],
               display_fields: ["title"],
           }
       - file: "src/pages/blog.md"
