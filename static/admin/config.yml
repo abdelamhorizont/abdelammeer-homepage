@@ -841,8 +841,8 @@ collections:
               name: "blog-reference",
               widget: "relation",
               collection: "blog",
-              search_fields: ["title"],
-              value_field: ["title", "type", "date"],
+              search_fields: ["title", "type", "date"],
+              value_field: "title",
               display_fields: ["title"],
           }
       - file: "src/pages/blog.md"
