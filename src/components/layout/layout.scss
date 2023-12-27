@@ -1,5 +1,5 @@
 .heightfill {
-    height: 80vh;
+    height: 0vh;
 }
 
 .layout {
@@ -38,11 +38,51 @@
 
     .color-modes {
         display: flex;
+        position: fixed;
+        right: 2rem;
 
         li {
-            background-color: rgb(255, 255, 255);
+            // transform:translateX(200px);
+            // margin: 0rem -1.3rem ;
+            visibility: hidden;
+            display: none;
+            // opacity: 0;
+            font-size: 2.8rem;
+            // background-color: rgb(255, 255, 255,0);
+            // background-color: blue;
+            transition: all ease 0.5s;
+            
+        }
+
+        .active-button{
+                transform:translateX(0px);
+                z-index: 10;
+                font-size: 3rem;
+                visibility:visible;
+                display:contents;
+
+                // filter: drop-shadow(0 0 1rem white);
+                // opacity: 1;
+        }
+
+    }
+
+    .color-modes:hover{
+        li{
+            // transform:translateX(0px);
+            margin: 0rem -0.5rem ;
+            visibility:visible;
+            display:contents;
+
+        }
+
+        li:hover{
+            // transform:translateX(0px);
+            font-size: 3.5rem;
+            // opacity: 1;
         }
     }
+
 
     .nav-sites {
         text-transform: uppercase;
@@ -64,26 +104,26 @@
         }
 
 
-        #space {
+        .space {
             background-color: rgb(134, 134, 255);
             // background-image: linear-gradient(rgb(134, 134, 255), yellow);
         }
 
-        #blog {
+        .blog {
             // background-image: linear-gradient( rgb(149, 182, 0), rgb(134, 134, 255));
             background-color: rgb(68, 180, 68);
 
         }
 
-        #work {
-            background-color: rgb(254, 214, 54);
+        .work {
+            background-color: rgb(254, 214, 54);            
+            // background-image: linear-gradient( rgb(254, 214, 54), rgb(255, 6, 6),);
+        }
 
+        .border{
             border-style: solid;
             border-width: 1px;
             border-color: black;
-            
-            // background-image: linear-gradient( rgb(254, 214, 54), rgb(255, 6, 6),);
-
         }
 
     }

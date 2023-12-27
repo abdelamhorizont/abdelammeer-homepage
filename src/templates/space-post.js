@@ -11,19 +11,19 @@ const SpacePost = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
-    <Layout>
+    <Layout activeSite={'space'}>
 
       <div className="space-post">
         <div className='spacepostcover'>
 
-          <div className="cover-image">
+          <div className={post.frontmatter.title == "deep sea bots" ? "cover-image deep-sea-bots" : "cover-image"}>
             <ImageSection type={"iframe"} content={post.frontmatter.cover?.iframe} columnStart={1} columnEnd={12} />
           </div>
 
           <div className="cover-title">
-            <div className="headline"><h1>{post.frontmatter.title}</h1></div>
-            <div><h2> {post.frontmatter.date} </h2></div>
-            <div><h2> {post.frontmatter.type} </h2></div>
+            <h2> {post.frontmatter.date} </h2>
+            <h1 className="headline">{post.frontmatter.title}</h1>
+            <h2> {post.frontmatter.type} </h2>
             {post.frontmatter?.collaborators &&
               <div className="collaborators"><h2>with {post.frontmatter?.collaborators} </h2></div>
             }
@@ -92,6 +92,22 @@ export const pageQuery = graphql`
           }
           videoFile {
             publicURL
+          }
+        }
+        variable_content {
+          type
+          column_end
+          column_start
+          text
+          images {
+            image {
+              image {
+                childImageSharp {
+                  gatsbyImageData
+                }
+              }
+              caption
+            }
           }
         }
       }

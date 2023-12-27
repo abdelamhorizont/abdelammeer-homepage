@@ -5,73 +5,95 @@ html {
 
 }
 
-body{
+body {
    -webkit-appearance: none;
    -moz-appearance: none;
    appearance: none;
 }
 
-.dark-theme{
+.dark-theme {
    background-color: #232323;
-   color: #e8e6e6;
    transition: all 1s ease;
 
-   a{
+   .work-page, .work-post, .blog-page, .blog-post, .space-page, .space-post{
+      background-image: linear-gradient(#232323);
+   
       color: #e8e6e6;
       transition: all 1s ease;
-
+   
+      a {
+         color: #e8e6e6;
+         transition: all 1s ease;
+      }
    }
-
-   .work-page{
-      h1,h2{
+   
+   .work-page {
+      h1,
+      h2 {
          color: #000000;
       }
    }
 }
 
-.light-theme{
+.light-theme {
    background-color: #e8e6e6;
-   color: #000000;
    transition: all 1s ease;
 
-   a{
+   .work-page, .work-post, .blog-page, .blog-post, .space-page, .space-post {
+      // background-color: #e8e6e6;
+      background-image: linear-gradient(#e8e6e6);
+   
       color: #000000;
       transition: all 1s ease;
-
+   
+      a {
+         color: #000000;
+         transition: all 1s ease;
+   
+      }
    }
 }
 
-.color-theme{
-   .work-page{
-      background-color: rgb(254, 214, 54);
+.color-theme {
+   background-color: rgba(0,0,0,0);
+   transition: all 1s ease;
+
+   .work-page, .work-post {
+      // background-color: rgb(254, 214, 54);
+      background-image: linear-gradient(rgb(254, 214, 54), rgb(134, 134, 255));
+
       color: #000000;
       transition: all 1s ease;
-   
-      a{
+
+      a {
          color: #000000;
          transition: all 1s ease;
 
       }
    }
-   
-   .blog-page{
+
+   .blog-page, .blog-post {
       background-color: rgb(68, 180, 68);
+      background-image: linear-gradient(rgb(149, 182, 0), rgb(134, 134, 255));
+
       color: #000000;
       transition: all 1s ease;
 
-      a{
+      a {
          color: #000000;
          transition: all 1s ease;
 
       }
    }
-   
-   .space-page{
-      background-color: rgb(134, 134, 255);
+
+   .space-page, .space-post {
+      // background-color: rgb(134, 134, 255);
+      background-image: linear-gradient(rgb(134, 134, 255), yellow);
+
       color: #000000;
       transition: all 1s ease;
 
-      a{
+      a {
          color: #000000;
          transition: all 1s ease;
 

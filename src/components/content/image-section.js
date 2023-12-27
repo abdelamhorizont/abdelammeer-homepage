@@ -40,7 +40,7 @@ const ImageSection = ({ content, type, columnStart, columnEnd }) => {
 
         {
           type == "iframe" ?
-            <iframe src={content} frameborder="0"></iframe>
+            <iframe src={content} frameborder="100px"></iframe>
             // <p className="caption">{image?.image?.caption}</p>
             :
             type == "image" ?

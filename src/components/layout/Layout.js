@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import { Helmet } from "react-helmet";
 
 import useSiteMetadata from "../SiteMetadata";
@@ -8,26 +8,37 @@ import Projectlist from "../projectlist/projectlist";
 
 import './layout.scss'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, activeSite }) => {
   const { title, description } = useSiteMetadata();
-  const [aboutOpen, setAboutOpen] = useState(false)
+  // const [aboutOpen, setAboutOpen] = useState(false)
 
-  const [theme, setTheme] = useState('light-theme')
-  const [Lighttheme, setLightTheme] = useState('light-theme')
-  const [ColorTheme, setColorTheme] = useState('color-theme')
+  const themes = [
+    'color-theme',
+    'light-theme',
+    'dark-theme',
+  ]
 
-  const LightThemeIcon = (theme == 'light-theme' ? "🌙" : "☀️")
-  const ColorThemeIcon = (theme == 'color-theme' ? "☁" : "🌈")
+  const [theme, setTheme] = useState(themes[0])
+  const [themeCount, setthemeCount] = useState(0)
+
+  const ThemeIcon = theme == 'light-theme' ? "🌙" : theme == 'color-theme' ? "☀️" : "🌈"
 
   const toggleTheme = () => {
-    theme === 'light-theme' ? setTheme('dark-theme') : setTheme('light-theme')
+    setTheme(themes[themeCount])
+    setthemeCount(themeCount + 1)
+
+    if (themeCount > 1) {
+      setthemeCount(0)
+    }
   };
 
-  const toggleColorTheme = () => {
-    theme != 'color-theme' ? setTheme('color-theme') : setTheme('light-theme')
-  };
 
-  useMemo(() => theme, [theme])
+  useMemo(() => themeCount, [theme])
+
+  useEffect(() => {
+    setTheme(themes[themeCount])
+  }, [themeCount])
+  
 
   return (
     <div className={`layout ${theme}`}>
@@ -54,15 +65,16 @@ const Layout = ({ children }) => {
               <li><a href="mailto:hello@abdelammeer.com">@</a></li>
             </ul>
             <ul className="nav-sites">
-              <li id='blog'><Link to="/blog">blog</Link></li>
-              <li id='space'><Link to="/space">space</Link></li>
-              <li id='work'><Link to="/work">work</Link></li>
+              <li className={`blog ${activeSite == 'blog' && 'border'}`}><Link to="/blog">blog</Link></li>
+              <li className={`space ${activeSite == 'space' && 'border'}`}><Link to="/space">space</Link></li>
+              <li className={`work ${activeSite == 'work' && 'border'}`}><Link to="/work">work</Link></li>
             </ul>
           </div>
 
           <ul className='color-modes'>
-            <li><button onClick={toggleColorTheme}>{ColorThemeIcon}</button></li>
-            <li><button onClick={toggleTheme}>{LightThemeIcon}</button></li>
+            <li className={theme == 'color-theme' && 'active-button'}><button onClick={() => setTheme('color-theme')}>🌈</button></li>
+            <li className={theme == 'light-theme' && 'active-button'}><button onClick={() => setTheme('light-theme')}>☀️</button></li>
+            <li className={theme == 'dark-theme' && 'active-button'}><button onClick={() => setTheme('dark-theme')}>🌙</button></li>
           </ul>
         </nav>
       </header>
@@ -75,7 +87,7 @@ const Layout = ({ children }) => {
         <div className="contact">
           <div className="insta-link"><a href='https://www.instagram.com/' target="blank">Instagram</a></div>
         </div>
-        
+
         <div className="nav-links-footer">
           <Link to="/imprint">Imprint</Link>
           <Link to="/privacy-policy">Privacy Policy</Link>

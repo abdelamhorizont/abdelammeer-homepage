@@ -655,6 +655,170 @@ collections:
           widget: "markdown",
           required: false,
         }
+      - {
+          label: "Content",
+          name: "variable-content",
+          widget: "list",
+          required: false,
+          types:
+            [
+              {
+                label: "Image Section",
+                name: "image-section",
+                widget: "object",
+                fields:
+                  [
+                    {
+                      label: "Column Start",
+                      name: "column-start",
+                      widget: "select",
+                      required: false,
+                      options:
+                        [
+                          "1",
+                          "2",
+                          "3",
+                          "4",
+                          "5",
+                          "6",
+                          "7",
+                          "8",
+                          "9",
+                          "10",
+                          "11",
+                        ],
+                    },
+                    {
+                      label: "Column End",
+                      name: "column-end",
+                      widget: "select",
+                      required: false,
+                      options:
+                        [
+                          "2",
+                          "3",
+                          "4",
+                          "5",
+                          "6",
+                          "7",
+                          "8",
+                          "9",
+                          "10",
+                          "11",
+                          "12",
+                          "13",
+                        ],
+                    },
+                    {
+                      label: "Images",
+                      name: "images",
+                      widget: "list",
+                      required: false,
+                      types:
+                        [
+                          {
+                            label: "Image",
+                            name: "image",
+                            widget: "object",
+                            fields:
+                              [
+                                {
+                                  label: "Image File",
+                                  name: "imageFile",
+                                  widget: "image",
+                                  required: false,
+                                  allow_multiple: true,
+                                },
+                                {
+                                  label: "Caption",
+                                  name: "caption",
+                                  widget: "string",
+                                  required: false,
+                                },
+                              ],
+                          },
+                          {
+                            label: "Video",
+                            name: "video",
+                            widget: "object",
+                            fields:
+                              [
+                                {
+                                  label: "Video File",
+                                  name: "videoFile",
+                                  widget: "file",
+                                  required: false,
+                                  allow_multiple: true,
+                                },
+                                {
+                                  label: "Caption",
+                                  name: "caption",
+                                  widget: "string",
+                                  required: false,
+                                },
+                              ],
+                          },
+                        ],
+                    },
+                  ],
+              },
+              {
+                label: "Text Section",
+                name: "text-section",
+                widget: "object",
+                fields:
+                  [
+                    {
+                      label: "Column Start",
+                      name: "column-start",
+                      widget: "select",
+                      required: false,
+                      options:
+                        [
+                          "1",
+                          "2",
+                          "3",
+                          "4",
+                          "5",
+                          "6",
+                          "7",
+                          "8",
+                          "9",
+                          "10",
+                          "11",
+                        ],
+                    },
+                    {
+                      label: "Column End",
+                      name: "column-end",
+                      widget: "select",
+                      required: false,
+                      options:
+                        [
+                          "2",
+                          "3",
+                          "4",
+                          "5",
+                          "6",
+                          "7",
+                          "8",
+                          "9",
+                          "10",
+                          "11",
+                          "12",
+                          "13",
+                        ],
+                    },
+                    {
+                      label: "Text",
+                      name: "text",
+                      widget: "markdown",
+                      required: false,
+                    },
+                  ],
+              },
+            ],
+        }
 
   - name: "pages"
     label: "Pages"
@@ -670,28 +834,17 @@ collections:
               default: "index-page",
             }
           - { label: "Title", name: "title", widget: "string" }
-          - {
-              label: "Video",
-              name: "video",
-              widget: "object",
-              fields:
-                [
-                  {
-                    label: "Video File",
-                    name: "videoFile",
-                    widget: file,
-                    required: false,
-                  },
-                  {
-                    label: "Fallback Image",
-                    name: "fallbackImage",
-                    widget: image,
-                    required: false,
-                  },
-                ],
-            }
           - { label: "Heading", name: "heading", widget: "string" }
           - { label: "Subheading", name: "subheading", widget: "string" }
+          - {
+              label: "Blog Reference",
+              name: "blog-reference",
+              widget: "relation",
+              collection: "blog",
+              search_fields: ["title"],
+              value_field: "title",
+              display_fields: ["title"],
+          }
       - file: "src/pages/blog.md"
         label: "Blog"
         name: "blog"

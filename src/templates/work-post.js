@@ -13,8 +13,7 @@ const WorkPost = ({ data }) => {
   const myimage = getImage(post.frontmatter.cover?.fallbackImage)
 
   return (
-    <Layout>
-
+    <Layout activeSite={'work'}>
       <div className="work-post">
         <div className='workpostcover'>
 

@@ -14,7 +14,7 @@ const BlogPost = ({ data }) => {
   const myimage = getImage(post.frontmatter.cover?.fallbackImage)
 
   return (
-    <Layout>
+    <Layout activeSite={'blog'}>
       <div className="blog-post">
         <div className='blogpostcover'>
 

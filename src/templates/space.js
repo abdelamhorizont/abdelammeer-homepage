@@ -49,7 +49,7 @@ const Space = () => {
   `)
 
   return (
-    <Layout>
+    <Layout activeSite={'space'}>
       <div className="space-page">
         <div className="project-list">
 
@@ -58,10 +58,12 @@ const Space = () => {
               const myimage = getImage(edge.node.frontmatter.cover?.fallbackImage)
 
               return (
-                <Link to={edge.node.fields.slug}>
-                  <div className="project-preview">
-
-                    <div className="project-text">
+                <Link to={edge.node.fields.slug} className="project-preview">
+                    <div className={edge.node.frontmatter.title == "deep sea bots" ? "cover-image deep-sea-bots" : "cover-image"}>
+                      <ImageSection type={"iframe"} content={edge.node.frontmatter.cover?.iframe} columnStart={1} columnEnd={12} />
+                    </div>
+                    
+                    <div className="cover-title">
                       <h1 className="headline">{edge.node.frontmatter.title}</h1>
                       <h2>{edge.node.frontmatter.date}</h2>
                       <h2>{edge.node.frontmatter.type}</h2>
@@ -71,11 +73,6 @@ const Space = () => {
                       }
                     </div>
 
-                    <div className="cover-image">
-                      <ImageSection type={"iframe"} content={edge.node.frontmatter.cover?.iframe} columnStart={1} columnEnd={12} />
-                    </div>
-
-                  </div>
                 </Link>
               )
             })

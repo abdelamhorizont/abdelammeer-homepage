@@ -42,7 +42,7 @@ const Blog = () => {
     `)
 
   return (
-    <Layout>
+    <Layout activeSite={'blog'}>
       <div className="blog-page">
         <div className="project-list">
           {

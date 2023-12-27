@@ -46,7 +46,7 @@ const Work = () => {
     `)
 
   return (
-    <Layout>
+    <Layout activeSite={'work'}>
       <div className="work-page">
         <div className="project-list">
           {
