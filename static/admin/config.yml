@@ -841,18 +841,27 @@ collections:
               name: "blog-reference",
               widget: "relation",
               collection: "blog",
-              search_fields: ["title", "type", "date"],
+              search_fields: ["title"],
               value_field: "title",
-              display_fields: ["title","type", "date"],
+              display_fields: ["title"],
             }
           - {
               label: "Work Reference",
               name: "work-reference",
               widget: "relation",
               collection: "work",
-              search_fields: ["title", "type", "date"],
+              search_fields: ["title"],
               value_field: "title",
-              display_fields: ["title","type", "date"],
+              display_fields: ["title"],
+            }
+          - {
+              label: "Space Reference",
+              name: "space-reference",
+              widget: "relation",
+              collection: "space",
+              search_fields: ["title"],
+              value_field: "title",
+              display_fields: ["title"],
             }
       - file: "src/pages/blog.md"
         label: "Blog"
