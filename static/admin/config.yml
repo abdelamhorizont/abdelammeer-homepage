@@ -843,7 +843,7 @@ collections:
               collection: "blog",
               search_fields: ["title", "type", "date"],
               value_field: "title",
-              display_fields: ["title"],
+              display_fields: ["title","type", "date"],
           }
       - file: "src/pages/blog.md"
         label: "Blog"
