@@ -845,6 +845,15 @@ collections:
               value_field: "title",
               display_fields: ["title","type", "date"],
             }
+          - {
+              label: "Work Reference",
+              name: "work-reference",
+              widget: "relation",
+              collection: "work",
+              search_fields: ["title", "type", "date"],
+              value_field: "title",
+              display_fields: ["title","type", "date"],
+            }
       - file: "src/pages/blog.md"
         label: "Blog"
         name: "blog"
