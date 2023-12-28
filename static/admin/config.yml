@@ -299,7 +299,12 @@ collections:
           widget: "object",
           fields:
             [
-              { label: "iFrame", name: "iframe", widget: "string", required: false },
+              {
+                label: "iFrame",
+                name: "iframe",
+                widget: "string",
+                required: false,
+              },
               {
                 label: "Video File",
                 name: "videoFile",
@@ -582,7 +587,12 @@ collections:
           widget: "object",
           fields:
             [
-              { label: "iFrame", name: "iframe", widget: "string", required: false },
+              {
+                label: "iFrame",
+                name: "iframe",
+                widget: "string",
+                required: false,
+              },
               {
                 label: "Video File",
                 name: "videoFile",
@@ -999,31 +1009,40 @@ collections:
                 ],
             }
           - {
-              label: "Blog Reference",
-              name: "blog-reference",
-              widget: "relation",
-              collection: "blog",
-              search_fields: ["title"],
-              value_field: "title",
-              display_fields: ["title"],
-            }
-          - {
-              label: "Work Reference",
-              name: "work-reference",
-              widget: "relation",
-              collection: "work",
-              search_fields: ["title"],
-              value_field: "title",
-              display_fields: ["title"],
-            }
-          - {
-              label: "Space Reference",
-              name: "space-reference",
-              widget: "relation",
-              collection: "space",
-              search_fields: ["title"],
-              value_field: "title",
-              display_fields: ["title"],
+              label: "Reference",
+              name: "reference-content",
+              widget: "list",
+              required: false,
+              types:
+                [
+                  {
+                    label: "Blog Reference",
+                    name: "blog-reference",
+                    widget: "relation",
+                    collection: "blog",
+                    search_fields: ["title"],
+                    value_field: "title",
+                    display_fields: ["title"],
+                  },
+                  {
+                    label: "Work Reference",
+                    name: "work-reference",
+                    widget: "relation",
+                    collection: "work",
+                    search_fields: ["title"],
+                    value_field: "title",
+                    display_fields: ["title"],
+                  },
+                  {
+                    label: "Space Reference",
+                    name: "space-reference",
+                    widget: "relation",
+                    collection: "space",
+                    search_fields: ["title"],
+                    value_field: "title",
+                    display_fields: ["title"],
+                  },
+                ],
             }
       - file: "src/pages/blog.md"
         label: "Blog"
