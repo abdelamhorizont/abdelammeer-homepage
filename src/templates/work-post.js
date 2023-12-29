@@ -15,34 +15,10 @@ const WorkPost = ({ data }) => {
   return (
     <Layout activeSite={'work'}>
       <div className="work-post">
+
         <div className='workpostcover'>
-
           <div className="cover-image">
-            {/* <ImageSection type={"image"} content={myimage} columnStart={1} columnEnd={12} /> */}
-
-            {/* <GatsbyImage
-              image={myimage}
-              alt={''}
-            /> */}
-
-            {/* <p className="caption">created by Kristian Vrhar on stable diffusion</p> */}
-
             <ImageSection type={"carousel"} content={post.frontmatter.cover?.images} columnStart={1} columnEnd={12} />
-
-            {/* {
-              post.frontmatter.cover?.images &&
-              post.frontmatter.cover?.images.map((image) => {
-                const myimg = getImage(image.imageFile)
-
-                return (
-                  <GatsbyImage
-                    image={myimg}
-                    alt={''}
-                  />
-                )
-              })
-            } */}
-
           </div>
 
           <div className="cover-title">
@@ -53,7 +29,6 @@ const WorkPost = ({ data }) => {
               <div className="collaborators"><h2>with {post.frontmatter?.collaborators} </h2></div>
             }
           </div>
-
         </div>
 
         <div className="work-post-content">

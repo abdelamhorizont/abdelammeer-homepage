@@ -30,6 +30,30 @@ body {
    .work-page {
       h1,
       h2 {
+         color: #e8e6e6;
+      }
+   }
+}
+
+.grey-theme {
+   background-color: #808080;
+   transition: all 1s ease;
+
+   .work-page, .work-post, .blog-page, .blog-post, .space-page, .space-post{
+      // background-image: linear-gradient(#6f6f6f00, #6f6f6f00);
+   
+      color: #000000;
+      transition: all 1s ease;
+   
+      a {
+         color: #0f0f0f;
+         transition: all 1s ease;
+      }
+   }
+   
+   .work-page {
+      h1,
+      h2 {
          color: #000000;
       }
    }
@@ -60,7 +84,7 @@ body {
 
    .work-page, .work-post {
       // background-color: rgb(254, 214, 54);
-      background-image: linear-gradient(rgb(254, 214, 54), rgb(134, 134, 255));
+      background: linear-gradient(rgb(254, 214, 54), rgb(134, 134, 255));
 
       color: #000000;
       transition: all 1s ease;
@@ -74,7 +98,7 @@ body {
 
    .blog-page, .blog-post {
       background-color: rgb(68, 180, 68);
-      background-image: linear-gradient(rgb(68, 180, 68), rgb(134, 134, 255));
+      background: linear-gradient(rgb(68, 180, 68), rgb(134, 134, 255));
 
       color: #000000;
       transition: all 1s ease;
@@ -88,7 +112,7 @@ body {
 
    .space-page, .space-post {
       // background-color: rgb(134, 134, 255);
-      background-image: linear-gradient(rgb(134, 134, 255), rgb(254, 214, 54));
+      background: linear-gradient(rgb(134, 134, 255), rgb(254, 214, 54));
 
       color: #000000;
       transition: all 1s ease;

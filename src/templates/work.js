@@ -52,7 +52,6 @@ const Work = () => {
           {
             data.allMarkdownRemark.edges.map(edge => {
               const myimage = getImage(edge.node.frontmatter.cover?.fallbackImage)
-
               return (
                 <Link to={edge.node.fields.slug}>
                   <div className="project-preview">

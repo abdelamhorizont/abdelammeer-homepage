@@ -42,22 +42,23 @@
         right: 2rem;
 
         li {
+            // position: absolute;
+            // right: 0;
             // transform:translateX(200px);
             // margin: 0rem -1.3rem ;
-            visibility: hidden;
-            display: none;
+            // visibility: hidden;
+            // display: none;
             // opacity: 0;
             font-size: 2.8rem;
             // background-color: rgb(255, 255, 255,0);
             // background-color: blue;
-            transition: all ease 0.5s;
-            
+            transition: all ease 0.5s;   
         }
 
         .active-button{
                 transform:translateX(0px);
                 z-index: 10;
-                font-size: 3rem;
+                // font-size: 3rem;
                 visibility:visible;
                 display:contents;
 
@@ -65,20 +66,29 @@
                 // opacity: 1;
         }
 
+        button{
+            img{
+                height: 30px;
+                max-width: 6rem;
+            }
+        }
+
     }
 
     .color-modes:hover{
         li{
             // transform:translateX(0px);
-            margin: 0rem -0.5rem ;
-            visibility:visible;
-            display:contents;
+            // margin: 0rem -0.5rem ;
+            // visibility:visible;
+            // display:contents;
+            // position: relative;
+            // opacity: 1;
 
         }
 
         li:hover{
             // transform:translateX(0px);
-            font-size: 3.5rem;
+            // font-size: 3.5rem;
             // opacity: 1;
         }
     }
