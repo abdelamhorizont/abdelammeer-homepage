@@ -30,6 +30,10 @@ variable-content:
         reference: ABK Stuttgart
       - type: work-reference
         reference: Narrating Africa
+  - type: text-section
+    column-start: "1"
+    column-end: "13"
+    text: a﻿bdel am meer communication design
 video:
   fallbackImage: ""
   videoFile: ""
