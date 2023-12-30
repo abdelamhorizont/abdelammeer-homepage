@@ -19,9 +19,14 @@ const IndexPage = ({ data }) => {
       <Layout>
         {
           frontmatter.variable_content.map(content => {
+            // content.type == "reference-section" &&
+            return (
+              <div></div>
+            )
             
           })
         }
+
         <div className="blog-page">
           <div className="project-list">
             {
@@ -32,7 +37,6 @@ const IndexPage = ({ data }) => {
                   <div className="project-preview">
                     <Link
                       to={edge.node.fields.slug}>
-
 
                       <h2>{edge.node.frontmatter.date}</h2>
                       <GatsbyImage
