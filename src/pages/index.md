@@ -12,6 +12,10 @@ variable-content:
     reference-content:
       - type: space-reference
         reference: deep sea bots
+    references:
+      - type: space-reference
+        reference: deep sea bots
+    reference-section-type: space
   - type: reference-section
     column-start: "1"
     column-end: "13"
@@ -22,10 +26,24 @@ variable-content:
         reference: Ocean View
       - type: blog-reference
         reference: Deep Sea Bots
+    reference-section-type: blog
+    references:
+      - type: blog-reference
+        reference: (Non) Artificial (Maybe) Intelligence
+      - type: blog-reference
+        reference: Ocean View
+      - type: blog-reference
+        reference: Deep Sea Bots
   - type: reference-section
     column-start: "1"
     column-end: "13"
     reference-content:
+      - type: work-reference
+        reference: ABK Stuttgart
+      - type: work-reference
+        reference: Narrating Africa
+    reference-section-type: work
+    references:
       - type: work-reference
         reference: ABK Stuttgart
       - type: work-reference
