@@ -1013,6 +1013,18 @@ collections:
                     fields:
                       [
                         {
+                          label: "Reference Section Type",
+                          name: "reference-section-type",
+                          widget: "select",
+                          required: false,
+                          options:
+                            [
+                              "blog",
+                              "space",
+                              "work"
+                            ]
+                        },
+                        {
                           label: "Column Start",
                           name: "column-start",
                           widget: "select",
@@ -1054,70 +1066,70 @@ collections:
                             ],
                         },
                         {
-                          label: "Reference",
-                          name: "reference-content",
+                          label: "References",
+                          name: "references",
                           widget: "list",
                           required: false,
                           types:
                             [
                               {
-                              label: "Blog Reference",
-                              name: "blog-reference",
-                              widget: "object",
-                              fields:
-                                [
-                                  {
-                                    label: "Reference",
-                                    name: "reference",
-                                    widget: "relation",
-                                    collection: "blog",
-                                    search_fields: ["title"],
-                                    value_field: "title",
-                                    display_fields: ["title"],
-                                  }
-                                ]
+                                label: "Blog Reference",
+                                name: "blog-reference",
+                                widget: "object",
+                                fields:
+                                  [
+                                    {
+                                      label: "Reference",
+                                      name: "reference",
+                                      widget: "relation",
+                                      collection: "blog",
+                                      search_fields: ["title"],
+                                      value_field: "title",
+                                      display_fields: ["title"],
+                                    },
+                                  ],
                               },
                               {
-                              label: "Work Reference",
-                              name: "work-reference",
-                              widget: "object",
-                              fields:
-                                [
-                                  {
-                                    label: "Reference",
-                                    name: "reference",
-                                    widget: "relation",
-                                    collection: "work",
-                                    search_fields: ["title"],
-                                    value_field: "title",
-                                    display_fields: ["title"],
-                                  }
-                                ]
+                                label: "Work Reference",
+                                name: "work-reference",
+                                widget: "object",
+                                fields:
+                                  [
+                                    {
+                                      label: "Reference",
+                                      name: "reference",
+                                      widget: "relation",
+                                      collection: "work",
+                                      search_fields: ["title"],
+                                      value_field: "title",
+                                      display_fields: ["title"],
+                                    },
+                                  ],
                               },
                               {
-                              label: "Space Reference",
-                              name: "space-reference",
-                              widget: "object",
-                              fields:
-                                [
-                                  {
-                                    label: "Reference",
-                                    name: "reference",
-                                    widget: "relation",
-                                    collection: "space",
-                                    search_fields: ["title"],
-                                    value_field: "title",
-                                    display_fields: ["title"],
-                                  }
-                                ]
+                                label: "Space Reference",
+                                name: "space-reference",
+                                widget: "object",
+                                fields:
+                                  [
+                                    {
+                                      label: "Reference",
+                                      name: "reference",
+                                      widget: "relation",
+                                      collection: "space",
+                                      search_fields: ["title"],
+                                      value_field: "title",
+                                      display_fields: ["title"],
+                                    },
+                                  ],
                               },
                             ],
-                        }
+                        },
                       ],
                   },
                 ],
             }
-            
+
       - file: "src/pages/blog.md"
         label: "Blog"
         name: "blog"

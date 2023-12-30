@@ -17,6 +17,34 @@ const IndexPage = ({ data }) => {
   return (
     <motion.div>
       <Layout>
+        <div className="blog-page">
+          <div className="project-list">
+            {
+              data.allMarkdownRemark.edges.map(edge => {
+                const myimage = getImage(edge.node.frontmatter.cover?.fallbackImage)
+
+                return (
+                  <div className="project-preview">
+                    <Link
+                      to={edge.node.fields.slug}>
+
+
+                      <h2>{edge.node.frontmatter.date}</h2>
+                      <GatsbyImage
+                        image={myimage}
+                        alt={''}
+                        className="preview-image"
+                      />
+                      <h1 className="headline">{edge.node.frontmatter.title}</h1>
+                      <h2>{edge.node.frontmatter.type}</h2>
+
+                    </Link>
+                  </div>
+                )
+              })
+            }
+          </div>
+        </div>
         {/* cookie */}
       </Layout>
     </motion.div>
@@ -33,6 +61,36 @@ export const pageQuery = graphql`
         title
         heading
         subheading
+        variable_content {
+          reference_content {
+            reference
+            type
+          }
+          column_end
+          column_start
+          text
+        }
+      }
+    }
+    allMarkdownRemark {
+      edges {
+        node {
+          frontmatter {
+            title
+            type
+            date(formatString: "YYYY")
+            cover {
+              fallbackImage {
+                childImageSharp {
+                  gatsbyImageData
+                }
+              }
+            }
+          }  
+          fields {
+            slug
+          }
+        }
       }
     }
   }
