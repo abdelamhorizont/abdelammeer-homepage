@@ -17,6 +17,11 @@ const IndexPage = ({ data }) => {
   return (
     <motion.div>
       <Layout>
+        {
+          frontmatter.variable_content.map(content => {
+            
+          })
+        }
         <div className="blog-page">
           <div className="project-list">
             {
