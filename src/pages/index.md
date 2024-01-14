@@ -48,6 +48,8 @@ variable-content:
         reference: ABK Stuttgart
       - type: work-reference
         reference: Narrating Africa
+      - type: work-reference
+        reference: GleisMediale
   - type: text-section
     column-start: "1"
     column-end: "13"
