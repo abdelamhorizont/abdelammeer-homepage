@@ -96,7 +96,7 @@ body {
 
    transition: all 1s ease;
 
-   .work-page, .work-post, .work-section {
+   .work-page, .work-post {
       // background-color: rgb(254, 214, 54);
       background: linear-gradient(rgb(254, 214, 54), rgb(134, 134, 255));
 
@@ -110,8 +110,8 @@ body {
       }
    }
 
-   .blog-page, .blog-post, .blog-section {
-      background-color: rgb(68, 180, 68);
+   .blog-page, .blog-post {
+      // background-color: rgb(68, 180, 68);
       background: linear-gradient(rgb(68, 180, 68), rgb(134, 134, 255));
 
       color: #000000;
@@ -124,7 +124,7 @@ body {
       }
    }
 
-   .space-page, .space-post, .space-section {
+   .space-page, .space-post {
       // background-color: rgb(134, 134, 255);
       background: linear-gradient(rgb(134, 134, 255), rgb(254, 214, 54));
 

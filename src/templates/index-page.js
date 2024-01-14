@@ -14,8 +14,6 @@ import '../styles/index.scss'
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-  const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'blog-post')
-  console.log(project);
 
   return (
     <Layout>
@@ -28,7 +26,8 @@ const IndexPage = ({ data }) => {
                   <>
                     {
                       content.reference_section_type == "blog" ?
-                        <div className="blog-section">
+                        // <div className="blog-section" style={{ gridColumn: "span 6"}}>
+                        <div className="blog-section" style={{ gridColumn: content.column_start + "/" + content.end}}> 
                           {content.reference_content.map(node => {
                             const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'blog-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
                             // const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'blog-post')[0]
@@ -43,7 +42,7 @@ const IndexPage = ({ data }) => {
                         content.reference_section_type == "space" ?
                           <div className="space-section">
                             {content.reference_content.map(node => {
-                              const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.title == node.reference)[0]
+                              const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'space-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
                               return (
                                 <ProjectPreview content={project.node} type={'iframe'} />
                               )
@@ -55,7 +54,7 @@ const IndexPage = ({ data }) => {
                             <div className="work-section">
                               <div className="project-list">
                                 {content.reference_content.map(node => {
-                                  const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.title == node.reference)[0]
+                                  const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'work-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
                                   return (
                                     <ProjectPreview content={project.node} />
                                   )
@@ -111,8 +110,8 @@ export const pageQuery = graphql`
             title
             type
             date(formatString: "YYYY")
-            iframe
             cover {
+              iframe
               fallbackImage {
                 childImageSharp {
                   gatsbyImageData

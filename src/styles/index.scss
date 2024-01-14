@@ -1,6 +1,8 @@
 .index-page {
     .project-list {
         padding: 2rem 0rem;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
     }
 
     .work-section,
@@ -9,6 +11,11 @@
         padding: 0.5rem;
         margin: 0.5rem;
         border-radius: 2rem;
+        a {
+            color: #000000;
+            transition: all 1s ease;
+   
+         }
     }
 
 

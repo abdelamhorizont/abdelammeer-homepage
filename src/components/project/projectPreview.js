@@ -11,7 +11,7 @@ export function ProjectPreview({ content, type }) {
 
       <div className={`${content?.frontmatter?.title} cover-image`}>
         {/* <div className={content.frontmatter?.title == "deep sea bots" ? "cover-image deep-sea-bots" : "cover-image"}> */}
-        <ImageSection type={type} content={content?.frontmatter.iframe ? content?.frontmatter : content?.frontmatter.cover} columnStart={1} columnEnd={12} />
+        <ImageSection type={type} content={content?.frontmatter.cover} columnStart={1} columnEnd={12} />
       </div>
 
       <div className="cover-title">
