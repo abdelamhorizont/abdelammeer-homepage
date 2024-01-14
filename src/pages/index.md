@@ -8,7 +8,7 @@ title: abdel am meer
 variable-content:
   - type: reference-section
     column-start: "1"
-    column-end: "9"
+    column-end: "7"
     reference-content:
       - type: space-reference
         reference: deep sea bots
@@ -17,7 +17,7 @@ variable-content:
         reference: Ocean View
     reference-section-type: space
   - type: reference-section
-    column-start: "9"
+    column-start: "7"
     column-end: "13"
     reference-content:
       - type: blog-reference
