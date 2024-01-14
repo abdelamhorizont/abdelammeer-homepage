@@ -26,11 +26,9 @@ const IndexPage = ({ data }) => {
                   <>
                     {
                       content.reference_section_type == "blog" ?
-                        // <div className="blog-section" style={{ gridColumn: "span 6"}}>
-                        <div className="blog-section" style={{ gridColumn: content.column_start + "/" + content.end}}> 
+                        <div className="blog-section" style={{ gridColumn: content.column_start + "/" + content.column_end}}> 
                           {content.reference_content.map(node => {
                             const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'blog-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
-                            // const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'blog-post')[0]
                             return (
                               <ProjectPreview content={project?.node} />
                             )
@@ -40,7 +38,7 @@ const IndexPage = ({ data }) => {
                         :
 
                         content.reference_section_type == "space" ?
-                          <div className="space-section">
+                          <div className="space-section" style={{ gridColumn: content.column_start + "/" + content.column_end}}>
                             {content.reference_content.map(node => {
                               const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'space-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
                               return (
@@ -51,7 +49,7 @@ const IndexPage = ({ data }) => {
 
                           :
                           content.reference_section_type == "work" ?
-                            <div className="work-section">
+                            <div className="work-section" style={{ gridColumn: content.column_start + "/" + content.column_end}}>
                               <div className="project-list">
                                 {content.reference_content.map(node => {
                                   const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'work-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]

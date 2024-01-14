@@ -1,4 +1,6 @@
 .index-page {
+    width: 100vw;
+
     .project-list {
         padding: 2rem 0rem;
         display: grid;
@@ -8,9 +10,11 @@
     .work-section,
     .blog-section,
     .space-section {
+        width: auto;
         padding: 0.5rem;
         margin: 0.5rem;
         border-radius: 2rem;
+
         a {
             color: #000000;
             transition: all 1s ease;

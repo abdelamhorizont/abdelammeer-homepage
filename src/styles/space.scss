@@ -123,10 +123,19 @@
     }
 }
 
-.space-page, .space-pos {
+.space-page, .space-post {
     width: 100vw;
     min-height: 100vh;
     padding-bottom: 10vh;
+}
+
+.space-section {
+    .project-preview {
+        .cover-image {
+            height: 60vh;
+        }
+    }
+    
 }
 
 .space-post {
