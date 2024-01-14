@@ -5,8 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 
 import Layout from "../components/layout/Layout";
 import { HTMLContent } from "../components/content/text-section";
-
-// import Tags from "../components/tags/tags";
+import { ProjectPreview } from '../components/project/projectPreview';
 
 import '../styles/reset.css'
 import '../styles/global.scss'
@@ -51,26 +50,8 @@ const Work = () => {
         <div className="project-list">
           {
             data.allMarkdownRemark.edges.map(edge => {
-              const myimage = getImage(edge.node.frontmatter.cover?.fallbackImage)
               return (
-                <Link to={edge.node.fields.slug}>
-                  <div className="project-preview">
-                    <GatsbyImage
-                      image={myimage}
-                      alt={''}
-                      className="preview-image"
-                    />
-
-                    <div className="project-text">
-                      <h2>{edge.node.frontmatter.date}</h2>
-                      <h1 className="headline">{edge.node.frontmatter.title}</h1>
-                      <h2>{edge.node.frontmatter.type}</h2>
-                      {edge.node.frontmatter?.collaborators &&
-                        <h2 className="collaborators">with {edge.node.frontmatter?.collaborators} </h2>
-                      }
-                    </div>
-                  </div>
-                </Link>
+                <ProjectPreview content={edge.node} />
               )
             })
           }

@@ -10,7 +10,6 @@ import Moon from '../../assets/img/SVG/moon.svg'
 import Cloud from '../../assets/img/SVG/cloud.svg'
 import Rainbow from '../../assets/img/SVG/rainbow.svg'
 
-import Projectlist from "../projectlist/projectlist";
 import './layout.scss'
 
 const Layout = ({ children, activeSite }) => {

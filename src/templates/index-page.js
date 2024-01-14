@@ -4,6 +4,7 @@ import { getImage, GatsbyImage } from "gatsby-plugin-image";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion"
 
 import Layout from "../components/layout/Layout";
+import { ProjectPreview } from '../components/project/projectPreview';
 
 import '../styles/reset.css'
 import '../styles/global.scss'
@@ -13,50 +14,69 @@ import '../styles/index.scss'
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
+  const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'blog-post')
+  console.log(project);
 
   return (
-    <motion.div>
-      <Layout>
-        {
-          frontmatter.variable_content.map(content => {
-            // content.type == "reference-section" &&
-            return (
-              <div></div>
-            )
-            
-          })
-        }
-
-        <div className="blog-page">
-          <div className="project-list">
-            {
-              data.allMarkdownRemark.edges.map(edge => {
-                const myimage = getImage(edge.node.frontmatter.cover?.fallbackImage)
-
+    <Layout>
+      <div className="index-page">
+        <div className="project-list">
+          {
+            frontmatter.variable_content.map(content => {
+              if (content.type == "reference-section") {
                 return (
-                  <div className="project-preview">
-                    <Link
-                      to={edge.node.fields.slug}>
+                  <>
+                    {
+                      content.reference_section_type == "blog" ?
+                        <div className="blog-section">
+                          {content.reference_content.map(node => {
+                            const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'blog-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
+                            // const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'blog-post')[0]
+                            return (
+                              <ProjectPreview content={project?.node} />
+                            )
+                          })}
+                        </div>
 
-                      <h2>{edge.node.frontmatter.date}</h2>
-                      <GatsbyImage
-                        image={myimage}
-                        alt={''}
-                        className="preview-image"
-                      />
-                      <h1 className="headline">{edge.node.frontmatter.title}</h1>
-                      <h2>{edge.node.frontmatter.type}</h2>
+                        :
 
-                    </Link>
-                  </div>
+                        content.reference_section_type == "space" ?
+                          <div className="space-section">
+                            {content.reference_content.map(node => {
+                              const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.title == node.reference)[0]
+                              return (
+                                <ProjectPreview content={project.node} type={'iframe'} />
+                              )
+                            })}
+                          </div>
+
+                          :
+                          content.reference_section_type == "work" ?
+                            <div className="work-section">
+                              <div className="project-list">
+                                {content.reference_content.map(node => {
+                                  const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.title == node.reference)[0]
+                                  return (
+                                    <ProjectPreview content={project.node} />
+                                  )
+                                })}
+                              </div>
+                            </div>
+                            :
+                            <div></div>
+                    }
+                  </>
                 )
-              })
-            }
-          </div>
+              }
+
+            })
+          }
         </div>
+
+
         {/* cookie */}
-      </Layout>
-    </motion.div>
+      </div >
+    </Layout>
   )
 }
 
@@ -75,6 +95,8 @@ export const pageQuery = graphql`
             reference
             type
           }
+          type
+          reference_section_type
           column_end
           column_start
           text
@@ -85,9 +107,11 @@ export const pageQuery = graphql`
       edges {
         node {
           frontmatter {
+            templateKey
             title
             type
             date(formatString: "YYYY")
+            iframe
             cover {
               fallbackImage {
                 childImageSharp {

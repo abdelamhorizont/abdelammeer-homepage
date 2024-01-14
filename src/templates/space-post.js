@@ -4,6 +4,7 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/layout/Layout";
 import TextSection, { HTMLContent } from "../components/content/text-section";
 import ImageSection from "../components/content/image-section";
+import { ProjectPreview } from '../components/project/projectPreview';
 
 // import '../styles/work-post.scss'
 
@@ -14,22 +15,7 @@ const SpacePost = ({ data }) => {
     <Layout activeSite={'space'}>
 
       <div className="space-post">
-        <div className='spacepostcover'>
-
-          <div className={post.frontmatter.title == "deep sea bots" ? "cover-image deep-sea-bots" : "cover-image"}>
-            <ImageSection type={"iframe"} content={post.frontmatter.cover?.iframe} columnStart={1} columnEnd={12} />
-          </div>
-
-          <div className="cover-title">
-            <h2> {post.frontmatter.date} </h2>
-            <h1 className="headline">{post.frontmatter.title}</h1>
-            <h2> {post.frontmatter.type} </h2>
-            {post.frontmatter?.collaborators &&
-              <div className="collaborators"><h2>with {post.frontmatter?.collaborators} </h2></div>
-            }
-          </div>
-
-        </div>
+        <ProjectPreview content={post} type={"iframe"} />
 
         <div className="space-post-content">
           <div className="description">

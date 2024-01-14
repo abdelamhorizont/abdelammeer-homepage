@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 
 import Layout from "../components/layout/Layout";
 import { HTMLContent } from "../components/content/text-section";
+import { ProjectPreview } from '../components/project/projectPreview';
 
 // import Tags from "../components/tags/tags";
 
@@ -47,25 +48,8 @@ const Blog = () => {
         <div className="project-list">
           {
             data.allMarkdownRemark.edges.map(edge => {
-              const myimage = getImage(edge.node.frontmatter.cover?.fallbackImage)
-
               return (
-                <div className="project-preview">
-                  <Link
-                    to={edge.node.fields.slug}>
-                   
-
-                    <h2>{edge.node.frontmatter.date}</h2>
-                    <GatsbyImage
-                      image={myimage}
-                      alt={''}
-                      className="preview-image"
-                    />
-                    <h1 className="headline">{edge.node.frontmatter.title}</h1>
-                    <h2>{edge.node.frontmatter.type}</h2>
-
-                  </Link>
-                </div>
+                <ProjectPreview content={edge.node} />
               )
             })
           }

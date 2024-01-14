@@ -2,6 +2,8 @@ html {
    scroll-behavior: smooth;
    font-size: clamp(10px, 1vw, 24px);
    background-color: #232323;
+   // background-image: linear-gradient(rgb(7, 7, 233), yellow);
+
 
 }
 
@@ -21,10 +23,11 @@ body {
       color: #e8e6e6;
       transition: all 1s ease;
    
-      a {
-         color: #e8e6e6;
-         transition: all 1s ease;
-      }
+   }
+   
+   a {
+      color: #e8e6e6;
+      transition: all 1s ease;
    }
    
    .work-page {
@@ -32,6 +35,11 @@ body {
       h2 {
          color: #e8e6e6;
       }
+   }
+
+   .work-section, .blog-section, .space-section{
+      background-color: #464646;
+      color: #232323
    }
 }
 
@@ -70,19 +78,25 @@ body {
       color: #000000;
       transition: all 1s ease;
    
-      a {
-         color: #000000;
-         transition: all 1s ease;
+   }
    
-      }
+   a {
+      color: #000000;
+      transition: all 1s ease;
+   }
+   .work-section, .blog-section, .space-section{
+      background-color: #cecece;
+      color: #e8e6e6
    }
 }
 
 .color-theme {
    background-color: rgba(0,0,0,0);
+   background-image: linear-gradient(rgb(7, 7, 233), yellow);
+
    transition: all 1s ease;
 
-   .work-page, .work-post {
+   .work-page, .work-post, .work-section {
       // background-color: rgb(254, 214, 54);
       background: linear-gradient(rgb(254, 214, 54), rgb(134, 134, 255));
 
@@ -96,7 +110,7 @@ body {
       }
    }
 
-   .blog-page, .blog-post {
+   .blog-page, .blog-post, .blog-section {
       background-color: rgb(68, 180, 68);
       background: linear-gradient(rgb(68, 180, 68), rgb(134, 134, 255));
 
@@ -110,7 +124,7 @@ body {
       }
    }
 
-   .space-page, .space-post {
+   .space-page, .space-post, .space-section {
       // background-color: rgb(134, 134, 255);
       background: linear-gradient(rgb(134, 134, 255), rgb(254, 214, 54));
 

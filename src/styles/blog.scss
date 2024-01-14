@@ -1,40 +1,55 @@
-.blog-page {
-    width: 100vw;
-    min-height: 100vh;
+.blog-page, .blog-section {
     overflow: hidden;
     padding: 0rem 0.5rem;
 
     .project-list {
-        padding: 0rem 0.5rem;
-        margin-top: 2rem;
+        // padding: 0rem 0.5rem;
+        margin-top: 3rem;
     }
     
     .project-preview{
         display: flex;
-        align-items: flex-end;
+        align-items: flex-start;
         width: 100%;
-        margin: 1rem 0rem;
-    }
-
-    h1 {
-        font-size: 5rem;
-        font-weight: 90;
-        line-height: 4.5rem;
-        font-family: Kleukens;
-        display: inline;
-    }
+        margin: 0.5rem 0rem;
+        
+        h2{
+            display: inline;
     
-    h2{
-        display: inline;
+            font-size: 1.8rem;
+            font-family: Kleukens;
+            margin: 0rem 0.5rem;
+            vertical-align: top;
+        }
+        
+        .cover-title{
+            h1 {
+                font-size: 5rem;
+                font-weight: 90;
+                line-height: 4.5rem;
+                font-family: Kleukens;
+                display: inline;
+                vertical-align: top;
+            }
+            
+            h2{
+                display: inline;
+                
+                vertical-align: top;
+                font-size: 1.8rem;
+                font-family: Kleukens;
+                margin: 0rem 0.5rem;
+                // vertical-align: top;
+            }
 
-        font-size: 1.8rem;
-        font-family: Kleukens;
-        margin: 0rem 0.5rem;
-        // vertical-align: top;
+            .year{
+                display: none;
+            }
+        }
     }
 
-    .preview-image{
-        align-self: flex-end;
+    .cover-image{
+        // align-self: flex-end;
         height: 4rem;
         width: auto;
         margin: 0rem 0.5rem;
@@ -50,6 +65,10 @@
     }
 }
 
+.blog-page{
+    min-height: 100vh;
+    width: 100vw;
+}
 
 .blog-post {
     padding: 1rem;

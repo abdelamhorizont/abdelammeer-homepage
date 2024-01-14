@@ -40,16 +40,16 @@ const ImageSection = ({ content, type, columnStart, columnEnd }) => {
 
         {
           type == "iframe" ?
-            <iframe src={content} frameborder="100px"></iframe>
-            // <p className="caption">{image?.image?.caption}</p>
-            :
-            type == "image" ?
-              <GatsbyImage image={content} alt={''} />
-              // <p className="caption">{image?.image?.caption}</p>
-              :
-              type == "grid" ?
-                content?.images?.map((image) => {
-                  const myimage = getImage(image?.image?.image)
+          // content?.iframe != null ?
+            <iframe src={content.iframe} frameborder="100px"></iframe>
+          :
+            // type == "image" ?
+          content?.fallbackImage != null ?
+              <GatsbyImage image={getImage(content?.fallbackImage)} alt={''} />
+          :
+          type == "grid" ?
+              content?.images?.map((image) => {
+                const myimage = getImage(image?.image?.image)
 
                   return (
                     // <div onClick={() => handleClick(i)}>
@@ -59,8 +59,8 @@ const ImageSection = ({ content, type, columnStart, columnEnd }) => {
                     </div>
                   )
                 })
-                :
-                type == "carousel" &&
+          :
+          type == "carousel" &&
                 // <div onClick={() => handleClick(i)}>
                 <Swiper
                   // onSwiper={(swiper) => swiper.slideTo(index)}
@@ -81,29 +81,6 @@ const ImageSection = ({ content, type, columnStart, columnEnd }) => {
                   className="swiper"
                 // onClick={() => setimgClick(false)}
                 >
-                  {/* {
-                    content?.images?.map(image => {
-                      const myimage = getImage(image?.image?.image)
-                      if (image != null) {
-                        return (
-                          <SwiperSlide className="swiper-slide" >
-                            <div className="slide-img-wrapper">
-                              <GatsbyImage
-                                image={myimage}
-                                imageStyle={{
-                                  objectFit: `contain`,
-                                }}
-                                Style={{
-                                  objectFit: `contain`,
-                                }}
-                                alt={''}
-                              />
-                            </div>
-                          </SwiperSlide>
-                        )
-                      }
-                    })
-                  } */}
 
                   {
                     content?.map((image) => {
