@@ -110,6 +110,17 @@ body {
       }
    }
 
+   .work-section, .work-page{
+      .project-preview {
+         .cover-title{
+            padding: 0.5rem;
+            background: rgb(254, 214, 54);
+            background: linear-gradient(rgb(254, 214, 54), rgb(134, 134, 255, 0.3));
+            border-radius: 2rem;
+         }
+      }
+   }
+
    .blog-page, .blog-post {
       // background-color: rgb(68, 180, 68);
       background: linear-gradient(rgb(68, 180, 68), rgb(134, 134, 255));
@@ -124,6 +135,15 @@ body {
       }
    }
 
+   .blog-section{
+      .project-preview {
+         padding: 0.5rem;
+         background: rgb(68, 180, 68);
+         background: linear-gradient( rgb(134, 134, 255, 0.3), rgb(68, 180, 68));
+         border-radius: 2rem;
+      }
+   }
+
    .space-page, .space-post {
       // background-color: rgb(134, 134, 255);
       background: linear-gradient(rgb(134, 134, 255), rgb(254, 214, 54));
@@ -135,6 +155,17 @@ body {
          color: #000000;
          transition: all 1s ease;
 
+      }
+   }
+
+   .space-section, .space-page{
+      .project-preview {
+         .cover-title{
+            padding: 0.5rem;
+            background: rgb(254, 214, 54);
+            background: linear-gradient(rgb(134, 134, 255), rgb(254, 214, 54, 0.6));
+            border-radius: 2rem;
+         }
       }
    }
 }

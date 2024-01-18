@@ -10,12 +10,14 @@
 
     .project-preview {
         display: flex;
+        
         align-items: flex-start;
-        width: 100%;
+        width:fit-content;
+        // word-break: break-all;
+        word-wrap: break-word;
+
         margin: 0.5rem 0rem;
-        background: linear-gradient(rgb(68, 180, 68), rgb(134, 134, 255));
-        margin: 0.5rem;
-        border-radius: 2rem;
+
         h2 {
             display: inline;
 
@@ -26,6 +28,8 @@
         }
 
         .cover-title {
+            width:fit-content;
+
             h1 {
                 font-size: 5rem;
                 font-weight: 90;

@@ -1,4 +1,6 @@
-.space-page, .space-post, .space-section {
+.space-page,
+.space-post,
+.space-section {
     overflow: hidden;
 
     .project-list {
@@ -11,39 +13,26 @@
     }
 
     .project-preview {
-        // display: grid;
+        display: block;
+        width: 100%;
         grid-column: 1/13;
-        // display: flex;
 
-        // justify-content: center;
-        align-items: end;
+        // align-items: end;
         border-radius: 2rem;
 
         .cover-title {
-            // position: absolute;
             z-index: 2;
-            // display: grid;
-            // justify-items: center;
-
             margin: 0.5rem 0rem;
-            // padding: 0rem 1rem;
+            width: fit-content;
 
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
+            display: flex;
+            // grid-template-columns: repeat(12, 1fr);
             gap: 0.5rem;
             align-items: baseline;
 
             h1 {
                 grid-column: span 2;
                 font-size: 1.7rem;
-                // line-height: 3rem;
-
-                // color: #e8e6e6;
-                // background-color: rgb(134, 134, 255);
-                background-image: linear-gradient(rgb(134, 134, 255), yellow);
-
-                border-radius: 2rem;
-                padding: 0rem 1rem;
 
             }
 
@@ -53,19 +42,14 @@
                 font-family: Kleukens;
                 font-size: 1.5rem;
 
-                // color: #e8e6e6;
-                // background-color: rgb(134, 134, 255);
-
-                background-image: linear-gradient(rgb(134, 134, 255), yellow);
-                border-radius: 2rem;
-                padding: 0.5rem 1rem;
-
             }
         }
 
         .cover-image {
             height: 90vh;
             width: 100%;
+            grid-column: 1/13;
+
             border-radius: 2rem;
             padding: 0;
             overflow: hidden;
@@ -82,26 +66,33 @@
             }
         }
 
-        .deep-sea-bots {
-            background-color: #e8e6e69b;
-
-            iframe {
-                width: 134%;
-                height: 134%;
-                // border-radius: 0.5rem;
-                zoom: 0.75;
-                -ms-zoom: 0.75;
-                -moz-transform: scale(0.75);
-                -moz-transform-origin: 0 0;
-                -o-transform: scale(0.75);
-                -o-transform-origin: 0 0;
-                -webkit-transform: scale(0.75);
-                -webkit-transform-origin: 0 0;
-            }
-        }
-
-        .blog-year{
+        .blog-year {
             display: none;
+        }
+    }
+
+    .deep-sea-bots {
+        .cover-image {
+            .html-content {
+                .image-section {
+                    iframe {
+                        width: 134%;
+                        height: 134%;
+                        zoom: 0.75;
+
+                        -ms-zoom: 0.75;
+                        transform: scale(0.75);
+
+                        -moz-transform: scale(0.75);
+                        -moz-transform-origin: 0 0;
+                        -o-transform: scale(0.75);
+                        -o-transform-origin: 0 0;
+                        -webkit-transform: scale(0.75);
+                        -webkit-transform-origin: 0 0;
+
+                    }
+                }
+            }
         }
     }
 
@@ -123,7 +114,8 @@
     }
 }
 
-.space-page, .space-post {
+.space-page,
+.space-post {
     width: 100vw;
     min-height: 100vh;
     padding-bottom: 10vh;
@@ -133,9 +125,60 @@
     .project-preview {
         .cover-image {
             height: 60vh;
+            grid-column: 1/13;
+
+        }
+
+    }
+
+    .deep-sea-bots {
+        // background-color: white;
+        // position: absolute;
+        z-index: 10;
+        // background-color: #e8e6e69b;
+
+        .cover-title {
+            display: none;
+        }
+
+
+        mix-blend-mode: difference;
+        .cover-image {
+            background-color: transparent;
+            mix-blend-mode: difference;
+
+            .html-content {
+                .image-section {
+                    filter: brightness(1.5);
+                    // filter:hue-rotate(180deg);
+                    // mix-blend-mode: difference;
+                    // mix-blend-mode:luminosity;
+
+                    iframe {
+                        mask-type: luminance;
+                        /* white = transparent, grays = semi-transparent, black = opaque */
+                        mask-type: alpha;
+
+                        width: 200%;
+                        height: 200%;
+                        zoom: 0.5;
+
+                        -ms-zoom: 0.5;
+                        transform: scale(0.5);
+
+                        -moz-transform: scale(0.5);
+                        -moz-transform-origin: 0 0;
+                        -o-transform: scale(0.5);
+                        -o-transform-origin: 0 0;
+                        -webkit-transform: scale(0.5);
+                        -webkit-transform-origin: 0 0;
+
+                    }
+                }
+            }
         }
     }
-    
+
 }
 
 .space-post {

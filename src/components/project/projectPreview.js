@@ -1,15 +1,16 @@
 import React from "react";
 import ImageSection from "../content/image-section";
 import { Link } from "gatsby";
+import _ from 'lodash';
 
 import "./project-preview.scss"
 
 export function ProjectPreview({ content, type }) {
   return (
-    <Link to={content?.fields?.slug} className="project-preview">
+    <Link to={content?.fields?.slug} className={`${_.kebabCase(content?.frontmatter?.title)} project-preview`}>
       <h2 className="blog-year" >{content?.frontmatter?.date}</h2>
 
-      <div className={`${content?.frontmatter?.title} cover-image`}>
+      <div className={`cover-image`}>
         {/* <div className={content.frontmatter?.title == "deep sea bots" ? "cover-image deep-sea-bots" : "cover-image"}> */}
         <ImageSection type={type} content={content?.frontmatter.cover} columnStart={1} columnEnd={12} />
       </div>

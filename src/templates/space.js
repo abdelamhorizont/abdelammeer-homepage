@@ -3,8 +3,8 @@ import { Link, graphql, useStaticQuery } from "gatsby";
 import { getImage, GatsbyImage } from "gatsby-plugin-image";
 import { motion, AnimatePresence } from "framer-motion"
 
-import Layout from "../components/layout/Layout";
 import { ProjectPreview } from '../components/project/projectPreview';
+import Layout from "../components/layout/Layout";
 import { HTMLContent } from "../components/content/text-section";
 import ImageSection from "../components/content/image-section";
 
