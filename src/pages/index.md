@@ -7,6 +7,16 @@ templateKey: index-page
 title: abdel am meer
 variable-content:
   - type: reference-section
+    column-start: "6"
+    column-end: "13"
+    reference-content:
+      - type: space-reference
+        reference: deep sea bots
+    references:
+      - type: space-reference
+        reference: deep sea bots
+    reference-section-type: space
+  - type: reference-section
     column-start: "1"
     column-end: "7"
     reference-content:
@@ -24,16 +34,6 @@ variable-content:
         reference: Deep Sea Bots
       - type: blog-reference
         reference: (Non) Artificial (Maybe) Intelligence
-  - type: reference-section
-    column-start: "7"
-    column-end: "13"
-    reference-content:
-      - type: space-reference
-        reference: deep sea bots
-    references:
-      - type: space-reference
-        reference: deep sea bots
-    reference-section-type: space
   - type: reference-section
     column-start: "1"
     column-end: "13"
