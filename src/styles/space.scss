@@ -133,8 +133,9 @@
 
     .deep-sea-bots {
         // background-color: white;
-        // position: absolute;
-        z-index: 10;
+        // position: fixed;
+        // right: -15rem;
+        // z-index: 10;
         overflow: visible;
         // background-color: #e8e6e69b;
 
@@ -170,16 +171,16 @@
 
                         width: calc(100% * 2.2);
                         height: calc(100% * 2);
-                        zoom: 0.48;
+                        zoom: 0.5;
 
-                        -ms-zoom: 0.49;
-                        transform: scale(0.49);
+                        -ms-zoom: 0.5;
+                        transform: scale(0.5);
 
-                        -moz-transform: scale(0.49);
+                        -moz-transform: scale(0.5);
                         -moz-transform-origin: 0 0;
-                        -o-transform: scale(0.49);
+                        -o-transform: scale(0.5);
                         -o-transform-origin: 0 0;
-                        -webkit-transform: scale(0.47);
+                        -webkit-transform: scale(0.5);
                         -webkit-transform-origin: 0 0;
 
                     }
