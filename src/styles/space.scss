@@ -135,6 +135,7 @@
         // background-color: white;
         // position: absolute;
         z-index: 10;
+        overflow: visible;
         // background-color: #e8e6e69b;
 
         .cover-title {
@@ -146,31 +147,39 @@
         .cover-image {
             background-color: transparent;
             mix-blend-mode: difference;
+            overflow: visible;
+
 
             .html-content {
+                overflow: visible;
+
                 .image-section {
                     filter: brightness(1.5);
+                    overflow: visible;
+
                     // filter:hue-rotate(180deg);
                     // mix-blend-mode: difference;
                     // mix-blend-mode:luminosity;
 
                     iframe {
+                        overflow: visible;
+
                         mask-type: luminance;
                         /* white = transparent, grays = semi-transparent, black = opaque */
                         mask-type: alpha;
 
-                        width: 200%;
-                        height: 200%;
-                        zoom: 0.5;
+                        width: calc(100% * 2.2);
+                        height: calc(100% * 2);
+                        zoom: 0.48;
 
-                        -ms-zoom: 0.5;
-                        transform: scale(0.5);
+                        -ms-zoom: 0.49;
+                        transform: scale(0.49);
 
-                        -moz-transform: scale(0.5);
+                        -moz-transform: scale(0.49);
                         -moz-transform-origin: 0 0;
-                        -o-transform: scale(0.5);
+                        -o-transform: scale(0.49);
                         -o-transform-origin: 0 0;
-                        -webkit-transform: scale(0.5);
+                        -webkit-transform: scale(0.47);
                         -webkit-transform-origin: 0 0;
 
                     }

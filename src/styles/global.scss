@@ -139,8 +139,17 @@ body {
       .project-preview {
          padding: 0.5rem;
          background: rgb(68, 180, 68);
-         background: linear-gradient( rgb(134, 134, 255, 0.3), rgb(68, 180, 68));
+         // background: linear-gradient( rgb(134, 134, 255, 0.3), rgb(68, 180, 68));
          border-radius: 2rem;
+
+         .cover-title {
+            width:fit-content;
+
+            h1 {
+                font-size: 3rem;
+                line-height: 3rem;
+            }
+         }
       }
    }
 
