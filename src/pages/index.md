@@ -6,6 +6,10 @@ landingvideo: /img/bildschirmfoto-2023-04-30-um-15.18.47.jpg
 templateKey: index-page
 title: abdel am meer
 variable-content:
+  - type: text-section
+    column-start: "1"
+    column-end: "13"
+    text: a﻿bdel am meer communication design
   - type: reference-section
     column-start: "6"
     column-end: "13"
@@ -50,10 +54,35 @@ variable-content:
         reference: Narrating Africa
       - type: work-reference
         reference: GleisMediale
-  - type: text-section
+  - type: reference-section
+    reference-section-type: space
+    column-start: "4"
+    column-end: "13"
+    references:
+      - type: space-reference
+        reference: Ocean View
+  - type: reference-section
+    reference-section-type: blog
+    column-start: "1"
+    column-end: "8"
+    references:
+      - type: blog-reference
+        reference: Mare Mediterraneum
+      - type: blog-reference
+        reference: Spawn Grounds
+      - type: blog-reference
+        reference: Ocean View
+  - type: reference-section
+    reference-section-type: work
     column-start: "1"
     column-end: "13"
-    text: a﻿bdel am meer communication design
+    references:
+      - type: work-reference
+        reference: Narrating Namibia
+      - type: work-reference
+        reference: GleisMediale
+      - type: work-reference
+        reference: Deep Sea Bots
 video:
   fallbackImage: ""
   videoFile: ""
