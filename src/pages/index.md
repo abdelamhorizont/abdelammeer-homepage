@@ -18,7 +18,7 @@ variable-content:
     reference-section-type: space
   - type: reference-section
     column-start: "1"
-    column-end: "7"
+    column-end: "12"
     reference-content:
       - type: blog-reference
         reference: (Non) Artificial (Maybe) Intelligence
