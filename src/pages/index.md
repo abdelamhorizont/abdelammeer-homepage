@@ -11,18 +11,8 @@ variable-content:
     column-end: "13"
     text: a﻿bdel am meer communication design
   - type: reference-section
-    column-start: "6"
-    column-end: "13"
-    reference-content:
-      - type: space-reference
-        reference: deep sea bots
-    references:
-      - type: space-reference
-        reference: deep sea bots
-    reference-section-type: space
-  - type: reference-section
     column-start: "1"
-    column-end: "8"
+    column-end: "13"
     reference-content:
       - type: blog-reference
         reference: (Non) Artificial (Maybe) Intelligence
@@ -38,6 +28,16 @@ variable-content:
         reference: Deep Sea Bots
       - type: blog-reference
         reference: (Non) Artificial (Maybe) Intelligence
+  - type: reference-section
+    column-start: "6"
+    column-end: "13"
+    reference-content:
+      - type: space-reference
+        reference: deep sea bots
+    references:
+      - type: space-reference
+        reference: deep sea bots
+    reference-section-type: space
   - type: reference-section
     column-start: "1"
     column-end: "13"
