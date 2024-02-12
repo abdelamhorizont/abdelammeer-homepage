@@ -92,7 +92,7 @@ body {
 
 .color-theme {
    background-color: rgba(0,0,0,0);
-   background-image: linear-gradient(rgb(22, 53, 255), rgb(255, 215, 17), rgb(68, 180, 68));
+   background: linear-gradient(rgb(68, 180, 68), rgb(134, 134, 255), rgb(254, 214, 54));
 
    transition: all 1s ease;
 
@@ -142,9 +142,9 @@ body {
    .blog-section{
       .project-preview {
          padding: 0.5rem;
-         background: rgb(68, 180, 68);
+         // background: rgb(68, 180, 68);
          // background: linear-gradient( rgb(134, 134, 255, 0.3), rgb(68, 180, 68));
-         border-radius: 2rem;
+         // border-radius: 3rem;
 
          .cover-title {
             width:fit-content;
@@ -174,10 +174,15 @@ body {
    .space-section, .space-page{
       .project-preview {
          .cover-title{
-            padding: 0.5rem;
-            background: rgb(254, 214, 54);
+            padding: 0.6rem;
+            background: rgb(134, 134, 255);
             // background: linear-gradient(rgb(134, 134, 255), rgb(254, 214, 54, 0.6));
             border-radius: 2rem;
+
+            h1 {
+               font-size: 3rem;
+               line-height: 3rem;
+           }
          }
       }
    }

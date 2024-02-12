@@ -5,10 +5,13 @@ import useSiteMetadata from "../SiteMetadata";
 import { withPrefix, Link } from "gatsby";
 import { motion } from "framer-motion"
 
-import Sun from '../../assets/img/SVG/sun.svg'
+import Sun from '../../assets/img/SVG/sun.png'
 import Moon from '../../assets/img/SVG/moon.svg'
-import Cloud from '../../assets/img/SVG/cloud.svg'
-import Rainbow from '../../assets/img/SVG/rainbow.svg'
+import Cloud from '../../assets/img/SVG/cloud.png'
+import Rainbow from '../../assets/img/SVG/rainbow.png'
+import Star from '../../assets/img/SVG/star.png'
+import Diamond from '../../assets/img/SVG/diamond.png'
+import Feuer from '../../assets/img/SVG/flame.png'
 
 import './layout.scss'
 
@@ -53,7 +56,7 @@ const Layout = ({ children, activeSite }) => {
 
   const ulHover = {
     default: { opacity: 1, x: 0, height: "50px" },
-    hover: { opacity: 1, x: 0, height: "100px" },
+    // hover: { opacity: 1, x: 0, height: "100px" },
     // closed: { opacity: 0, x: "-100%" },
   }
 
@@ -93,27 +96,27 @@ const Layout = ({ children, activeSite }) => {
             whileHover="hover"
           >
             <motion.li
+              // className={theme == 'dark-theme' && 'active-button'}
+              animate={theme == 'dark-theme' ? "hover" : "default"}
+              variants={ulHover}
+            ><button onClick={() => setTheme('dark-theme')}><img id="moon" src={Star} alt="Dark Theme" /></button></motion.li>
+            <motion.li
+              // className={theme == 'light-theme' && 'active-button'}
+              animate={theme == 'light-theme' ? "hover" : "default"}
+              variants={ulHover}
+            ><button onClick={() => setTheme('light-theme')}><img id="sun" src={Sun} alt="Light Theme" /></button></motion.li>
+              <motion.li
+                // className={theme == 'grey-theme' && 'active-button'}
+                animate={theme == 'grey-theme' ? "hover" : "default"}
+                variants={ulHover}
+              ><button onClick={() => setTheme('grey-theme')}><img id="cloud" src={Cloud} alt="Grey Theme" /></button></motion.li>
+            <motion.li
               // className={theme == 'color-theme' && 'active-button'}
               animate={theme == 'color-theme' ? "hover" : "default"}
               variants={ulHover}
             >
               <button onClick={() => setTheme('color-theme')}><img id="rainbow" src={Rainbow} alt="Color Theme" /></button>
             </motion.li>
-            <motion.li
-              // className={theme == 'light-theme' && 'active-button'}
-              animate={theme == 'light-theme' ? "hover" : "default"}
-              variants={ulHover}
-            ><button onClick={() => setTheme('light-theme')}><img id="sun" src={Sun} alt="Light Theme" /></button></motion.li>
-            <motion.li
-              // className={theme == 'dark-theme' && 'active-button'}
-              animate={theme == 'dark-theme' ? "hover" : "default"}
-              variants={ulHover}
-            ><button onClick={() => setTheme('dark-theme')}><img id="moon" src={Moon} alt="Dark Theme" /></button></motion.li>
-            <motion.li
-              // className={theme == 'grey-theme' && 'active-button'}
-              animate={theme == 'grey-theme' ? "hover" : "default"}
-              variants={ulHover}
-            ><button onClick={() => setTheme('grey-theme')}><img id="cloud" src={Cloud} alt="Grey Theme" /></button></motion.li>
           </motion.ul>
         </nav>
       </header>
