@@ -9,7 +9,7 @@ title section:
   type: chatbot
   images:
     - type: image
-      imageFile: /img/deep-sea-bots-logo.png
+      imageFile: /img/element-12.png
 title: deep sea bots
 type: chatbot
 date: 2023-10-31T15:20:54.876Z
