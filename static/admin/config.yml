@@ -560,6 +560,91 @@ collections:
           widget: "hidden",
           default: "space-post",
         }
+      - {
+          label: "Title",
+          name: "title",
+          widget: "object",
+          fields:
+            [
+              { label: "Title", name: "title", widget: "string" },
+              {
+                label: "Subtitle",
+                name: "subtitle",
+                widget: "string",
+                required: false,
+              },
+              {
+                label: "Type",
+                name: "type",
+                widget: "string",
+                required: false,
+              },
+              {
+                label: "Location",
+                name: "location",
+                widget: "string",
+                required: false,
+              },
+              {
+                label: "Collaborators",
+                name: "collaborators",
+                widget: "string",
+                required: false,
+              },
+              { label: "Date", name: "date", widget: "date" },
+              {
+                label: "Images",
+                name: "images",
+                widget: "list",
+                required: false,
+                types:
+                  [
+                    {
+                      label: "Image",
+                      name: "image",
+                      widget: "object",
+                      fields:
+                        [
+                          {
+                            label: "Image File",
+                            name: "imageFile",
+                            widget: "image",
+                            required: false,
+                            allow_multiple: true,
+                          },
+                          {
+                            label: "Caption",
+                            name: "caption",
+                            widget: "string",
+                            required: false,
+                          },
+                        ],
+                    },
+                    {
+                      label: "Video",
+                      name: "video",
+                      widget: "object",
+                      fields:
+                        [
+                          {
+                            label: "Video File",
+                            name: "videoFile",
+                            widget: "file",
+                            required: false,
+                            allow_multiple: true,
+                          },
+                          {
+                            label: "Caption",
+                            name: "caption",
+                            widget: "string",
+                            required: false,
+                          },
+                        ],
+                    },
+                  ],
+              },
+            ],
+        }
       - { label: "Title", name: "title", widget: "string" }
       - {
           label: "Subtitle",
@@ -1017,12 +1102,7 @@ collections:
                           name: "reference-section-type",
                           widget: "select",
                           required: false,
-                          options:
-                            [
-                              "blog",
-                              "space",
-                              "work"
-                            ]
+                          options: ["blog", "space", "work"],
                         },
                         {
                           label: "Column Start",

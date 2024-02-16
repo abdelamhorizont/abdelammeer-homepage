@@ -18,7 +18,7 @@
         grid-column: 1/13;
 
         // align-items: end;
-        border-radius: 2rem;
+        // border-radius: 2rem;
 
         .cover-title {
             z-index: 2;
@@ -55,7 +55,7 @@
             width: 100%;
             grid-column: 1/13;
 
-            border-radius: 2rem;
+            // border-radius: 2rem;
             padding: 0;
             overflow: hidden;
 
@@ -131,6 +131,7 @@
         .cover-image {
             height: 60vh;
             grid-column: 1/13;
+            border-radius: 2rem;
 
         }
 
@@ -141,26 +142,25 @@
         // position: fixed;
         // right: -15rem;
         // z-index: 10;
-        overflow: visible;
+        // overflow: visible;
+        // mix-blend-mode: difference;
         // background-color: #e8e6e69b;
 
         .cover-title {
             display: none;
         }
 
-
-        mix-blend-mode: difference;
         .cover-image {
-            background-color: transparent;
-            mix-blend-mode: difference;
-            overflow: visible;
-
-
+            // background-color: transparent;
+            // mix-blend-mode: difference;
+            // overflow: visible;
+            border-radius: 2rem;
+            
             .html-content {
                 overflow: visible;
 
                 .image-section {
-                    filter: brightness(1.5);
+                    // filter: brightness(1.5);
                     overflow: visible;
 
                     // filter:hue-rotate(180deg);
@@ -170,9 +170,9 @@
                     iframe {
                         overflow: visible;
 
-                        mask-type: luminance;
+                        // mask-type: luminance;
                         /* white = transparent, grays = semi-transparent, black = opaque */
-                        mask-type: alpha;
+                        // mask-type: alpha;
 
                         width: calc(100% * 2.2);
                         height: calc(100% * 2);
