@@ -29,7 +29,7 @@ variable-content:
       - type: blog-reference
         reference: (Non) Artificial (Maybe) Intelligence
   - type: reference-section
-    column-start: "6"
+    column-start: "1"
     column-end: "13"
     reference-content:
       - type: space-reference
@@ -56,7 +56,7 @@ variable-content:
         reference: GleisMediale
   - type: reference-section
     reference-section-type: space
-    column-start: "4"
+    column-start: "1"
     column-end: "13"
     references:
       - type: space-reference
