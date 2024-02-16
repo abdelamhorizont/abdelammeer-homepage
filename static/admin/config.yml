@@ -561,8 +561,8 @@ collections:
           default: "space-post",
         }
       - {
-          label: "Title",
-          name: "title",
+          label: "Title Section",
+          name: "title section",
           widget: "object",
           fields:
             [
