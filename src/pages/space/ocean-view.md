@@ -6,7 +6,7 @@ title section:
   images:
     - type: image
       imageFile: /img/element-13.png
-  type: Memories
+  type: Diary
 title: Ocean View
 type: Memories
 date: 2023-03-25T13:43:08.620Z
