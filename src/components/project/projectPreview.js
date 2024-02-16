@@ -11,7 +11,6 @@ export function ProjectPreview({ content, type }) {
       <h2 className="blog-year" >{content?.frontmatter?.date}</h2>
 
       <div className={`cover-image`}>
-        {/* <div className={content.frontmatter?.title == "deep sea bots" ? "cover-image deep-sea-bots" : "cover-image"}> */}
         <ImageSection type={type} content={content?.frontmatter.cover} columnStart={1} columnEnd={12} />
       </div>
 

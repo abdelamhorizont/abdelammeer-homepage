@@ -128,6 +128,8 @@
 
 .space-section {
     .project-preview {
+        display: flex;
+        
         .cover-image {
             height: 60vh;
             grid-column: 1/13;
@@ -147,7 +149,7 @@
         // background-color: #e8e6e69b;
 
         .cover-title {
-            display: none;
+            // display: none;
         }
 
         .cover-image {
