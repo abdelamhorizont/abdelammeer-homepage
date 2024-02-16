@@ -106,6 +106,16 @@ export const pageQuery = graphql`
           frontmatter {
             templateKey
             title
+            title_section {
+              title
+              images {
+                imageFile {
+                  childImageSharp {
+                    gatsbyImageData
+                  }
+                }
+              }
+            }
             type
             date(formatString: "YYYY")
             cover {

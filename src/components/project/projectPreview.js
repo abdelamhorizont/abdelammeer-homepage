@@ -1,6 +1,7 @@
 import React from "react";
 import ImageSection from "../content/image-section";
 import { Link } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import _ from 'lodash';
 
 import "./project-preview.scss"
@@ -8,7 +9,7 @@ import "./project-preview.scss"
 export function ProjectPreview({ content, type }) {
   return (
     <Link to={content?.fields?.slug} className={`${_.kebabCase(content?.frontmatter?.title)} project-preview`}>
-      <h2 className="blog-year" >{content?.frontmatter?.date}</h2>
+      {/* <h2 className="blog-year" >{content?.frontmatter?.date}</h2> */}
 
       <div className={`cover-image`}>
         <ImageSection type={type} content={content?.frontmatter.cover} columnStart={1} columnEnd={12} />
@@ -16,7 +17,9 @@ export function ProjectPreview({ content, type }) {
 
       <div className="cover-title">
         <h2 className="year">{content?.frontmatter?.date}</h2>
-        <h1 className="headline">{content?.frontmatter?.title}</h1>
+        {content?.frontmatter?.title_section ? <GatsbyImage className="title-img" image={getImage(content?.frontmatter?.title_section.images[0].imageFile)} alt={''} /> :
+          <h1 className="headline">{content?.frontmatter?.title}</h1>
+        }
         <h2>{content?.frontmatter?.type}</h2>
 
         {content?.frontmatter?.collaborators && <h2 className="collaborators">with {content?.frontmatter?.collaborators} </h2>}
