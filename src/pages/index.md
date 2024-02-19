@@ -43,6 +43,13 @@ variable-content:
         reference: deep sea bots
     reference-section-type: space
   - type: reference-section
+    reference-section-type: space
+    column-start: "1"
+    column-end: "13"
+    references:
+      - type: space-reference
+        reference: Ocean View
+  - type: reference-section
     column-start: "1"
     column-end: "13"
     reference-content:
@@ -58,24 +65,6 @@ variable-content:
         reference: Narrating Africa
       - type: work-reference
         reference: GleisMediale
-  - type: reference-section
-    reference-section-type: space
-    column-start: "1"
-    column-end: "13"
-    references:
-      - type: space-reference
-        reference: Ocean View
-  - type: reference-section
-    reference-section-type: blog
-    column-start: "1"
-    column-end: "8"
-    references:
-      - type: blog-reference
-        reference: Mare Mediterraneum
-      - type: blog-reference
-        reference: Spawn Grounds
-      - type: blog-reference
-        reference: Ocean View
   - type: reference-section
     reference-section-type: work
     column-start: "1"
