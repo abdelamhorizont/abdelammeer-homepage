@@ -28,6 +28,10 @@ variable-content:
         reference: Deep Sea Bots
       - type: blog-reference
         reference: (Non) Artificial (Maybe) Intelligence
+      - type: blog-reference
+        reference: Mare Mediterraneum
+      - type: blog-reference
+        reference: Spawn Grounds
   - type: reference-section
     column-start: "1"
     column-end: "13"
