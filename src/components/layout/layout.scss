@@ -44,15 +44,17 @@
         justify-content: center;
 
         li {
+            display: flex;
+            justify-content: center;
             // position: absolute;
             // right: 0;
             // transform:translateX(200px);
             margin: 0rem 0rem;
-            margin-bottom: -1rem;
+            margin-bottom: 2rem;
             // visibility: hidden;
             // display: none;
             // opacity: 0;
-            font-size: 2.8rem;
+            font-size: 2rem;
             // background-color: rgb(255, 255, 255,0);
             // background-color: blue;
             transition: all ease 0.5s;   
@@ -71,8 +73,8 @@
 
         button{
             img{
-                max-height: 5rem;
-                max-width: 6rem;
+                max-height: 4rem;
+                max-width: 5rem;
             }
         }
 
@@ -80,7 +82,7 @@
 
     .color-modes:hover{
         li{
-            margin-bottom: 1rem;
+            // margin-bottom: 1rem;
 
             // transform:translateX(0px);
             // margin: 0rem -0.5rem ;

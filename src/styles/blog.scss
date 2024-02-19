@@ -27,18 +27,21 @@
         }
 
         .cover-title {
-            width:fit-content;
+            // width:fit-content;
+            display: flex;
 
             h1 {
                 font-size: 5rem;
                 font-weight: 90;
                 line-height: 4.5rem;
                 font-family: Kleukens;
-                display: inline;
+                width: max-content;
+                max-width: 70vw;
+                // display:inline-block;
                 vertical-align: top;
             }
 
-            h2 {
+            h2, .blog-type {
                 display: inline;
 
                 vertical-align: top;
@@ -48,9 +51,11 @@
                 // vertical-align: top;
             }
 
-            .year {
+            .year, .type {
                 display: none;
+                // order: 2;
             }
+
         }
     }
 
