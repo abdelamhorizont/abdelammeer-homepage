@@ -4,13 +4,14 @@
     // width: 100vw;
 
     .project-list {
-        width: 80vw;
-        // overflow: hidden;
+        width: 100%;
+        overflow: hidden;
         padding: 0rem 0.5rem;
         margin-top: 1rem;
 
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        // grid-template-columns: 30vw  30vw  30vw;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         // grid-template-rows: masonry;
         gap: 0.5rem;
 
@@ -19,7 +20,7 @@
         }
         
         .project-preview {
-            width: 100%;
+            max-width: 100%;
             grid-column: span 1;
             // height: max-content;
     
@@ -41,30 +42,43 @@
                 // position: absolute;
                 z-index: 1;
     
-                display: flex;
-                // display: grid;
-                // grid-template-columns: repeat(6, 1fr);
+                // display: flex;
+                justify-content: space-between;
+                display: grid;
+                grid-template-columns: 1fr 1fr auto auto 1fr 1fr;
                 gap: 0.5rem 1.5rem;
                 // margin: 0.5rem;
                 
     
                 h1 {
+                    grid-column: 1/6;
                     font-size: 4.5rem;
                     font-weight: 90;
                     line-height: 4rem;
-                    font-family: "Helvetica";
-                    // display: inline;
+                    font-family: "Kleukens";
+                    display: block;
                     vertical-align: top;
+                    order: 3;
+                    // width: 100%;
                     // grid-column: span 3;
                 }
     
                 h2 {
+                    grid-column: span 1;
+
                     display: inline;
                     vertical-align: top;
                     font-size: 1.8rem;
                     font-family: Kleukens;
+                    // width: 50%;
+
                     // margin: 0rem 0.5rem;
                     // vertical-align: top;
+                }
+
+                .type{
+                    grid-column: 6/7;
+
                 }
     
                 .collaborators {
