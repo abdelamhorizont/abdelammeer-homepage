@@ -50,6 +50,13 @@ variable-content:
       - type: space-reference
         reference: Ocean View
   - type: reference-section
+    reference-section-type: work
+    column-start: "1"
+    column-end: "13"
+    references:
+      - type: work-reference
+        reference: New Normal
+  - type: reference-section
     column-start: "1"
     column-end: "13"
     reference-content:
