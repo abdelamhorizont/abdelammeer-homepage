@@ -58,6 +58,22 @@
             // background-color: rgb(255, 255, 255,0);
             // background-color: blue;
             transition: all ease 0.5s;   
+
+            #star{
+                position: fixed;
+                left: 1rem;
+                bottom: 20vh;
+            }
+            #sun{
+                position: fixed;
+                top: 0rem;
+                right: 30vw;
+            }
+            #rainbow{
+                position: fixed;
+                bottom: 1rem;
+                right: 20vw;
+            }
         }
 
         .active-button{

@@ -19,14 +19,22 @@
 
         // align-items: end;
         // border-radius: 2rem;
+        h2 {
+            display: inline;
+            // grid-column: span 1;
+            font-family: Kleukens;
+            font-size: 1.8rem;
+            vertical-align: top;
+        }
 
         .cover-title {
             z-index: 2;
-            width: 100%;
+            // width: 33vw;
             display: flex;        
             align-items: flex-start;
             justify-content: space-between;
-            border-radius: 2rem 0rem 0rem 2rem;
+            border-radius: 0rem 0rem 2rem 2rem;
+            // border-radius: 2rem 0rem 0rem 2rem;
 
             // grid-template-columns: repeat(2, auto);
             // gap: 0.5rem;
@@ -39,7 +47,7 @@
 
             }
 
-            h2, span {
+            h2 {
                 display: inline;
                 // grid-column: span 1;
                 font-family: Kleukens;
@@ -69,7 +77,7 @@
 
         .cover-image {
             height: 90vh;
-            width: 100%;
+            // width: 66vw;
             grid-column: 1/13;
 
             // border-radius: 2rem;
@@ -133,6 +141,8 @@
         font-family: Kleukens;
         font-size: 3rem;
         font-size: 0.8rem;
+        vertical-align: top;
+
     }
 }
 
@@ -145,26 +155,35 @@
 
 .space-section {
     .project-preview {
-        display: grid;
+        display: flex;
         grid-template-columns: repeat(12, 1fr);
+        margin: 0.5rem;
 
         .cover-image {
             height: 70vh;
+            width: 70vw;
             grid-column: 5/13;
-            border-radius: 0rem 2rem 2rem 0rem;
-            order: 2;
+            border-radius: 20rem;
+            // border-radius: 0rem 2rem 2rem 0rem;
+            // order: 2;
         }
 
         .cover-title {
             grid-column: 1/5;
-            order: 1;
-            width: 100%;
+            margin-right: 1rem;
+            // order: 1;
+            // width: 30vw;
+            height: 50%;
             // width: calc(100% - 2rem);
-            padding: 1rem;
+            // padding: 1rem;
+            
+            .work-year {
+                display: none;
+            }
         }
 
     }
-
+    
     .deep-sea-bots {
         // background-color: white;
         // position: fixed;

@@ -16,9 +16,10 @@ body {
 .dark-theme {
    background-color: #232323;
    transition: all 1s ease;
+   color: #e8e6e6;
 
-   .work-page, .work-post, .blog-page, .blog-post, .space-page, .space-post{
-      background-image: linear-gradient(#232323);
+   .work-page, .work-post, .blog-page, .blog-post, .space-page, .space-post, .work-section, .blog-section, .space-section{
+      // background-image: linear-gradient(#232323);
    
       color: #e8e6e6;
       transition: all 1s ease;
@@ -38,15 +39,20 @@ body {
    }
 
    .work-section, .blog-section, .space-section{
-      background-color: #464646;
-      color: #232323
+      // background-color: #464646;
+      color: #e8e6e6;
    }
 }
 
 .grey-theme {
-   background-color: #808080;
+   background-color: #ac97c1;
    transition: all 1s ease;
+   a {
+      color: #000000;
+      transition: all 1s ease;
 
+   }
+   
    .work-page, .work-post, .blog-page, .blog-post, .space-page, .space-post{
       // background-image: linear-gradient(#6f6f6f00, #6f6f6f00);
    
@@ -95,6 +101,11 @@ body {
    background: linear-gradient(rgb(68, 180, 68), rgb(134, 134, 255), rgb(254, 214, 54), rgb(68, 180, 68), rgb(134, 134, 255), rgb(254, 214, 54));
 
    transition: all 1s ease;
+
+   a {
+      color: #000000;
+      transition: all 1s ease;
+   }
 
    .work-page, .work-post {
       // background-color: rgb(254, 214, 54);
@@ -175,7 +186,7 @@ body {
       .project-preview {
          .cover-title{
             // padding: 0.6rem;
-            background: rgb(134, 134, 255);
+            // background: rgb(134, 134, 255, 0);
             // background: linear-gradient(rgb(134, 134, 255), rgb(254, 214, 54, 0.6));
             h1 {
                font-size: 3rem;

@@ -1,11 +1,12 @@
 .index-page {
     width: 100vw;
+    padding-top: 1rem;
 
-    .project-list {
-        // padding: 2rem 0rem;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-    }
+    // .project-list {
+    //     // padding: 2rem 0rem;
+    //     display: grid;
+    //     grid-template-columns: repeat(12, 1fr);
+    // }
 
     .work-section,
     .blog-section,
@@ -13,12 +14,12 @@
         width: auto;
         padding: 0.5rem 0rem;
         margin: 0.5rem;
-        border-radius: 2rem;
-        margin-bottom: 10vh;
-        margin-top: 2rem;
+        // border-radius: 2rem;
+        margin-bottom: 0vh;
+        // margin-top: 2rem;
 
         a {
-            color: #000000;
+            // color: #000000;
             transition: all 1s ease;
    
          }

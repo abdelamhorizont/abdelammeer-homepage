@@ -99,7 +99,7 @@ const Layout = ({ children, activeSite }) => {
               // className={theme == 'dark-theme' && 'active-button'}
               animate={theme == 'dark-theme' ? "hover" : "default"}
               variants={ulHover}
-            ><button onClick={() => setTheme('dark-theme')}><img id="moon" src={Star} alt="Dark Theme" /></button></motion.li>
+            ><button onClick={() => setTheme('dark-theme')}><img id="star" src={Star} alt="Dark Theme" /></button></motion.li>
             <motion.li
               // className={theme == 'light-theme' && 'active-button'}
               animate={theme == 'light-theme' ? "hover" : "default"}
