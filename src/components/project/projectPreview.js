@@ -9,7 +9,7 @@ import "./project-preview.scss"
 export function ProjectPreview({ content, type }) {
   return (
     <Link to={content?.fields?.slug} className={`${_.kebabCase(content?.frontmatter?.title)} project-preview`}>
-      <h2 className="year" >{content?.frontmatter?.date}</h2>
+      <h2 className="year">{content?.frontmatter?.date}</h2>
 
       <div className={`cover-image`}>
         <ImageSection type={type} content={content?.frontmatter.cover} columnStart={1} columnEnd={12} />

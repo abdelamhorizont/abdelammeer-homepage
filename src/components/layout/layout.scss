@@ -66,7 +66,7 @@
             }
             #sun{
                 position: fixed;
-                top: 0rem;
+                top: 0.5rem;
                 right: 30vw;
             }
             #rainbow{
@@ -91,29 +91,20 @@
             img{
                 max-height: 4rem;
                 max-width: 5rem;
+                transition: all ease 0.5s;   
+
             }
         }
 
-    }
-
-    .color-modes:hover{
-        li{
-            // margin-bottom: 1rem;
-
-            // transform:translateX(0px);
-            // margin: 0rem -0.5rem ;
-            // visibility:visible;
-            // display:contents;
-            // position: relative;
-            // opacity: 1;
-
-        }
-
         li:hover{
-            // transform:translateX(0px);
-            // font-size: 3.5rem;
-            // opacity: 1;
+            img{
+                transform: scale(1.25) rotate(360deg);
+                // transition: all ease 0.5s;   
+
+            }
+
         }
+
     }
 
 

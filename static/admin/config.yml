@@ -1184,6 +1184,12 @@ collections:
                                       value_field: "title",
                                       display_fields: ["title"],
                                     },
+                                    {
+                                      label: "Full Width",
+                                      name: "full-width",
+                                      widget: "boolean",
+                                      default: false,
+                                    },
                                   ],
                               },
                               {
