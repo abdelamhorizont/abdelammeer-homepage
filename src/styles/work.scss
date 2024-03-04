@@ -19,6 +19,9 @@
         .project-preview {
             max-width: 100%;
             grid-column: span 1;
+            display: flex;
+            justify-content: center;
+            align-items:end;
             // height: max-content;
 
             .cover-image {
@@ -48,10 +51,17 @@
             }
 
             .cover-title {
-                // position: absolute;
-                box-sizing: border-box;
+                // opacity: 0;
+                transform: scale(0);
+                transition: all 0.5s ease;
 
-                // display: flex;
+                box-sizing: border-box;
+                position: absolute;
+                z-index: 10;
+                max-width:30vw;
+                margin-bottom: 2rem;
+                // margin: 2rem;
+
                 justify-content: space-between;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -59,17 +69,16 @@
                 // margin: 0.5rem;
 
                 padding: 0.5rem;
-                background: rgb(254, 214, 54, 0);
+                background: rgb(254, 214, 54);
                 border-radius: 2rem;
 
                 h1 {
                     grid-column: 1/6;
-                    font-size: 4.5rem;
+                    font-size: 4.25rem;
                     font-weight: 90;
                     line-height: 4rem;
                     font-family: "Kleukens";
                     display: block;
-                    vertical-align: top;
                     order: 3;
                     // width: 100%;
                     // grid-column: span 3;
@@ -107,12 +116,18 @@
             }
         }
 
-        .new-normal {
-            grid-column: span 3;
+        .project-preview:hover{
+            .cover-title {
+                transform: scale(1);
+            }
+        } 
 
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 0.5rem;
+        .new-normal {
+            grid-column: 2/4;
+
+            // display: grid;
+            // grid-template-columns: repeat(3, minmax(0, 1fr));
+            // gap: 0.5rem;
 
             .cover-image {
                 grid-column: span 2;
@@ -137,11 +152,11 @@
                 }
             }
             
-            .cover-title {
-                height: 100%;
-                grid-column: span 1;
-                order: 1;
-            }
+            // .cover-title {
+            //     height:max-content;
+            //     grid-column: span 1;
+            //     order: 1;
+            // }
 
         }
     }

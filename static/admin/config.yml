@@ -1189,6 +1189,7 @@ collections:
                                       name: "full-width",
                                       widget: "boolean",
                                       default: false,
+                                      required: false,
                                     },
                                   ],
                               },
