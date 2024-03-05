@@ -9,10 +9,7 @@ title section:
   type: Workshop
   location: HfG Karlsruhe
   collaborators: Christina Mäckelburg
-  images:
-    - type: image
-      imageFile: mindmap.png
-      caption: mind map by participants
+  images: []
 type: Workshop
 cover:
   fallbackImage: mindmap.png
