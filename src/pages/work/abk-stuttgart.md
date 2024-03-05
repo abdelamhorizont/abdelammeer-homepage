@@ -1,5 +1,13 @@
 ---
 templateKey: work-post
+title section:
+  date: 2019-09-30T22:00:00.000Z
+  title: ABK Stuttgart
+  type: Corporate Design
+  collaborators: Jasmina Begovič, Raphael Berg
+  images:
+    - type: video
+      videoFile: /img/16.mp4
 title: ABK Stuttgart
 subtitle: ""
 type: Corporate Design
