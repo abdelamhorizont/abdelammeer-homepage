@@ -1,5 +1,15 @@
 ---
 templateKey: work-post
+title section:
+  date: 2021-04-30T22:00:00.000Z
+  title: Narrating Namibia
+  type: Reader
+  location: Windhoek, Marbach
+  collaborators: SONJA SCHWARZ
+  images:
+    - type: image
+      imageFile: /img/narrating-namibia-1.jpg
+      caption: Reader
 title: Narrating Namibia
 type: Reader
 location: Windhoek, Marbach
