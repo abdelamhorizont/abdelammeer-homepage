@@ -54,7 +54,7 @@ const IndexPage = ({ data }) => {
                                 {content.references?.map(node => {
                                   const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'work-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
                                   return (
-                                    <ProjectPreview content={project.node} />
+                                    <ProjectPreview content={project.node} fullWidth={node.full_width} />
                                   )
                                 })}
                               </div>
@@ -91,6 +91,7 @@ export const pageQuery = graphql`
           references {
             reference
             type
+            full_width
           }
           type
           reference_section_type

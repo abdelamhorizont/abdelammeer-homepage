@@ -6,9 +6,9 @@ import _ from 'lodash';
 
 import "./project-preview.scss"
 
-export function ProjectPreview({ content, type }) {
+export function ProjectPreview({ content, type, fullWidth }) {
   return (
-    <Link to={content?.fields?.slug} className={`${_.kebabCase(content?.frontmatter?.title)} project-preview`}>
+    <Link to={content?.fields?.slug} className={`${_.kebabCase(content?.frontmatter?.title)} ${fullWidth && 'fill-width'} project-preview`}>
       <h2 className="year">{content?.frontmatter?.date}</h2>
 
       <div className={`cover-image`}>
