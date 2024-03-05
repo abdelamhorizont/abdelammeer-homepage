@@ -28,7 +28,7 @@ const IndexPage = ({ data }) => {
                       content.reference_section_type == "blog" ?
                         <div className="blog-section" style={{ gridColumn: content.column_start + "/" + content.column_end}}> 
                           {content.references?.map(node => {
-                            const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'blog-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
+                            const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'blog-post').filter(edge => edge.node.frontmatter.title_section?.title == node.reference)[0]
                             return (
                               <ProjectPreview content={project?.node} />
                             )
@@ -40,7 +40,7 @@ const IndexPage = ({ data }) => {
                         content?.reference_section_type == "space" ?
                           <div className="space-section" style={{ gridColumn: content.column_start + "/" + content.column_end}}>
                             {content?.references?.map(node => {
-                              const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'space-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
+                              const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'space-post').filter(edge => edge.node.frontmatter.title_section?.title == node.reference)[0]
                               return (
                                 <ProjectPreview content={project.node} type={'iframe'} />
                               )
@@ -52,7 +52,7 @@ const IndexPage = ({ data }) => {
                             <div className="work-section" style={{ gridColumn: content.column_start + "/" + content.column_end}}>
                               <div className="project-list">
                                 {content.references?.map(node => {
-                                  const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'work-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
+                                  const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'work-post').filter(edge => edge.node.frontmatter.title_section?.title == node.reference)[0]
                                   return (
                                     <ProjectPreview content={project.node} fullWidth={node.full_width} />
                                   )
