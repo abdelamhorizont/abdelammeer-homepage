@@ -74,6 +74,12 @@ collections:
                 types:
                   [
                     {
+                      label: "iFrame",
+                      name: "iframe",
+                      widget: "string",
+                      required: false,
+                    },
+                    {
                       label: "Image",
                       name: "image",
                       widget: "object",
@@ -118,7 +124,7 @@ collections:
                   ],
               },
             ],
-        }  
+        }
       - { label: "Title", name: "title", widget: "string" }
       - {
           label: "Subtitle",
@@ -397,6 +403,12 @@ collections:
                 types:
                   [
                     {
+                      label: "iFrame",
+                      name: "iframe",
+                      widget: "string",
+                      required: false,
+                    },
+                    {
                       label: "Image",
                       name: "image",
                       widget: "object",
@@ -441,7 +453,7 @@ collections:
                   ],
               },
             ],
-        }  
+        }
       - { label: "Title", name: "title", widget: "string" }
       - {
           label: "Subtitle",
@@ -769,6 +781,12 @@ collections:
                 required: false,
                 types:
                   [
+                    {
+                      label: "iFrame",
+                      name: "iframe",
+                      widget: "string",
+                      required: false,
+                    },
                     {
                       label: "Image",
                       name: "image",
