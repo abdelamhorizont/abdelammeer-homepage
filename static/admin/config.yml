@@ -34,6 +34,91 @@ collections:
           widget: "hidden",
           default: "blog-post",
         }
+      - {
+          label: "Title Section",
+          name: "title section",
+          widget: "object",
+          fields:
+            [
+              { label: "Title", name: "title", widget: "string" },
+              {
+                label: "Subtitle",
+                name: "subtitle",
+                widget: "string",
+                required: false,
+              },
+              {
+                label: "Type",
+                name: "type",
+                widget: "string",
+                required: false,
+              },
+              {
+                label: "Location",
+                name: "location",
+                widget: "string",
+                required: false,
+              },
+              {
+                label: "Collaborators",
+                name: "collaborators",
+                widget: "string",
+                required: false,
+              },
+              { label: "Date", name: "date", widget: "date" },
+              {
+                label: "Images",
+                name: "images",
+                widget: "list",
+                required: false,
+                types:
+                  [
+                    {
+                      label: "Image",
+                      name: "image",
+                      widget: "object",
+                      fields:
+                        [
+                          {
+                            label: "Image File",
+                            name: "imageFile",
+                            widget: "image",
+                            required: false,
+                            allow_multiple: true,
+                          },
+                          {
+                            label: "Caption",
+                            name: "caption",
+                            widget: "string",
+                            required: false,
+                          },
+                        ],
+                    },
+                    {
+                      label: "Video",
+                      name: "video",
+                      widget: "object",
+                      fields:
+                        [
+                          {
+                            label: "Video File",
+                            name: "videoFile",
+                            widget: "file",
+                            required: false,
+                            allow_multiple: true,
+                          },
+                          {
+                            label: "Caption",
+                            name: "caption",
+                            widget: "string",
+                            required: false,
+                          },
+                        ],
+                    },
+                  ],
+              },
+            ],
+        }  
       - { label: "Title", name: "title", widget: "string" }
       - {
           label: "Subtitle",
@@ -272,6 +357,91 @@ collections:
           widget: "hidden",
           default: "work-post",
         }
+      - {
+          label: "Title Section",
+          name: "title section",
+          widget: "object",
+          fields:
+            [
+              { label: "Title", name: "title", widget: "string" },
+              {
+                label: "Subtitle",
+                name: "subtitle",
+                widget: "string",
+                required: false,
+              },
+              {
+                label: "Type",
+                name: "type",
+                widget: "string",
+                required: false,
+              },
+              {
+                label: "Location",
+                name: "location",
+                widget: "string",
+                required: false,
+              },
+              {
+                label: "Collaborators",
+                name: "collaborators",
+                widget: "string",
+                required: false,
+              },
+              { label: "Date", name: "date", widget: "date" },
+              {
+                label: "Images",
+                name: "images",
+                widget: "list",
+                required: false,
+                types:
+                  [
+                    {
+                      label: "Image",
+                      name: "image",
+                      widget: "object",
+                      fields:
+                        [
+                          {
+                            label: "Image File",
+                            name: "imageFile",
+                            widget: "image",
+                            required: false,
+                            allow_multiple: true,
+                          },
+                          {
+                            label: "Caption",
+                            name: "caption",
+                            widget: "string",
+                            required: false,
+                          },
+                        ],
+                    },
+                    {
+                      label: "Video",
+                      name: "video",
+                      widget: "object",
+                      fields:
+                        [
+                          {
+                            label: "Video File",
+                            name: "videoFile",
+                            widget: "file",
+                            required: false,
+                            allow_multiple: true,
+                          },
+                          {
+                            label: "Caption",
+                            name: "caption",
+                            widget: "string",
+                            required: false,
+                          },
+                        ],
+                    },
+                  ],
+              },
+            ],
+        }  
       - { label: "Title", name: "title", widget: "string" }
       - {
           label: "Subtitle",
@@ -645,27 +815,6 @@ collections:
               },
             ],
         }
-      - { label: "Title", name: "title", widget: "string" }
-      - {
-          label: "Subtitle",
-          name: "subtitle",
-          widget: "string",
-          required: false,
-        }
-      - { label: "Type", name: "type", widget: "string", required: false }
-      - {
-          label: "Location",
-          name: "location",
-          widget: "string",
-          required: false,
-        }
-      - {
-          label: "Collaborators",
-          name: "collaborators",
-          widget: "string",
-          required: false,
-        }
-      - { label: "Date", name: "date", widget: "date" }
       - {
           label: "Cover",
           name: "cover",

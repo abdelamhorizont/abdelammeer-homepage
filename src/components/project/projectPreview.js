@@ -9,21 +9,21 @@ import "./project-preview.scss"
 export function ProjectPreview({ content, type, fullWidth }) {
   return (
     <Link to={content?.fields?.slug} className={`${_.kebabCase(content?.frontmatter?.title)} ${fullWidth && 'fill-width'} project-preview`}>
-      <h2 className="year">{content?.frontmatter?.date}</h2>
+      <h2 className="year">{content?.frontmatter?.title_section?.date}</h2>
 
       <div className={`cover-image`}>
         <ImageSection type={type} content={content?.frontmatter.cover} columnStart={1} columnEnd={12} />
       </div>
 
       <div className="cover-title">
-        <h2 className="work-year">{content?.frontmatter?.date}</h2>
+        <h2 className="work-year">{content?.frontmatter?.title_section?.date}</h2>
         {content?.frontmatter?.title_section ? <GatsbyImage className="title-img" image={getImage(content?.frontmatter?.title_section.images[0].imageFile)} alt={''} /> :
-          <h1 className="headline">{content?.frontmatter?.title}
-            <span className="blog-type"><h2>{content?.frontmatter?.type}</h2></span>
+          <h1 className="headline">{content?.frontmatter?.title_section?.title}
+            <span className="blog-type"><h2>{content?.frontmatter?.title_section?.type}</h2></span>
           </h1>
         }
 
-        <h2 className="type">{content?.frontmatter?.type}</h2>
+        <h2 className="type">{content?.frontmatter?.title_section?.type}</h2>
 
         {content?.frontmatter?.collaborators && <h2 className="collaborators">with {content?.frontmatter?.collaborators} </h2>}
       </div>

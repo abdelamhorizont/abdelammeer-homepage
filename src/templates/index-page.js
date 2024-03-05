@@ -109,6 +109,8 @@ export const pageQuery = graphql`
             title
             title_section {
               title
+              type
+              date(formatString: "YYYY")
               images {
                 imageFile {
                   childImageSharp {
