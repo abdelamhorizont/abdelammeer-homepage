@@ -1,6 +1,14 @@
 ---
 templateKey: blog-post
 cover-image: /img/download.png
+title section:
+  date: 2022-09-30T22:00:00.000Z
+  title: (Non) Artificial (Maybe) Intelligence
+  type: "Seminar "
+  location: HfG Karlsruhe
+  images:
+    - type: image
+      imageFile: download.png
 title: (Non) Artificial (Maybe) Intelligence
 variable-content:
   - type: image-section
@@ -170,6 +178,7 @@ collaborators: students
 date: 2022-10-01T08:43:10.878Z
 cover:
   fallbackImage: download.png
+  caption: created by Kristian Vrhar on stable diffusion
 Description: What and who and how and why? We will examine various AI tools,
   models and training Data, define possibilities, limitations and risks and use
   these technologies to comment on the very same ones through the lenses of
