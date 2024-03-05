@@ -23,10 +23,6 @@ variable-content:
     reference-section-type: blog
     references:
       - type: blog-reference
-        reference: Ocean View
-      - type: blog-reference
-        reference: Deep Sea Bots
-      - type: blog-reference
         reference: (Non) Artificial (Maybe) Intelligence
       - type: blog-reference
         reference: Mare Mediterraneum
