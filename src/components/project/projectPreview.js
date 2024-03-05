@@ -14,7 +14,7 @@ export function ProjectPreview({ content, type, fullWidth }) {
       <div className={`cover-image`}>
         <ImageSection type={type} content={content?.frontmatter.cover} columnStart={1} columnEnd={12} />
       </div>
-
+{/*  */}
       <div className="cover-title">
         <h2 className="work-year">{content?.frontmatter?.title_section?.date}</h2>
         {content?.frontmatter?.title_section ? <GatsbyImage className="title-img" image={getImage(content?.frontmatter?.title_section.images[0].imageFile)} alt={''} /> :
