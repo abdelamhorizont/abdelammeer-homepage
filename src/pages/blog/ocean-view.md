@@ -5,10 +5,7 @@ title section:
   title: Ocean View
   type: Residency
   location: Matsudo, Japan
-  images:
-    - type: video
-      videoFile: ocean-view-announcement.mp4
-      caption: Announcement
+  images: []
 title: Ocean View
 type: Ocean View
 date: 2024-03-05T14:22:37.628Z
