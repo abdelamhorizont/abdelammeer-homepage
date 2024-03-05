@@ -6,9 +6,7 @@ title section:
   title: (Non) Artificial (Maybe) Intelligence
   type: "Seminar "
   location: HfG Karlsruhe
-  images:
-    - type: image
-      imageFile: download.png
+  images: []
 title: (Non) Artificial (Maybe) Intelligence
 variable-content:
   - type: image-section

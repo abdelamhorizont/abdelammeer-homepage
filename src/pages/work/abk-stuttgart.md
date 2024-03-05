@@ -5,9 +5,7 @@ title section:
   title: ABK Stuttgart
   type: Corporate Design
   collaborators: Jasmina Begovič, Raphael Berg
-  images:
-    - type: video
-      videoFile: /img/16.mp4
+  images: []
 title: ABK Stuttgart
 subtitle: ""
 type: Corporate Design
