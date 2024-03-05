@@ -1,6 +1,11 @@
 ---
 templateKey: work-post
 cover-image: /img/bildschirmfoto-2021-09-12-um-15.09.31.png
+title section:
+  date: 2021-09-14T22:00:00.000Z
+  title: Deep Sea Bots
+  type: Installation
+  location: ABK Stuttgart
 title: Deep Sea Bots
 type: Installation
 location: ABK Stuttgart
