@@ -6,10 +6,7 @@ title section:
   type: Reader
   location: Windhoek, Marbach
   collaborators: SONJA SCHWARZ
-  images:
-    - type: image
-      imageFile: /img/narrating-namibia-1.jpg
-      caption: Reader
+  images: []
 title: Narrating Namibia
 type: Reader
 location: Windhoek, Marbach
