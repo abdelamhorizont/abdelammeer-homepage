@@ -55,34 +55,23 @@ variable-content:
     column-end: "13"
     references:
       - type: work-reference
+        full-width: false
+        reference: Deep Sea Bots
+      - type: work-reference
         reference: New Normal
-  - type: reference-section
-    column-start: "1"
-    column-end: "13"
-    reference-content:
+        full-width: true
       - type: work-reference
+        full-width: true
         reference: ABK Stuttgart
       - type: work-reference
-        reference: Narrating Africa
-    reference-section-type: work
-    references:
-      - type: work-reference
-        reference: ABK Stuttgart
-      - type: work-reference
-        reference: Narrating Africa
-      - type: work-reference
+        full-width: false
         reference: GleisMediale
-  - type: reference-section
-    reference-section-type: work
-    column-start: "1"
-    column-end: "13"
-    references:
       - type: work-reference
+        full-width: false
         reference: Narrating Namibia
       - type: work-reference
-        reference: GleisMediale
-      - type: work-reference
-        reference: Deep Sea Bots
+        full-width: true
+        reference: Narrating Africa
 video:
   fallbackImage: ""
   videoFile: ""
