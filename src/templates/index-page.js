@@ -54,7 +54,7 @@ const IndexPage = ({ data }) => {
                                 {content.references?.map(node => {
                                   const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'work-post').filter(edge => edge.node.frontmatter.title_section?.title == node.reference)[0]
                                   return (
-                                    <ProjectPreview content={project.node} fullWidth={node.full_width} />
+                                    <ProjectPreview content={project?.node} fullWidth={node.full_width} />
                                   )
                                 })}
                               </div>
