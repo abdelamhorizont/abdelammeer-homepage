@@ -12,6 +12,7 @@ type: Seminar
 date: 2023-04-01T14:22:36.721Z
 cover:
   fallbackImage: mare18.jpeg
+  caption: Work by Jessica Keßler
 tags:
   - All
 ---
