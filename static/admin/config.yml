@@ -125,27 +125,6 @@ collections:
               },
             ],
         }
-      - { label: "Title", name: "title", widget: "string" }
-      - {
-          label: "Subtitle",
-          name: "subtitle",
-          widget: "string",
-          required: false,
-        }
-      - { label: "Type", name: "type", widget: "string" }
-      - {
-          label: "Location",
-          name: "location",
-          widget: "string",
-          required: false,
-        }
-      - {
-          label: "Collaborators",
-          name: "collaborators",
-          widget: "string",
-          required: false,
-        }
-      - { label: "Date", name: "date", widget: "date" }
       - {
           label: "Cover",
           name: "cover",
@@ -331,6 +310,13 @@ collections:
                           "12",
                           "13",
                         ],
+                    },
+                    {
+                      label: "Big Size",
+                      name: "big-size",
+                      widget: "boolean",
+                      default: "false",
+                      required: false,
                     },
                     {
                       label: "Text",

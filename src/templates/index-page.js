@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, graphql } from "gatsby";
 import { getImage, GatsbyImage } from "gatsby-plugin-image";
-import { motion, useScroll, useTransform, useSpring } from "framer-motion"
+import { motion } from "framer-motion"
 
 import Layout from "../components/layout/Layout";
 import { ProjectPreview } from '../components/project/projectPreview';
@@ -14,11 +14,51 @@ import '../styles/index.scss'
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
+  const page = {
+    hidden: {
+      scale: 0,
+      transition: {
+        when: "afterChildren",
+      },
+    },
+    visible: {
+      scale: 1,
+      transition: {
+        when: "beforeChildren",
+        staggerChildren: 0.3,
+      },
+    },
+  }
+
+  const section = {
+    hidden: {
+      scale: 0,
+      transition: {
+        when: "afterChildren",
+      },
+    },
+    visible: {
+      scale: 1,
+      transition: {
+        when: "beforeChildren",
+        staggerChildren: 0.3,
+      },
+    },
+  }
+
+  const item = {
+    hidden: { scale: 0 },
+    visible: { scale: 1 },
+    transition: { duration: 1 },
+  }
 
   return (
     <Layout>
       <div className="index-page">
-        <div className="project-list">
+        <motion.ul className="project-list"
+          initial="hidden"
+          animate="visible"
+          variants={page}>
           {
             frontmatter.variable_content.map(content => {
               if (content.type == "reference-section") {
@@ -26,39 +66,61 @@ const IndexPage = ({ data }) => {
                   <>
                     {
                       content.reference_section_type == "blog" ?
-                        <div className="blog-section" style={{ gridColumn: content.column_start + "/" + content.column_end}}> 
-                          {content.references?.map(node => {
+                        <motion.li className="blog-section" style={{ gridColumn: content.column_start + "/" + content.column_end }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          variants={section}
+                        >
+                          {content.references?.map((node) => {
                             const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'blog-post').filter(edge => edge.node.frontmatter.title_section?.title == node.reference)[0]
                             return (
-                              <ProjectPreview content={project?.node} />
+                              <motion.div
+                                variants={item}>
+                                <ProjectPreview content={project?.node} />
+                              </motion.div>
                             )
                           })}
-                        </div>
+                        </motion.li>
 
                         :
 
                         content?.reference_section_type == "space" ?
-                          <div className="space-section" style={{ gridColumn: content.column_start + "/" + content.column_end}}>
+                          <motion.div className="space-section" style={{ gridColumn: content.column_start + "/" + content.column_end }}
+                            initial="hidden"
+                            whileInView="visible"
+                            variants={section}
+                            viewport={{ once: true }}
+                          >
                             {content?.references?.map(node => {
                               const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'space-post').filter(edge => edge.node.frontmatter.title_section?.title == node.reference)[0]
                               return (
                                 <ProjectPreview content={project.node} type={'iframe'} />
                               )
                             })}
-                          </div>
+                          </motion.div>
 
                           :
                           content.reference_section_type == "work" ?
-                            <div className="work-section" style={{ gridColumn: content.column_start + "/" + content.column_end}}>
+                            <motion.div className="work-section" style={{ gridColumn: content.column_start + "/" + content.column_end }}
+                              initial="hidden"
+                              whileInView="visible"
+                              variants={section}
+                              viewport={{ once: true }}
+                            >
                               <div className="project-list">
                                 {content.references?.map(node => {
                                   const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'work-post').filter(edge => edge.node.frontmatter.title_section?.title == node.reference)[0]
                                   return (
-                                    <ProjectPreview content={project?.node} fullWidth={node.full_width} />
+                                    <motion.div
+                                      className={node.full_width && 'full-width'}
+                                      variants={item}>
+                                      <ProjectPreview content={project?.node} />
+                                    </motion.div>
                                   )
                                 })}
                               </div>
-                            </div>
+                            </motion.div>
                             :
                             <div></div>
                     }
@@ -68,7 +130,7 @@ const IndexPage = ({ data }) => {
 
             })
           }
-        </div>
+        </motion.ul>
 
 
         {/* cookie */}
@@ -131,6 +193,7 @@ export const pageQuery = graphql`
                   gatsbyImageData
                 }
               }
+              caption
             }
           }  
           fields {

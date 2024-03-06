@@ -2,13 +2,15 @@ import React from "react";
 import ImageSection from "../content/image-section";
 import { Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { motion } from "framer-motion"
+
 import _ from 'lodash';
 
 import "./project-preview.scss"
 
 export function ProjectPreview({ content, type, fullWidth }) {
   return (
-    <Link to={content?.fields?.slug} className={`${_.kebabCase(content?.frontmatter?.title)} ${fullWidth && 'fill-width'} project-preview`}>
+    <Link to={content?.fields?.slug} className={`${_.kebabCase(content?.frontmatter?.title)} project-preview`}>
       <h2 className="year">{content?.frontmatter?.title_section?.date}</h2>
 
       <div className={`cover-image`}>
@@ -17,7 +19,7 @@ export function ProjectPreview({ content, type, fullWidth }) {
 
       <div className="cover-title">
         <h2 className="work-year">{content?.frontmatter?.title_section?.date}</h2>
-        {content?.frontmatter?.title_section.images.length ?
+        {content?.frontmatter?.title_section?.images?.length ?
           <GatsbyImage className="title-img" image={getImage(content?.frontmatter?.title_section.images[0]?.imageFile)} alt={''} />
           :
           <h1 className="headline">{content?.frontmatter?.title_section?.title}

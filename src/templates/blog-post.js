@@ -18,22 +18,23 @@ const BlogPost = ({ data }) => {
       <div className="blog-post">
         <div className='blogpostcover'>
 
-          <h2> {post.frontmatter.date} </h2>
-          <h1 className="headline">{post.frontmatter.title}</h1>
-          <h2> {post.frontmatter.type} </h2>
-
+          <h2 className="date"> {post.frontmatter.title_section.date} </h2>
+        
           <div className="cover-image">
             <GatsbyImage
               image={myimage}
               alt={''}
             />
-            <p className="caption">created by Kristian Vrhar on stable diffusion</p>
+            <p className="caption">{post.frontmatter.cover?.caption}</p>
           </div>
+          
+          <h1 className="headline">{post.frontmatter.title_section.title}</h1>
+          <h2 className="type"> {post.frontmatter.title_section.type} </h2>
         </div>
 
         <div className="blog-post-content">
           <div className="description">
-          <TextSection content={post.frontmatter.Description} columns={'2'} />
+            <TextSection content={post.frontmatter.Description} columns={'2'} />
           </div>
 
           {
@@ -68,6 +69,18 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       id
       frontmatter {
+        title_section {
+          title
+          type
+          date(formatString: "YYYY")
+          images {
+            imageFile {
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
+          }
+        }
         title
         type
         date(formatString: "YYYY")
@@ -78,6 +91,7 @@ export const pageQuery = graphql`
               gatsbyImageData
             }
           }
+          caption
         }
         Description
         variable_content {
