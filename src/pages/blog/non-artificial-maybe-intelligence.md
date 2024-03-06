@@ -1,29 +1,20 @@
 ---
 templateKey: blog-post
 cover-image: /img/download.png
-title section:
-  date: 2022-09-30T22:00:00.000Z
-  title: (Non) Artificial (Maybe) Intelligence
-  type: "Seminar "
-  location: HfG Karlsruhe
-  images: []
-title: (Non) Artificial (Maybe) Intelligence
 variable-content:
   - type: image-section
-    images:
-      - image:
-          image: ai-dungeon.png
-          caption: Ai Dungeon
-      - image:
-          image: ai-questions.png
-          caption: Questions
-      - image:
-          image: bildschirmfoto-2023-04-06-um-17.26.17.png
-          caption: Quick Draw
-    columns: "3"
     column-start: "1"
     column-end: "13"
-    column: "1"
+    images:
+      - type: video
+        videoFile: non-artificial-maybe-intelligence_intro.mp4
+        caption: Seminar Presentation Video
+      - type: image
+        imageFile: bildschirm­foto-2023-06-26-um-11.56.08.png
+        caption: work by Julia Ziegler
+      - type: video
+        videoFile: ai_logo_video.mp4
+        caption: AI, YOU & I
   - type: text-section
     text: >-
       ## Resources
@@ -170,13 +161,20 @@ projectInfos: >-
   \
 
   What and who and how and why? We will examine various AI tools, models and training Data, define possibilities, limitations and risks and use these technologies to comment on the very same ones through the lenses of history, politics, society, culture and science. We will approach this with stupidity as a high order maybe-intelligence.
-type: "Seminar "
-location: HfG Karlsruhe
 collaborators: students
 date: 2022-10-01T08:43:10.878Z
+location: HfG Karlsruhe
 cover:
   fallbackImage: download.png
   caption: created by Kristian Vrhar on stable diffusion
+title: (Non) Artificial (Maybe) Intelligence
+type: "Seminar "
+title section:
+  date: 2022-09-30T22:00:00.000Z
+  title: (Non) Artificial (Maybe) Intelligence
+  type: "Seminar "
+  location: HfG Karlsruhe
+  images: []
 Description: What and who and how and why? We will examine various AI tools,
   models and training Data, define possibilities, limitations and risks and use
   these technologies to comment on the very same ones through the lenses of
