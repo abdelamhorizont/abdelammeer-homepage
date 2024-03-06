@@ -43,11 +43,15 @@ const BlogPost = ({ data }) => {
 
               if (content.type == 'text-section') {
                 return (
-                  <TextSection content={content.text} columnStart={content.column_start} columnEnd={content.column_end} />
+                  <div style={{gridColumn: content.column_start + "/" + content.column_end}} className={`html-content`}>
+                    <TextSection content={content.text} />
+                  </div>
                 )
               } else if (content.type == 'image-section') {
                 return (
+                  <div style={{gridColumn: content.column_start + "/" + content.column_end}} className={`html-content`}>
                   <ImageSection content={content} type={"grid"} columnStart={content.column_start} columnEnd={content.column_end} />
+                  </div>
                 )
               }
             })

@@ -30,7 +30,7 @@
         .cover-title {
             z-index: 2;
             // width: 33vw;
-            display: flex;        
+            display: flex;
             align-items: flex-start;
             justify-content: space-between;
             border-radius: 0rem 0rem 2rem 2rem;
@@ -55,10 +55,10 @@
                 vertical-align: top;
             }
 
-            .title-img{
+            .title-img {
                 // position: absolute;
                 transform: scale(1.3);
-                width:100%;
+                width: 100%;
                 // align-self: center;
                 // height:55%;
                 // height: auto;
@@ -69,7 +69,7 @@
                 // height: 100%;
                 // width: 100%;
 
-                img{
+                img {
                     object-fit: contain;
                 }
             }
@@ -103,26 +103,25 @@
 
     .deep-sea-bots {
         .cover-image {
-            .html-content {
-                .image-section {
-                    iframe {
-                        width: 134%;
-                        height: 134%;
-                        zoom: 0.75;
+            .image-section {
+                iframe {
+                    width: 134%;
+                    height: 134%;
+                    zoom: 0.75;
 
-                        -ms-zoom: 0.75;
-                        transform: scale(0.75);
+                    -ms-zoom: 0.75;
+                    transform: scale(0.75);
 
-                        -moz-transform: scale(0.75);
-                        -moz-transform-origin: 0 0;
-                        -o-transform: scale(0.75);
-                        -o-transform-origin: 0 0;
-                        -webkit-transform: scale(0.75);
-                        -webkit-transform-origin: 0 0;
+                    -moz-transform: scale(0.75);
+                    -moz-transform-origin: 0 0;
+                    -o-transform: scale(0.75);
+                    -o-transform-origin: 0 0;
+                    -webkit-transform: scale(0.75);
+                    -webkit-transform-origin: 0 0;
 
-                    }
                 }
             }
+
         }
     }
 
@@ -134,7 +133,8 @@
         line-height: 2.5rem;
     }
 
-    h2, span {
+    h2,
+    span {
         display: inline;
         // max-width: 8vw;
         // grid-column: span 1;
@@ -176,14 +176,14 @@
             height: 50%;
             // width: calc(100% - 2rem);
             // padding: 1rem;
-            
+
             .work-year {
                 display: none;
             }
         }
 
     }
-    
+
     .deep-sea-bots {
         // background-color: white;
         // position: fixed;
@@ -195,46 +195,45 @@
 
 
         .cover-image {
-            background-color: rgba(255,255,255,0.5);
+            background-color: rgba(255, 255, 255, 0.5);
             // mix-blend-mode: difference;
             // overflow: visible;
             // border-radius: 0rem 2rem 2rem 0rem;
-            
-            .html-content {
+
+            overflow: hidden;
+
+            .image-section {
+                // filter: brightness(1.5);
                 overflow: visible;
 
-                .image-section {
-                    // filter: brightness(1.5);
+                // filter:hue-rotate(180deg);
+                // mix-blend-mode: difference;
+                // mix-blend-mode:luminosity;
+
+                iframe {
                     overflow: visible;
 
-                    // filter:hue-rotate(180deg);
-                    // mix-blend-mode: difference;
-                    // mix-blend-mode:luminosity;
+                    // mask-type: luminance;
+                    /* white = transparent, grays = semi-transparent, black = opaque */
+                    // mask-type: alpha;
 
-                    iframe {
-                        overflow: visible;
+                    width: calc(100% * 2.2);
+                    height: calc(100% * 2);
+                    zoom: 0.5;
 
-                        // mask-type: luminance;
-                        /* white = transparent, grays = semi-transparent, black = opaque */
-                        // mask-type: alpha;
+                    -ms-zoom: 0.5;
+                    transform: scale(0.5);
 
-                        width: calc(100% * 2.2);
-                        height: calc(100% * 2);
-                        zoom: 0.5;
+                    -moz-transform: scale(0.5);
+                    -moz-transform-origin: 0 0;
+                    -o-transform: scale(0.5);
+                    -o-transform-origin: 0 0;
+                    -webkit-transform: scale(0.5);
+                    -webkit-transform-origin: 0 0;
 
-                        -ms-zoom: 0.5;
-                        transform: scale(0.5);
-
-                        -moz-transform: scale(0.5);
-                        -moz-transform-origin: 0 0;
-                        -o-transform: scale(0.5);
-                        -o-transform-origin: 0 0;
-                        -webkit-transform: scale(0.5);
-                        -webkit-transform-origin: 0 0;
-
-                    }
                 }
             }
+
         }
     }
 

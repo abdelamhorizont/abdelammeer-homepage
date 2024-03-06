@@ -219,6 +219,12 @@ collections:
                       types:
                         [
                           {
+                            label: "iFrame",
+                            name: "iframe",
+                            widget: "string",
+                            required: false,
+                          },
+                          {
                             label: "Image",
                             name: "image",
                             widget: "object",

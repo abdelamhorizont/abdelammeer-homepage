@@ -12,22 +12,11 @@ export const HTMLContent = ({ content }) => (
 );
 
 
-const TextSection = ({ content, columnStart, columnEnd }) => {
-  const gridCols = {
-    gridColumn: columnStart + "/" + columnEnd
-  }
- 
-  const gridColsFallback = {
-    gridColumn: "span 7"
-  }
-
+const TextSection = ({ content }) => {
   return (
-      <div style={columnStart ? gridCols : gridColsFallback} className={`html-content`}>
-      {/* <div style={ gridCols } className={`html-content`}> */}
-        <ReactMarkdown>
-          {content}
-        </ReactMarkdown>
-      </div>
+    <ReactMarkdown>
+      {content}
+    </ReactMarkdown>
   )
 }
 

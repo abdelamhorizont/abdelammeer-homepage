@@ -10,7 +10,7 @@ import 'swiper/css'
 // import 'swiper/scss/navigation';
 // import 'swiper/scss/pagination';
 
-const ImageSection = ({ content, type, columnStart, columnEnd }) => {
+const ImageSection = ({ content, type}) => {
   // const [imgClick, setimgClick] = useState(false)
   // const [index, setindex] = useState()
 
@@ -25,19 +25,9 @@ const ImageSection = ({ content, type, columnStart, columnEnd }) => {
   const navigationPrevRef = React.useRef(null)
   const navigationNextRef = React.useRef(null)
 
-  const gridCols = {
-    gridColumn: columnStart + "/" + (columnEnd)
-  }
-
-  const gridColsFallback = {
-    gridColumn: "span 12"
-  }
-
 
   return (
-    <div style={columnStart ? gridCols : gridColsFallback} className={`html-content`}>
       <div className="image-section">
-
         {
           type == "iframe" ?
             // content?.iframe != null ?
@@ -117,7 +107,6 @@ const ImageSection = ({ content, type, columnStart, columnEnd }) => {
 
 
       </div>
-    </div>
   )
 }
 
