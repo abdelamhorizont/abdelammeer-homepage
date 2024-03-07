@@ -48,7 +48,7 @@ const BlogPost = ({ data }) => {
               } else if (content.type == 'image-section') {
                 return (
                   <div style={{gridColumn: content.column_start + "/" + content.column_end}} className={`html-content`}>
-                  <ImageSection content={content} type={"grid"} columnStart={content.column_start} columnEnd={content.column_end} />
+                  <ImageSection content={content.image} type={"grid"} />
                   </div>
                 )
               }
