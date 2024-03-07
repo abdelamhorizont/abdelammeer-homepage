@@ -111,60 +111,6 @@
 }
 
 .blogpostcover {
-    // h1.headline {
-    //     // width: 80vw;
-    //     grid-column: 3/11;
-    //     margin-bottom: 1.5rem;
-
-    //     font-family: Kleukens;
-    //     font-size: 5rem;
-    //     line-height: 4rem;
-    //     margin-bottom: 3.5rem;
-    //     text-align: center;
-
-    // }
-
-    // h2 {
-    //     grid-column: span 2;
-    //     font-family: Kleukens;
-    //     font-size: 1.8rem;
-    // }
-
-    // h2:first-child {
-    //     text-align: right;
-    // }
-
-    // .subhead {
-    //     grid-column: 1/13;
-    //     display: flex;
-    //     justify-content: space-between;
-    //     margin-bottom: 1rem;
-
-    //     h2 {
-    //         // width: 16vw;
-    //         font-family: Kleukens;
-    //         font-size: 1.8rem;
-    //     }
-    // }
-
-    // .cover-image {
-    //     grid-column: 6/8;
-
-    //     div {
-    //         width: 100%;
-    //         height: 100%;
-    //     }
-
-    //     // p{
-    //     //     margin-top: 0.2rem;
-    //     //     font-family: Kleukens;
-    //     //     font-size: 0.8rem;
-    //     // }
-    // }
-
-
-    // width:fit-content;
-    // display: flex;
     margin-bottom: 5.5rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -241,12 +187,6 @@
         grid-column: 2/12;
         margin-bottom: 3.5rem;
 
-        p {
-            font-size: 2rem;
-            line-height: 2.2rem;
-            font-family: Kleukens;
-
-        }
     }
 
     .image-section {
@@ -266,10 +206,4 @@
         display: flex;
         gap: 1rem;
     }
-}
-
-p.caption {
-    margin-top: 0.2rem;
-    font-family: Kleukens;
-    font-size: 0.8rem;
 }

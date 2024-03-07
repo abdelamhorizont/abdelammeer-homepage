@@ -33,7 +33,7 @@ const BlogPost = ({ data }) => {
         </div>
 
         <div className="blog-post-content">
-          <div className="description">
+          <div className="description prom-text">
             <TextSection content={post.frontmatter.Description} columns={'2'} />
           </div>
 
@@ -48,7 +48,7 @@ const BlogPost = ({ data }) => {
               } else if (content.type == 'image-section') {
                 return (
                   <div style={{gridColumn: content.column_start + "/" + content.column_end}} className={`html-content`}>
-                  <ImageSection content={content.image} type={"grid"} />
+                  <ImageSection content={content} type={"grid"} />
                   </div>
                 )
               }

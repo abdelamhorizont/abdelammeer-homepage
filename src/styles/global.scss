@@ -1,9 +1,10 @@
 html {
    scroll-behavior: smooth;
-   font-size: clamp(10px, 1vw, 24px);
    background-color: #232323;
-   // background-image: linear-gradient(rgb(7, 7, 233), yellow);
 
+   [data-slate-editor] { 
+      -webkit-user-modify: read-write !important; 
+  }
 
 }
 

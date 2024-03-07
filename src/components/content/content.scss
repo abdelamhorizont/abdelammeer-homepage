@@ -1,40 +1,49 @@
-.html-content{
+.html-content {
     // margin-bottom: 3.5rem;
     height: 100%;
+    margin-bottom: 4.5rem;
 
     font-family: Kleukens;
-    // overflow: auto;
     word-wrap: break-word;
 
-    p{
-        font-size: 1.25rem;
-        line-height: 1.5rem;
-        margin-bottom: 1rem;
-    }
 
-
-    h2{
+    h2 {
         margin-bottom: 1.5rem;
         font-size: 1.8rem;
         // font-weight: bold;
     }
 
-    h3{
+    h3 {
         margin-bottom: 1.5rem;
         font-size: 1.25rem;
         font-weight: bold;
     }
 
-    a{
+    p{
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+     }
+
+    a {
         color: grey;
     }
 
-    .image-section{
+    .image-section {
         height: 100%;
+
+        .video-section {
+            video {
+                width: 100%;
+            }
+
+            // width: 30vw;
+        }
     }
+
 }
 
-.swiper{
+.swiper {
     height: 100%;
     // z-index: -1;
     // .swiper-buttons{
@@ -49,38 +58,38 @@
     //         height: 100%;
     //     }
     // }
-    .swiper-slide{
+    .swiper-slide {
         width: auto;
         max-width: 100%;
 
     }
 }
 
-.swiper-img{
+.swiper-img {
     object-fit: contain;
     height: 100%;
 }
 
-.swiper-buttons{
+.swiper-buttons {
     position: absolute;
     bottom: 0vh;
     display: inline-flex;
     z-index: 1000;
     width: 100%;
     height: 100%;
- }
- 
- .swiper-button-prev,
- .swiper-button-next {
+}
+
+.swiper-button-prev,
+.swiper-button-next {
     display: flex;
     width: 50%;
     outline: none !important;
- }
- 
+}
+
 //  .swiper-button-prev{
 //     cursor: url('arrow-left.svg'), auto;	
 //  }
- 
+
 //  .swiper-button-next{
 //     cursor: url('arrow-right.svg'), auto;	
 //     transform-origin: center;

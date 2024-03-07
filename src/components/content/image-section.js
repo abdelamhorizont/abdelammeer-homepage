@@ -51,21 +51,22 @@ const ImageSection = ({ content, type }) => {
 
                   return (
                     // <div onClick={() => handleClick(i)}>
-                    <div>
+                    <>
                       {
                         image.type == "video" ?
                           <div className="video-section">
-                            <video key={image?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline>
+                            <video key={image?.videoFile?.publicURL} controls>
+                            {/* <video key={image?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline> */}
                               <source src={image?.videoFile?.publicURL} type="video/mp4" />
                             </video>
                           </div>
                           :
-                          <>
+                          <div>
                             <GatsbyImage image={myimage} alt={''} />
                             <p className="caption">{image?.image?.caption}</p>
-                          </>
+                          </div>
                       }
-                    </div>
+                    </>
                   )
                 })
                 :
