@@ -47,7 +47,7 @@ const ImageSection = ({ content, type}) => {
             :
                 type == "grid" ?
                   content?.images?.map((image) => {
-                    const myimage = getImage(image?.image?.image)
+                    const myimage = getImage(image?.imageFile)
 
                     return (
                       // <div onClick={() => handleClick(i)}>

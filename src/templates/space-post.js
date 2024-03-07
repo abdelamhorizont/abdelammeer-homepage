@@ -86,13 +86,15 @@ export const pageQuery = graphql`
           column_start
           text
           images {
-            image {
-              image {
-                childImageSharp {
-                  gatsbyImageData
-                }
+            caption
+            type
+            imageFile {
+              childImageSharp {
+                gatsbyImageData
               }
-              caption
+            }
+            videoFile {
+              publicURL
             }
           }
         }

@@ -39,8 +39,6 @@ const BlogPost = ({ data }) => {
 
           {
             post.frontmatter?.variable_content?.map((content) => {
-              console.log(content.end);
-
               if (content.type == 'text-section') {
                 return (
                   <div style={{gridColumn: content.column_start + "/" + content.column_end}} className={`html-content`}>
@@ -104,13 +102,15 @@ export const pageQuery = graphql`
           column_start
           text
           images {
-            image {
-              image {
-                childImageSharp {
-                  gatsbyImageData
-                }
+            caption
+            type
+            imageFile {
+              childImageSharp {
+                gatsbyImageData
               }
-              caption
+            }
+            videoFile {
+              publicURL
             }
           }
         }
