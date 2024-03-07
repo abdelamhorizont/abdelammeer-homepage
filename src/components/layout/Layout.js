@@ -123,7 +123,7 @@ const Layout = ({ children, activeSite }) => {
 
       {children}
 
-      <div className="heightfill"></div>
+      {/* <div className="heightfill"></div> */}
 
       <div className="footer">
         <div className="contact">
