@@ -1,7 +1,5 @@
 ---
 templateKey: blog-post
-title: Spawn Grounds
-date: 2023-01-01T09:44:04.967Z
 cover-image: /img/mindmap.png
 title section:
   date: 2022-12-31T23:00:00.000Z
@@ -10,7 +8,22 @@ title section:
   location: HfG Karlsruhe
   collaborators: Christina Mäckelburg
   images: []
-type: Workshop
+variable-content:
+  - type: image-section
+    column-start: "3"
+    column-end: "10"
+    images: []
+date: 2023-01-01T09:44:04.967Z
 cover:
   fallbackImage: mindmap.png
+title: Spawn Grounds
+type: Workshop
+Description: >-
+  Umfeld, Spielfeld; Ziel und Zufall; Augen zu, Augen auf; Auf Los geht's los!
+  Aufbrechen, Auflösen, Auf den Kopf stellen! Spielbrett, Pausenhof, Gameshow,
+  Triple A Open World MMORPG. Game-Engine, Kreide und Würfel, choose your
+  character!
+
+
+  https://scratch.mit.edu/projects/786869998
 ---
