@@ -220,9 +220,23 @@ collections:
                         [
                           {
                             label: "iFrame",
-                            name: "iframe",
-                            widget: "string",
-                            required: false,
+                            name: "iFrame",
+                            widget: "object",
+                            fields:
+                              [
+                                {
+                                  label: "iFrame Link",
+                                  name: "iFrame-link",
+                                  widget: "string",
+                                  required: false,
+                                },
+                                {
+                                  label: "Caption",
+                                  name: "caption",
+                                  widget: "string",
+                                  required: false,
+                                },
+                              ],
                           },
                           {
                             label: "Image",
@@ -775,9 +789,23 @@ collections:
                   [
                     {
                       label: "iFrame",
-                      name: "iframe",
-                      widget: "string",
-                      required: false,
+                      name: "iFrame",
+                      widget: "object",
+                      fields:
+                        [
+                          {
+                            label: "iFrame Link",
+                            name: "iFrame-link",
+                            widget: "string",
+                            required: false,
+                          },
+                          {
+                            label: "Caption",
+                            name: "caption",
+                            widget: "string",
+                            required: false,
+                          },
+                        ],
                     },
                     {
                       label: "Image",
