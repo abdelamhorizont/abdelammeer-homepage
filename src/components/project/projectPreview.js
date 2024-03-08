@@ -10,7 +10,7 @@ import "./project-preview.scss"
 
 export function ProjectPreview({ content, type, fullWidth }) {
   return (
-    <Link to={content?.fields?.slug} className={`${_.kebabCase(content?.frontmatter?.title)} project-preview`}>
+    <Link to={content?.fields?.slug} className={`${_.kebabCase(content?.frontmatter?.title_section?.title)} project-preview`}>
       <h2 className="year">{content?.frontmatter?.title_section?.date}</h2>
 
       <div className={`cover-image`}>
