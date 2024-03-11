@@ -168,7 +168,6 @@ export const pageQuery = graphql`
         node {
           frontmatter {
             templateKey
-            title
             title_section {
               title
               type
