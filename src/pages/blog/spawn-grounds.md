@@ -19,7 +19,7 @@ variable-content:
     column-end: "10"
     images:
       - type: iFrame
-        iFrame-link: https://scratch.mit.edu/projects/786869998
+        iFrame-link: https://deep-sea-bots.netlify.app/
         caption: Mingo-Maze
 date: 2023-01-01T09:44:04.967Z
 cover:
