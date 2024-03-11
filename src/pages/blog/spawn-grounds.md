@@ -19,7 +19,7 @@ variable-content:
     column-end: "10"
     images:
       - type: iFrame
-        iFrame-link: https://hubs.mozilla.com/cKPXVXD/melodic-speedy-rendezvous
+        iFrame-link: https://hubs.mozilla.com/cKPXVXD/melodic-speedy-rendezvous/embed
         caption: Scratch Game Mingo-Maze
 date: 2023-01-01T09:44:04.967Z
 cover:
