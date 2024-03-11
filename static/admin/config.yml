@@ -1311,7 +1311,6 @@ collections:
                                       collection: "blog",
                                       search_fields: ["title_section.title"],
                                       value_field: "title_section.title",
-                                      display_fields: ["title_section.title"],
                                     },
                                   ],
                               },
