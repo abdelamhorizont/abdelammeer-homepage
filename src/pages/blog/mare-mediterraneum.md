@@ -5,7 +5,7 @@ projectInfos: test
 date: 2023-04-01T14:22:36.721Z
 title section:
   date: 2023-03-31T22:00:00.000Z
-  title: MARE MEDITERRANEUM — البحر الأبيض
+  title: "MARE MEDITERRANEUM "
   type: Seminar
   images: []
 cover:
