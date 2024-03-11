@@ -73,7 +73,7 @@ const IndexPage = ({ data }) => {
                           variants={section}
                         >
                           {content.references?.map((node) => {
-                            const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'blog-post').filter(edge => edge.node.frontmatter.title_section?.title == node.reference)[0]
+                            const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'blog-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
                             return (
                               <motion.div
                                 variants={item}>
@@ -93,7 +93,7 @@ const IndexPage = ({ data }) => {
                             viewport={{ once: true }}
                           >
                             {content?.references?.map(node => {
-                              const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'space-post').filter(edge => edge.node.frontmatter.title_section?.title == node.reference)[0]
+                              const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'space-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
                               return (
                                 <ProjectPreview content={project.node} type={'iframe'} />
                               )
@@ -110,7 +110,7 @@ const IndexPage = ({ data }) => {
                             >
                               <div className="project-list">
                                 {content.references?.map(node => {
-                                  const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'work-post').filter(edge => edge.node.frontmatter.title_section?.title == node.reference)[0]
+                                  const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'work-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
                                   return (
                                     <motion.div
                                       className={node.full_width && 'full-width'}
@@ -168,6 +168,7 @@ export const pageQuery = graphql`
         node {
           frontmatter {
             templateKey
+            title
             title_section {
               title
               type

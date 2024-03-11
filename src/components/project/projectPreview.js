@@ -10,7 +10,7 @@ import "./project-preview.scss"
 
 export function ProjectPreview({ content, type, fullWidth }) {
   return (
-    <Link to={content?.fields?.slug} className={`${_.kebabCase(content?.frontmatter?.title_section?.title)} project-preview`}>
+    <Link to={content?.fields?.slug} className={`${_.kebabCase(content?.frontmatter?.title)} project-preview`}>
       <h2 className="year">{content?.frontmatter?.title_section?.date}</h2>
 
       <div className={`cover-image`}>
@@ -22,8 +22,8 @@ export function ProjectPreview({ content, type, fullWidth }) {
         {content?.frontmatter?.title_section?.images?.length ?
           <GatsbyImage className="title-img" image={getImage(content?.frontmatter?.title_section.images[0]?.imageFile)} alt={''} />
           :
-          <h1 className="headline">{content?.frontmatter?.title_section?.title}
-            <span className="blog-type"><h2>{content?.frontmatter?.title_section?.type}</h2></span>
+          <h1 className="headline">{content?.frontmatter?.title}
+            {/* <span className="blog-type"><h2>{content?.frontmatter?.title_section?.type}</h2></span> */}
           </h1>
         }
 

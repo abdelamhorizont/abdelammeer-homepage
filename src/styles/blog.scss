@@ -16,6 +16,7 @@
         word-wrap: break-word;
 
         margin: 0.5rem 0rem;
+      
 
         h2 {
             display: inline;
@@ -36,9 +37,15 @@
 
         .cover-title {
             // width:fit-content;
-            display: flex;
+            // display: flex;
+            // margin-bottom: 5.5rem;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1rem;
 
             h1 {
+                grid-column: 1/11;
+
                 font-size: 5rem;
                 font-weight: 90;
                 line-height: 4.5rem;
@@ -66,13 +73,23 @@
                 // vertical-align: top;
             }
 
-
-            .blog-type {
-           
+            .cover-image {
+                // margin: 0rem 1rem;
+                grid-column: 2/4;
+                // max-width: 20vw;
+            }
+        
+            .date {
+                grid-column: 1/2;
+            }
+        
+            .type {
+                grid-column: 11/13;
+                text-align: end;
+        
             }
 
-            .work-year,
-            .type {
+            .work-year {
                 display: none;
                 // order: 2;
             }
