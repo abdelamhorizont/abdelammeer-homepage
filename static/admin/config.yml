@@ -34,7 +34,7 @@ collections:
           widget: "hidden",
           default: "blog-post",
         }
-      - { label: "Title", name: "title", widget: "string" },
+      - { label: "Title", name: "title", widget: "string" }
       - {
           label: "Title Section",
           name: "title section",
