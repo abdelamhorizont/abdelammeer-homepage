@@ -53,18 +53,26 @@ const ImageSection = ({ content, type }) => {
                     // <div onClick={() => handleClick(i)}>
                     <>
                       {
-                        image.type == "video" ?
-                          <div className="video-section">
-                            <video key={image?.videoFile?.publicURL} controls>
-                            {/* <video key={image?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline> */}
-                              <source src={image?.videoFile?.publicURL} type="video/mp4" />
-                            </video>
+                        image.type == "iframe" ?
+                          <div>
+                            <iframe src={image?.iframe} frameborder="100px"></iframe>
+                            <p className="caption">{image?.caption}</p>
                           </div>
                           :
-                          <div>
-                            <GatsbyImage image={myimage} alt={''} />
-                            <p className="caption">{image?.image?.caption}</p>
-                          </div>
+                          image.type == "video" ?
+                            <div className="video-section">
+                              <video key={image?.videoFile?.publicURL} controls>
+                                {/* <video key={image?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline> */}
+                                <source src={image?.videoFile?.publicURL} type="video/mp4" />
+                                <p className="caption">{image?.caption}</p>
+
+                              </video>
+                            </div>
+                            :
+                            <div>
+                              <GatsbyImage image={myimage} alt={''} />
+                              <p className="caption">{image?.image?.caption}</p>
+                            </div>
                       }
                     </>
                   )
