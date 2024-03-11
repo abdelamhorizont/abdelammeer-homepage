@@ -111,6 +111,8 @@
 }
 
 .blogpostcover {
+    position: sticky;
+    top: 2.5rem;
     margin-bottom: 5.5rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);

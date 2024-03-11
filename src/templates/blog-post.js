@@ -16,10 +16,9 @@ const BlogPost = ({ data }) => {
   return (
     <Layout activeSite={'blog'}>
       <div className="blog-post">
-        <div className='blogpostcover'>
 
+        <div className='blogpostcover'>
           <h2 className="date"> {post.frontmatter.title_section.date} </h2>
-        
           <div className="cover-image">
             <GatsbyImage
               image={myimage}
@@ -27,10 +26,10 @@ const BlogPost = ({ data }) => {
             />
             <p className="caption">{post.frontmatter.cover?.caption}</p>
           </div>
-          
           <h1 className="headline">{post.frontmatter.title_section.title}</h1>
           <h2 className="type"> {post.frontmatter.title_section.type} </h2>
         </div>
+
 
         <div className="blog-post-content">
           <div className="description prom-text">
