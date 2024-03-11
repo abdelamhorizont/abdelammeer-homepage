@@ -53,9 +53,9 @@ const ImageSection = ({ content, type }) => {
                     // <div onClick={() => handleClick(i)}>
                     <>
                       {
-                        image.type == "iframe" ?
-                          <div>
-                            <iframe src={image?.iframe} frameborder="100px"></iframe>
+                        image.type == "iFrame" ?
+                          <div className="iFrame">
+                            <iframe src={image?.iFrame_link} frameborder="100px"></iframe>
                             <p className="caption">{image?.caption}</p>
                           </div>
                           :
