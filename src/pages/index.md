@@ -23,6 +23,8 @@ variable-content:
     reference-section-type: blog
     references:
       - type: blog-reference
+        reference: "Typography 1: Letters"
+      - type: blog-reference
         reference: (Non) Artificial (Maybe) Intelligence
       - type: blog-reference
         reference: Mare Mediterraneum
