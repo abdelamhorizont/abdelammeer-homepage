@@ -2,16 +2,17 @@
     width: 100vw;
     padding-top: 2rem;
 
-    // .project-list {
-    //     // padding: 2rem 0rem;
-    //     display: grid;
-    //     grid-template-columns: repeat(12, 1fr);
-    // }
+    .project-list {
+        // padding: 2rem 0rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     .work-section,
     .blog-section,
     .space-section {
-        width: auto;
+        grid-column: span 1;
+        // width: 50vw;
         padding: 0rem 0.5rem;
         // margin: 0.5rem;
         // border-radius: 2rem;
