@@ -1292,7 +1292,7 @@ collections:
                           options: ["blog", "space", "work"],
                         },
                         {
-                          label: "hero",
+                          label: "Hero",
                           name: "hero",
                           widget: "boolean",
                           default: false,
