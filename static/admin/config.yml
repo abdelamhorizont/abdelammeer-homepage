@@ -1292,8 +1292,8 @@ collections:
                           options: ["blog", "space", "work"],
                         },
                         {
-                          label: "Full Width",
-                          name: "full-width",
+                          label: "hero",
+                          name: "hero",
                           widget: "boolean",
                           default: false,
                           required: false,
