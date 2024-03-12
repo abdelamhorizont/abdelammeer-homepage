@@ -66,7 +66,7 @@ const IndexPage = ({ data }) => {
                   <>
                     {
                       content.reference_section_type == "blog" ?
-                        <motion.li className="blog-section" style={{ gridColumn: content.column_start + "/" + content.column_end }}
+                        <motion.li className={`blog-section ${content.full_width && 'full-width'}`}
                           initial="hidden"
                           whileInView="visible"
                           viewport={{ once: true }}
@@ -86,7 +86,7 @@ const IndexPage = ({ data }) => {
                         :
 
                         content?.reference_section_type == "space" ?
-                          <motion.div className="space-section" style={{ gridColumn: content.column_start + "/" + content.column_end }}
+                          <motion.div className={`space-section ${content.full_width && 'full-width'}`}
                             initial="hidden"
                             whileInView="visible"
                             variants={section}
@@ -102,7 +102,7 @@ const IndexPage = ({ data }) => {
 
                           :
                           content.reference_section_type == "work" ?
-                            <motion.div className="work-section" style={{ gridColumn: content.column_start + "/" + content.column_end }}
+                            <motion.div className={`work-section ${content.full_width && 'full-width'}`}
                               initial="hidden"
                               whileInView="visible"
                               variants={section}
