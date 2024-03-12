@@ -748,7 +748,7 @@ collections:
           widget: "hidden",
           default: "space-post",
         }
-      - { label: "Title", name: "title", widget: "string" }  
+      - { label: "Title", name: "title", widget: "string" }
       - {
           label: "Title Section",
           name: "title section",
@@ -1292,6 +1292,13 @@ collections:
                           options: ["blog", "space", "work"],
                         },
                         {
+                          label: "Full Width",
+                          name: "full-width",
+                          widget: "boolean",
+                          default: false,
+                          required: false,
+                        },
+                        {
                           label: "References",
                           name: "references",
                           widget: "list",
@@ -1311,13 +1318,6 @@ collections:
                                       collection: "blog",
                                       search_fields: ["title"],
                                       value_field: "title",
-                                    },
-                                    {
-                                      label: "Full Width",
-                                      name: "full-width",
-                                      widget: "boolean",
-                                      default: false,
-                                      required: false,
                                     },
                                   ],
                               },
@@ -1359,13 +1359,6 @@ collections:
                                       search_fields: ["title"],
                                       value_field: "title",
                                       display_fields: ["title"],
-                                    },
-                                    {
-                                      label: "Full Width",
-                                      name: "full-width",
-                                      widget: "boolean",
-                                      default: false,
-                                      required: false,
                                     },
                                   ],
                               },
