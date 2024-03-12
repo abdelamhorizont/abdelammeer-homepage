@@ -6,7 +6,7 @@ import TextSection, { HTMLContent } from "../components/content/text-section";
 import ImageSection from "../components/content/image-section";
 import { ProjectPreview } from '../components/project/projectPreview';
 
-// import '../styles/work-post.scss'
+import '../styles/space.scss'
 
 const SpacePost = ({ data }) => {
   const { markdownRemark: post } = data;
@@ -14,7 +14,7 @@ const SpacePost = ({ data }) => {
   return (
     <Layout activeSite={'space'}>
 
-      <div className="space-post">
+      <div className="space-post space-section">
         <ProjectPreview content={post} type={"iframe"} />
 
         <div className="space-post-content">
@@ -53,10 +53,19 @@ export const pageQuery = graphql`
       frontmatter {
         templateKey
         title
-        type
-        date(formatString: "YYYY")
+        title_section {
+          type
+          date(formatString: "YYYY")
+          collaborators
+          images {
+            imageFile {
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
+          }
+        }
         iframe
-        collaborators
         Description
         cover {
           iframe

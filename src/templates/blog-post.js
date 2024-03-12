@@ -26,7 +26,7 @@ const BlogPost = ({ data }) => {
             />
             <p className="caption">{post.frontmatter.cover?.caption}</p>
           </div>
-          <h1 className="headline">{post.frontmatter.title_section.title}</h1>
+          <h1 className="headline">{post.frontmatter.title}</h1>
           <h2 className="type"> {post.frontmatter.title_section.type} </h2>
         </div>
 
@@ -71,7 +71,6 @@ export const pageQuery = graphql`
       id
       frontmatter {
         title_section {
-          title
           type
           date(formatString: "YYYY")
           images {
@@ -83,8 +82,6 @@ export const pageQuery = graphql`
           }
         }
         title
-        type
-        date(formatString: "YYYY")
         templateKey
         cover {
           fallbackImage {

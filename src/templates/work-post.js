@@ -22,11 +22,11 @@ const WorkPost = ({ data }) => {
           </div>
 
           <div className="cover-title">
-            <div><h2> {post.frontmatter.date} </h2></div>
+            <div><h2> {post.frontmatter.title_section.date} </h2></div>
             <div className="headline"><h1>{post.frontmatter.title}</h1></div>
-            <div><h2> {post.frontmatter.type} </h2></div>
-            {post.frontmatter?.collaborators &&
-              <div className="collaborators"><h2>with {post.frontmatter?.collaborators} </h2></div>
+            <div><h2> {post.frontmatter.title_section.type} </h2></div>
+            {post.frontmatter?.title_section.collaborators &&
+              <div className="collaborators"><h2>with {post.frontmatter?.title_section.collaborators} </h2></div>
             }
           </div>
         </div>
@@ -66,8 +66,18 @@ export const pageQuery = graphql`
       id
       frontmatter {
         title
-        type
-        date(formatString: "YYYY")
+        title_section {
+          type
+          date(formatString: "YYYY")
+          collaborators
+          images {
+            imageFile {
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
+          }
+        }
         templateKey
         cover {
           iframe
@@ -91,7 +101,6 @@ export const pageQuery = graphql`
             publicURL
           }
         }
-        collaborators
         Description
         variable_content {
           type

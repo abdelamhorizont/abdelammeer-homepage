@@ -41,7 +41,6 @@ collections:
           widget: "object",
           fields:
             [
-              { label: "Title", name: "title", widget: "string" },
               {
                 label: "Subtitle",
                 name: "subtitle",
@@ -370,13 +369,13 @@ collections:
           widget: "hidden",
           default: "work-post",
         }
+      - { label: "Title", name: "title", widget: "string" }
       - {
           label: "Title Section",
           name: "title section",
           widget: "object",
           fields:
             [
-              { label: "Title", name: "title", widget: "string" },
               {
                 label: "Subtitle",
                 name: "subtitle",
@@ -756,7 +755,6 @@ collections:
           widget: "object",
           fields:
             [
-              { label: "Title", name: "title", widget: "string" },
               {
                 label: "Subtitle",
                 name: "subtitle",
