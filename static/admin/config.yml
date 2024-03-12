@@ -749,6 +749,7 @@ collections:
           widget: "hidden",
           default: "space-post",
         }
+      - { label: "Title", name: "title", widget: "string" }  
       - {
           label: "Title Section",
           name: "title section",
