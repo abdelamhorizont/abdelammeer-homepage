@@ -747,7 +747,7 @@ collections:
           widget: "hidden",
           default: "space-post",
         }
-      - { label: "Title", name: "title", widget: "string" }  
+      - { label: "Title", name: "title", widget: "string" }
       - {
           label: "Title Section",
           name: "title section",
@@ -1289,6 +1289,13 @@ collections:
                           widget: "select",
                           required: false,
                           options: ["blog", "space", "work"],
+                        },
+                        {
+                          label: "hero",
+                          name: "hero",
+                          widget: "boolean",
+                          default: false,
+                          required: false,
                         },
                         {
                           label: "References",
