@@ -5,14 +5,14 @@
     .project-list {
         // padding: 2rem 0rem;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 0.5rem;
     }
 
     .work-section,
     .blog-section,
     .space-section {
-        grid-column: span 1;
+        grid-column: span 2;
         // width: 50vw;
         padding: 0rem 0.5rem;
         // margin: 0.5rem;
@@ -28,6 +28,6 @@
     }
 
     .hero{
-        grid-column: span 2;
+        grid-column: span 4;
     }
 }

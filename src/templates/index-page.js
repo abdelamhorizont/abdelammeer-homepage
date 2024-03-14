@@ -86,7 +86,7 @@ const IndexPage = ({ data }) => {
                         :
 
                         content?.reference_section_type == "space" ?
-                          <motion.div className={`space-section ${content.hero && 'hero'}`}
+                          <motion.li className={`space-section ${content.hero && 'hero'}`}
                             initial="hidden"
                             whileInView="visible"
                             variants={section}
@@ -98,11 +98,11 @@ const IndexPage = ({ data }) => {
                                 <ProjectPreview content={project.node} type={'iframe'} />
                               )
                             })}
-                          </motion.div>
+                          </motion.li>
 
                           :
                           content.reference_section_type == "work" ?
-                            <motion.div className={`work-section ${content.hero && 'hero'}`}
+                            <motion.li className={`work-section ${content.hero && 'hero'}`}
                               initial="hidden"
                               whileInView="visible"
                               variants={section}
@@ -120,7 +120,7 @@ const IndexPage = ({ data }) => {
                                   )
                                 })}
                               </div>
-                            </motion.div>
+                            </motion.li>
                             :
                             <div></div>
                     }
