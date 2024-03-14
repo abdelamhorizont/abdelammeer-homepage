@@ -66,7 +66,7 @@ const IndexPage = ({ data }) => {
                   <>
                     {
                       content.reference_section_type == "blog" ?
-                        <motion.li className={`blog-section ${content.hero && 'full-width'}`}
+                        <motion.li className={`blog-section ${content.hero && 'hero'}`}
                           initial="hidden"
                           whileInView="visible"
                           viewport={{ once: true }}
@@ -86,7 +86,7 @@ const IndexPage = ({ data }) => {
                         :
 
                         content?.reference_section_type == "space" ?
-                          <motion.div className={`space-section ${content.hero && 'full-width'}`}
+                          <motion.div className={`space-section ${content.hero && 'hero'}`}
                             initial="hidden"
                             whileInView="visible"
                             variants={section}
@@ -102,7 +102,7 @@ const IndexPage = ({ data }) => {
 
                           :
                           content.reference_section_type == "work" ?
-                            <motion.div className={`work-section ${content.hero && 'full-width'}`}
+                            <motion.div className={`work-section ${content.hero && 'hero'}`}
                               initial="hidden"
                               whileInView="visible"
                               variants={section}

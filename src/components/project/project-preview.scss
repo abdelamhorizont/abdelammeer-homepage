@@ -1,0 +1,12 @@
+.project-description {
+    width: 100%;
+    margin-top: 7.5vh;
+    margin-bottom: 2rem;
+    padding: 0rem 0.5rem;
+
+    flex-basis: 100%;
+    // white-space: nowrap;
+    flex-shrink: 0;
+    display: none;
+    transition: all 0.5s ease;
+}
