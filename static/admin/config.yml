@@ -460,7 +460,6 @@ collections:
               },
             ],
         }
-      - { label: "Title", name: "title", widget: "string" }
       - {
           label: "Subtitle",
           name: "subtitle",

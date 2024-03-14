@@ -99,7 +99,8 @@ body {
 
 .color-theme {
    background-color: rgba(0,0,0,0);
-   background: linear-gradient(rgb(68, 180, 68), rgb(134, 134, 255), rgb(254, 214, 54), rgb(68, 180, 68), rgb(134, 134, 255), rgb(254, 214, 54));
+   background: linear-gradient(rgb(68, 180, 68), rgb(134, 134, 255), rgb(254, 214, 54));
+   // background: linear-gradient(rgb(68, 180, 68), rgb(134, 134, 255), rgb(254, 214, 54), rgb(68, 180, 68), rgb(134, 134, 255), rgb(254, 214, 54));
 
    transition: all 1s ease;
 
