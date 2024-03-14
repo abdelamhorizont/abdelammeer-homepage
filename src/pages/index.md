@@ -61,9 +61,6 @@ variable-content:
     column-end: "13"
     references:
       - type: work-reference
-        reference: New Normal
-        full-width: false
-      - type: work-reference
         full-width: true
         reference: ABK Stuttgart
       - type: work-reference
