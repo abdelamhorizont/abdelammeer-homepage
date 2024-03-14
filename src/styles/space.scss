@@ -1,12 +1,14 @@
 .space-section {
     overflow: hidden;
-
+    transition: all 0.5s ease;
+    
     .project-list {
         padding: 0rem 0.5rem;
+        transition: all 0.5s ease;
     }
 
     .project-preview {
-
+        transition: all 0.5s ease;
         // display: flex;
         // grid-template-columns: repeat(12, 1fr);
         margin: 0.5rem;
@@ -25,7 +27,7 @@
             .cover-image {
                 position: relative;
                 grid-column: 1/13;
-                height: 90%;
+                height: 99%;
                 width: 100%;
                 grid-column: 5/13;
                 border-radius: 25vw;
@@ -171,6 +173,19 @@
                     -webkit-transform-origin: -200px 0;
 
                 }
+            }
+        }
+    }
+}
+
+.hero {
+    .project-preview {
+        .preview-title {
+            height: 70vh;
+
+            .title-img {
+                // transform: scale(1);
+                width: 25%;
             }
         }
     }
