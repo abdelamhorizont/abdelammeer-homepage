@@ -58,9 +58,6 @@ variable-content:
         full-width: false
       - type: work-reference
         full-width: true
-        reference: Deep Sea Bots
-      - type: work-reference
-        full-width: true
         reference: ABK Stuttgart
       - type: work-reference
         full-width: false
