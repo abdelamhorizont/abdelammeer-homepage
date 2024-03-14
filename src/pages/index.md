@@ -47,6 +47,7 @@ variable-content:
     references:
       - type: space-reference
         reference: Ocean View
+    hero: true
   - type: reference-section
     reference-section-type: work
     column-start: "1"
@@ -70,6 +71,7 @@ variable-content:
       - type: work-reference
         full-width: true
         reference: Narrating Africa
+    hero: true
 video:
   fallbackImage: ""
   videoFile: ""
