@@ -47,7 +47,14 @@ variable-content:
     references:
       - type: space-reference
         reference: Ocean View
-    hero: true
+    hero: false
+  - type: reference-section
+    hero: false
+    reference-section-type: blog
+    references:
+      - type: work-reference
+        full-width: true
+        reference: New Normal
   - type: reference-section
     reference-section-type: work
     column-start: "1"
