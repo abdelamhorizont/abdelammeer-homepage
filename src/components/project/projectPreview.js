@@ -34,7 +34,7 @@ export function ProjectPreview({ content, type, fullWidth }) {
           {content?.frontmatter?.collaborators && <h2 className="collaborators">with {content?.frontmatter?.collaborators} </h2>}
           {/* </div> */}
         </div>
-        <div className="project-description prom-text">
+        <div className="project-description">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, illo impedit rerum, laudantium cupiditate aliquam totam natus neque consequatur, odio error omnis. Deleniti, molestias. Quasi quos officia laudantium quia vel.
           </p>
