@@ -54,26 +54,9 @@ variable-content:
     references:
       - type: space-reference
         reference: deep sea bots
+      - type: space-reference
+        reference: Ocean View
     reference-section-type: space
-  - type: reference-section
-    hero: false
-    reference-section-type: work
-    references:
-      - type: work-reference
-        full-width: true
-        reference: New Normal
-      - type: work-reference
-        full-width: false
-        reference: ABK Stuttgart
-      - type: work-reference
-        full-width: false
-        reference: GleisMediale
-      - type: work-reference
-        full-width: false
-        reference: Narrating Namibia
-      - type: work-reference
-        full-width: false
-        reference: Narrating Africa
 video:
   fallbackImage: ""
   videoFile: ""
