@@ -55,7 +55,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <div className="index-page">
-        <motion.ul className="project-list"
+        <motion.ul className="section-list"
           initial="hidden"
           animate="visible"
           variants={page}>
@@ -114,7 +114,6 @@ const IndexPage = ({ data }) => {
                               <div className="project-list">
                                 {content.references?.map(node => {
                                   const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'work-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
-                                  console.log(project);
                                   return (
                                     <motion.div
                                       className={node.full_width && 'full-width'}

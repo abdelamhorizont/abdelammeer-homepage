@@ -21,12 +21,11 @@ export function ProjectPreview({ content, type, fullWidth }) {
 
           {/* <div className="cover-title"> */}
           <h2 className="work-year">{content?.frontmatter?.title_section?.date}</h2>
+
           {content?.frontmatter?.title_section?.images?.length ?
             <GatsbyImage className="title-img" image={getImage(content?.frontmatter?.title_section.images[0]?.imageFile)} alt={''} />
             :
-            <h1 className="headline">{content?.frontmatter?.title}
-              {/* <span className="blog-type"><h2>{content?.frontmatter?.title_section?.type}</h2></span> */}
-            </h1>
+            <h1 className="headline">{content?.frontmatter?.title}</h1>
           }
 
           <h2 className="type">{content?.frontmatter?.title_section?.type}</h2>
