@@ -74,14 +74,6 @@ variable-content:
       - type: work-reference
         full-width: false
         reference: Narrating Africa
-  - type: reference-section
-    reference-section-type: space
-    column-start: "1"
-    column-end: "13"
-    references:
-      - type: space-reference
-        reference: Ocean View
-    hero: false
 video:
   fallbackImage: ""
   videoFile: ""
