@@ -50,7 +50,7 @@ variable-content:
     hero: false
   - type: reference-section
     hero: false
-    reference-section-type: blog
+    reference-section-type: work
     references:
       - type: work-reference
         full-width: true
