@@ -16,45 +16,45 @@
             height: max-content;
         }
 
-        .full-width {
-            grid-column: span 3;
+        // .full-width {
+        //     grid-column: span 1;
 
-            // display: grid;
-            // grid-template-columns: repeat(3, minmax(0, 1fr));
-            // gap: 0.5rem;
-            .project-preview {
-                .cover-image {
-                    grid-column: span 2;
-                    // order: 2;
-                    height: 100%;
+        //     // display: grid;
+        //     // grid-template-columns: repeat(3, minmax(0, 1fr));
+        //     // gap: 0.5rem;
+        //     .project-preview {
+        //         .cover-image {
+        //             // grid-column: span 2;
+        //             // order: 2;
+        //             height: 100%;
 
-                    .image-section,
-                    .video-section,
-                    .gatsby-image-wrapper {
-                        object-fit: cover;
-                        object-position: center center;
-                        width: 100%;
-                        // max-height: 100%;
-                        height: 70vh;
+        //             .image-section,
+        //             .video-section,
+        //             .gatsby-image-wrapper {
+        //                 object-fit: cover;
+        //                 object-position: center center;
+        //                 width: 100%;
+        //                 // max-height: 100%;
+        //                 height: 70vh;
 
-                    }
+        //             }
 
-                    img,
-                    video {
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-            }
+        //             img,
+        //             video {
+        //                 width: 100%;
+        //                 height: 100%;
+        //             }
+        //         }
+        //     }
 
 
-            // .cover-title {
-            //     height:max-content;
-            //     grid-column: span 1;
-            //     order: 1;
-            // }
+        //     // .cover-title {
+        //     //     height:max-content;
+        //     //     grid-column: span 1;
+        //     //     order: 1;
+        //     // }
 
-        }
+        // }
 
         div {
             .project-preview {
@@ -118,12 +118,12 @@
                     
                     h1 {
                         display: inline-flex;
-                        width: fit-content;
+                        // width: fit-content;
                         height: fit-content;
 
-                        padding: 0.75rem;
-                        background: rgb(254, 214, 54);
-                        border-radius: 2rem;
+                        // padding: 0.75rem;
+                        // background: rgb(254, 214, 54);
+                        // border-radius: 2rem;
 
                         // grid-column: span 4;
                         font-size: 3.25rem;
