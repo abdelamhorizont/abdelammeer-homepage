@@ -73,7 +73,7 @@ const IndexPage = ({ data }) => {
                           variants={section}
                         >
                           {content.references?.map((node) => {
-                            const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'blog-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
+                            const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'blog-post' || 'work-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
                             return (
                               <motion.div
                                 variants={item}>
