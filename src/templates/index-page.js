@@ -95,7 +95,10 @@ const IndexPage = ({ data }) => {
                             {content?.references?.map(node => {
                               const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'space-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
                               return (
-                                <ProjectPreview content={project.node} type={'iframe'} />
+                                <motion.div
+                                  variants={item}>
+                                  <ProjectPreview content={project.node} type={'iframe'} />
+                                </motion.div>
                               )
                             })}
                           </motion.li>
@@ -111,6 +114,7 @@ const IndexPage = ({ data }) => {
                               <div className="project-list">
                                 {content.references?.map(node => {
                                   const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'work-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
+                                  console.log(project);
                                   return (
                                     <motion.div
                                       className={node.full_width && 'full-width'}
