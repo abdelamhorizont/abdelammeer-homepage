@@ -30,6 +30,21 @@ variable-content:
         reference: Spawn Grounds
       - type: blog-reference
         reference: (Non) Artificial (Maybe) Intelligence
+      - type: work-reference
+        full-width: false
+        reference: New Normal
+      - type: work-reference
+        full-width: false
+        reference: ABK Stuttgart
+      - type: work-reference
+        full-width: false
+        reference: GleisMediale
+      - type: work-reference
+        full-width: false
+        reference: Narrating Namibia
+      - type: work-reference
+        full-width: false
+        reference: Narrating Africa
   - type: reference-section
     column-start: "1"
     column-end: "13"
