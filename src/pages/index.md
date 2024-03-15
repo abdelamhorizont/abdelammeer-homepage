@@ -25,11 +25,11 @@ variable-content:
       - type: blog-reference
         reference: "Typography 1: Letters"
       - type: blog-reference
-        reference: (Non) Artificial (Maybe) Intelligence
-      - type: blog-reference
         reference: Mare Mediterraneum
       - type: blog-reference
         reference: Spawn Grounds
+      - type: blog-reference
+        reference: (Non) Artificial (Maybe) Intelligence
   - type: reference-section
     column-start: "1"
     column-end: "13"
