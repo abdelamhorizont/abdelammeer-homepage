@@ -25,11 +25,11 @@ variable-content:
       - type: blog-reference
         reference: "Typography 1: Letters"
       - type: blog-reference
-        reference: (Non) Artificial (Maybe) Intelligence
-      - type: blog-reference
         reference: Mare Mediterraneum
       - type: blog-reference
         reference: Spawn Grounds
+      - type: blog-reference
+        reference: (Non) Artificial (Maybe) Intelligence
   - type: reference-section
     column-start: "1"
     column-end: "13"
@@ -40,14 +40,6 @@ variable-content:
       - type: space-reference
         reference: deep sea bots
     reference-section-type: space
-  - type: reference-section
-    reference-section-type: space
-    column-start: "1"
-    column-end: "13"
-    references:
-      - type: space-reference
-        reference: Ocean View
-    hero: false
   - type: reference-section
     hero: false
     reference-section-type: work
@@ -67,6 +59,14 @@ variable-content:
       - type: work-reference
         full-width: false
         reference: Narrating Africa
+  - type: reference-section
+    reference-section-type: space
+    column-start: "1"
+    column-end: "13"
+    references:
+      - type: space-reference
+        reference: Ocean View
+    hero: false
 video:
   fallbackImage: ""
   videoFile: ""
