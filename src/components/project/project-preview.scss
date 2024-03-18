@@ -1,17 +1,21 @@
 .project-description {
-    width: 100%;
-    margin-top: 7.5vh;
+    // max-width: 39vw;
+    // margin-top: 7.5vh;
     margin-bottom: 2rem;
     padding: 0rem 0.5rem;
 
-    flex-basis: 100%;
+    // flex-basis: 100%;
     // white-space: nowrap;
-    flex-shrink: 0;
-    display: none;
+    // flex-shrink: 0;
     transition: all 0.5s ease;
-
+    
     font-family: Kleukens;
     font-size: 1.5rem;
     line-height: 1.8rem;
+    
+    p{
+        display: none;
+
+    }
 
 }

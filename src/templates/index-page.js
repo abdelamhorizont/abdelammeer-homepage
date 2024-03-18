@@ -160,7 +160,6 @@ export const pageQuery = graphql`
           }
           type
           reference_section_type
-          hero
           column_end
           column_start
           text

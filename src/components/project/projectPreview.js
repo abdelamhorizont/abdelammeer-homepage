@@ -25,18 +25,20 @@ export function ProjectPreview({ content, type, fullWidth }) {
           {content?.frontmatter?.title_section?.images?.length ?
             <GatsbyImage className="title-img" image={getImage(content?.frontmatter?.title_section.images[0]?.imageFile)} alt={''} />
             :
-            <h1 className="headline">{content?.frontmatter?.title}</h1>
+            <div className="project-description">
+              <h1 className="headline">{content?.frontmatter?.title}</h1>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, illo impedit rerum, laudantium cupiditate aliquam totam natus neque consequatur, odio error omnis. Deleniti, molestias. Quasi quos officia laudantium quia vel.
+                </p>
+              </div>
+            </div>
           }
 
           <h2 className="type">{content?.frontmatter?.title_section?.type}</h2>
 
           {content?.frontmatter?.collaborators && <h2 className="collaborators">with {content?.frontmatter?.collaborators} </h2>}
           {/* </div> */}
-        </div>
-        <div className="project-description">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, illo impedit rerum, laudantium cupiditate aliquam totam natus neque consequatur, odio error omnis. Deleniti, molestias. Quasi quos officia laudantium quia vel.
-          </p>
         </div>
       </Link>
     </>
