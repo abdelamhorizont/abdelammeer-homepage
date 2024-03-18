@@ -11,17 +11,6 @@ variable-content:
     column-end: "13"
     text: a﻿bdel am meer communication design
   - type: reference-section
-    hero: true
-    reference-section-type: blog
-    references:
-      - type: blog-reference
-        reference: "Typography 1: Letters"
-      - type: blog-reference
-        reference: Spawn Grounds
-      - type: work-reference
-        full-width: false
-        reference: New Normal
-  - type: reference-section
     column-start: "1"
     column-end: "13"
     reference-content:
