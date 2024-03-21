@@ -8,11 +8,11 @@ import _ from 'lodash';
 
 import "./project-preview.scss"
 
-export function ProjectPreview({ content, type, fullWidth }) {
+export function ProjectPreview({ content, type, hero }) {
   return (
     <>
       <Link to={content?.fields?.slug} className={`${_.kebabCase(content?.frontmatter?.title)} project-preview`}>
-        <div className="preview-title">
+        <div className={hero ? "blogpostcover" : "preview-title"}>
           <h2 className="year">{content?.frontmatter?.title_section?.date}</h2>
 
           <div className={`cover-image`}>
@@ -20,18 +20,16 @@ export function ProjectPreview({ content, type, fullWidth }) {
           </div>
 
           {/* <div className="cover-title"> */}
-          <h2 className="work-year">{content?.frontmatter?.title_section?.date}</h2>
+          {/* <h2 className="work-year">{content?.frontmatter?.title_section?.date}</h2> */}
 
           {content?.frontmatter?.title_section?.images?.length ?
             <GatsbyImage className="title-img" image={getImage(content?.frontmatter?.title_section.images[0]?.imageFile)} alt={''} />
             :
             <div className="project-description">
               <h1 className="headline">{content?.frontmatter?.title}</h1>
-              <div>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, illo impedit rerum, laudantium cupiditate aliquam totam natus neque consequatur, odio error omnis. Deleniti, molestias. Quasi quos officia laudantium quia vel.
                 </p>
-              </div>
             </div>
           }
 

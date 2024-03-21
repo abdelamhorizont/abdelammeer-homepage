@@ -81,7 +81,7 @@ const Layout = ({ children, activeSite }) => {
           <div className="nav-group" >
             <ul className="nav-meta">
               <li id='logo'><Link to="/">abdelammeer</Link></li>
-              <li><Link to="/">about</Link></li>
+              <li><Link to="/about">about</Link></li>
               <li><a href="mailto:hello@abdelammeer.com">@</a></li>
             </ul>
             <ul className="nav-sites">

@@ -66,7 +66,8 @@ const IndexPage = ({ data }) => {
                   <>
                     {
                       content.reference_section_type == "blog" ?
-                        <motion.li className={`blog-section ${content.hero && 'hero'}`}
+                        <motion.li className={`blog-section ${'hero'}`}
+                        // <motion.li className={`blog-section ${content.hero && 'hero'}`}
                           initial="hidden"
                           whileInView="visible"
                           viewport={{ once: true }}
@@ -77,7 +78,7 @@ const IndexPage = ({ data }) => {
                             return (
                               <motion.div
                                 variants={item}>
-                                <ProjectPreview content={project?.node} />
+                                <ProjectPreview content={project?.node} hero={true} />
                               </motion.div>
                             )
                           })}
@@ -158,6 +159,7 @@ export const pageQuery = graphql`
             type
             full_width
           }
+          hero
           type
           reference_section_type
           column_end
