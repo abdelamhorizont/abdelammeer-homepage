@@ -32,7 +32,7 @@ variable-content:
       * Illustration
       * Editorial Design
       * Workshops
-    title: "services "
+    title: "Services "
   - type: text-section
     big-size: "false"
     text: |-
@@ -42,14 +42,14 @@ variable-content:
       * Stadtpalais Stuttgart
       * Fraunhofer Institut
       * Stiftung Digitale Spielekultur
-    title: "# clients  *"
+    title: "Clients "
   - type: text-section
     big-size: "false"
     text: |-
       * Jugendzentrum Penthaus Neuhausen
       * Kirchengemeinde Kiel Gaarden
       * Schülerhaus Schwabschule
-    title: workshops
+    title: Teaching
 listedInfos:
   - column:
       title: test
