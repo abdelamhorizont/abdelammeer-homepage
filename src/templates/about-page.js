@@ -27,6 +27,28 @@ const AboutPage = ({ data }) => {
         {/* <div className={hero ? "blogpostcover" : "preview-title"}> */}
           <h1 className="year">{post?.title}</h1>
 
+          <div className="description">
+            <TextSection content={post.Description} columns={'2'} />
+          </div>
+
+          {
+            post?.variable_content?.map((content) => {
+              if (content.type == 'text-section') {
+                return (
+                  <div  className={`html-content`}>
+                    <TextSection content={content.text} />
+                  </div>
+                )
+              } else if (content.type == 'image-section') {
+                return (
+                  <div style={{ gridColumn: content.column_start + "/" + content.column_end }} className={`html-content`}>
+                    <ImageSection content={content} type={"grid"} />
+                  </div>
+                )
+              }
+            })
+          }
+
           {/* <div className={`cover-image`}>
             <ImageSection type={type} content={content?.frontmatter.cover} columnStart={1} columnEnd={12} />
           </div>

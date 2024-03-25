@@ -1,13 +1,23 @@
-.about-page{
+.about-page {
     background-color: #e8e6e6;
     margin: 0.5rem;
     margin-top: 2rem;
     min-height: 100vh;
     padding: 1rem;
     border-radius: 1rem;
-    
-    .about-content{
-        
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+
+    div {
+        grid-column: 4/12;
+    }
+
+    .description{
+        font-family: Kleukens;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
     }
 
 }
@@ -136,18 +146,19 @@
             margin-bottom: 0.5rem;
             // flex-wrap: wrap;
 
-        // .preview-title {
+            // .preview-title {
             h1 {
                 font-size: 5rem;
                 grid-column: span 8;
             }
-            
-            h2{
+
+            h2 {
                 font-size: 1.5rem;
             }
 
 
             .cover-image {
+
                 // margin: 0rem 1rem;
                 // grid-column: span 1;
                 // height: 5vh;
@@ -169,24 +180,24 @@
                 flex-direction: column;
                 // align-items: space-between;
                 // justify-content: space-between;
-                
+
                 // flex-basis: 100%;
                 // white-space: nowrap;
                 // flex-shrink: 0;
                 transition: all 0.5s ease;
-                
+
                 font-family: Kleukens;
                 font-size: 1.5rem;
                 line-height: 1.8rem;
                 max-width: 70vw;
-                
-                p{
+
+                p {
                     margin-top: 1rem;
                     max-width: 60vw;
                     // display: none;
-            
+
                 }
-            
+
             }
 
             .type {
