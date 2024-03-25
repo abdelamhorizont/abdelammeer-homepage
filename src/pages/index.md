@@ -28,6 +28,8 @@ variable-content:
         reference: Mare Mediterraneum
       - type: blog-reference
         reference: Spawn Grounds
+      - type: space-reference
+        reference: deep sea bots
       - type: blog-reference
         reference: (Non) Artificial (Maybe) Intelligence
       - type: work-reference
@@ -36,6 +38,8 @@ variable-content:
       - type: work-reference
         full-width: false
         reference: ABK Stuttgart
+      - type: space-reference
+        reference: Ocean View
       - type: work-reference
         full-width: false
         reference: GleisMediale
