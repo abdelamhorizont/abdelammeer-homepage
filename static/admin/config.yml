@@ -1431,25 +1431,6 @@ collections:
                     required: false,
                   },
                   {
-                    label: "Type",
-                    name: "type",
-                    widget: "string",
-                    required: false,
-                  },
-                  {
-                    label: "Location",
-                    name: "location",
-                    widget: "string",
-                    required: false,
-                  },
-                  {
-                    label: "Collaborators",
-                    name: "collaborators",
-                    widget: "string",
-                    required: false,
-                  },
-                  { label: "Date", name: "date", widget: "date" },
-                  {
                     label: "Images",
                     name: "images",
                     widget: "list",

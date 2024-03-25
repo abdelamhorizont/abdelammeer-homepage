@@ -3,13 +3,13 @@
 }
 
 .layout {
+    overflow: auto;
     nav {
         position: fixed;
         display: flex;
         justify-content: space-between;
         z-index: 10;
         padding: 0.3rem;
-
         width: calc(100vw - 0.6rem);
 
         a {
