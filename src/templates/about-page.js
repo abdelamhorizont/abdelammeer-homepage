@@ -35,9 +35,12 @@ const AboutPage = ({ data }) => {
             post?.variable_content?.map((content) => {
               if (content.type == 'text-section') {
                 return (
-                  <div  className={`html-content`}>
+                  <>
+                  <h2>title</h2>
+                  <div className={`html-content`}>
                     <TextSection content={content.text} />
                   </div>
+                  </>
                 )
               } else if (content.type == 'image-section') {
                 return (
