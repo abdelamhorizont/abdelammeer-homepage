@@ -16,44 +16,40 @@ variable-content:
   - type: text-section
     big-size: "false"
     text: |-
-      # C﻿ontact
-
       +49 1 768 783 4347\
       hello@abdelammeer.com\
       \
       Abdelhamid Ameur,\
       Sparrhärmlingweg 41,\
       70376 Stuttgart
+    title: C﻿ontact
   - type: text-section
     big-size: "false"
     text: |-
-      # services
-
       * Visual Identity
       * Web Design &\
         Frontend Development
       * Illustration
       * Editorial Design
       * Workshops
+    title: "services "
   - type: text-section
     big-size: "false"
     text: |-
-      # clients
-
       * Staatliche Akademie der\
         Bildenden Künste Stuttgart
       * Deutsches Literaturarchiv Marbach
       * Stadtpalais Stuttgart
       * Fraunhofer Institut
       * Stiftung Digitale Spielekultur
+    title: "# clients  *"
   - type: text-section
     big-size: "false"
     text: |-
-      # workshops
-
       * Jugendzentrum Penthaus Neuhausen
       * Kirchengemeinde Kiel Gaarden
       * Schülerhaus Schwabschule
+    title: workshops
 listedInfos:
   - column:
       title: test
