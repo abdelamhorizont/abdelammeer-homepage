@@ -170,7 +170,7 @@ collections:
                 widget: "object",
                 fields:
                   [
-                    { label: "Title", name: "title", widget: "string" }
+                    { label: "Title", name: "title", widget: "string" },
                     {
                       label: "Column Start",
                       name: "column-start",
@@ -291,7 +291,7 @@ collections:
                 widget: "object",
                 fields:
                   [
-                    { label: "Title", name: "title", widget: "string" }
+                    { label: "Title", name: "title", widget: "string" },
                     {
                       label: "Column Start",
                       name: "column-start",
@@ -1536,7 +1536,7 @@ collections:
                     widget: "object",
                     fields:
                       [
-                        { label: "Title", name: "title", widget: "string" }
+                        { label: "Title", name: "title", widget: "string" },
                         {
                           label: "Column Start",
                           name: "column-start",
@@ -1657,7 +1657,7 @@ collections:
                     widget: "object",
                     fields:
                       [
-                        { label: "Title", name: "title", widget: "string" }                      
+                        { label: "Title", name: "title", widget: "string" },                      
                         {
                           label: "Column Start",
                           name: "column-start",
