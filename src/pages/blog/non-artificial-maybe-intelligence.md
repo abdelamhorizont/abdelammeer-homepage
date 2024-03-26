@@ -179,17 +179,18 @@ projectInfos: >-
 collaborators: students
 date: 2022-10-01T08:43:10.878Z
 location: HfG Karlsruhe
-cover:
-  fallbackImage: download.png
-  caption: created by Kristian Vrhar on stable diffusion
 title: (Non) Artificial (Maybe) Intelligence
-type: "Seminar "
 title section:
   date: 2022-09-30T22:00:00.000Z
   title: (Non) Artificial (Maybe) Intelligence
-  type: "Seminar "
+  type: blog
   location: HfG Karlsruhe
   images: []
+  format: Seminar
+cover:
+  fallbackImage: download.png
+  caption: created by Kristian Vrhar on stable diffusion
+type: "Seminar "
 Description: T﻿he seminar (Non) Artificial (Maybe) Intelligence was my first one
   at the Karlsruhe University of Arts and Design in the winter semester 2022, a
   time where generative AI was reaching new levels and public popularity through
