@@ -50,6 +50,13 @@ collections:
               {
                 label: "Type",
                 name: "type",
+                widget: "select",
+                required: false,
+                options: ["blog", "space", "work"],
+              },
+              {
+                label: "Format",
+                name: "format",
                 widget: "string",
                 required: false,
               },
@@ -1657,7 +1664,7 @@ collections:
                     widget: "object",
                     fields:
                       [
-                        { label: "Title", name: "title", widget: "string" },                      
+                        { label: "Title", name: "title", widget: "string" },
                         {
                           label: "Column Start",
                           name: "column-start",

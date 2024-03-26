@@ -80,6 +80,12 @@
 
                 }
 
+                iframe {
+                    width: 100%;
+                    height: 100%;
+                    // border-radius: 0.5rem;
+                }
+
                 img,
                 video {
                     width: auto;
@@ -95,7 +101,36 @@
 
     }
 
+    .deep-sea-bots {
+        .preview-title {
+            .cover-image {
+                background-color: rgba(255, 255, 255, 0.5);
+                overflow: hidden;
 
+                .image-section {
+
+                    // overflow: visible;
+                    iframe {
+                        // overflow: visible;
+                        width: calc(100% * 4.4);
+                        height: calc(100% * 4);
+                        zoom: 0.5;
+
+                        -ms-zoom: 0.25;
+                        transform: scale(0.5) translateX(-2%);
+
+                        -moz-transform: scale(0.25);
+                        -moz-transform-origin: -2% 0;
+                        -o-transform: scale(0.25);
+                        -o-transform-origin: -2% 0;
+                        -webkit-transform: scale(0.25);
+                        -webkit-transform-origin: -2% 0;
+
+                    }
+                }
+            }
+        }
+    }
     // .project-preview:hover {
 
     //     .cover-image {

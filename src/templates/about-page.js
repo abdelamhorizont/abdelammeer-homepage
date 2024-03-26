@@ -36,7 +36,7 @@ const AboutPage = ({ data }) => {
               if (content.type == 'text-section') {
                 return (
                   <>
-                  <h2>title</h2>
+                  <h2>{content?.title}</h2>
                   <div className={`html-content`}>
                     <TextSection content={content.text} />
                   </div>
@@ -129,6 +129,7 @@ query AboutPageTemplate {
         title
         Description
         variable_content {
+          title
           type
           column_end
           column_start

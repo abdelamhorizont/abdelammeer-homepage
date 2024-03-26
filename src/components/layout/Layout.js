@@ -77,7 +77,7 @@ const Layout = ({ children, activeSite }) => {
       </Helmet>
 
       <header>
-        <nav>
+        <nav className="nav-header">
           <div className="nav-group" >
             <ul className="nav-meta">
               <li id='logo'><Link to="/">abdelammeer</Link></li>
@@ -125,16 +125,18 @@ const Layout = ({ children, activeSite }) => {
 
       {/* <div className="heightfill"></div> */}
 
-      <div className="footer">
-        <div className="contact">
-          <div className="insta-link"><a href='https://www.instagram.com/' target="blank">Instagram</a></div>
-        </div>
+      <nav className="nav-footer">
+        <ul>
+        {/* <div className="contact"> */}
+          <li className="insta-link"><a href='https://www.instagram.com/' target="blank">Instagram</a></li>
+        {/* </div> */}
 
-        <div className="nav-links-footer">
-          <Link to="/imprint">Imprint</Link>
-          <Link to="/privacy-policy">Privacy Policy</Link>
-        </div>
-      </div>
+        {/* <div className="nav-links-footer"> */}
+         <li> <Link to="/imprint">Imprint</Link></li>
+          <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+        {/* </div> */}
+        </ul>
+      </nav>
 
 
     </div>
