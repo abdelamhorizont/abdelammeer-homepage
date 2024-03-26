@@ -77,7 +77,9 @@ const IndexPage = ({ data }) => {
                             const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'blog-post' || 'work-post' || 'space-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
                             return (
                               <motion.div
-                                variants={item}>
+                                variants={item}
+                                clasName={project?.node?.frontmatter?.title_section?.type}
+                                >
                                 <ProjectPreview content={project?.node} hero={true} />
                               </motion.div>
                             )
@@ -177,6 +179,7 @@ export const pageQuery = graphql`
             title_section {
               title
               type
+              format
               date(formatString: "YYYY")
               images {
                 imageFile {

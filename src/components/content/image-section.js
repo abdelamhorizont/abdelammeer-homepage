@@ -29,8 +29,8 @@ const ImageSection = ({ content, type }) => {
   return (
     <div className="image-section">
       {
-        type == "iframe" ?
-          // content?.iframe != null ?
+        // type == "iframe" ?
+          content?.iframe != null ?
           <iframe src={content.iframe} frameborder="100px"></iframe>
           :
           // type == "video" ?
