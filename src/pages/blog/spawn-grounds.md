@@ -5,10 +5,11 @@ title: Spawn Grounds
 title section:
   date: 2022-12-31T23:00:00.000Z
   title: Spawn Grounds
-  type: Workshop
+  type: blog
   location: HfG Karlsruhe
   collaborators: Christina Mäckelburg
   images: []
+  format: Seminar
 Description: Umfeld, Spielfeld; Ziel und Zufall; Augen zu, Augen auf; Auf Los
   geht's los! Aufbrechen, Auflösen, Auf den Kopf stellen! Spielbrett, Pausenhof,
   Gameshow, Triple A Open World MMORPG. Game-Engine, Kreide und Würfel, choose
