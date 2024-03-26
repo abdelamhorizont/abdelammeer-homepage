@@ -3,18 +3,16 @@ templateKey: blog-post
 cover-image: /img/mare18.jpeg
 projectInfos: test
 date: 2023-04-01T14:22:36.721Z
+title: Mare Mediterraneum
 title section:
   date: 2023-03-31T22:00:00.000Z
   title: "MARE MEDITERRANEUM "
-  type: Seminar
+  type: blog
   images: []
+  format: Seminar
 cover:
   fallbackImage: mare18.jpeg
   caption: Work by Jessica Keßler
-title: Mare Mediterraneum
-tags:
-  - All
-type: Seminar
 Description: >-
       The Mediterranean Sea as a border, as a place, as a space - for wind,
   waves and ground, for journeys, for escape, for sea dwellers, cargo ships and
@@ -32,4 +30,7 @@ Description: >-
 
 
       We will read texts from ‚Undrowned‘, Black Feminist Lessons from Marine Mammals by Alexis Pauline Gumbs, listen to ‚Saying Water‘, a monologue by Roni Horn, follow investigations of Forensic Architecture and Migrant Journal, browse through geographic maps, charts and data sources. — and then we will go to the beach. I mean, we have to. We will go to southern france for a workshop and visit the Rencontres d’Arles. More on that later this afternoon.
+tags:
+  - All
+type: Seminar
 ---
