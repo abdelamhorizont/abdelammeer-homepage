@@ -5,9 +5,17 @@ title: "about "
 title section:
   date: 2024-03-25T10:02:48.381Z
 Description: >-
-  Hello there! My Name is Abdel. I am a communication designer working with
-  Illustration and code, text and typography, images, identities and
-  publications of all sort. really, anything visual – or hidden!\
+  In my work as an academic assistant at the Karlsruhe University of Arts and
+  Design, I give seminars in the Department of Communication Design on
+  interdisciplinary topics such as the demystification of AI and virtual
+  assistants, worldbuilding in video games, or the treatment of the
+  Mediterranean region in the media as a border area. 
+
+
+  I particularly like to use accessible formats, interactive installations, game formats, workshops, in combination with haptic experiences, special printing processes, working with ceramics and textiles. During the artist-in-residence program of PARADISE AIR in Matsudo, Japan, last year, I had the opportunity to work and exhibit. 
+
+
+  I also have a freelance practice as a communication designer, where I created, for example, the new corporate design of the ABK Stuttgart, where I studied, or the exhibition design for Narrating Africa at the German Literature Archive in Marbach.\
 
   \
 
@@ -15,27 +23,24 @@ Description: >-
 variable-content:
   - type: text-section
     big-size: "false"
-    text: |-
-      +49 1 768 783 4347\
-      hello@abdelammeer.com\
-      \
-      Abdelhamid Ameur,\
-      Sparrhärmlingweg 41,\
-      70376 Stuttgart
+    text: hello@abdelammeer.com
     title: C﻿ontact
   - type: text-section
     big-size: "false"
     text: |-
-      * Visual Identity
-      * Web Design &\
-        Frontend Development
       * Illustration
+      * Visual Identity
+      * Web Design & Creative Coding
       * Editorial Design
-      * Workshops
-    title: "Services "
+      * C﻿onsulting 
+      * Seminars & Workshops
+    title: "Skills & Services "
   - type: text-section
     big-size: "false"
     text: |-
+      * Z﻿KM Karlsruhe
+      * H﻿fG Karlsruhe
+      * M﻿elton Prior Institute
       * Staatliche Akademie der\
         Bildenden Künste Stuttgart
       * Deutsches Literaturarchiv Marbach
@@ -46,8 +51,10 @@ variable-content:
   - type: text-section
     big-size: "false"
     text: |-
+      * H﻿fG Karlsruhe
+      * K﻿unstmuseum Stuttgart
+      * S﻿tadtbibliothek Bietigheim-Bissingen
       * Jugendzentrum Penthaus Neuhausen
-      * Kirchengemeinde Kiel Gaarden
       * Schülerhaus Schwabschule
     title: Teaching
 listedInfos:
