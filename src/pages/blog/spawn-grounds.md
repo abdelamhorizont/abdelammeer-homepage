@@ -9,7 +9,7 @@ title section:
   location: HfG Karlsruhe
   collaborators: Christina Mäckelburg
   images: []
-  format: Seminar
+  format: Workshop
 Description: Umfeld, Spielfeld; Ziel und Zufall; Augen zu, Augen auf; Auf Los
   geht's los! Aufbrechen, Auflösen, Auf den Kopf stellen! Spielbrett, Pausenhof,
   Gameshow, Triple A Open World MMORPG. Game-Engine, Kreide und Würfel, choose
