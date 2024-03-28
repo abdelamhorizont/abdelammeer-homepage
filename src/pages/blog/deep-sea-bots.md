@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Deep Sea Bots
+title: deep sea bots
 title section:
   date: 2021-09-15T13:56:53.742Z
   type: space
