@@ -6,8 +6,15 @@ title section:
   title: Ocean View
   type: blog
   location: Matsudo, Japan
-  images: []
+  images:
+    - type: image
+      imageFile: element-13ocean-view.png
+      caption: Ocean View Title
   format: Seminar
 type: Ocean View
 date: 2024-03-05T14:22:37.628Z
+cover-image:
+  - type: iframe
+    iframe-link: https://ocean-view.netlify.app
+    caption: Ocean View Link
 ---
