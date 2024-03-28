@@ -83,8 +83,22 @@ collections:
                     {
                       label: "iFrame",
                       name: "iframe",
-                      widget: "string",
-                      required: false,
+                      widget: "object",
+                      fields:
+                        [
+                          {
+                            label: "iFrame Link",
+                            name: "iframe-link",
+                            widget: "string",
+                            required: false,
+                          },
+                          {
+                            label: "Caption",
+                            name: "caption",
+                            widget: "string",
+                            required: false,
+                          },
+                        ],
                     },
                     {
                       label: "Image",
@@ -177,7 +191,12 @@ collections:
                 widget: "object",
                 fields:
                   [
-                    { label: "Title", name: "title", widget: "string", required: false },
+                    {
+                      label: "Title",
+                      name: "title",
+                      widget: "string",
+                      required: false,
+                    },
                     {
                       label: "Column Start",
                       name: "column-start",
@@ -298,7 +317,12 @@ collections:
                 widget: "object",
                 fields:
                   [
-                    { label: "Title", name: "title", widget: "string", required: false },
+                    {
+                      label: "Title",
+                      name: "title",
+                      widget: "string",
+                      required: false,
+                    },
                     {
                       label: "Column Start",
                       name: "column-start",
