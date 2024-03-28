@@ -74,7 +74,7 @@ const IndexPage = ({ data }) => {
                           variants={section}
                         >
                           {content.references?.map((node) => {
-                            const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'blog-post' || 'work-post' || 'space-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
+                            const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'blog-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
                             return (
                               <motion.div
                                 variants={item}
@@ -86,47 +86,47 @@ const IndexPage = ({ data }) => {
                           })}
                         </motion.li>
 
-                        :
+                        // :
 
-                        content?.reference_section_type == "space" ?
-                          <motion.li className={`space-section ${content.hero && 'hero'}`}
-                            initial="hidden"
-                            whileInView="visible"
-                            variants={section}
-                            viewport={{ once: true }}
-                          >
-                            {content?.references?.map(node => {
-                              const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'space-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
-                              return (
-                                <motion.div
-                                  variants={item}>
-                                  <ProjectPreview content={project.node} type={'iframe'} />
-                                </motion.div>
-                              )
-                            })}
-                          </motion.li>
+                        // content?.reference_section_type == "space" ?
+                        //   <motion.li className={`space-section ${content.hero && 'hero'}`}
+                        //     initial="hidden"
+                        //     whileInView="visible"
+                        //     variants={section}
+                        //     viewport={{ once: true }}
+                        //   >
+                        //     {content?.references?.map(node => {
+                        //       const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'space-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
+                        //       return (
+                        //         <motion.div
+                        //           variants={item}>
+                        //           <ProjectPreview content={project.node} type={'iframe'} />
+                        //         </motion.div>
+                        //       )
+                        //     })}
+                        //   </motion.li>
 
-                          :
-                          content.reference_section_type == "work" ?
-                            <motion.li className={`work-section ${content.hero && 'hero'}`}
-                              initial="hidden"
-                              whileInView="visible"
-                              variants={section}
-                              viewport={{ once: true }}
-                            >
-                              <div className="project-list">
-                                {content.references?.map(node => {
-                                  const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'work-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
-                                  return (
-                                    <motion.div
-                                      className={node.full_width && 'full-width'}
-                                      variants={item}>
-                                      <ProjectPreview content={project?.node} />
-                                    </motion.div>
-                                  )
-                                })}
-                              </div>
-                            </motion.li>
+                        //   :
+                        //   content.reference_section_type == "work" ?
+                        //     <motion.li className={`work-section ${content.hero && 'hero'}`}
+                        //       initial="hidden"
+                        //       whileInView="visible"
+                        //       variants={section}
+                        //       viewport={{ once: true }}
+                        //     >
+                        //       <div className="project-list">
+                        //         {content.references?.map(node => {
+                        //           const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'work-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
+                        //           return (
+                        //             <motion.div
+                        //               className={node.full_width && 'full-width'}
+                        //               variants={item}>
+                        //               <ProjectPreview content={project?.node} />
+                        //             </motion.div>
+                        //           )
+                        //         })}
+                        //       </div>
+                        //     </motion.li>
                             :
                             <div></div>
                     }
