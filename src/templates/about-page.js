@@ -142,9 +142,6 @@ query AboutPageTemplate {
                 gatsbyImageData
               }
             }
-            videoFile {
-              publicURL
-            }
             iFrame_link
           }
         }

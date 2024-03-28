@@ -105,9 +105,6 @@ export const pageQuery = graphql`
                 gatsbyImageData
               }
             }
-            videoFile {
-              publicURL
-            }
             iFrame_link
           }
         }
