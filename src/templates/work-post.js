@@ -92,13 +92,7 @@ export const pageQuery = graphql`
                 gatsbyImageData
               }
             }
-            videoFile {
-              publicURL
-            }
             caption
-          }
-          videoFile {
-            publicURL
           }
         }
         Description

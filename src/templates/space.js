@@ -35,9 +35,6 @@ const Space = () => {
                 gatsbyImageData
               }
             }
-            videoFile {
-              publicURL
-            }
           }
         }
         fields {

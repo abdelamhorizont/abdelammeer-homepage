@@ -193,9 +193,6 @@ export const pageQuery = graphql`
             date(formatString: "YYYY")
             cover {
               iframe
-              videoFile {
-                publicURL
-              }
               fallbackImage {
                 childImageSharp {
                   gatsbyImageData
