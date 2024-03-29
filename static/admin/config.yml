@@ -148,7 +148,7 @@ collections:
         }
       - {
           label: "Cover Image",
-          name: "cover-image",
+          name: "cover_image",
           widget: "list",
           required: false,
           types:
