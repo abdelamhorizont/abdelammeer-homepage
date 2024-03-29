@@ -159,7 +159,6 @@ export const pageQuery = graphql`
           references {
             reference
             type
-            full_width
           }
           hero
           type

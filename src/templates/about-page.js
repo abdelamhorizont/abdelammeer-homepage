@@ -142,7 +142,6 @@ query AboutPageTemplate {
                 gatsbyImageData
               }
             }
-            iFrame_link
           }
         }
       }

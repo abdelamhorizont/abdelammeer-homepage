@@ -105,7 +105,6 @@ export const pageQuery = graphql`
                 gatsbyImageData
               }
             }
-            iFrame_link
           }
         }
       }
