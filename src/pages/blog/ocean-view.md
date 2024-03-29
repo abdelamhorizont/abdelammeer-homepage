@@ -17,4 +17,8 @@ cover-image:
   - type: iframe
     iframe-link: https://ocean-view.netlify.app
     caption: Ocean View Link
+cover_image:
+  - type: iframe
+    iframe-link: https://ocean-view.netlify.app
+    caption: ocean view
 ---
