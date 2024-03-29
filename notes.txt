@@ -1,13 +1,7 @@
-- index page
-- about page
 - imprint, privacy policy
 - hover effects
 - video player
-- site links
 - site transitions
-
 - mobile lol
-
-- chatbot
 
 - backend style
