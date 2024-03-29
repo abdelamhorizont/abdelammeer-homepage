@@ -25,30 +25,13 @@ variable-content:
       - type: blog-reference
         reference: "Typography 1: Letters"
       - type: blog-reference
-        reference: Mare Mediterraneum
-      - type: blog-reference
         reference: Spawn Grounds
-      - type: space-reference
+      - type: blog-reference
         reference: deep sea bots
       - type: blog-reference
-        reference: (Non) Artificial (Maybe) Intelligence
-      - type: work-reference
-        full-width: false
-        reference: New Normal
-      - type: work-reference
-        full-width: false
         reference: ABK Stuttgart
-      - type: space-reference
+      - type: blog-reference
         reference: Ocean View
-      - type: work-reference
-        full-width: false
-        reference: GleisMediale
-      - type: work-reference
-        full-width: false
-        reference: Narrating Namibia
-      - type: work-reference
-        full-width: false
-        reference: Narrating Africa
   - type: reference-section
     column-start: "1"
     column-end: "13"
