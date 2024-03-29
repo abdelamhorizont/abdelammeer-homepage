@@ -13,6 +13,10 @@ cover-image:
   - type: iframe
     iframe-link: https://deep-sea-bots.netlify.app/
     caption: deep sea bots Link
+cover_image:
+  - type: video
+    videoFile: 16.mp4
+    caption: "various items "
 Description: interactive exploration of what kind of an appearance an artificial
   intelligence might choose, what questions it might ask and therefore what
   identity it could have. This chatbot is a counter design to the common
