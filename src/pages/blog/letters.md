@@ -12,6 +12,10 @@ cover-image:
   - type: image
     imageFile: typo1.jpeg
     caption: Letter Tattoos
+cover_image:
+  - type: image
+    imageFile: typo1.jpeg
+    caption: image
 cover:
   videoFile: ""
   fallbackImage: typo1.jpeg
