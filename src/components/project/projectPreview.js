@@ -31,8 +31,8 @@ export function ProjectPreview({ content, type, hero }) {
             :
             <div className="project-description">
               <h1 className="headline">{content?.frontmatter?.title}</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, illo impedit rerum, laudantium cupiditate aliquam totam natus neque consequatur, odio error omnis. Deleniti, molestias. Quasi quos officia laudantium quia vel.
+              <p>{content?.frontmatter?.Description}
+                {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, illo impedit rerum, laudantium cupiditate aliquam totam natus neque consequatur, odio error omnis. Deleniti, molestias. Quasi quos officia laudantium quia vel. */}
               </p>
             </div>
           }

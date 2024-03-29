@@ -191,6 +191,7 @@ export const pageQuery = graphql`
             }
             type
             date(formatString: "YYYY")
+            Description
             cover {
               iframe
               fallbackImage {
