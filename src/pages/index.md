@@ -25,26 +25,11 @@ variable-content:
       - type: blog-reference
         reference: "Typography 1: Letters"
       - type: blog-reference
-        reference: Spawn Grounds
-      - type: blog-reference
         reference: deep sea bots
       - type: blog-reference
         reference: ABK Stuttgart
       - type: blog-reference
         reference: Ocean View
-  - type: reference-section
-    column-start: "1"
-    column-end: "13"
-    reference-content:
-      - type: space-reference
-        reference: deep sea bots
-    references:
-      - type: space-reference
-        reference: deep sea bots
-      - type: space-reference
-        reference: Ocean View
-    reference-section-type: space
-    hero: false
 video:
   fallbackImage: ""
   videoFile: ""
