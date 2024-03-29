@@ -25,11 +25,11 @@ variable-content:
       - type: blog-reference
         reference: "Typography 1: Letters"
       - type: blog-reference
+        reference: Ocean View
+      - type: blog-reference
         reference: deep sea bots
       - type: blog-reference
         reference: ABK Stuttgart
-      - type: blog-reference
-        reference: Ocean View
 video:
   fallbackImage: ""
   videoFile: ""
