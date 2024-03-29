@@ -51,6 +51,7 @@ const AboutPage = ({ data }) => {
               }
             })
           }
+{/* test */}
           {/* <div className={`cover-image`}>
             <ImageSection type={type} content={content?.frontmatter.cover} columnStart={1} columnEnd={12} />
           </div>
