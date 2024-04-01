@@ -8,14 +8,14 @@ import _ from 'lodash';
 
 import "./project-preview.scss"
 
-export function ProjectPreview({ content, type, hero }) {
+export function ProjectPreview({ content, type }) {
   return (
       <Link to={content?.fields?.slug} className={`${_.kebabCase(content?.frontmatter?.title)} project-preview`}>
-        <div className={hero ? "blogpostcover" : "preview-title"}>
+        <div className={content.type = "blog" ? "blogpostcover" : "preview-title"}>
           <h2 className="year">{content?.frontmatter?.title_section?.date}</h2>
 
           <div className={`cover-image`}>
-            <ImageSection type={type} content={content?.frontmatter.cover} columnStart={1} columnEnd={12} />
+            <ImageSection type={type} content={content?.frontmatter?.cover_image[0]} columnStart={1} columnEnd={12} />
           </div>
 
           {/* <div className="cover-title"> */}
@@ -24,16 +24,12 @@ export function ProjectPreview({ content, type, hero }) {
           {content?.frontmatter?.title_section?.images?.length ?
             <>
               <GatsbyImage className="title-img" image={getImage(content?.frontmatter?.title_section.images[0]?.imageFile)} alt={''} />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, illo impedit rerum, laudantium cupiditate aliquam totam natus neque consequatur, odio error omnis. Deleniti, molestias. Quasi quos officia laudantium quia vel.
-              </p>
+              <p>{content?.frontmatter?.Description} </p>
             </>
             :
             <div className="project-description">
               <h1 className="headline">{content?.frontmatter?.title}</h1>
-              <p>{content?.frontmatter?.Description}
-                {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, illo impedit rerum, laudantium cupiditate aliquam totam natus neque consequatur, odio error omnis. Deleniti, molestias. Quasi quos officia laudantium quia vel. */}
-              </p>
+              <p>{content?.frontmatter?.Description} </p>
             </div>
           }
 

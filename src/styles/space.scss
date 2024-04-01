@@ -1,136 +1,139 @@
-.space-section {
-    overflow: hidden;
-    transition: all 0.5s ease;
+.blog-section{
+    background-color: blue;
+    .space {
+        overflow: hidden;
+        transition: all 0.5s ease;
+        
+        .project-list {
+            padding: 0rem 0.5rem;
+            transition: all 0.5s ease;
+        }
     
-    .project-list {
-        padding: 0rem 0.5rem;
-        transition: all 0.5s ease;
-    }
-
-    .project-preview {
-        transition: all 0.5s ease;
-        // display: flex;
-        // grid-template-columns: repeat(12, 1fr);
-        margin: 0.5rem;
-        width: 100%;
-        height: 100%;
-        height: 40vh;
-
-        .preview-title {
+        .project-preview {
+            transition: all 0.5s ease;
+            // display: flex;
+            // grid-template-columns: repeat(12, 1fr);
+            margin: 0.5rem;
             width: 100%;
-            // height: 100%;
+            height: 100%;
             height: 40vh;
-
-            display: flex;
-            align-items: flex-start;
-
-            .cover-image {
-                position: relative;
-                grid-column: 1/13;
-                height: 99%;
+    
+            .preview-title {
                 width: 100%;
-                grid-column: 5/13;
-                border-radius: 25vw;
-
-                padding: 0;
-                overflow: hidden;
-
-                .image-section {
+                // height: 100%;
+                height: 40vh;
+    
+                display: flex;
+                align-items: flex-start;
+    
+                .cover-image {
+                    position: relative;
+                    grid-column: 1/13;
+                    height: 99%;
                     width: 100%;
-                    height: 100%;
-
-                    iframe {
+                    grid-column: 5/13;
+                    border-radius: 25vw;
+    
+                    padding: 0;
+                    overflow: hidden;
+    
+                    .image-section {
                         width: 100%;
                         height: 100%;
-                        // border-radius: 0.5rem;
+    
+                        iframe {
+                            width: 100%;
+                            height: 100%;
+                            // border-radius: 0.5rem;
+                        }
                     }
                 }
-            }
-
-
-            h1 {
-                font-size: 1.8rem;
-                vertical-align: top;
-
-            }
-
-            h2 {
-                display: inline;
-                // grid-column: span 1;
-                font-family: Kleukens;
-                font-size: 1.5rem;
-                vertical-align: top;
-            }
-
-            .title-img {
-                transform: scale(1.3);
-                width: 35%;
-                height: fit-content;
-                margin-top: 3rem;
-                overflow: visible;
-
-                img {
-                    object-fit: contain;
+    
+    
+                h1 {
+                    font-size: 1.8rem;
+                    vertical-align: top;
+    
+                }
+    
+                h2 {
+                    display: inline;
+                    // grid-column: span 1;
+                    font-family: Kleukens;
+                    font-size: 1.5rem;
+                    vertical-align: top;
+                }
+    
+                .title-img {
+                    transform: scale(1.3);
+                    width: 35%;
+                    height: fit-content;
+                    margin-top: 3rem;
+                    overflow: visible;
+    
+                    img {
+                        object-fit: contain;
+                    }
+                }
+    
+                .work-year {
+                    display: none;
                 }
             }
-
-            .work-year {
-                display: none;
-            }
+    
         }
-
-    }
-
-    .deep-sea-bots {
-        .preview-title {
-            .cover-image {
-                background-color: rgba(255, 255, 255, 0.5);
-                overflow: hidden;
-
-                .image-section {
-
-                    // overflow: visible;
-                    iframe {
+    
+        .deep-sea-bots {
+            .preview-title {
+                .cover-image {
+                    background-color: rgba(255, 255, 255, 0.5);
+                    overflow: hidden;
+    
+                    .image-section {
+    
                         // overflow: visible;
-                        width: calc(100% * 4.4);
-                        height: calc(100% * 4);
-                        zoom: 0.5;
-
-                        -ms-zoom: 0.25;
-                        transform: scale(0.5) translateX(-2%);
-
-                        -moz-transform: scale(0.25);
-                        -moz-transform-origin: -2% 0;
-                        -o-transform: scale(0.25);
-                        -o-transform-origin: -2% 0;
-                        -webkit-transform: scale(0.25);
-                        -webkit-transform-origin: -2% 0;
-
+                        iframe {
+                            // overflow: visible;
+                            width: calc(100% * 4.4);
+                            height: calc(100% * 4);
+                            zoom: 0.5;
+    
+                            -ms-zoom: 0.25;
+                            transform: scale(0.5) translateX(-2%);
+    
+                            -moz-transform: scale(0.25);
+                            -moz-transform-origin: -2% 0;
+                            -o-transform: scale(0.25);
+                            -o-transform-origin: -2% 0;
+                            -webkit-transform: scale(0.25);
+                            -webkit-transform-origin: -2% 0;
+    
+                        }
                     }
                 }
             }
         }
-    }
-
-
-
-    h1 {
-        display: inline;
-        font-family: "Helvetica";
-        font-size: 3rem;
-        line-height: 2.5rem;
-    }
-
-    h2,
-    span {
-        display: inline;
-        // max-width: 8vw;
-        // grid-column: span 1;
-        font-family: Kleukens;
-        font-size: 3rem;
-        font-size: 0.8rem;
-        vertical-align: top;
-
+    
+    
+    
+        h1 {
+            display: inline;
+            font-family: "Helvetica";
+            font-size: 3rem;
+            line-height: 2.5rem;
+        }
+    
+        h2,
+        span {
+            display: inline;
+            // max-width: 8vw;
+            // grid-column: span 1;
+            font-family: Kleukens;
+            font-size: 3rem;
+            font-size: 0.8rem;
+            vertical-align: top;
+    
+        }
     }
 }
 
@@ -177,19 +180,6 @@
         }
     }
 }
-
-// .hero {
-//     .project-preview {
-//         .preview-title {
-//             height: 70vh;
-
-//             .title-img {
-//                 // transform: scale(1);
-//                 width: 25%;
-//             }
-//         }
-//     }
-// }
 
 .full-width {
     .deep-sea-bots {

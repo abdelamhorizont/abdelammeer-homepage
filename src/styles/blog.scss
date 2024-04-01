@@ -1,13 +1,12 @@
-.blog-page,
-.blog-section {
+.blog{
     overflow: hidden;
     padding: 0rem 0.5rem;
-
+    
     .project-list {
         margin-top: 3rem;
-
+        
     }
-
+    
     .project-preview {
         width: 100%;
 
@@ -101,36 +100,6 @@
 
     }
 
-    .deep-sea-bots {
-        .preview-title {
-            .cover-image {
-                background-color: rgba(255, 255, 255, 0.5);
-                overflow: hidden;
-
-                .image-section {
-
-                    // overflow: visible;
-                    iframe {
-                        // overflow: visible;
-                        width: calc(100% * 4.4);
-                        height: calc(100% * 4);
-                        zoom: 0.5;
-
-                        -ms-zoom: 0.25;
-                        transform: scale(0.5) translateX(-2%);
-
-                        -moz-transform: scale(0.25);
-                        -moz-transform-origin: -2% 0;
-                        -o-transform: scale(0.25);
-                        -o-transform-origin: -2% 0;
-                        -webkit-transform: scale(0.25);
-                        -webkit-transform-origin: -2% 0;
-
-                    }
-                }
-            }
-        }
-    }
     // .project-preview:hover {
 
     //     .cover-image {
@@ -147,23 +116,22 @@
     // }
 }
 
-.blog-section {
-
-    // background-color: coral;
+.blog {
+    
     .project-preview {
         .blogpostcover {
             width: 100%;
             display: flex;
             margin-bottom: 0.5rem;
             // flex-wrap: wrap;
-
-        // .preview-title {
-            h1 {
-                font-size: 5rem;
-                grid-column: span 8;
-            }
             
-            h2{
+            // .preview-title {
+                h1 {
+                    font-size: 5rem;
+                    grid-column: span 8;
+                }
+                
+                h2{
                 font-size: 1.5rem;
             }
 
@@ -185,6 +153,7 @@
                 // max-width: 70vw;
                 // max-width: max-content;
                 // margin-bottom: 2rem;
+
                 padding: 0rem 0.5rem;
                 display: flex;
                 flex-direction: column;

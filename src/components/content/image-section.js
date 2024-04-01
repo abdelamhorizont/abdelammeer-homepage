@@ -30,8 +30,8 @@ const ImageSection = ({ content, type }) => {
     <div className="image-section">
       {
         // type == "iframe" ?
-          content?.iframe != null ?
-          <iframe src={content.iframe} frameborder="100px"></iframe>
+          content?.iframe_link != null ?
+          <iframe src={content.iframe_link} frameborder="100px"></iframe>
           :
           // type == "video" ?
           content?.videoFile != null ?
@@ -42,8 +42,8 @@ const ImageSection = ({ content, type }) => {
             </div>
             :
             // type == "image" ?
-            content?.fallbackImage != null ?
-              <GatsbyImage image={getImage(content?.fallbackImage)} alt={''} />
+            content?.imageFile != null ?
+              <GatsbyImage image={getImage(content?.imageFile)} alt={''} />
               :
               type == "grid" ?
                 content?.images?.map((image) => {

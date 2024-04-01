@@ -11,6 +11,8 @@ import '../styles/global.scss'
 import '../styles/typo.scss'
 
 import '../styles/index.scss'
+import '../styles/blog.scss'
+import '../styles/space.scss'
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
@@ -67,7 +69,7 @@ const IndexPage = ({ data }) => {
                     {
                       content.reference_section_type == "blog" ?
                         <motion.li className={`blog-section ${'hero'}`}
-                        // <motion.li className={`blog-section ${content.hero && 'hero'}`}
+                          // <motion.li className={`blog-section ${content.hero && 'hero'}`}
                           initial="hidden"
                           whileInView="visible"
                           viewport={{ once: true }}
@@ -79,56 +81,14 @@ const IndexPage = ({ data }) => {
                               <motion.div
                                 variants={item}
                                 clasName={project?.node?.frontmatter?.title_section?.type}
-                                >
-                                <ProjectPreview content={project?.node} hero={true} />
+                              >
+                                <ProjectPreview content={project?.node} />
                               </motion.div>
                             )
                           })}
                         </motion.li>
-
-                        // :
-
-                        // content?.reference_section_type == "space" ?
-                        //   <motion.li className={`space-section ${content.hero && 'hero'}`}
-                        //     initial="hidden"
-                        //     whileInView="visible"
-                        //     variants={section}
-                        //     viewport={{ once: true }}
-                        //   >
-                        //     {content?.references?.map(node => {
-                        //       const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'space-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
-                        //       return (
-                        //         <motion.div
-                        //           variants={item}>
-                        //           <ProjectPreview content={project.node} type={'iframe'} />
-                        //         </motion.div>
-                        //       )
-                        //     })}
-                        //   </motion.li>
-
-                        //   :
-                        //   content.reference_section_type == "work" ?
-                        //     <motion.li className={`work-section ${content.hero && 'hero'}`}
-                        //       initial="hidden"
-                        //       whileInView="visible"
-                        //       variants={section}
-                        //       viewport={{ once: true }}
-                        //     >
-                        //       <div className="project-list">
-                        //         {content.references?.map(node => {
-                        //           const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'work-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
-                        //           return (
-                        //             <motion.div
-                        //               className={node.full_width && 'full-width'}
-                        //               variants={item}>
-                        //               <ProjectPreview content={project?.node} />
-                        //             </motion.div>
-                        //           )
-                        //         })}
-                        //       </div>
-                        //     </motion.li>
-                            :
-                            <div></div>
+                        :
+                        <div></div>
                     }
                   </>
                 )
@@ -174,6 +134,18 @@ export const pageQuery = graphql`
           frontmatter {
             templateKey
             title
+            cover_image {
+              caption
+              iframe_link
+              imageFile {
+                childImageSharp {
+                  gatsbyImageData
+                }
+              }
+              videoFile {
+                publicURL
+              }
+            }
             title_section {
               title
               type
