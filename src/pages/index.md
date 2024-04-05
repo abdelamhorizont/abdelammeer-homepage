@@ -25,9 +25,15 @@ variable-content:
       - type: blog-reference
         reference: "Typography 1: Letters"
       - type: blog-reference
-        reference: Ocean View
+        reference: Mare Mediterraneum
+      - type: blog-reference
+        reference: Spawn Grounds
       - type: blog-reference
         reference: deep sea bots
+      - type: blog-reference
+        reference: (Non) Artificial (Maybe) Intelligence
+      - type: blog-reference
+        reference: Ocean View
       - type: blog-reference
         reference: ABK Stuttgart
 video:
