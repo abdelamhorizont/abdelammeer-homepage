@@ -68,7 +68,8 @@ const IndexPage = ({ data }) => {
                   <>
                     {
                       content.reference_section_type == "blog" ?
-                        <motion.li className={`blog-section ${'hero'}`}
+                        <motion.li 
+                          className={`blog-section ${'hero'}`}
                           // <motion.li className={`blog-section ${content.hero && 'hero'}`}
                           initial="hidden"
                           whileInView="visible"
@@ -80,8 +81,9 @@ const IndexPage = ({ data }) => {
                             return (
                               <motion.div
                                 variants={item}
+                                // clasName={'space'}
                                 clasName={project?.node?.frontmatter?.title_section?.type}
-                              >
+                                >
                                 <ProjectPreview content={project?.node} />
                               </motion.div>
                             )
