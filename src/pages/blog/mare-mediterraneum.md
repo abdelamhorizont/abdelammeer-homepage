@@ -10,6 +10,10 @@ title section:
   type: blog
   images: []
   format: Seminar
+cover_image:
+  - type: image
+    imageFile: mare18.jpeg
+    caption: Work by Jessica Keßler
 cover:
   fallbackImage: mare18.jpeg
   caption: Work by Jessica Keßler
