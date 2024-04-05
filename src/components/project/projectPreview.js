@@ -16,7 +16,7 @@ export function ProjectPreview({ content, type }) {
         <h2 className="year">{content?.frontmatter?.title_section?.date}</h2>
 
         <div className={`cover-image`}>
-          <ImageSection type={type} content={content?.frontmatter?.cover_image[0]} columnStart={1} columnEnd={12} />
+          <ImageSection type={type} content={content?.frontmatter?.cover_image && content?.frontmatter?.cover_image[0]} columnStart={1} columnEnd={12} />
         </div>
 
         {content?.frontmatter?.title_section?.images?.length ?
