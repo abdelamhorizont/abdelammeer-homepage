@@ -9,11 +9,11 @@ import { ProjectPreview } from '../components/project/projectPreview';
 
 // import Tags from "../components/tags/tags";
 
-import '../styles/reset.css'
-import '../styles/global.scss'
-import '../styles/typo.scss'
+// import '../styles/reset.css'
+// import '../styles/global.scss'
+// import '../styles/typo.scss'
 
-import '../styles/blog.scss'
+// import '../styles/blog.scss'
 
 const Blog = () => {
   const data = useStaticQuery(graphql`

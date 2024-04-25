@@ -3,9 +3,9 @@ import { useState, useEffect, useRef } from "react";
 import ReactMarkdown from 'react-markdown'
 
 
-import './content.scss'
-import 'swiper/css'
-import 'swiper/scss/pagination';
+// import './content.scss'
+// import 'swiper/css'
+// import 'swiper/scss/pagination';
 
 export const HTMLContent = ({ content }) => (
   <div className='html-content' dangerouslySetInnerHTML={{ __html: content }} />

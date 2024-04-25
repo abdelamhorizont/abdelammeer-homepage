@@ -6,7 +6,7 @@ import Layout from "../components/layout/Layout";
 import TextSection, { HTMLContent } from "../components/content/text-section";
 import ImageSection from "../components/content/image-section";
 
-import '../styles/work.scss'
+// import '../styles/work.scss'
 
 const WorkPost = ({ data }) => {
   const { markdownRemark: post } = data;

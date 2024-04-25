@@ -10,11 +10,11 @@ import ImageSection from "../components/content/image-section";
 
 // import Tags from "../components/tags/tags";
 
-import '../styles/reset.css'
-import '../styles/global.scss'
-import '../styles/typo.scss'
+// import '../styles/reset.css'
+// import '../styles/global.scss'
+// import '../styles/typo.scss'
 
-import '../styles/space.scss'
+// import '../styles/space.scss'
 
 const Space = () => {
   const data = useStaticQuery(graphql`

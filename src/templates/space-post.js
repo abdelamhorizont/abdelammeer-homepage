@@ -6,7 +6,7 @@ import TextSection, { HTMLContent } from "../components/content/text-section";
 import ImageSection from "../components/content/image-section";
 import { ProjectPreview } from '../components/project/projectPreview';
 
-import '../styles/space.scss'
+// import '../styles/space.scss'
 
 const SpacePost = ({ data }) => {
   const { markdownRemark: post } = data;

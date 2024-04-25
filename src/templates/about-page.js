@@ -9,9 +9,9 @@ import ImageSection from "../components/content/image-section";
 
 // import Tags from "../components/tags/tags";
 
-import '../styles/reset.css'
-import '../styles/global.scss'
-import '../styles/typo.scss'
+// import '../styles/reset.css'
+// import '../styles/global.scss'
+// import '../styles/typo.scss'
 
 import '../styles/about.scss'
 

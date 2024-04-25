@@ -7,11 +7,11 @@ import Layout from "../components/layout/Layout";
 import { HTMLContent } from "../components/content/text-section";
 import { ProjectPreview } from '../components/project/projectPreview';
 
-import '../styles/reset.css'
-import '../styles/global.scss'
-import '../styles/typo.scss'
+// import '../styles/reset.css'
+// import '../styles/global.scss'
+// import '../styles/typo.scss'
 
-import '../styles/index.scss'
+// import '../styles/index.scss'
 
 const Work = () => {
   const data = useStaticQuery(graphql`

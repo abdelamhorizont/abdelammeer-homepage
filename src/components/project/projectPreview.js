@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 
 import _ from 'lodash';
 
-import "./project-preview.scss"
+// import "./project-preview.scss"
 
 export function ProjectPreview({ content, type }) {
   return (

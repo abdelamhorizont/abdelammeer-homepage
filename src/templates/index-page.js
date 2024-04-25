@@ -11,8 +11,8 @@ import '../styles/global.scss'
 import '../styles/typo.scss'
 
 import '../styles/index.scss'
+// import '../styles/space.scss'
 import '../styles/blog.scss'
-import '../styles/space.scss'
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
@@ -102,7 +102,7 @@ const IndexPage = ({ data }) => {
 
 
         {/* cookie */}
-      </div >
+      </div>
     </Layout>
   )
 }

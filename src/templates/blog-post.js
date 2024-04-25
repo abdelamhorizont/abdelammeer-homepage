@@ -7,7 +7,7 @@ import Layout from "../components/layout/Layout";
 import TextSection, { HTMLContent } from "../components/content/text-section";
 import ImageSection from "../components/content/image-section";
 
-import '../styles/blog.scss'
+// import '../styles/blog.scss'
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data;
