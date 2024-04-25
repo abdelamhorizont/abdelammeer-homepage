@@ -7,7 +7,7 @@ title section:
   format: Chatbot
   images:
     - type: image
-      imageFile: deep-sea-bots-logo.png
+      imageFile: element-12.png
       caption: deep sea bots Logo
 cover-image:
   - type: iframe
