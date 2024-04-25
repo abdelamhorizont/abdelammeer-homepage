@@ -4,7 +4,7 @@ title: Ocean View
 title section:
   date: 2023-03-25T14:22:37.613Z
   title: Ocean View
-  type: blog
+  type: space
   location: Matsudo, Japan
   images:
     - type: image
