@@ -21,4 +21,11 @@ cover_image:
   - type: iframe
     iframe-link: https://ocean-view.netlify.app
     caption: ocean view
+Description: during the three weeks of this residency I focused on my
+  relationship to the ocean, especially the mediterrean, past works, memories,
+  different perspectives as well as research connecting to geopolitical issues,
+  migration and ecological crisis. the result of the residency is an archive of
+  photographs, videos, thoughts and illustrations that can be explored through
+  drawing. the pompous rooms of the former hotel became the stage for this ocean
+  view.
 ---
