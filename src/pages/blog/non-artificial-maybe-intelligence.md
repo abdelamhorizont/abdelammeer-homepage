@@ -11,6 +11,17 @@ variable-content:
         caption: Seminar Presentation Video
   - type: text-section
     big-size: "false"
+    text: T﻿he seminar (Non) Artificial (Maybe) Intelligence was my first one at the
+      Karlsruhe University of Arts and Design in the winter semester 2022, a
+      time where generative AI was reaching new levels and public popularity
+      through Image generation platforms like Midjourney, OpenAi or Stable
+      Diffusion. Actually ChatGPT was released midway during the seminar. Not
+      knowing the school and the students I chose this popular topic
+      anticipating some interest and to expand on the research I had done for my
+      graduation work [deep sea
+      bots](http://localhost:8000/space/deep-sea-bots/)
+  - type: text-section
+    big-size: "false"
     column-start: "2"
     column-end: "12"
     text: |-
@@ -195,12 +206,9 @@ cover:
   fallbackImage: download.png
   caption: created by Kristian Vrhar on stable diffusion
 type: "Seminar "
-Description: T﻿he seminar (Non) Artificial (Maybe) Intelligence was my first one
-  at the Karlsruhe University of Arts and Design in the winter semester 2022, a
-  time where generative AI was reaching new levels and public popularity through
-  Image generation platforms like Midjourney, OpenAi or Stable Diffusion.
-  Actually ChatGPT was released midway during the seminar. Not knowing the
-  school and the students I chose this popular topic anticipating some interest
-  and to expand on the research I had done for my graduation work [deep sea
-  bots](http://localhost:8000/space/deep-sea-bots/)
+Description: What and who and how and why? We will examine various AI tools,
+  models and training Data, define possibilities, limitations and risks and use
+  these technologies to comment on the very same ones through the lenses of
+  history, politics, society, culture and science. We will approach this with
+  stupidity as a high order maybe-intelligence.
 ---
