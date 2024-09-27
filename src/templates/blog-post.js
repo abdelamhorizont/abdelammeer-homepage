@@ -7,7 +7,7 @@ import Layout from "../components/layout/Layout";
 import TextSection, { HTMLContent } from "../components/content/text-section";
 import ImageSection from "../components/content/image-section";
 
-// import '../styles/blog.scss'
+import '../styles/blog.scss'
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data;
@@ -33,7 +33,7 @@ const BlogPost = ({ data }) => {
 
         <div className="blog-post-content">
           <div className="description prom-text">
-            <TextSection content={post.frontmatter.Description} columns={'2'} />
+            <TextSection content={post.frontmatter.Description} />
           </div>
 
           {

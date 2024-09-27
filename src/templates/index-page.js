@@ -12,7 +12,7 @@ import '../styles/typo.scss'
 
 import '../styles/index.scss'
 // import '../styles/space.scss'
-import '../styles/blog.scss'
+// import '../styles/blog.scss'
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
@@ -67,7 +67,7 @@ const IndexPage = ({ data }) => {
                 return (
                   <>
                     {
-                      content.reference_section_type == "blog" ?
+                      content.reference_section_type == ("blog" || "work") ?
                         <motion.li 
                           className={`blog-section ${'hero'}`}
                           // <motion.li className={`blog-section ${content.hero && 'hero'}`}
@@ -77,12 +77,13 @@ const IndexPage = ({ data }) => {
                           variants={section}
                         >
                           {content.references?.map((node) => {
-                            const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'blog-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
+                            // const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.title == node.reference)[0]
+                            const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == ('blog-post' || 'work-post' || 'space-post')).filter(edge => edge.node.frontmatter.title == node.reference)[0]
                             return (
                               <motion.div
                                 variants={item}
-                                clasName={'space-post'}
-                                // clasName={project?.node?.frontmatter?.title_section?.type + '-post'}
+                                // clasName={'space-post'}
+                                clasName={project?.node?.frontmatter?.title_section?.type + '-post'}
                                 >
                                 <ProjectPreview content={project?.node} />
                               </motion.div>

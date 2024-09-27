@@ -87,7 +87,7 @@ const Layout = ({ children, activeSite }) => {
             <ul className="nav-sites">
               <li className={`blog ${activeSite == 'blog' && 'border'}`}><Link to="/blog">blog</Link></li>
               <li className={`space ${activeSite == 'space' && 'border'}`}><Link to="/space">space</Link></li>
-              {/* <li className={`work ${activeSite == 'work' && 'border'}`}><Link to="/work">work</Link></li> */}
+              <li className={`work ${activeSite == 'work' && 'border'}`}><Link to="/work">work</Link></li>
             </ul>
           </div>
 
