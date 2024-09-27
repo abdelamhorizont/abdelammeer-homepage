@@ -36,6 +36,9 @@ variable-content:
         reference: (Non) Artificial (Maybe) Intelligence
       - type: blog-reference
         reference: ABK Stuttgart
+      - type: work-reference
+        full-width: false
+        reference: Narrating Africa
 video:
   fallbackImage: ""
   videoFile: ""
