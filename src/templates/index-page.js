@@ -81,8 +81,8 @@ const IndexPage = ({ data }) => {
                             return (
                               <motion.div
                                 variants={item}
-                                // clasName={'space'}
-                                clasName={project?.node?.frontmatter?.title_section?.type}
+                                clasName={'space-post'}
+                                // clasName={project?.node?.frontmatter?.title_section?.type + '-post'}
                                 >
                                 <ProjectPreview content={project?.node} />
                               </motion.div>

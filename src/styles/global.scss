@@ -46,10 +46,10 @@ body {
 }
 
 .grey-theme {
-   background-color: #ac97c1;
+   background-color: #0d00ff;
    transition: all 1s ease;
    a {
-      color: #000000;
+      color: #4bbaff;
       transition: all 1s ease;
 
    }
@@ -57,11 +57,11 @@ body {
    .work-page, .work-post, .blog-page, .blog-post, .space-page, .space-post{
       // background-image: linear-gradient(#6f6f6f00, #6f6f6f00);
    
-      color: #000000;
+      color: #4bbaff;
       transition: all 1s ease;
    
       a {
-         color: #0f0f0f;
+         color: #4bbaff;
          transition: all 1s ease;
       }
    }
@@ -69,7 +69,7 @@ body {
    .work-page {
       h1,
       h2 {
-         color: #000000;
+         color: #4bbaff;
       }
    }
 }
