@@ -20,6 +20,9 @@ variable-content:
       anticipating some interest and to expand on the research I had done for my
       graduation work [deep sea
       bots](http://localhost:8000/space/deep-sea-bots/)
+    title: ""
+    column-start: "4"
+    column-end: "9"
   - type: text-section
     big-size: "false"
     column-start: "2"
