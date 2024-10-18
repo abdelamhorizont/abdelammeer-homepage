@@ -1,12 +1,12 @@
 ---
 templateKey: work-post
+title: ABK Stuttgart
 title section:
   date: 2019-09-30T22:00:00.000Z
   title: ABK Stuttgart
-  type: Corporate Design
+  type: Identity
   collaborators: Jasmina Begovič, Raphael Berg
   images: []
-title: ABK Stuttgart
 subtitle: ""
 type: Corporate Design
 location: ABK Stuttgart
