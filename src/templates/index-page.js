@@ -11,8 +11,9 @@ import '../styles/global.scss'
 import '../styles/typo.scss'
 
 import '../styles/index.scss'
-// import '../styles/space.scss'
-// import '../styles/blog.scss'
+import '../styles/space.scss'
+import '../styles/blog.scss'
+import '../styles/work.scss'
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
@@ -68,28 +69,21 @@ const IndexPage = ({ data }) => {
                   <>
                     {
                       content.reference_section_type == ("blog" || "work") ?
-                        <motion.li 
-                          className={`blog-section ${'hero'}`}
-                          // <motion.li className={`blog-section ${content.hero && 'hero'}`}
-                          initial="hidden"
-                          whileInView="visible"
-                          viewport={{ once: true }}
-                          variants={section}
-                        >
+                        <>
                           {content.references?.map((node) => {
                             // const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.title == node.reference)[0]
                             const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == ('blog-post' || 'work-post' || 'space-post')).filter(edge => edge.node.frontmatter.title == node.reference)[0]
                             return (
                               <motion.div
                                 variants={item}
-                                // clasName={'space-post'}
-                                clasName={project?.node?.frontmatter?.title_section?.type + '-post'}
-                                >
+                                // clasName={'post-link'}
+                                className={project?.node?.frontmatter?.title_section?.type + ' post-link'}
+                              >
                                 <ProjectPreview content={project?.node} />
                               </motion.div>
                             )
                           })}
-                        </motion.li>
+                        </>
                         :
                         <div></div>
                     }

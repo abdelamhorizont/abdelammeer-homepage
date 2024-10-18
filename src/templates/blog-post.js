@@ -38,9 +38,11 @@ const BlogPost = ({ data }) => {
 
           {
             post.frontmatter?.variable_content?.map((content) => {
+              // const gridStyle = {gridColumn: 4 + "/" + 9}
+              const gridStyle = {gridColumn: content.column_start ? content.column_start + "/" + content.column_end : "4/9"}
               if (content.type == 'text-section') {
                 return (
-                  <div style={{gridColumn: content.column_start + "/" + content.column_end}} className={`html-content`}>
+                  <div style={gridStyle} className={`html-content`}>
                     <TextSection content={content.text} />
                   </div>
                 )

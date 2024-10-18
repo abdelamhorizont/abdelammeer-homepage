@@ -27,7 +27,7 @@ const ImageSection = ({ content, type }) => {
 
 
   return (
-    <div className="image-section">
+    <>
       {
         // type == "iframe" ?
           content?.iframe_link != null ?
@@ -126,7 +126,7 @@ const ImageSection = ({ content, type }) => {
       }
 
 
-    </div>
+    </>
   )
 }
 

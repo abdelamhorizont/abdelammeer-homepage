@@ -7,12 +7,15 @@ import { motion } from "framer-motion"
 import _ from 'lodash';
 
 // import "./project-preview.scss"
+import '../../styles/index.scss'
+import '../../styles/blog.scss'
+import '../../styles/space.scss'
+
 
 export function ProjectPreview({ content, type }) {
   return (
     <Link to={content?.fields?.slug} className={`${_.kebabCase(content?.frontmatter?.title)} project-preview`}>
-      <div className={"blogpostcover"}>
-        {/* <div className={content.type = "blog" ? "blogpostcover" : "preview-title"}> */}
+      <div className={"postcover"}>
         <h2 className="year">{content?.frontmatter?.title_section?.date}</h2>
 
         <div className={`cover-image`}>
@@ -20,12 +23,12 @@ export function ProjectPreview({ content, type }) {
         </div>
 
         {content?.frontmatter?.title_section?.images?.length ?
-          <>
-            <GatsbyImage className="title-img" image={getImage(content?.frontmatter?.title_section.images[0]?.imageFile)} alt={''} />
-            <div className="project-description">
+          <div className="title-img">
+            <GatsbyImage image={getImage(content?.frontmatter?.title_section.images[0]?.imageFile)} alt={''} />
+            {/* <div className="project-description">
               <p>{content?.frontmatter?.Description} </p>
-            </div>
-          </>
+            </div> */}
+          </div>
           :
           <div className="project-description">
             <h1 className="headline">{content?.frontmatter?.title}</h1>
