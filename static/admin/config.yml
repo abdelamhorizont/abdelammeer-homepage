@@ -487,6 +487,13 @@ collections:
               {
                 label: "Type",
                 name: "type",
+                widget: "select",
+                required: false,
+                options: ["blog", "space", "work"],
+              },
+              {
+                label: "Format",
+                name: "format",
                 widget: "string",
                 required: false,
               },
@@ -513,8 +520,22 @@ collections:
                     {
                       label: "iFrame",
                       name: "iframe",
-                      widget: "string",
-                      required: false,
+                      widget: "object",
+                      fields:
+                        [
+                          {
+                            label: "iFrame Link",
+                            name: "iframe-link",
+                            widget: "string",
+                            required: false,
+                          },
+                          {
+                            label: "Caption",
+                            name: "caption",
+                            widget: "string",
+                            required: false,
+                          },
+                        ],
                     },
                     {
                       label: "Image",
@@ -563,37 +584,80 @@ collections:
             ],
         }
       - {
-          label: "Subtitle",
-          name: "subtitle",
-          widget: "string",
+          label: "Cover Image",
+          name: "cover_image",
+          widget: "list",
           required: false,
+          types:
+            [
+              {
+                label: "iFrame",
+                name: "iframe",
+                widget: "object",
+                fields:
+                  [
+                    {
+                      label: "iFrame Link",
+                      name: "iframe-link",
+                      widget: "string",
+                      required: false,
+                    },
+                    {
+                      label: "Caption",
+                      name: "caption",
+                      widget: "string",
+                      required: false,
+                    },
+                  ],
+              },
+              {
+                label: "Image",
+                name: "image",
+                widget: "object",
+                fields:
+                  [
+                    {
+                      label: "Image File",
+                      name: "imageFile",
+                      widget: "image",
+                      required: false,
+                    },
+                    {
+                      label: "Caption",
+                      name: "caption",
+                      widget: "string",
+                      required: false,
+                    },
+                  ],
+              },
+              {
+                label: "Video",
+                name: "video",
+                widget: "object",
+                fields:
+                  [
+                    {
+                      label: "Video File",
+                      name: "videoFile",
+                      widget: "file",
+                      required: false,
+                    },
+                    {
+                      label: "Caption",
+                      name: "caption",
+                      widget: "string",
+                      required: false,
+                    },
+                  ],
+              },
+            ],
         }
-      - { label: "Type", name: "type", widget: "string" }
-      - {
-          label: "Location",
-          name: "location",
-          widget: "string",
-          required: false,
-        }
-      - {
-          label: "Collaborators",
-          name: "collaborators",
-          widget: "string",
-          required: false,
-        }
-      - { label: "Date", name: "date", widget: "date" }
       - {
           label: "Cover",
           name: "cover",
           widget: "object",
           fields:
             [
-              {
-                label: "iFrame",
-                name: "iframe",
-                widget: "string",
-                required: false,
-              },
               {
                 label: "Video File",
                 name: "videoFile",
@@ -607,54 +671,10 @@ collections:
                 required: false,
               },
               {
-                label: "Images",
-                name: "images",
-                widget: "list",
+                label: "Caption",
+                name: "caption",
+                widget: "string",
                 required: false,
-                types:
-                  [
-                    {
-                      label: "Image",
-                      name: "image",
-                      widget: "object",
-                      fields:
-                        [
-                          {
-                            label: "Image File",
-                            name: "imageFile",
-                            widget: "image",
-                            required: false,
-                            allow_multiple: true,
-                          },
-                          {
-                            label: "Caption",
-                            name: "caption",
-                            widget: "string",
-                            required: false,
-                          },
-                        ],
-                    },
-                    {
-                      label: "Video",
-                      name: "video",
-                      widget: "object",
-                      fields:
-                        [
-                          {
-                            label: "Video File",
-                            name: "videoFile",
-                            widget: file,
-                            required: false,
-                          },
-                          {
-                            label: "Caption",
-                            name: "caption",
-                            widget: "string",
-                            required: false,
-                          },
-                        ],
-                    },
-                  ],
               },
             ],
         }
@@ -677,6 +697,12 @@ collections:
                 widget: "object",
                 fields:
                   [
+                    {
+                      label: "Title",
+                      name: "title",
+                      widget: "string",
+                      required: false,
+                    },
                     {
                       label: "Column Start",
                       name: "column-start",
@@ -725,6 +751,26 @@ collections:
                       required: false,
                       types:
                         [
+                          {
+                            label: "iFrame",
+                            name: "iFrame",
+                            widget: "object",
+                            fields:
+                              [
+                                {
+                                  label: "iFrame Link",
+                                  name: "iFrame-link",
+                                  widget: "string",
+                                  required: false,
+                                },
+                                {
+                                  label: "Caption",
+                                  name: "caption",
+                                  widget: "string",
+                                  required: false,
+                                },
+                              ],
+                          },
                           {
                             label: "Image",
                             name: "image",
@@ -778,6 +824,12 @@ collections:
                 fields:
                   [
                     {
+                      label: "Title",
+                      name: "title",
+                      widget: "string",
+                      required: false,
+                    },
+                    {
                       label: "Column Start",
                       name: "column-start",
                       widget: "select",
@@ -817,6 +869,13 @@ collections:
                           "12",
                           "13",
                         ],
+                    },
+                    {
+                      label: "Big Size",
+                      name: "big-size",
+                      widget: "boolean",
+                      default: "false",
+                      required: false,
                     },
                     {
                       label: "Text",
@@ -865,6 +924,13 @@ collections:
               {
                 label: "Type",
                 name: "type",
+                widget: "select",
+                required: false,
+                options: ["blog", "space", "work"],
+              },
+              {
+                label: "Format",
+                name: "format",
                 widget: "string",
                 required: false,
               },
@@ -890,13 +956,13 @@ collections:
                   [
                     {
                       label: "iFrame",
-                      name: "iFrame",
+                      name: "iframe",
                       widget: "object",
                       fields:
                         [
                           {
                             label: "iFrame Link",
-                            name: "iFrame-link",
+                            name: "iframe-link",
                             widget: "string",
                             required: false,
                           },
@@ -955,17 +1021,80 @@ collections:
             ],
         }
       - {
+          label: "Cover Image",
+          name: "cover_image",
+          widget: "list",
+          required: false,
+          types:
+            [
+              {
+                label: "iFrame",
+                name: "iframe",
+                widget: "object",
+                fields:
+                  [
+                    {
+                      label: "iFrame Link",
+                      name: "iframe-link",
+                      widget: "string",
+                      required: false,
+                    },
+                    {
+                      label: "Caption",
+                      name: "caption",
+                      widget: "string",
+                      required: false,
+                    },
+                  ],
+              },
+              {
+                label: "Image",
+                name: "image",
+                widget: "object",
+                fields:
+                  [
+                    {
+                      label: "Image File",
+                      name: "imageFile",
+                      widget: "image",
+                      required: false,
+                    },
+                    {
+                      label: "Caption",
+                      name: "caption",
+                      widget: "string",
+                      required: false,
+                    },
+                  ],
+              },
+              {
+                label: "Video",
+                name: "video",
+                widget: "object",
+                fields:
+                  [
+                    {
+                      label: "Video File",
+                      name: "videoFile",
+                      widget: "file",
+                      required: false,
+                    },
+                    {
+                      label: "Caption",
+                      name: "caption",
+                      widget: "string",
+                      required: false,
+                    },
+                  ],
+              },
+            ],
+        }
+      - {
           label: "Cover",
           name: "cover",
           widget: "object",
           fields:
             [
-              {
-                label: "iFrame",
-                name: "iframe",
-                widget: "string",
-                required: false,
-              },
               {
                 label: "Video File",
                 name: "videoFile",
@@ -979,54 +1108,10 @@ collections:
                 required: false,
               },
               {
-                label: "Images",
-                name: "images",
-                widget: "list",
+                label: "Caption",
+                name: "caption",
+                widget: "string",
                 required: false,
-                types:
-                  [
-                    {
-                      label: "Image",
-                      name: "image",
-                      widget: "object",
-                      fields:
-                        [
-                          {
-                            label: "Image File",
-                            name: "imageFile",
-                            widget: "image",
-                            required: false,
-                            allow_multiple: true,
-                          },
-                          {
-                            label: "Caption",
-                            name: "caption",
-                            widget: "string",
-                            required: false,
-                          },
-                        ],
-                    },
-                    {
-                      label: "Video",
-                      name: "video",
-                      widget: "object",
-                      fields:
-                        [
-                          {
-                            label: "Video File",
-                            name: "videoFile",
-                            widget: file,
-                            required: false,
-                          },
-                          {
-                            label: "Caption",
-                            name: "caption",
-                            widget: "string",
-                            required: false,
-                          },
-                        ],
-                    },
-                  ],
               },
             ],
         }
@@ -1049,6 +1134,12 @@ collections:
                 widget: "object",
                 fields:
                   [
+                    {
+                      label: "Title",
+                      name: "title",
+                      widget: "string",
+                      required: false,
+                    },
                     {
                       label: "Column Start",
                       name: "column-start",
@@ -1097,6 +1188,26 @@ collections:
                       required: false,
                       types:
                         [
+                          {
+                            label: "iFrame",
+                            name: "iFrame",
+                            widget: "object",
+                            fields:
+                              [
+                                {
+                                  label: "iFrame Link",
+                                  name: "iFrame-link",
+                                  widget: "string",
+                                  required: false,
+                                },
+                                {
+                                  label: "Caption",
+                                  name: "caption",
+                                  widget: "string",
+                                  required: false,
+                                },
+                              ],
+                          },
                           {
                             label: "Image",
                             name: "image",
@@ -1150,6 +1261,12 @@ collections:
                 fields:
                   [
                     {
+                      label: "Title",
+                      name: "title",
+                      widget: "string",
+                      required: false,
+                    },
+                    {
                       label: "Column Start",
                       name: "column-start",
                       widget: "select",
@@ -1191,6 +1308,13 @@ collections:
                         ],
                     },
                     {
+                      label: "Big Size",
+                      name: "big-size",
+                      widget: "boolean",
+                      default: "false",
+                      required: false,
+                    },
+                    {
                       label: "Text",
                       name: "text",
                       widget: "markdown",
@@ -1199,6 +1323,14 @@ collections:
                   ],
               },
             ],
+        }
+      - {
+          label: "Tags",
+          name: "tags",
+          widget: "select",
+          multiple: true,
+          required: false,
+          options: ["All", "Object", "Space", "Research", "Exhibition"],
         }
 
   - name: "pages"
