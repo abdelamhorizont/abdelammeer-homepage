@@ -10,6 +10,9 @@ title section:
     - type: video
       videoFile: /img/16.mp4
       caption: ABK Stuttgart Products
+    - type: image
+      imageFile: /img/1.jpg
+      caption: ABK Stuttgart Office Material
 subtitle: ""
 type: Corporate Design
 location: ABK Stuttgart
