@@ -57,7 +57,7 @@ type: Corporate Design
 title section:
   date: 2019-09-30T22:00:00.000Z
   title: ABK Stuttgart
-  type: Identity
+  type: work
   collaborators: Jasmina Begovič, Raphael Berg
   images: []
   format: Identity
