@@ -71,8 +71,8 @@ const IndexPage = ({ data }) => {
                       content.reference_section_type == ("blog" || "work") ?
                         <>
                           {content.references?.map((node) => {
-                            // const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.title == node.reference)[0]
-                            const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == ('blog-post' || 'work-post' || 'space-post')).filter(edge => edge.node.frontmatter.title == node.reference)[0]
+                            const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.title == node.reference)[0]
+                            // const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == ('blog-post' || 'work-post' || 'space-post')).filter(edge => edge.node.frontmatter.title == node.reference)[0]
                             console.log(project?.node?.frontmatter?.title);
                             
                             return (
