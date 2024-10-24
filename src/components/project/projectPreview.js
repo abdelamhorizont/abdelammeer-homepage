@@ -6,7 +6,6 @@ import { motion } from "framer-motion"
 
 import _ from 'lodash';
 
-// import "./project-preview.scss"
 import '../../styles/index.scss'
 import '../../styles/blog.scss'
 import '../../styles/space.scss'
