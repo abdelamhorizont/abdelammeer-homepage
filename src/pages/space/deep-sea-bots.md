@@ -5,6 +5,17 @@ cover-image: /img/bildschirmfoto-2021-09-12-um-15.09.31.png
 projectInfos: test
 date: 2023-10-31T15:20:54.876Z
 title: deep sea bots
+title section:
+  date: 2023-10-30T23:00:00.000Z
+  title: deep sea bots
+  type: chatbot
+  images:
+    - type: image
+      imageFile: /img/element-12.png
+cover_image:
+  - type: video
+    videoFile: /img/anglerfisch.mp4
+    caption: Anglerfisch
 cover:
   iframe: https://deep-sea-bots.netlify.app/
   fallbackImage: /img/bildschirmfoto-2021-09-12-um-15.09.31.png
@@ -14,14 +25,8 @@ cover:
     - type: video
       videoFile: /img/anglerfisch.mp4
   videoFile: /img/anglerfisch.mp4
+Description: t﻿est
 tags:
   - All
 type: chatbot
-title section:
-  date: 2023-10-30T23:00:00.000Z
-  title: deep sea bots
-  type: chatbot
-  images:
-    - type: image
-      imageFile: /img/element-12.png
 ---
