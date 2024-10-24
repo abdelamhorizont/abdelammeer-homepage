@@ -57,22 +57,5 @@ variable-content:
       * Jugendzentrum Penthaus Neuhausen
       * Schülerhaus Schwabschule
     title: Teaching
-listedInfos:
-  - column:
-      title: test
-      list:
-        - listElement:
-            year: "2023"
-            title: test
-            location: test
-            link:
-              link: www.google.com
-              linkText: google
-anima-ona-image:
-  image: ""
-  caption: ""
-image:
-  image: /img/anima_ona_2100x.webp
-  caption: Anima Ona
 ---
 text
