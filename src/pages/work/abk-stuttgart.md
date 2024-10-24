@@ -1,23 +1,26 @@
 ---
 templateKey: work-post
-title: ABK Stuttgart
-title section:
-  date: 2019-09-30T22:00:00.000Z
-  title: ABK Stuttgart
-  type: Identity
-  collaborators: Jasmina Begovič, Raphael Berg
-  images:
-    - type: video
-      videoFile: /img/16.mp4
-      caption: ABK Stuttgart Products
-    - type: image
-      imageFile: /img/1.jpg
-      caption: ABK Stuttgart Office Material
-subtitle: ""
-type: Corporate Design
-location: ABK Stuttgart
+variable-content:
+  - type: image-section
+    column-start: "1"
+    column-end: "13"
+    images:
+      - type: image
+        imageFile: /img/11.jpg
+        caption: Logo Stamp
+      - type: image
+        imageFile: /img/7.jpg
+        caption: Logo positioning and letter paper layout
+      - type: image
+        imageFile: /img/8.jpg
+        caption: letter paper layout
 collaborators: Jasmina Begovič, Raphael Berg
 date: 2019-10-01T13:52:54.513Z
+cover_image:
+  - type: video
+    videoFile: /img/16.mp4
+    caption: ABK Stuttgart Products
+location: ABK Stuttgart
 cover:
   fallbackImage: /img/1.jpg
   images:
@@ -48,6 +51,15 @@ cover:
       imageFile: /img/11.jpg
       caption: Stamp
   videoFile: /img/16.mp4
+subtitle: ""
+title: ABK Stuttgart
+type: Corporate Design
+title section:
+  date: 2019-09-30T22:00:00.000Z
+  title: ABK Stuttgart
+  type: Identity
+  collaborators: Jasmina Begovič, Raphael Berg
+  images: []
 Description: >-
   In 2019, the current corporate design of ABK Stuttgart was introduced. The
   extensive design and implementation of the corporate identity was undertaken
@@ -61,18 +73,4 @@ Description: >-
   \
 
   The Design Manual explains design principles, technical details as well as guidelines and the handling of the elements, including logo, business card, letterhead, templates for Microsoft Word, Excel and PowerPoint, certificate, folder, stamp, as well as flags and janitorial clothing.
-variable-content:
-  - type: image-section
-    column-start: "1"
-    column-end: "13"
-    images:
-      - type: image
-        imageFile: /img/11.jpg
-        caption: Logo Stamp
-      - type: image
-        imageFile: /img/7.jpg
-        caption: Logo positioning and letter paper layout
-      - type: image
-        imageFile: /img/8.jpg
-        caption: letter paper layout
 ---
