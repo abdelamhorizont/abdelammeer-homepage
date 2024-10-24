@@ -216,32 +216,6 @@ collections:
             ],
         }
       - {
-          label: "Cover",
-          name: "cover",
-          widget: "object",
-          fields:
-            [
-              {
-                label: "Video File",
-                name: "videoFile",
-                widget: file,
-                required: false,
-              },
-              {
-                label: "Fallback Image",
-                name: "fallbackImage",
-                widget: image,
-                required: false,
-              },
-              {
-                label: "Caption",
-                name: "caption",
-                widget: "string",
-                required: false,
-              },
-            ],
-        }
-      - {
           label: "description",
           name: "Description",
           widget: "markdown",
