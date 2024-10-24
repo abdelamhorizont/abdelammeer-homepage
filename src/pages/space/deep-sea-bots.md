@@ -1,7 +1,6 @@
 ---
 iframe: abdelammeer.com
 templateKey: space-post
-cover-image: /img/bildschirmfoto-2021-09-12-um-15.09.31.png
 projectInfos: test
 date: 2023-10-31T15:20:54.876Z
 title section:
@@ -14,18 +13,7 @@ title section:
 cover_image:
   - type: iframe
     iframe-link: https://deep-sea-bots.netlify.app/
-cover:
-  iframe: https://deep-sea-bots.netlify.app/
-  fallbackImage: /img/bildschirmfoto-2021-09-12-um-15.09.31.png
-  images:
-    - type: image
-      imageFile: /img/bildschirmfoto-2021-09-12-um-15.09.31.png
-    - type: video
-      videoFile: /img/anglerfisch.mp4
-  videoFile: /img/anglerfisch.mp4
 title: deep sea bots
-tags:
-  - All
 type: chatbot
 Description: t﻿est
 ---
