@@ -24,18 +24,6 @@ const Space = () => {
       node {
         frontmatter {
           title
-          type
-          date(formatString: "YYYY")
-          collaborators
-          iframe
-          cover {
-            iframe
-            fallbackImage {
-              childImageSharp {
-                gatsbyImageData
-              }
-            }
-          }
         }
         fields {
           slug

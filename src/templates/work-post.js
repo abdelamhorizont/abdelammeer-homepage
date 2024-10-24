@@ -79,22 +79,6 @@ export const pageQuery = graphql`
           }
         }
         templateKey
-        cover {
-          iframe
-          fallbackImage {
-            childImageSharp {
-              gatsbyImageData
-            }
-          }
-          images {
-            imageFile {
-              childImageSharp {
-                gatsbyImageData
-              }
-            }
-            caption
-          }
-        }
         Description
         variable_content {
           type

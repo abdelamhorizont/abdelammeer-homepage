@@ -65,24 +65,7 @@ export const pageQuery = graphql`
             }
           }
         }
-        iframe
         Description
-        cover {
-          iframe
-          fallbackImage {
-            childImageSharp {
-              gatsbyImageData
-            }
-          }
-          images {
-            imageFile {
-              childImageSharp {
-                gatsbyImageData
-              }
-            }
-            caption
-          }
-        }
         variable_content {
           type
           column_end
