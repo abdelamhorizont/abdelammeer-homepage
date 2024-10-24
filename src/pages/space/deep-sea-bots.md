@@ -5,8 +5,8 @@ projectInfos: test
 date: 2023-10-31T15:20:54.876Z
 title: deep sea bots
 cover_image:
-  - type: iframe
-    iframe-link: https://deep-sea-bots.netlify.app/
+  - type: video
+    videoFile: /img/anglerfisch.mp4
 type: chatbot
 title section:
   date: 2023-10-30T23:00:00.000Z
