@@ -40,6 +40,12 @@ variable-content:
       - type: work-reference
         full-width: false
         reference: ABK Stuttgart
+      - type: work-reference
+        full-width: false
+        reference: Narrating Namibia
+      - type: work-reference
+        full-width: false
+        reference: GleisMediale
 video:
   fallbackImage: ""
   videoFile: ""
