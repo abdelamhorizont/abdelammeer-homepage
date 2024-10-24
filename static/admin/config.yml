@@ -627,32 +627,6 @@ collections:
             ],
         }
       - {
-          label: "Cover",
-          name: "cover",
-          widget: "object",
-          fields:
-            [
-              {
-                label: "Video File",
-                name: "videoFile",
-                widget: file,
-                required: false,
-              },
-              {
-                label: "Fallback Image",
-                name: "fallbackImage",
-                widget: image,
-                required: false,
-              },
-              {
-                label: "Caption",
-                name: "caption",
-                widget: "string",
-                required: false,
-              },
-            ],
-        }
-      - {
           label: "description",
           name: "Description",
           widget: "markdown",
@@ -1064,32 +1038,6 @@ collections:
             ],
         }
       - {
-          label: "Cover",
-          name: "cover",
-          widget: "object",
-          fields:
-            [
-              {
-                label: "Video File",
-                name: "videoFile",
-                widget: file,
-                required: false,
-              },
-              {
-                label: "Fallback Image",
-                name: "fallbackImage",
-                widget: image,
-                required: false,
-              },
-              {
-                label: "Caption",
-                name: "caption",
-                widget: "string",
-                required: false,
-              },
-            ],
-        }
-      - {
           label: "description",
           name: "Description",
           widget: "markdown",
@@ -1297,14 +1245,6 @@ collections:
                   ],
               },
             ],
-        }
-      - {
-          label: "Tags",
-          name: "tags",
-          widget: "select",
-          multiple: true,
-          required: false,
-          options: ["All", "Object", "Space", "Research", "Exhibition"],
         }
 
   - name: "pages"
@@ -1922,75 +1862,4 @@ collections:
                   },
                 ],
             }
-          - {
-              label: "listes Infos",
-              name: "listedInfos",
-              widget: "list",
-              field:
-                {
-                  label: "Column",
-                  name: "column",
-                  widget: "object",
-                  fields:
-                    [
-                      {
-                        label: "Title",
-                        name: "title",
-                        widget: "string",
-                        required: false,
-                      },
-                      {
-                        label: "List",
-                        name: "list",
-                        widget: "list",
-                        field:
-                          {
-                            label: "List Element",
-                            name: "listElement",
-                            widget: "object",
-                            fields:
-                              [
-                                {
-                                  label: "Year",
-                                  name: "year",
-                                  widget: "string",
-                                  required: false,
-                                },
-                                {
-                                  label: "Title",
-                                  name: "title",
-                                  widget: "string",
-                                  required: false,
-                                },
-                                {
-                                  label: "Location",
-                                  name: "location",
-                                  widget: "string",
-                                  required: false,
-                                },
-                                {
-                                  label: "Link",
-                                  name: "link",
-                                  widget: "object",
-                                  fields:
-                                    [
-                                      {
-                                        label: "Link",
-                                        name: "link",
-                                        widget: "string",
-                                        required: false,
-                                      },
-                                      {
-                                        label: "Link Text",
-                                        name: "linkText",
-                                        widget: "string",
-                                        required: false,
-                                      },
-                                    ],
-                                },
-                              ],
-                          },
-                      },
-                    ],
-                },
-            }
+          
