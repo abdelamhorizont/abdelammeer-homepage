@@ -3,12 +3,12 @@ templateKey: blog-post
 cover-image: /img/download.png
 variable-content:
   - type: image-section
-    column-start: "4"
-    column-end: "9"
+    column-start: null
+    column-end: null
     images:
       - type: video
         videoFile: non-artificial-maybe-intelligence_intro.mp4
-        caption: Seminar Presentation Video
+        caption: Seminar Trailer
   - type: text-section
     big-size: "false"
     text: T﻿he seminar (Non) Artificial (Maybe) Intelligence was my first one at the
@@ -21,28 +21,28 @@ variable-content:
       graduation work [deep sea
       bots](http://localhost:8000/space/deep-sea-bots/)
     title: ""
-    column-start: "4"
-    column-end: "9"
+    column-start: null
+    column-end: null
   - type: text-section
     big-size: "false"
-    column-start: "2"
-    column-end: "12"
+    column-start: null
+    column-end: null
     text: |-
       T﻿he seminar took place every two weeks, seven days in total:
 
-      Day 1: Prologue
+      ## Day 1: Prologue
 
-      Day 2: Demystify
+      ## Day 2: Demystify
 
-      Day 3: Models
+      ## Day 3: Models
 
-      Day 4: Hacking
+      ## Day 4: Hacking
 
-      Day 5: Research
+      ## Day 5: Research
 
-      Day 6: Work
+      ## Day 6: Work
 
-      Day 7:  Documentation
+      ## Day 7:  Documentation
   - type: text-section
     text: >-
       ## Resources
@@ -204,10 +204,10 @@ cover_image:
     imageFile: download.png
     caption: created by Kristian Vrhar on stable diffusion
 location: HfG Karlsruhe
-title: (Non) Artificial (Maybe) Intelligence
 cover:
   fallbackImage: download.png
   caption: created by Kristian Vrhar on stable diffusion
+title: (Non) Artificial (Maybe) Intelligence
 type: "Seminar "
 Description: What and who and how and why? We will examine various AI tools,
   models and training Data, define possibilities, limitations and risks and use
