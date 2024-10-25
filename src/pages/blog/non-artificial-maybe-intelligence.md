@@ -30,19 +30,19 @@ variable-content:
     text: |-
       T﻿he seminar took place every two weeks, seven days in total:
 
-      Day 1: Prologue
+      ## Day 1: Prologue
 
-      Day 2: Demystify
+      ## Day 2: Demystify
 
-      Day 3: Models
+      ## Day 3: Models
 
-      Day 4: Hacking
+      ## Day 4: Hacking
 
-      Day 5: Research
+      ## Day 5: Research
 
-      Day 6: Work
+      ## Day 6: Work
 
-      Day 7:  Documentation
+      ## Day 7:  Documentation
   - type: text-section
     text: >-
       ## Resources
