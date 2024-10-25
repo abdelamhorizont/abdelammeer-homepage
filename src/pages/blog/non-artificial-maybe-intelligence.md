@@ -44,6 +44,16 @@ variable-content:
 
       ## Day 7:  Documentation
   - type: text-section
+    big-size: "false"
+    title: "Day 1: Prologue"
+    text: >-
+      
+
+      ![AI Dungeon](ai-dungeon.png "AI Dungeon")
+
+
+      A﻿fter Introducing the Seminar structure and talking about awareness we started to play [AI Dungeon](https://play.aidungeon.io/main/home)
+  - type: text-section
     text: >-
       ## Resources
 
