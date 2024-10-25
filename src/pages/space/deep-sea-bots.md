@@ -7,6 +7,9 @@ title: deep sea bots
 cover_image:
   - type: video
     videoFile: /img/anglerfisch.mp4
+  - type: iframe
+    iframe-link: https://deep-sea-bots.netlify.app/
+    caption: deep sea bots
 type: chatbot
 title section:
   date: 2023-10-30T23:00:00.000Z
