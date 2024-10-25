@@ -64,21 +64,27 @@
 
             transition: all ease 0.5s;   
 
-            // #star{
-            //     position: fixed;
-            //     left: 1rem;
-            //     bottom: 20vh;
-            // }
-            // #sun{
-            //     position: fixed;
-            //     top: 0.5rem;
-            //     right: 30vw;
-            // }
-            // #rainbow{
-            //     position: fixed;
-            //     bottom: 1rem;
-            //     right: 20vw;
-            // }
+            #star{
+                position: fixed;
+                left: 1rem;
+                bottom: 20vh;
+            }
+            #sun{
+                position: fixed;
+                top: 0.5rem;
+                right: 30vw;
+            }
+            #rainbow{
+                position: fixed;
+                bottom: 1rem;
+                right: 20vw;
+            }
+
+            #cloud{
+                position: fixed;
+                top: 10rem;
+                right: 1vw;
+            }
         }
 
         .active-button{

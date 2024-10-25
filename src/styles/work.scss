@@ -34,7 +34,7 @@
 
 
     .cover-image {
-        // height: 50vh;
+        height: 50vh;
         width: 49vw;
         // z-index: 0;
 
@@ -44,9 +44,11 @@
         border-radius: 1rem;
         overflow: hidden;
         position: absolute;
+        object-fit: contain;
 
         img,
         video {
+            object-fit: contain;
             height: 100%;
             width: 100%;
             // border-radius: 1rem;

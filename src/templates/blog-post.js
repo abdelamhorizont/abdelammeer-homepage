@@ -11,14 +11,14 @@ import '../styles/blog.scss'
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data;
-  const myimage = getImage(post.frontmatter.cover?.fallbackImage)
+  const myimage = getImage(post.frontmatter?.cover_image[0]?.imageFile)
 
   return (
     <Layout activeSite={'blog'}>
       <div className="blog-post">
 
-        <div className='blogpostcover'>
-          <h2 className="date"> {post.frontmatter.title_section.date} </h2>
+        <div className='postcover'>
+          <h2 className="year"> {post.frontmatter.title_section.date} </h2>
           <div className="cover-image">
             <GatsbyImage
               image={myimage}
@@ -26,8 +26,10 @@ const BlogPost = ({ data }) => {
             />
             <p className="caption">{post.frontmatter.cover?.caption}</p>
           </div>
-          <h1 className="headline">{post.frontmatter.title}</h1>
-          <h2 className="type"> {post.frontmatter.title_section.type} </h2>
+          <div className="project-description">
+            <h1 className="headline">{post.frontmatter.title}</h1>
+          </div>
+          <h2 className="type"> {post.frontmatter.title_section.format} </h2>
         </div>
 
 
@@ -39,7 +41,7 @@ const BlogPost = ({ data }) => {
           {
             post.frontmatter?.variable_content?.map((content) => {
               // const gridStyle = {gridColumn: 4 + "/" + 9}
-              const gridStyle = {gridColumn: content.column_start ? content.column_start + "/" + content.column_end : "4/9"}
+              const gridStyle = { gridColumn: content.column_start ? content.column_start + "/" + content.column_end : "4/9" }
               if (content.type == 'text-section') {
                 return (
                   <div style={gridStyle} className={`html-content`}>
@@ -48,8 +50,8 @@ const BlogPost = ({ data }) => {
                 )
               } else if (content.type == 'image-section') {
                 return (
-                  <div style={{gridColumn: content.column_start + "/" + content.column_end}} className={`html-content`}>
-                  <ImageSection content={content} type={"grid"} />
+                  <div style={{ gridColumn: content.column_start + "/" + content.column_end }} className={`html-content`}>
+                    <ImageSection content={content} type={"grid"} />
                   </div>
                 )
               }
@@ -74,6 +76,7 @@ export const pageQuery = graphql`
       frontmatter {
         title_section {
           type
+          format
           date(formatString: "YYYY")
           images {
             imageFile {
@@ -85,13 +88,17 @@ export const pageQuery = graphql`
         }
         title
         templateKey
-        cover {
-          fallbackImage {
-            childImageSharp {
-              gatsbyImageData
-            }
-          }
-          caption
+        cover_image {
+              caption
+              iframe_link
+              imageFile {
+                childImageSharp {
+                  gatsbyImageData
+                }
+              }
+              videoFile {
+                publicURL
+              }
         }
         Description
         variable_content {
