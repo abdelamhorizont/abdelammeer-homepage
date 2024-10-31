@@ -1,21 +1,40 @@
 import React, { useEffect, useState } from "react";
 import { graphql, Link } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout/Layout";
 import TextSection, { HTMLContent } from "../components/content/text-section";
 import ImageSection from "../components/content/image-section";
 import { ProjectPreview } from '../components/project/projectPreview';
 
-// import '../styles/space.scss'
+import '../styles/space.scss'
 
 const SpacePost = ({ data }) => {
   const { markdownRemark: post } = data;
+  const myimage = getImage(post.frontmatter?.cover_image[0]?.imageFile)
+console.log(post.frontmatter.cover_image);
 
   return (
     <Layout activeSite={'space'}>
 
-      <div className="space-post space-section">
-        <ProjectPreview content={post} type={"iframe"} />
+      <div className="space-post">
+
+        <div className='postcover'>
+          <h2 className="year"> {post.frontmatter.title_section.date} </h2>
+          <div className="cover-image">
+            <GatsbyImage
+              image={myimage}
+              alt={''}
+            />
+            <iframe src={post.frontmatter.cover_image[0]?.iframe_link} frameborder="100px"></iframe>
+
+            <p className="caption">{post.frontmatter.cover_image?.caption}</p>
+          </div>
+          <div className="project-description">
+            <h1 className="headline">{post.frontmatter.title}</h1>
+          </div>
+          <h2 className="type"> {post.frontmatter.title_section.format} </h2>
+        </div>
 
         <div className="space-post-content">
           <div className="description">
@@ -55,8 +74,8 @@ export const pageQuery = graphql`
         title
         title_section {
           type
+          format
           date(formatString: "YYYY")
-          collaborators
           images {
             imageFile {
               childImageSharp {
@@ -64,6 +83,18 @@ export const pageQuery = graphql`
               }
             }
           }
+        }
+        cover_image {
+              caption
+              iframe_link
+              imageFile {
+                childImageSharp {
+                  gatsbyImageData
+                }
+              }
+              videoFile {
+                publicURL
+              }
         }
         Description
         variable_content {

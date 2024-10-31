@@ -46,12 +46,12 @@
     }
 
     .color-modes {
-        display: flex;
+        // display: flex;
         // flex-direction: column;
-        position: fixed;
-        right: 0rem;
-        justify-content: center;
-        margin-right: 2rem;
+        // position: fixed;
+        // right: 0rem;
+        // justify-content: center;
+        // margin-right: 2rem;
 
         li {
             display: flex;
@@ -100,8 +100,10 @@
 
         button{
             img{
-                max-height: 5.25rem;
-                max-width: 6.5rem;
+                // max-height: 5.25rem;
+                // max-width: 6.5rem;
+                max-height: 4.25rem;
+                max-width: 5.5rem;
                 transition: all ease 0.5s;   
 
             }

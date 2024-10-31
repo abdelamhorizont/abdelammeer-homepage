@@ -24,7 +24,7 @@ const BlogPost = ({ data }) => {
               image={myimage}
               alt={''}
             />
-            <p className="caption">{post.frontmatter.cover?.caption}</p>
+            <p className="caption">{post.frontmatter.cover_image[0]?.caption}</p>
           </div>
           <div className="project-description">
             <h1 className="headline">{post.frontmatter.title}</h1>
@@ -41,7 +41,7 @@ const BlogPost = ({ data }) => {
           {
             post.frontmatter?.variable_content?.map((content) => {
               // const gridStyle = {gridColumn: 4 + "/" + 9}
-              const gridStyle = { gridColumn: content.column_start ? content.column_start + "/" + content.column_end : "4/9" }
+              const gridStyle = { gridColumn: content.column_start ? content.column_start + "/" + content.column_end : "4/11" }
               if (content.type == 'text-section') {
                 return (
                   <div style={gridStyle} className={`html-content`}>
@@ -50,7 +50,7 @@ const BlogPost = ({ data }) => {
                 )
               } else if (content.type == 'image-section') {
                 return (
-                  <div style={{ gridColumn: content.column_start + "/" + content.column_end }} className={`html-content`}>
+                  <div style={{ gridColumn: content.column_start ? content.column_start + "/" + content.column_end : "4/11" }} className={`html-content`}>
                     <ImageSection content={content} type={"grid"} />
                   </div>
                 )

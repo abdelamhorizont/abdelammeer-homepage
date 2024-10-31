@@ -279,10 +279,10 @@
         // width:100vw;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        // gap: 1rem;
+        gap: 1rem;
 
         .description {
-            grid-column: 4/12;
+            grid-column: 4/11;
             margin-bottom: 3.5rem;
             font-size: 1.5rem;
 
