@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { graphql, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import _ from 'lodash';
 
 import Layout from "../components/layout/Layout";
 import TextSection, { HTMLContent } from "../components/content/text-section";
@@ -12,12 +13,12 @@ import '../styles/space.scss'
 const SpacePost = ({ data }) => {
   const { markdownRemark: post } = data;
   const myimage = getImage(post.frontmatter?.cover_image[0]?.imageFile)
-console.log(post.frontmatter.cover_image);
+  let iframeIndex = post.frontmatter.cover_image[0]?.iframe_link ? 0 : 1
 
   return (
     <Layout activeSite={'space'}>
 
-      <div className="space-post">
+      <div className={`${_.kebabCase(post?.frontmatter?.title)} space-post`}>
 
         <div className='postcover'>
           <h2 className="year"> {post.frontmatter.title_section.date} </h2>
@@ -26,13 +27,25 @@ console.log(post.frontmatter.cover_image);
               image={myimage}
               alt={''}
             />
-            <iframe src={post.frontmatter.cover_image[0]?.iframe_link} frameborder="100px"></iframe>
+            <iframe src={post.frontmatter.cover_image[iframeIndex]?.iframe_link} frameborder="100px"></iframe>
 
             <p className="caption">{post.frontmatter.cover_image?.caption}</p>
           </div>
-          <div className="project-description">
-            <h1 className="headline">{post.frontmatter.title}</h1>
-          </div>
+
+          {post?.frontmatter?.title_section?.images?.length ?
+            <div className="title-img">
+              <GatsbyImage image={getImage(post?.frontmatter?.title_section.images[0]?.imageFile)} alt={''} />
+              {/* <div className="project-description">
+              <p>{content?.frontmatter?.Description} </p>
+            </div> */}
+            </div>
+            :
+            <div className="project-description">
+              <h1 className="headline">{post?.frontmatter?.title}</h1>
+              <p>{post?.frontmatter?.Description} </p>
+            </div>
+          }
+
           <h2 className="type"> {post.frontmatter.title_section.format} </h2>
         </div>
 
