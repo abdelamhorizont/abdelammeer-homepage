@@ -20,6 +20,20 @@ cover_image:
   - type: video
     videoFile: /img/16.mp4
     caption: ABK Stuttgart Products
+  - type: image
+    imageFile: /img/1.jpg
+  - type: image
+    imageFile: /img/img_0307.jpg
+  - type: image
+    imageFile: /img/11.jpg
+  - type: image
+    imageFile: /img/4.jpg
+  - type: image
+    imageFile: /img/7.jpg
+  - type: image
+    imageFile: /img/3.jpg
+  - type: image
+    imageFile: /img/14b.gif
 location: ABK Stuttgart
 cover:
   fallbackImage: /img/1.jpg
