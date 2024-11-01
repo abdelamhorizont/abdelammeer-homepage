@@ -99,7 +99,121 @@
     }
 }
 
+.work-post {
+    padding: 1rem;
+    padding-top: 5rem;
 
+    .postcover {
+        width: 100%;
+        // display: flex;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+
+        border-top: 1px;
+        border-color: aliceblue;
+        // border-style: solid;
+
+        // grid-template-columns: repeat(12, 1fr);
+        padding-top: 1rem;
+        margin-bottom: 1rem;
+
+        gap: 1rem;
+
+        &:hover {
+            padding-left: 0rem;
+
+        }
+
+        // .preview-title {
+        .project-description {
+            grid-column: span 8;
+            
+            h1 {
+                font-size: 5rem;
+            }
+        }
+        
+        
+        
+        h2 {
+            font-size: 1.5rem;
+            display: inline;
+            width: max-content;
+        }
+        
+        
+        .cover-image {
+            grid-column: span 2;
+
+            img,
+            video {
+                width: min-content;
+                height: 100%;
+                border-radius: 1rem;
+            }
+
+            p.caption {
+                margin: 0.5rem;
+                line-height: 1.2rem;
+                font-weight: 300;
+            }
+        }
+
+
+        .type {
+            grid-column: span 1;
+
+        }
+    }
+
+    .blog-post-content {
+        // width:100vw;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1rem;
+
+        .description {
+            grid-column: 4/11;
+            margin-bottom: 3.5rem;
+            font-size: 1.5rem;
+
+            // width: 100%;
+
+        }
+
+        .image-section {
+            width: 100%;
+            display: flex;
+            flex: 1 1 0;
+
+            gap: 1rem;
+
+            div {
+                flex-basis: 100%;
+            }
+
+            .iFrame {
+
+                iframe {
+                    width: 100%;
+                    height: 80vh;
+                    border-radius: 2rem;
+                    // zoom: 1.25;
+                }
+
+                p.caption {
+                    text-align: center;
+                }
+            }
+        }
+
+        .text-section {
+            max-width: 100%;
+            display: flex;
+            gap: 1rem;
+        }
+    }
+}
 // .work-page,
 // .work-section {
 //     overflow: hidden;

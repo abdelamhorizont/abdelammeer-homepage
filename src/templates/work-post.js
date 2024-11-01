@@ -6,29 +6,32 @@ import Layout from "../components/layout/Layout";
 import TextSection, { HTMLContent } from "../components/content/text-section";
 import ImageSection from "../components/content/image-section";
 
-// import '../styles/work.scss'
+import '../styles/work.scss'
 
 const WorkPost = ({ data }) => {
   const { markdownRemark: post } = data;
-  const myimage = getImage(post.frontmatter.cover?.fallbackImage)
+  // const myimage = getImage(post.frontmatter.cover?.fallbackImage)
+console.log(post.frontmatter.cover_image);
 
   return (
     <Layout activeSite={'work'}>
       <div className="work-post">
 
-        <div className='workpostcover'>
+        <div className='postcover'>
           <div className="cover-image">
-            <ImageSection type={"carousel"} content={post.frontmatter.cover?.images} columnStart={1} columnEnd={12} />
+            <ImageSection type={"carousel"} content={post.frontmatter.cover_image} columnStart={1} columnEnd={12} />
           </div>
 
-          <div className="cover-title">
-            <div><h2> {post.frontmatter.title_section.date} </h2></div>
-            <div className="headline"><h1>{post.frontmatter.title}</h1></div>
-            <div><h2> {post.frontmatter.title_section.type} </h2></div>
+          <div><h2> {post.frontmatter.title_section.date} </h2></div>
+          <div className="headline"><h1>{post.frontmatter.title}</h1></div>
+
+          <div>
+            <div><h2> {post.frontmatter.title_section.format} </h2></div>
             {post.frontmatter?.title_section.collaborators &&
-              <div className="collaborators"><h2>with {post.frontmatter?.title_section.collaborators} </h2></div>
+              <div className="collaborators"><h3>with {post.frontmatter?.title_section.collaborators} </h3></div>
             }
           </div>
+
         </div>
 
         <div className="work-post-content">
@@ -68,6 +71,7 @@ export const pageQuery = graphql`
         title
         title_section {
           type
+          format
           date(formatString: "YYYY")
           collaborators
           images {
