@@ -22,18 +22,25 @@ cover_image:
     caption: ABK Stuttgart Products
   - type: image
     imageFile: /img/1.jpg
+    caption: Overview
   - type: image
     imageFile: /img/img_0307.jpg
+    caption: Flags
   - type: image
     imageFile: /img/11.jpg
+    caption: Stamp
   - type: image
     imageFile: /img/4.jpg
+    caption: Businesscards
   - type: image
     imageFile: /img/7.jpg
+    caption: letter paper margin
   - type: image
     imageFile: /img/3.jpg
+    caption: Logo embossing
   - type: image
     imageFile: /img/14b.gif
+    caption: Design Manual
 location: ABK Stuttgart
 cover:
   fallbackImage: /img/1.jpg
