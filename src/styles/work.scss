@@ -23,7 +23,10 @@
     }
 
     h2 {
-        background-color: rgb(254, 214, 54);
+        // background-color: rgb(254, 214, 54);
+        color: white;
+        border-color: white;
+
         // position: absolute;
         margin: 0.2rem;
         z-index: 1;
@@ -77,11 +80,13 @@
             text-align: center;
             // line-height: 4.5rem;
 
-            padding: 0rem 0.5rem;
-            border-style: solid;
-            border-width: 1px;
-            border-color: black;
-            background-color: rgb(254, 214, 54);
+            color: white;
+
+            // padding: 0rem 0.5rem;
+            // border-style: solid;
+            // border-width: 1px;
+            // border-color: black;
+            // background-color: rgb(254, 214, 54);
 
         }
 
@@ -101,13 +106,13 @@
 
 .work-post {
     padding: 1rem;
-    padding-top: 5rem;
+    // padding-top: 5rem;
 
     .postcover {
         width: 100%;
         // display: flex;
         display: grid;
-        grid-template-columns: repeat(12, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
 
         border-top: 1px;
         border-color: aliceblue;
@@ -143,20 +148,24 @@
         
         
         .cover-image {
-            grid-column: span 2;
+            // position: absolute;
+            width: 100vw;
+            height: 80vh;
+            overflow: hidden;
+            // grid-column: span 2;
 
-            img,
-            video {
-                width: min-content;
-                height: 100%;
-                border-radius: 1rem;
-            }
+            // img,
+            // video {
+            //     width: min-content;
+            //     height: 100%;
+            //     border-radius: 1rem;
+            // }
 
-            p.caption {
-                margin: 0.5rem;
-                line-height: 1.2rem;
-                font-weight: 300;
-            }
+            // p.caption {
+            //     margin: 0.5rem;
+            //     line-height: 1.2rem;
+            //     font-weight: 300;
+            // }
         }
 
 
@@ -166,7 +175,7 @@
         }
     }
 
-    .blog-post-content {
+    .work-post-content {
         // width:100vw;
         display: grid;
         grid-template-columns: repeat(12, 1fr);

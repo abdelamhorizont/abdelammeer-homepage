@@ -11,7 +11,7 @@ import '../styles/work.scss'
 const WorkPost = ({ data }) => {
   const { markdownRemark: post } = data;
   // const myimage = getImage(post.frontmatter.cover?.fallbackImage)
-console.log(post.frontmatter.cover_image);
+  // console.log(post.frontmatter.cover_image);
 
   return (
     <Layout activeSite={'work'}>
@@ -80,6 +80,18 @@ export const pageQuery = graphql`
                 gatsbyImageData
               }
             }
+          }
+        }
+        cover_image {
+          caption
+          iframe_link
+          imageFile {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+          videoFile {
+            publicURL
           }
         }
         templateKey

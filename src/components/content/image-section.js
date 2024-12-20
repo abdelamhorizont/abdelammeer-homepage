@@ -30,7 +30,7 @@ const ImageSection = ({ content, type }) => {
     <>
       {
         // type == "iframe" ?
-          content?.iframe_link != null ?
+        content?.iframe_link != null ?
           <iframe src={content.iframe_link} frameborder="100px"></iframe>
           :
           // type == "video" ?
@@ -42,10 +42,10 @@ const ImageSection = ({ content, type }) => {
             </div>
             :
             // type == "image" ?
-            content?.imageFile != null ?
+            (content?.imageFile != null) ?
               <GatsbyImage image={getImage(content?.imageFile)} alt={''} />
               :
-              type == "grid" ?
+              (content?.length > 1 && type == "grid") ?
                 content?.images?.map((image) => {
                   const myimage = getImage(image?.imageFile)
 
@@ -78,7 +78,7 @@ const ImageSection = ({ content, type }) => {
                   )
                 })
                 :
-                type == "carousel" &&
+                (content?.length > 1 && type == "carousel") &&
                 // <div onClick={() => handleClick(i)}>
                 <Swiper
                   // onSwiper={(swiper) => swiper.slideTo(index)}
@@ -103,17 +103,26 @@ const ImageSection = ({ content, type }) => {
                   {
                     content?.map((image) => {
                       const myimg = getImage(image.imageFile)
+                      console.log(image);
 
                       return (
-                        <SwiperSlide className="swiper-slide" >
-                          <GatsbyImage
-                            image={myimg}
-                            alt={''}
+                        image?.videoFile != null ?
+                          <SwiperSlide className="swiper-slide" >
+                            <div className="video-section">
+                              <video key={image?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline>
+                                <source src={image?.videoFile?.publicURL} type="video/mp4" />
+                              </video>
+                            </div>
+                          </SwiperSlide>
+                          :
+                          <SwiperSlide className="swiper-slide" >
+                            <GatsbyImage
+                              image={myimg}
+                              alt={''}
                             // style={{ height: '100%' }}
-                            className="swiper-img"
-                          />
-                        </SwiperSlide>
-
+                            // className="swiper-img"
+                            />
+                          </SwiperSlide>
                       )
                     })
                   }
