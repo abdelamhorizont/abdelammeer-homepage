@@ -22,6 +22,12 @@ variable-content:
         reference: Deep Sea Bots
     reference-section-type: blog
     references:
+      - type: work-reference
+        full-width: false
+        reference: NEW NORMAL
+      - type: work-reference
+        full-width: false
+        reference: Systems
       - type: blog-reference
         reference: "Typography 1: Letters"
       - type: space-reference
