@@ -1,5 +1,6 @@
    .space {
        grid-column: span 2;
+       padding: 0rem 0.5rem;
 
        h2 {
            background-color: rgb(134, 134, 255);
@@ -10,6 +11,9 @@
            width: 50vw;
            border-radius: 25vw;
            overflow: hidden;
+           display: flex;
+           justify-content: center;
+           align-items: center;
 
            video {
                width: 100%;
@@ -98,8 +102,8 @@
                display: inline-flex;
                justify-items: flex-end;
                margin-left: auto;
-            //    max-width: 17vw;
-            //    object-fit: contain;
+               //    max-width: 17vw;
+               //    object-fit: contain;
 
            }
 
@@ -164,6 +168,7 @@
            .cover-image {
                background-color: rgba(255, 255, 255, 0.5);
                overflow: hidden;
+               padding-top: 17rem;
 
 
                // overflow: visible;
@@ -187,8 +192,8 @@
 
            }
 
-           .title-img {   
-            max-width: 17vw;
+           .title-img {
+               max-width: 17vw;
            }
        }
    }

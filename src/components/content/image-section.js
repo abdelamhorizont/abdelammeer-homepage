@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, A11y } from 'swiper';
 
 // import './content.scss'
-// import 'swiper/css'
+import 'swiper/css'
 // import 'swiper/scss/navigation';
 // import 'swiper/scss/pagination';
 
@@ -78,11 +78,13 @@ const ImageSection = ({ content, type }) => {
                   )
                 })
                 :
-                (content?.length > 1 && type == "carousel") &&
+                // (content?.length > 1 && type == "carousel") &&
+                (type == "carousel") &&
                 // <div onClick={() => handleClick(i)}>
                 <Swiper
                   // onSwiper={(swiper) => swiper.slideTo(index)}
                   modules={[Navigation]}
+                  // navigation
                   navigation={{
                     nextEl: navigationNextRef.current,
                     prevEl: navigationPrevRef.current
@@ -92,7 +94,7 @@ const ImageSection = ({ content, type }) => {
                     swiper.params.navigation.prevEl = navigationPrevRef.current;
                   }}
                   loop
-                  initialSlide={0}
+                  // initialSlide={0}
                   spaceBetween={0}
                   slidesPerView={'auto'}
                   // centeredSlides
@@ -103,7 +105,7 @@ const ImageSection = ({ content, type }) => {
                   {
                     content?.map((image) => {
                       const myimg = getImage(image.imageFile)
-                      console.log(image);
+                      // console.log(content.length);
 
                       return (
                         image?.videoFile != null ?

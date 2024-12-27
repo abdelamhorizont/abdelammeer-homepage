@@ -1,7 +1,7 @@
 .blog-page,
 .section-list {
     overflow: hidden;
-    padding: 0rem 0.5rem;
+    // padding: 0rem 0.5rem;
 
 
 
@@ -124,6 +124,7 @@
 
 .blog {
     grid-column: span 2;
+    padding: 0rem 0.5rem;
 
     h2 {
         background-color: rgb(68, 180, 68);

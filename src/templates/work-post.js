@@ -22,15 +22,20 @@ const WorkPost = ({ data }) => {
             <ImageSection type={"carousel"} content={post.frontmatter.cover_image} columnStart={1} columnEnd={12} />
           </div>
 
-          <div><h2> {post.frontmatter.title_section.date} </h2></div>
-          <div className="headline"><h1>{post.frontmatter.title}</h1></div>
-
-          <div>
-            <div><h2> {post.frontmatter.title_section.format} </h2></div>
-            {post.frontmatter?.title_section.collaborators &&
-              <div className="collaborators"><h3>with {post.frontmatter?.title_section.collaborators} </h3></div>
-            }
+          {/* <div><h2> {post.frontmatter.title_section.date} </h2></div> */}
+          <h2 className="year"> {post.frontmatter.title_section.date} </h2>
+          <div className="project-description">
+            <h1 className="headline">{post.frontmatter.title}</h1>
           </div>
+          <h2 className="type"> {post.frontmatter.title_section.format} </h2>
+          {post.frontmatter?.title_section.collaborators &&
+            <div className="collaborators"><h3>with {post.frontmatter?.title_section.collaborators} </h3></div>
+          }
+
+
+          {/* <div>
+            <div><h2> {post.frontmatter.title_section.format} </h2></div>
+          </div> */}
 
         </div>
 

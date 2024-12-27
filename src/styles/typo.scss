@@ -31,7 +31,8 @@
 html {
    color: black;
    font-family: PPAgrandir;
-   font-size: clamp(10px, 1vw, 16px);
+   // font-size: clamp(10px, 1vw, 16px);
+   font-size: clamp(8px, 1vw, 14px);
 }
 
 .prom-text {
