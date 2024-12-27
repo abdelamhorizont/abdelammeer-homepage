@@ -7,6 +7,6 @@ title section:
   format: Visuals
 cover_image:
   - type: video
-    videoFile: /img/butterfly.mp4
-    caption: Butterfly Sun
+    videoFile: /img/abdel_butterfly_2.mp4
+    caption: butterfly sun
 ---
