@@ -29,15 +29,11 @@ variable-content:
         full-width: false
         reference: Systems
       - type: blog-reference
-        reference: "Typography 1: Letters"
-      - type: space-reference
-        reference: deep sea bots
-      - type: blog-reference
         reference: Mare Mediterraneum
-      - type: space-reference
-        reference: Ocean View
       - type: blog-reference
         reference: Spawn Grounds
+      - type: space-reference
+        reference: deep sea bots
       - type: blog-reference
         reference: (Non) Artificial (Maybe) Intelligence
       - type: work-reference
@@ -46,6 +42,10 @@ variable-content:
       - type: work-reference
         full-width: false
         reference: ABK Stuttgart
+      - type: blog-reference
+        reference: "Typography 1: Letters"
+      - type: space-reference
+        reference: Ocean View
       - type: work-reference
         full-width: false
         reference: Narrating Namibia
