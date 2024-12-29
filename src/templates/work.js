@@ -63,7 +63,7 @@ const WorkPage = ({ data }) => {
           animate="visible"
           variants={page}>
           {
-            frontmatter.variable_content.map(content => {
+            frontmatter.variable_content?.map(content => {
               if (content.type == "reference-section") {
                 return (
                   <>
@@ -108,8 +108,8 @@ const WorkPage = ({ data }) => {
 export default WorkPage;
 
 export const pageQuery = graphql`
-  query IndexPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+  query WorkTemplate {
+    markdownRemark(frontmatter: { templateKey: { eq: "work" } }) {
       frontmatter {
         title
         heading
