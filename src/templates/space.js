@@ -1,60 +1,233 @@
-import React, { useEffect } from "react";
-import { Link, graphql, useStaticQuery } from "gatsby";
+import React, { useEffect, useState } from "react";
+import { Link, graphql } from "gatsby";
 import { getImage, GatsbyImage } from "gatsby-plugin-image";
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 
-import { ProjectPreview } from '../components/project/projectPreview';
 import Layout from "../components/layout/Layout";
-import { HTMLContent } from "../components/content/text-section";
-import ImageSection from "../components/content/image-section";
+import { ProjectPreview } from '../components/project/projectPreview';
 
-// import Tags from "../components/tags/tags";
+import '../styles/reset.css'
+import '../styles/global.scss'
+import '../styles/typo.scss'
 
-// import '../styles/reset.css'
-// import '../styles/global.scss'
-// import '../styles/typo.scss'
+import '../styles/index.scss'
+import '../styles/space.scss'
+import '../styles/blog.scss'
+import '../styles/work.scss'
 
-// import '../styles/space.scss'
-
-const Space = () => {
-  const data = useStaticQuery(graphql`
-  query {
-  allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "space-post"}}}) {
-    edges {
-      node {
-        frontmatter {
-          title
-        }
-        fields {
-          slug
-        }
-      }
-    }
+const SpacePage = ({ data }) => {
+  const { frontmatter } = data.markdownRemark
+  const page = {
+    hidden: {
+      scale: 0,
+      transition: {
+        when: "afterChildren",
+      },
+    },
+    visible: {
+      scale: 1,
+      transition: {
+        when: "beforeChildren",
+        staggerChildren: 0.3,
+      },
+    },
   }
-}
-  `)
+
+  const section = {
+    hidden: {
+      scale: 0,
+      transition: {
+        when: "afterChildren",
+      },
+    },
+    visible: {
+      scale: 1,
+      transition: {
+        when: "beforeChildren",
+        staggerChildren: 0.3,
+      },
+    },
+  }
+
+  const item = {
+    hidden: { scale: 0 },
+    visible: { scale: 1 },
+    transition: { duration: 1 },
+  }
 
   return (
-    <Layout activeSite={'space'}>
-      <div className="space-page">
-        <div className="project-list">
-
+    <Layout>
+      <div className="index-page">
+        <motion.ul className="section-list"
+          initial="hidden"
+          animate="visible"
+          variants={page}>
           {
-            data.allMarkdownRemark.edges.map(edge => {
-              return (
-                <ProjectPreview content={edge.node} type={"iframe"} />
-              )
+            frontmatter.variable_content?.map(content => {
+              if (content.type == "reference-section") {
+                return (
+                  <>
+                    {
+                      // content.reference_section_type == ("blog" || "work") ?
+                        <>
+                          {content.references?.map((node) => {
+                            // const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.title == node.reference)[0]
+                            const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == 'space-post').filter(edge => edge.node.frontmatter.title == node.reference)[0]
+                            // console.log(project?.node?.frontmatter?.title);
+                            
+                            return (
+                              <motion.div
+                                variants={item}
+                                // clasName={'post-link'}
+                                className={project?.node?.frontmatter?.title_section?.type + ' post-link'}
+                              >
+                                <ProjectPreview content={project?.node} />
+                              </motion.div>
+                            )
+                          })}
+                        </>
+                        // :
+                        // <div></div>
+                    }
+                  </>
+                )
+              }
+
             })
           }
+        </motion.ul>
 
-        </div>
 
+        {/* cookie */}
       </div>
     </Layout>
   )
 }
 
 
+export default SpacePage;
 
-export default Space;
+export const pageQuery = graphql`
+  query SpaceTemplate {
+    markdownRemark(frontmatter: { templateKey: { eq: "space" } }) {
+      frontmatter {
+        title
+        heading
+        subheading
+        variable_content {
+          references {
+            reference
+            type
+          }
+          type
+          reference_section_type
+          column_end
+          column_start
+          text
+        }
+      }
+    }
+    allMarkdownRemark {
+      edges {
+        node {
+          frontmatter {
+            templateKey
+            title
+            cover_image {
+              caption
+              iframe_link
+              imageFile {
+                childImageSharp {
+                  gatsbyImageData
+                }
+              }
+              videoFile {
+                publicURL
+              }
+            }
+            title_section {
+              title
+              type
+              format
+              date(formatString: "YYYY")
+              images {
+                imageFile {
+                  childImageSharp {
+                    gatsbyImageData
+                  }
+                }
+              }
+            }
+            type
+            date(formatString: "YYYY")
+            Description
+          }  
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`
+
+// import React, { useEffect } from "react";
+// import { Link, graphql, useStaticQuery } from "gatsby";
+// import { getImage, GatsbyImage } from "gatsby-plugin-image";
+// import { motion, AnimatePresence } from "framer-motion"
+
+// import { ProjectPreview } from '../components/project/projectPreview';
+// import Layout from "../components/layout/Layout";
+// import { HTMLContent } from "../components/content/text-section";
+// import ImageSection from "../components/content/image-section";
+
+// // import Tags from "../components/tags/tags";
+
+// // import '../styles/reset.css'
+// // import '../styles/global.scss'
+// // import '../styles/typo.scss'
+
+// // import '../styles/space.scss'
+
+// const Space = () => {
+//   const data = useStaticQuery(graphql`
+//   query {
+//   allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "space-post"}}}) {
+//     edges {
+//       node {
+//         frontmatter {
+//           title
+//         }
+//         fields {
+//           slug
+//         }
+//       }
+//     }
+//   }
+// }
+//   `)
+
+//   return (
+//     <Layout activeSite={'space'}>
+//       <div className="space-page">
+//         <div className="project-list">
+
+//           {
+//             data.allMarkdownRemark.edges.map(edge => {
+//               return (
+//                 <ProjectPreview content={edge.node} type={"iframe"} />
+//               )
+//             })
+//           }
+
+//         </div>
+
+//       </div>
+//     </Layout>
+//   )
+// }
+
+
+
+// export default Space;
 
