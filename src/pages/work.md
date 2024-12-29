@@ -16,10 +16,10 @@ variable-content:
         reference: Systems
       - type: work-reference
         full-width: false
-        reference: ABK Stuttgart
+        reference: Narrating Africa
       - type: work-reference
         full-width: false
-        reference: Narrating Africa
+        reference: ABK Stuttgart
       - type: work-reference
         full-width: false
         reference: Narrating Namibia
