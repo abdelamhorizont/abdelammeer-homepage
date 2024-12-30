@@ -10,10 +10,16 @@ variable-content:
     references:
       - type: work-reference
         full-width: false
-        reference: NEW NORMAL
+        reference: Five in your Eyes
       - type: work-reference
         full-width: false
         reference: Systems
+      - type: work-reference
+        full-width: false
+        reference: NEW NORMAL
+      - type: work-reference
+        full-width: false
+        reference: Deep Sea Bots
       - type: work-reference
         full-width: false
         reference: Narrating Africa
