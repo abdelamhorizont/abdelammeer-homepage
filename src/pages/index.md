@@ -24,10 +24,10 @@ variable-content:
     references:
       - type: work-reference
         full-width: false
-        reference: NEW NORMAL
+        reference: Five in your Eyes
       - type: work-reference
         full-width: false
-        reference: Systems
+        reference: NEW NORMAL
       - type: blog-reference
         reference: Mare Mediterraneum
       - type: blog-reference
