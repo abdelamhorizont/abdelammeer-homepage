@@ -8,14 +8,18 @@ variable-content:
   - type: reference-section
     hero: false
     references:
-      - type: space-reference
-        reference: deep sea bots
+      - type: work-reference
+        full-width: false
+        reference: Five in your Eyes
+      - type: work-reference
+        full-width: false
+        reference: Systems
       - type: work-reference
         full-width: false
         reference: NEW NORMAL
       - type: work-reference
         full-width: false
-        reference: Systems
+        reference: Deep Sea Bots
       - type: work-reference
         full-width: false
         reference: Narrating Africa
