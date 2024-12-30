@@ -8,6 +8,8 @@ variable-content:
   - type: reference-section
     hero: false
     references:
+      - type: space-reference
+        reference: deep sea bots
       - type: work-reference
         full-width: false
         reference: NEW NORMAL
