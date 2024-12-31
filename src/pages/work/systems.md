@@ -7,6 +7,6 @@ title section:
   format: Print
 cover_image:
   - type: image
-    imageFile: /img/img_5310.jpg
-    caption: Blue Collar Shirt
+    imageFile: /img/cover-wide.jpg
+    caption: Monoprints
 ---
