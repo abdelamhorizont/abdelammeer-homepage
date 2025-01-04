@@ -6,13 +6,17 @@ title section:
   title: GleisMediale
   type: work
   images: []
-  format: Identity
+  format: Event Identity
+  location: Stuttgart Main Station
 type: Exhibition Identity
 date: 2023-12-12T16:24:50.438Z
 cover:
   videoFile: ""
   fallbackImage: /img/gm1.jpg
 cover_image:
+  - type: image
+    imageFile: /img/gleismediale-4.jpg
+    caption: Wayfinding
   - type: image
     imageFile: /img/gm1.jpg
     caption: Flyer
