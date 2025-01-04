@@ -7,6 +7,6 @@ title section:
   format: Interactive Installation
 cover_image:
   - type: video
-    videoFile: /img/legehenne.mp4
-    caption: Legehenne
+    videoFile: /img/anglerfisch.mp4
+    caption: Anglerfisch
 ---
