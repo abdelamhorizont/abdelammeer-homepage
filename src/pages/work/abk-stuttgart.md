@@ -19,8 +19,6 @@ variable-content:
       - type: image
         imageFile: /img/8.jpg
         caption: letter paper layout
-collaborators: Jasmina Begovič, Raphael Berg
-date: 2019-10-01T13:52:54.513Z
 cover_image:
   - type: video
     videoFile: /img/16.mp4
