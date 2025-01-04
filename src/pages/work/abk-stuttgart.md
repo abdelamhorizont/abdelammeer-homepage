@@ -43,40 +43,7 @@ cover_image:
   - type: video
     videoFile: /img/14b.mp4
     caption: Design Manual Flip through
-location: ABK Stuttgart
-cover:
-  fallbackImage: /img/1.jpg
-  images:
-    - type: image
-      imageFile: /img/1.jpg
-      caption: Overview
-    - type: image
-      image: /img/img_0307.jpg
-      caption: Flags
-      imageFile: /img/img_0307.jpg
-    - type: video
-      videoFile: /img/16.mp4
-      caption: objects
-    - type: image
-      image: /img/7
-      caption: Text Detail
-      imageFile: /img/8.jpg
-    - type: image
-      imageFile: /img/3.jpg
-      caption: Embossement Detail
-    - type: image
-      imageFile: /img/4.jpg
-      caption: Business Cards
-    - type: image
-      imageFile: /img/14b.gif
-      caption: Documentation, Design Guidelines
-    - type: image
-      imageFile: /img/11.jpg
-      caption: Stamp
-  videoFile: /img/16.mp4
-subtitle: ""
 title: ABK Stuttgart
-type: Corporate Design
 title section:
   date: 2019-09-30T22:00:00.000Z
   title: ABK Stuttgart
