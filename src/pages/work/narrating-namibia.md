@@ -6,6 +6,9 @@ cover_image:
   - type: image
     imageFile: /img/narrating-namibia-1.jpg
     caption: Reader
+  - type: image
+    imageFile: /img/narrating-namibia-gif.gif
+    caption: Reader flip through
 location: Windhoek, Marbach
 cover:
   fallbackImage: /img/narrating-namibia-1.jpg
