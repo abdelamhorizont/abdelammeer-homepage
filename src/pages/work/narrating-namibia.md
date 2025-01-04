@@ -1,7 +1,5 @@
 ---
 templateKey: work-post
-collaborators: SONJA SCHWARZ
-date: 2021-05-01T14:00:38.386Z
 cover_image:
   - type: image
     imageFile: /img/narrating-namibia-1.jpg
@@ -12,11 +10,7 @@ cover_image:
   - type: video
     videoFile: /img/narrating-namibia-gif.mp4
     caption: Reader flip through
-location: Windhoek, Marbach
-cover:
-  fallbackImage: /img/narrating-namibia-1.jpg
 title: Narrating Namibia
-type: Reader
 title section:
   date: 2021-04-30T22:00:00.000Z
   title: Narrating Namibia
