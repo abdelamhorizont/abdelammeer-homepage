@@ -2,6 +2,11 @@
 templateKey: work-post
 variable-content:
   - type: image-section
+    title: Design Manual
+    images:
+      - type: video
+        videoFile: /img/14b.mp4
+  - type: image-section
     column-start: "1"
     column-end: "13"
     images:
@@ -33,14 +38,11 @@ cover_image:
     imageFile: /img/4.jpg
     caption: Businesscards
   - type: image
-    imageFile: /img/7.jpg
-    caption: letter paper margin
-  - type: image
     imageFile: /img/3.jpg
     caption: Logo embossing
-  - type: image
-    imageFile: /img/14b.gif
-    caption: Design Manual
+  - type: video
+    videoFile: /img/14b.mp4
+    caption: Design Manual Flip through
 location: ABK Stuttgart
 cover:
   fallbackImage: /img/1.jpg
