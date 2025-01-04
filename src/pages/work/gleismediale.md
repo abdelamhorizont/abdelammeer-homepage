@@ -16,4 +16,7 @@ cover_image:
   - type: image
     imageFile: /img/gm1.jpg
     caption: Flyer
+Description: Flyer and temporary guidance system at the Stuttgart main station
+  for the opening of GleisMediale an exhibition by ABK Stuttgart in cooperation
+  with Ströer Media Creation and Stuttgarter Straßenbahnen (SSB) AG.
 ---
