@@ -134,15 +134,7 @@ query AboutPageTemplate {
           column_end
           column_start
           text
-          images {
-            caption
-            type
-            imageFile {
-              childImageSharp {
-                gatsbyImageData
-              }
-            }
-          }
+
         }
       }
     }

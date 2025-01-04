@@ -81,13 +81,6 @@ export const pageQuery = graphql`
           format
           date(formatString: "YYYY")
           collaborators
-          images {
-            imageFile {
-              childImageSharp {
-                gatsbyImageData 
-              }
-            }
-          }
         }
         cover_image {
           caption
@@ -108,15 +101,6 @@ export const pageQuery = graphql`
           column_end
           column_start
           text
-          images {
-            caption
-            type
-            imageFile {
-              childImageSharp {
-                gatsbyImageData
-              }
-            }
-          }
         }
       }
     }

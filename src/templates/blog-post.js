@@ -78,13 +78,6 @@ export const pageQuery = graphql`
           type
           format
           date(formatString: "YYYY")
-          images {
-            imageFile {
-              childImageSharp {
-                gatsbyImageData
-              }
-            }
-          }
         }
         title
         templateKey
@@ -106,15 +99,7 @@ export const pageQuery = graphql`
           column_end
           column_start
           text
-          images {
-            caption
-            type
-            imageFile {
-              childImageSharp {
-                gatsbyImageData
-              }
-            }
-          }
+
         }
       }
     }
