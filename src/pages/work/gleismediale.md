@@ -26,6 +26,9 @@ cover_image:
   - type: image
     imageFile: /img/gleismediale-3.jpg
     caption: Flyer back
+  - type: image
+    imageFile: /img/gleismediale-6.jpg
+    caption: Wayfinding 2
 Description: Flyer and temporary guidance system at the Stuttgart main station
   for the opening of GleisMediale an exhibition by ABK Stuttgart in cooperation
   with Ströer Media Creation and Stuttgarter Straßenbahnen (SSB) AG.
