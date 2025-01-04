@@ -46,6 +46,8 @@ const WorkPost = ({ data }) => {
 
           {
             post.frontmatter?.variable_content?.map((content) => {
+              console.log(content);
+              
               if (content.type == 'text-section') {
                 return (
                   <TextSection content={content.text} columnStart={content.column_start} columnEnd={content.column_end} />
