@@ -5,7 +5,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, A11y } from 'swiper';
 
-// import './content.scss'
+import './content.scss'
 import 'swiper/css'
 // import 'swiper/scss/navigation';
 // import 'swiper/scss/pagination';
@@ -35,11 +35,11 @@ const ImageSection = ({ content, type }) => {
           :
           // type == "video" ?
           content?.videoFile != null ?
-            <div className="video-section">
+            // <div className="video-section">
               <video key={content?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline>
                 <source src={content?.videoFile?.publicURL} type="video/mp4" />
               </video>
-            </div>
+            // </div>
             :
             // type == "image" ?
             (content?.imageFile != null) ?
@@ -60,14 +60,13 @@ const ImageSection = ({ content, type }) => {
                           </div>
                           :
                           image.type == "video" ?
-                            <div className="video-section">
+                            // <div className="video-section">
                               <video key={image?.videoFile?.publicURL} controls>
                                 {/* <video key={image?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline> */}
                                 <source src={image?.videoFile?.publicURL} type="video/mp4" />
                                 <p className="caption">{image?.caption}</p>
-
                               </video>
-                            </div>
+                            // </div>
                             :
                             <div>
                               <GatsbyImage image={myimage} alt={''} />
@@ -105,16 +104,16 @@ const ImageSection = ({ content, type }) => {
                   {
                     content?.map((image) => {
                       const myimg = getImage(image.imageFile)
-                      // console.log(content.length);
+                      console.log(myimg);
 
                       return (
                         image?.videoFile != null ?
                           <SwiperSlide className="swiper-slide" >
-                            <div className="video-section">
+                            {/* <div className="video-section"> */}
                               <video key={image?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline>
                                 <source src={image?.videoFile?.publicURL} type="video/mp4" />
                               </video>
-                            </div>
+                            {/* </div> */}
                           </SwiperSlide>
                           :
                           <SwiperSlide className="swiper-slide" >

@@ -6,27 +6,130 @@
            background-color: rgb(134, 134, 255);
        }
 
+       .postcover {
+           grid-column: span 2;
+
+           width: auto;
+           display: flex;
+
+           transition: all 0.3s ease;
+
+           &:hover {
+               // border-left: 1px solid black;
+               padding-left: 1rem;
+
+           }
+
+           gap: 1rem;
+           margin-bottom: 1rem;
+
+           h1 {
+               font-size: 5rem;
+               line-height: 4.5rem;
+               margin-bottom: 1rem;
+               // margin-top: 0px;
+
+           }
+
+           h2 {
+               font-size: 1.5rem;
+               font-family: Kleukens;
+               height: fit-content;
+               border-radius: 5rem;
+               text-align: left;
+
+               padding: 0.2rem 0.5rem;
+               border-style: solid;
+               border-width: 1px;
+               border-color: black;
+           }
+
+           .title-img {
+               // transform: scale(0.5);
+               height: fit-content;
+               // margin-top: 3rem;
+               overflow: visible;
+
+               img {
+                   // height: 20vh;
+                   object-fit: contain;
+               }
+           }
+
+
+
+           .project-description {
+               // padding: 0rem 0.5rem;
+               // display: flex;
+               // flex-direction: column;
+
+               transition: all 0.5s ease;
+
+               font-family: Kleukens;
+               max-width: 70vw;
+
+               // h1{
+               //     margin-bottom: 1rem;
+               // }
+
+               p {
+                   max-width: 50vw;
+                   font-size: 1.25rem;
+                   line-height: 1.5rem;
+                   opacity: 0.9;
+                   // display: none;
+
+               }
+
+           }
+
+           .type {
+               justify-self: flex-end;
+               text-align: center;
+               margin-left: auto;
+
+           }
+       }
+
        .cover-image {
            height: 40vh;
            width: 50vw;
-           border-radius: 25vw;
+
            overflow: hidden;
+
            display: flex;
            justify-content: center;
            align-items: center;
 
+           border-radius: 25vw;
+
+           img,
            video {
-               width: 100%;
-               height: 100%;
+               min-width: fit-content;
+               min-height: fit-content;
+               border-radius: 1rem;
            }
 
+           iframe {
+               height: 100%;
+               width: 100%;
+           }
 
+       }
+
+       .deep-sea-bots {
+           .postcover {
+               .cover-image {
+                      padding-top: 25rem;
+               }
+           }
        }
    }
 
    .space-post {
        padding: 1rem;
        padding-top: 5rem;
+
 
        .postcover {
            width: 100%;
@@ -51,6 +154,20 @@
 
            }
 
+           h2 {
+               background-color: rgb(134, 134, 255);
+               font-size: 1.5rem;
+               font-family: Kleukens;
+               height: fit-content;
+               border-radius: 5rem;
+               text-align: left;
+
+               padding: 0.2rem 0.5rem;
+               border-style: solid;
+               border-width: 1px;
+               border-color: black;
+           }
+
            // .preview-title {
            .project-description {
                grid-column: span 8;
@@ -70,7 +187,7 @@
 
 
            .cover-image {
-               position: absolute;
+               //    position: absolute;
                grid-column: span 8;
                height: 80vh;
                width: 80%;
@@ -98,19 +215,22 @@
            }
 
            .title-img {
-               // grid-column: span 2;
-               display: inline-flex;
-               justify-items: flex-end;
+               // transform: scale(0.5);
+               height: fit-content;
                margin-left: auto;
-               //    max-width: 17vw;
-               //    object-fit: contain;
 
+               overflow: visible;
+
+               img {
+                   // height: 20vh;
+                   object-fit: contain;
+               }
            }
 
            .type {
-               justify-self: flex-end;
-               margin-left: 0rem;
-               width: fit-content;
+               //    justify-self: flex-end;
+               margin-left: auto;
+               width: max-content;
            }
        }
 
@@ -168,7 +288,7 @@
            .cover-image {
                background-color: rgba(255, 255, 255, 0.5);
                overflow: hidden;
-               padding-top: 17rem;
+               //    padding-top: 10rem;
 
 
                // overflow: visible;

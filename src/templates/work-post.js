@@ -39,7 +39,7 @@ const WorkPost = ({ data }) => {
 
         </div>
 
-        <div className="work-post-content">
+        <div className="work-post-content prom-text">
           <div className="description">
             <TextSection content={post.frontmatter.Description} columns={'2'} />
           </div>
@@ -82,7 +82,7 @@ export const pageQuery = graphql`
           images {
             imageFile {
               childImageSharp {
-                gatsbyImageData
+                gatsbyImageData 
               }
             }
           }
