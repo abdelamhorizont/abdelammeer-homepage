@@ -7,7 +7,10 @@ cover_image:
     imageFile: /img/narrating-namibia-1.jpg
     caption: Reader
   - type: image
-    imageFile: /img/narrating-namibia-gif.gif
+    imageFile: /img/img_2915-1024x768.jpg
+    caption: Exhibition view
+  - type: video
+    videoFile: /img/narrating-namibia-gif.mp4
     caption: Reader flip through
 location: Windhoek, Marbach
 cover:
