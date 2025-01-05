@@ -1,5 +1,14 @@
 ---
 templateKey: work-post
+title: Narrating Namibia
+title section:
+  date: 2021-04-30T22:00:00.000Z
+  title: Narrating Namibia
+  type: work
+  location: Windhoek, Marbach
+  collaborators: SONJA SCHWARZ
+  images: []
+  format: Reader
 cover_image:
   - type: image
     imageFile: /img/narrating-namibia-1.jpg
@@ -10,15 +19,18 @@ cover_image:
   - type: video
     videoFile: /img/narrating-namibia-gif.mp4
     caption: Reader flip through
-title: Narrating Namibia
-title section:
-  date: 2021-04-30T22:00:00.000Z
-  title: Narrating Namibia
-  type: work
-  location: Windhoek, Marbach
-  collaborators: SONJA SCHWARZ
-  images: []
-  format: Reader
+  - type: image
+    imageFile: /img/narrating-namibia-poster-19.jpg
+    caption: poster
+  - type: image
+    imageFile: /img/narrating-namibia-10.jpg
+    caption: spread
+  - type: image
+    imageFile: /img/narrating-namibia-poster-12.jpg
+    caption: poster 2
+  - type: image
+    imageFile: /img/narrating-namibia-6.jpg
+    caption: spread 2
 Description: >-
   ‘Narrating Africa is an impossible task due to the cultural, linguistic
   diversity’ and at the same time an ‘interesting’ and ‘brave topic’, reflects
