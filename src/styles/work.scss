@@ -233,7 +233,7 @@
         }
     }
 
-    .work-post-content {
+    .post-content{
         padding: 1rem;
 
         // width:100vw;
@@ -251,7 +251,9 @@
         }
 
         .image-section {
-            width: 100%;
+            grid-column: 4/11;
+
+            // width: 100%;
             display: flex;
             flex: 1 1 0;
 

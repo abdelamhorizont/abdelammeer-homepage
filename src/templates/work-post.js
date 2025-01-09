@@ -39,23 +39,27 @@ const WorkPost = ({ data }) => {
 
         </div>
 
-        <div className="work-post-content prom-text">
+        <div className="post-content prom-text">
           <div className="description">
             <TextSection content={post.frontmatter.Description} columns={'2'} />
           </div>
 
           {
             post.frontmatter?.variable_content?.map((content) => {
-              console.log(content);
-              
+              console.log(content.images);
+
               if (content.type == 'text-section') {
                 return (
                   <TextSection content={content.text} columnStart={content.column_start} columnEnd={content.column_end} />
                 )
               } else if (content.type == 'image-section') {
-                return (
-                  <ImageSection content={content} type={"grid"} columnStart={content.column_start} columnEnd={content.column_end} />
-                )
+                // content.images.map((image, i) => {
+                  return (
+                    <div style={{ gridColumn: content.column_start ? content.column_start + "/" + content.column_end : "4/11" }} className={`html-content`}>
+                      <ImageSection content={content} type={"grid"} columnStart={content.column_start} columnEnd={content.column_end} />
+                    </div>
+                  )
+                // })
               }
             })
           }
@@ -81,6 +85,13 @@ export const pageQuery = graphql`
           format
           date(formatString: "YYYY")
           collaborators
+          images {
+            imageFile {
+              childImageSharp {
+                gatsbyImageData 
+              }
+            }
+          }
         }
         cover_image {
           caption
@@ -101,6 +112,14 @@ export const pageQuery = graphql`
           column_end
           column_start
           text
+          images {
+            caption
+            type
+            videoFile {
+                publicURL
+            }
+            imageFile
+          }
         }
       }
     }

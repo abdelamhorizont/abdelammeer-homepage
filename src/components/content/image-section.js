@@ -45,7 +45,8 @@ const ImageSection = ({ content, type }) => {
             (content?.imageFile != null) ?
               <GatsbyImage image={getImage(content?.imageFile)} alt={''} />
               :
-              (content?.length > 1 && type == "grid") ?
+            // (content?.length > 1 && type == "grid") ?
+            (type == "grid") ?
                 content?.images?.map((image) => {
                   const myimage = getImage(image?.imageFile)
 
@@ -61,8 +62,8 @@ const ImageSection = ({ content, type }) => {
                           :
                           image.type == "video" ?
                             // <div className="video-section">
-                              <video key={image?.videoFile?.publicURL} controls>
-                                {/* <video key={image?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline> */}
+                              // <video key={image?.videoFile?.publicURL} controls>
+                                <video key={image?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline>
                                 <source src={image?.videoFile?.publicURL} type="video/mp4" />
                                 <p className="caption">{image?.caption}</p>
                               </video>
@@ -70,6 +71,7 @@ const ImageSection = ({ content, type }) => {
                             :
                             <div>
                               <GatsbyImage image={myimage} alt={''} />
+                              <img src={image.imageFile} alt={''} />
                               <p className="caption">{image?.image?.caption}</p>
                             </div>
                       }
