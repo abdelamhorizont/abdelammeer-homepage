@@ -52,4 +52,11 @@ Description: >-
 
 
   Currently on display in Studio 11 at the Kunstmuseum Stuttgart
+variable-content:
+  - type: image-section
+    images:
+      - type: image
+        imageFile: /img/dsc080574.jpg
+        caption: screen print
+    title: Residency
 ---
