@@ -1,18 +1,13 @@
 ---
 templateKey: work-post
-title: Narrating Africa
-title section:
-  date: 2023-12-13T23:00:00.000Z
-  title: Narrating Africa
-  type: work
-  images: []
-  format: Exhibition Design
-  location: Deutsches Literaturarchiv Marbach
-  collaborators: Sonja Schwarz
-type: Exhibition
+variable-content:
+  - type: image-section
+    images:
+      - type: image
+        imageFile: /img/narrating-africa-8.jpg
+        caption: typographic detail
+    title: Typography
 date: 2023-12-14T16:40:35.397Z
-cover:
-  fallbackImage: /img/narrating-africa-1.jpg
 cover_image:
   - type: image
     imageFile: /img/narrating-africa-1.jpg
@@ -32,6 +27,18 @@ cover_image:
   - type: image
     imageFile: /img/narrating-africa-11.jpg
     caption: various formats
+cover:
+  fallbackImage: /img/narrating-africa-1.jpg
+title: Narrating Africa
+type: Exhibition
+title section:
+  date: 2023-12-13T23:00:00.000Z
+  title: Narrating Africa
+  type: work
+  images: []
+  format: Exhibition Design
+  location: Deutsches Literaturarchiv Marbach
+  collaborators: Sonja Schwarz
 Description: >-
   "How do we tell stories about Africa: about a continent and its diversity?
   Which images and stereotypes, which colonial and national ideologies determine

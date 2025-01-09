@@ -43,4 +43,11 @@ Description: >-
 
 
   Reading through the articles of this current issue of Umbau I felt not only a continious anxiety dealing with conflicts and challenges of current times but also a protective and hopeful tone in the texts, condensed in form of the titles. So I made a necklace, with Amulets (providing protection from danger) and talismans (attracting good luck) as a measure to cope with my own and with generational fears. A middle finger Khamsa, the shape of the mediterranean ocean, pangea, a spiral galaxy, the ghost of the german eagle, the Stuttgart Horse, Africa upside down, a raging bull, an AI-trained human 3d-model, a creepy baby, a derpy elephant, a burning flower, a branch or scar, a scorpion, a bird or missile, a symbol for tax money and a cute bunny. The motives are references to other articles of this issue, motives around my own national identity, inspired from pendants from my sister and my mother and motives from my sketchbook that give me joy, some charged with more, some with less meaning.
+variable-content:
+  - type: image-section
+    images:
+      - type: image
+        imageFile: /img/img_4948.jpg
+        caption: Pendants from my sister
+    title: Research
 ---
