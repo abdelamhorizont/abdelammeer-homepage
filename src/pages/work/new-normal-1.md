@@ -19,7 +19,7 @@ cover_image:
     videoFile: /img/reel-4.mp4
     caption: Visuals for Yung Obama
   - type: video
-    videoFile: /img/abdel_butterfly_1_1.mov
+    videoFile: /img/abdel_butterfly_1.mp4
     caption: Artificial Butterfly
 Description: >-
   recap of our visuals and the great collective effort at the

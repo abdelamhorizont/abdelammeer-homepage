@@ -13,7 +13,7 @@ variable-content:
         reference: Five in your Eyes
       - type: work-reference
         full-width: false
-        reference: Systems
+        reference: Living Systems
       - type: work-reference
         full-width: false
         reference: NEW NORMAL
