@@ -13,7 +13,7 @@ cover_image:
     videoFile: /img/reel-2.mp4
     caption: Visuals for Levin Goes Lightly
   - type: video
-    videoFile: /img/reel-3.mp4
+    videoFile: /img/reel-3.mov
     caption: Party Visuals
   - type: video
     videoFile: /img/reel-4.mp4
