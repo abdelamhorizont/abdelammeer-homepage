@@ -1,24 +1,13 @@
 ---
 templateKey: work-post
-variable-content:
-  - type: image-section
-    title: Design Manual
-    images:
-      - type: video
-        videoFile: /img/14b.mp4
-  - type: image-section
-    column-start: "1"
-    column-end: "13"
-    images:
-      - type: image
-        imageFile: /img/11.jpg
-        caption: Logo Stamp
-      - type: image
-        imageFile: /img/7.jpg
-        caption: Logo positioning and letter paper layout
-      - type: image
-        imageFile: /img/8.jpg
-        caption: letter paper layout
+title: ABK Stuttgart
+title section:
+  date: 2019-09-30T22:00:00.000Z
+  title: ABK Stuttgart
+  type: work
+  collaborators: Jasmina Begovič, Raphael Berg
+  images: []
+  format: Identity
 cover_image:
   - type: video
     videoFile: /img/16.mp4
@@ -41,14 +30,6 @@ cover_image:
   - type: video
     videoFile: /img/14b.mp4
     caption: Design Manual Flip through
-title: ABK Stuttgart
-title section:
-  date: 2019-09-30T22:00:00.000Z
-  title: ABK Stuttgart
-  type: work
-  collaborators: Jasmina Begovič, Raphael Berg
-  images: []
-  format: Identity
 Description: >-
   In 2019, the current corporate design of ABK Stuttgart was introduced. The
   extensive design and implementation of the corporate identity was undertaken
@@ -62,4 +43,24 @@ Description: >-
   \
 
   The Design Manual explains design principles, technical details as well as guidelines and the handling of the elements, including logo, business card, letterhead, templates for Microsoft Word, Excel and PowerPoint, certificate, folder, stamp, as well as flags and janitorial clothing.
+variable-content:
+  - type: image-section
+    title: Design Manual
+    images:
+      - type: video
+        videoFile: /img/14b.mp4
+        caption: Design Manual
+  - type: image-section
+    column-start: "1"
+    column-end: "13"
+    images:
+      - type: image
+        imageFile: /img/11.jpg
+        caption: Logo Stamp
+      - type: image
+        imageFile: /img/7.jpg
+        caption: Logo positioning and letter paper layout
+      - type: image
+        imageFile: /img/8.jpg
+        caption: letter paper layout
 ---
