@@ -70,7 +70,7 @@ const ImageSection = ({ content, type }) => {
                             // </div>
                             :
                             <div>
-                              <GatsbyImage image={myimage} alt={''} />
+                              {/* <GatsbyImage image={myimage} alt={''} /> */}
                               <img src={image.imageFile} alt={''} />
                               <p className="caption">{image?.image?.caption}</p>
                             </div>
