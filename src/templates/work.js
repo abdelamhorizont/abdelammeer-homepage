@@ -68,7 +68,6 @@ const WorkPage = ({ data }) => {
                 return (
                   <>
                     {
-                      // content.reference_section_type == ("blog" || "work") ?
                         <>
                           {content.references?.map((node) => {
                             // const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.title == node.reference)[0]
@@ -86,8 +85,7 @@ const WorkPage = ({ data }) => {
                             )
                           })}
                         </>
-                        // :
-                        // <div></div>
+
                     }
                   </>
                 )
