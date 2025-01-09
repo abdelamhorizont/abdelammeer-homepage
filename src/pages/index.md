@@ -27,7 +27,7 @@ variable-content:
         reference: Five in your Eyes
       - type: work-reference
         full-width: false
-        reference: NEW NORMAL
+        reference: Systems
       - type: blog-reference
         reference: Mare Mediterraneum
       - type: blog-reference
