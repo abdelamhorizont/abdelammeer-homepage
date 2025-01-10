@@ -7,7 +7,7 @@ variable-content:
     column-end: null
     images:
       - type: video
-        videoFile: non-artificial-maybe-intelligence_intro.mp4
+        videoFile: non-artificial-maybe-intelligence_intro_low.mp4
         caption: Seminar Trailer
   - type: text-section
     big-size: "false"
@@ -30,19 +30,19 @@ variable-content:
     text: |-
       T﻿he seminar took place every two weeks, seven days in total:
 
-      ## Day 1: Prologue
+      **Day 1: Prologue**
 
-      ## Day 2: Demystify
+      **Day 2: Demystify**
 
-      ## Day 3: Models
+      **Day 3: Models**
 
-      ## Day 4: Hacking
+      **Day 4: Hacking**
 
-      ## Day 5: Research
+      **Day 5: Research**
 
-      ## Day 6: Work
+      **Day 6: Work**
 
-      ## Day 7:  Documentation
+      **Day 7:  Documentation**
   - type: text-section
     big-size: "false"
     title: "Day 1: Prologue"
@@ -53,6 +53,17 @@ variable-content:
 
 
       A﻿fter Introducing the Seminar structure and talking about awareness we started to play [AI Dungeon](https://play.aidungeon.io/main/home)
+  - type: image-section
+    images:
+      - type: image
+        imageFile: ai-dungeon.png
+        caption: AI Dungeon
+      - type: image
+        imageFile: bildschirmfoto-2023-04-06-um-17.26.17.png
+        caption: Google's Quickdraw
+      - type: image
+        imageFile: bildschirmfoto-2023-04-06-um-17.33.16.png
+        caption: COCO (Common Objects in Context)
   - type: text-section
     text: >-
       ## Resources
