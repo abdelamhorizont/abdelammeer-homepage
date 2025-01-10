@@ -73,15 +73,23 @@ variable-content:
       Introduction to A.I., data, models and machine learning algorithms
 
 
+
+
       <https://kim.hfg-karlsruhe.de/>\
 
-      research group on artificial intelligence and media philosophy KIM (from German: *Künstliche Intelligenz und Medienphilosophie*) at hfg karlsruhe\
+      research group on artificial intelligence and media philosophy KIM (from German: *Künstliche Intelligenz und Medienphilosophie*) at hfg karlsruhe
+
+
+      \
 
       \
 
       <https://www.lesswrong.com/tag/ai>\
 
-      "LessWrong is an online forum and community dedicated to improving human reasoning and decision-making" - about page\
+      "LessWrong is an online forum and community dedicated to improving human reasoning and decision-making" - about page
+
+
+      \
 
       \
 
@@ -90,14 +98,21 @@ variable-content:
       AI Alignment Forum
 
 
+
+
       <https://arxiv.org/list/cs.AI/recent>\
 
       arXiv® is a curated research-sharing platform
 
 
+
+
       <https://tacticaltech.org/>\
 
-      Tactical Tech, Berlin-based non-profit organisation\
+      Tactical Tech, Berlin-based non-profit organisation
+
+
+      \
 
       \
 
@@ -105,7 +120,10 @@ variable-content:
 
       Excavating AI - The Politics of Images in Machine Learning Training Sets \
 
-      By Kate Crawford and Trevor Paglen   \
+      By Kate Crawford and Trevor Paglen   
+
+
+      \
 
       \
 
@@ -122,9 +140,13 @@ variable-content:
       <https://cocodataset.org/#explore>
 
 
+
+
       Neural Networks, mathematical explanation\
 
       <https://www.youtube.com/watch?v=aircAruvnKk&list=RDCMUCYO_jab_esuFRV4b17AJtAw&start_radio=1&rv=aircAruvnKk&t=0>
+
+
 
 
       Image Classification with ml5 \
@@ -146,9 +168,13 @@ variable-content:
       Stable Diffusion
 
 
+
+
       <https://www.midjourney.com/home/>\
 
       text to image AI; Free Trial, Paid Subscription/Credit System afterwards (Discord Account required)
+
+
 
 
       <https://www.craiyon.com/>\
@@ -156,11 +182,15 @@ variable-content:
       text to image AI; Free to use directly in the browser, kind of scuffed, more like a budget version of image AI 
 
 
+
+
       <https://openai.com/dall-e-2/>\
 
       creates an image based on your description, style of painting / colors / artistic movement, etc \
 
       (you must sign up and you receive 50 free credits)
+
+
 
 
       <http://gaugan.org/gaugan2/>\
@@ -176,9 +206,13 @@ variable-content:
       Open Source,Friendly Machine Learning for the Web 
 
 
+
+
       <https://teachablemachine.withgoogle.com/>\
 
       Teachable Machine
+
+
 
 
       <https://www.youtube.com/watch?v=ky5ZB-mqZKM>\
@@ -192,6 +226,8 @@ variable-content:
       <https://play.aidungeon.io/main/home>\
 
       t﻿ext-based pen&paper wit AI, paid with free option
+
+
 
 
       <https://quickdraw.withgoogle.com/?locale=en_US>\
@@ -208,6 +244,8 @@ variable-content:
       Deep Fakes\
       <https://www.youtube.com/watch?v=yyFQPjIrnQE&ab_channel=LoloRick>\
       <https://thisxdoesnotexist.com/>
+
+
 
       Eyeo 2018 - Rebecca Fiebrink:\
       <https://vimeo.com/287094397>
