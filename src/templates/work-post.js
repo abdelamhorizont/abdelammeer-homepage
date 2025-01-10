@@ -50,15 +50,17 @@ const WorkPost = ({ data }) => {
 
               if (content.type == 'text-section') {
                 return (
-                  <TextSection content={content.text} columnStart={content.column_start} columnEnd={content.column_end} />
+                  <div style={{ gridColumn: content.column_start ? content.column_start + "/" + content.column_end : "4/11" }} className={`text-section`}>
+                    <TextSection content={content.text} columnStart={content.column_start} columnEnd={content.column_end} />
+                  </div>
                 )
               } else if (content.type == 'image-section') {
                 // content.images.map((image, i) => {
-                  return (
-                    <div style={{ gridColumn: content.column_start ? content.column_start + "/" + content.column_end : "4/11" }} className={`image-section`}>
-                      <ImageSection content={content} type={"grid"} columnStart={content.column_start} columnEnd={content.column_end} />
-                    </div>
-                  )
+                return (
+                  <div style={{ gridColumn: content.column_start ? content.column_start + "/" + content.column_end : "4/11" }} className={`image-section`}>
+                    <ImageSection content={content} type={"grid"} columnStart={content.column_start} columnEnd={content.column_end} />
+                  </div>
+                )
                 // })
               }
             })

@@ -58,6 +58,7 @@ const BlogPage = ({ data }) => {
   return (
     <Layout>
       <div className="index-page">
+      <div className="top-space"></div>
         <motion.ul className="section-list"
           initial="hidden"
           animate="visible"
