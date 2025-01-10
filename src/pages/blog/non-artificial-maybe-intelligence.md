@@ -61,6 +61,8 @@ variable-content:
       ## Ressources
 
 
+
+
       ### Readings
 
 
@@ -139,8 +141,6 @@ variable-content:
       ### I﻿mage Generation
 
 
-
-
       <https://huggingface.co/spaces/stabilityai/stable-diffusion>\
 
       Stable Diffusion
@@ -168,10 +168,7 @@ variable-content:
       image generator,creates landscapes with the textures you add (glitchy but it makes it funny)
 
 
-      ### \
-
-
-      M﻿odel Training
+      ### M﻿odel Training
 
 
       <https://ml5js.org/>\
@@ -184,13 +181,12 @@ variable-content:
       Teachable Machine
 
 
-      <https://www.youtube.com/watch?v=ky5ZB-mqZKM>AI influencers are getting filthy rich... let's build one
+      <https://www.youtube.com/watch?v=ky5ZB-mqZKM>\
+
+      AI influencers are getting filthy rich... let's build one
 
 
-      ### \
-
-
-      G﻿ames
+      ### G﻿ames
 
 
       <https://play.aidungeon.io/main/home>\
