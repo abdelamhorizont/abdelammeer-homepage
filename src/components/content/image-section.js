@@ -39,7 +39,7 @@ const ImageSection = ({ content, type }) => {
               <video key={content?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline>
                 <source src={content?.videoFile?.publicURL} type="video/mp4" />
               </video>
-              <p className="caption">{content?.caption}</p>
+              {/* <p className="caption">{content?.caption}</p> */}
              </div>
             :
             // type == "image" ?
@@ -63,8 +63,8 @@ const ImageSection = ({ content, type }) => {
                           :
                           image.type == "video" ?
                             <div className="video-section">
-                              {/* <video key={image?.videoFile?.publicURL} controls> */}
-                              <video key={image?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline>
+                              <video key={image?.videoFile?.publicURL} autoPlay muted loop controls>
+                              {/* <video key={image?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline> */}
                                   <source src={image?.videoFile?.publicURL} type="video/mp4" />
                               </video>
                               <p className="caption">{image?.caption}</p>

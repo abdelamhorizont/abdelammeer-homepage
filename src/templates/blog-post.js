@@ -50,7 +50,7 @@ const BlogPost = ({ data }) => {
                 )
               } else if (content.type == 'image-section') {
                 return (
-                  <div style={{ gridColumn: content.column_start ? content.column_start + "/" + content.column_end : "4/11" }} className={`html-content`}>
+                  <div style={{ gridColumn: content.column_start ? content.column_start + "/" + content.column_end : "4/11" }} className={`image-section`}>
                     <ImageSection content={content} type={"grid"} />
                   </div>
                 )
@@ -99,7 +99,18 @@ export const pageQuery = graphql`
           column_end
           column_start
           text
-
+          images {
+            caption
+            type
+            videoFile {
+                publicURL
+            }
+            imageFile {
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
+          }
         }
       }
     }
