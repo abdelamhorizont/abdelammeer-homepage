@@ -74,10 +74,10 @@
     font-family: Kleukens;
     word-wrap: break-word;
 
-    display: flex;
-    flex: 1 1 0;
+    // display: flex;
+    // flex: 1 1 0;
 
-    gap: 1rem;
+    // gap: 1rem;
 
     div {
         flex-basis: 100%;
@@ -86,7 +86,7 @@
     h2 {
         margin-bottom: 1.5rem;
         font-size: 1.8rem;
-        // font-weight: bold;
+        font-weight: bold;
     }
 
     h3 {
@@ -112,6 +112,7 @@
 
     a {
         color: grey;
+        text-decoration: underline;
     }
 
     // .image-section {

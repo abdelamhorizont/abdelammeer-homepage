@@ -44,7 +44,7 @@ const BlogPost = ({ data }) => {
               const gridStyle = { gridColumn: content.column_start ? content.column_start + "/" + content.column_end : "4/11" }
               if (content.type == 'text-section') {
                 return (
-                  <div style={gridStyle} className={`html-content`}>
+                  <div style={{ gridColumn: content.column_start ? content.column_start + "/" + content.column_end : "4/11" }} className={`text-section`}>
                     <TextSection content={content.text} />
                   </div>
                 )
