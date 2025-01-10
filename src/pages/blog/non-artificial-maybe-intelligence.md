@@ -7,7 +7,7 @@ variable-content:
     column-end: null
     images:
       - type: video
-        videoFile: non-artificial-maybe-intelligence_intro.mp4
+        videoFile: non-artificial-maybe-intelligence_intro_low.mp4
         caption: Seminar Trailer
   - type: text-section
     big-size: "false"
