@@ -215,9 +215,12 @@
             }
 
             p.caption {
-                margin: 0.5rem;
+                font-size: 1rem;
                 line-height: 1.2rem;
                 font-weight: 300;
+                margin: 0.5rem;
+                margin-top: 0.2rem;
+                font-family: Kleukens;
             }
         }
 
@@ -243,46 +246,43 @@
 
         .description {
             grid-column: 4/11;
-            margin-bottom: 3.5rem;
+            margin-bottom: 4.5rem;
             font-size: 1.5rem;
-
-            // width: 100%;
-
         }
 
-        .image-section {
-            grid-column: 4/11;
+        // .image-section {
+        //     // grid-column: 4/11;
 
-            // width: 100%;
-            display: flex;
-            flex: 1 1 0;
+        //     // width: 100%;
+        //     display: flex;
+        //     flex: 1 1 0;
 
-            gap: 1rem;
+        //     gap: 1rem;
 
-            div {
-                flex-basis: 100%;
-            }
+        //     div {
+        //         flex-basis: 100%;
+        //     }
 
-            .iFrame {
+        //     .iFrame {
 
-                iframe {
-                    width: 100%;
-                    height: 80vh;
-                    border-radius: 2rem;
-                    // zoom: 1.25;
-                }
+        //         iframe {
+        //             width: 100%;
+        //             height: 80vh;
+        //             border-radius: 2rem;
+        //             // zoom: 1.25;
+        //         }
 
-                p.caption {
-                    text-align: center;
-                }
-            }
-        }
+        //         p.caption {
+        //             text-align: center;
+        //         }
+        //     }
+        // }
 
-        .text-section {
-            max-width: 100%;
-            display: flex;
-            gap: 1rem;
-        }
+        // .text-section {
+        //     max-width: 100%;
+        //     display: flex;
+        //     gap: 1rem;
+        // }
     }
 }
 

@@ -55,7 +55,7 @@ const WorkPost = ({ data }) => {
               } else if (content.type == 'image-section') {
                 // content.images.map((image, i) => {
                   return (
-                    <div style={{ gridColumn: content.column_start ? content.column_start + "/" + content.column_end : "4/11" }} className={`html-content`}>
+                    <div style={{ gridColumn: content.column_start ? content.column_start + "/" + content.column_end : "4/11" }} className={`image-section`}>
                       <ImageSection content={content} type={"grid"} columnStart={content.column_start} columnEnd={content.column_end} />
                     </div>
                   )
@@ -118,7 +118,11 @@ export const pageQuery = graphql`
             videoFile {
                 publicURL
             }
-            imageFile
+            imageFile {
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
           }
         }
       }
