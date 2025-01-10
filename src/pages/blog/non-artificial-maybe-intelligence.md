@@ -3,8 +3,8 @@ templateKey: blog-post
 cover-image: /img/download.png
 variable-content:
   - type: image-section
-    column-start: null
-    column-end: null
+    column-start: "5"
+    column-end: "10"
     images:
       - type: video
         videoFile: non-artificial-maybe-intelligence_intro_low.mp4
