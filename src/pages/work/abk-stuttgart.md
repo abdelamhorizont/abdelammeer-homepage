@@ -61,6 +61,6 @@ variable-content:
         imageFile: /img/7.jpg
         caption: Logo positioning and letter paper layout
       - type: image
-        imageFile: /img/8.jpg
-        caption: letter paper layout
+        imageFile: /img/4.jpg
+        caption: business cards
 ---
