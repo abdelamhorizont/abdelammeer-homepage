@@ -3,8 +3,8 @@ templateKey: blog-post
 cover-image: /img/download.png
 variable-content:
   - type: image-section
-    column-start: null
-    column-end: null
+    column-start: "5"
+    column-end: "10"
     images:
       - type: video
         videoFile: non-artificial-maybe-intelligence_intro_low.mp4
@@ -43,16 +43,6 @@ variable-content:
       **Day 6: Work**
 
       **Day 7:  Documentation**
-  - type: text-section
-    big-size: "false"
-    title: "Day 1: Prologue"
-    text: >-
-      
-
-      ![AI Dungeon](ai-dungeon.png "AI Dungeon")
-
-
-      A﻿fter Introducing the Seminar structure and talking about awareness we started to play [AI Dungeon](https://play.aidungeon.io/main/home)
   - type: image-section
     images:
       - type: image
@@ -63,53 +53,63 @@ variable-content:
         caption: Google's Quickdraw
       - type: image
         imageFile: bildschirmfoto-2023-04-06-um-17.33.16.png
-        caption: COCO (Common Objects in Context)
+        caption: COCO Common Objects in Contex
+    column-start: "1"
+    column-end: "13"
   - type: text-section
     text: >-
-      ## Resources
+      ## Ressources
 
 
-      Introduction to A.I., data, models and machine learning algorithms\
+      ### Readings
 
-      <https://nooscope.ai/>\
 
       \
 
+      <https://nooscope.ai/>\
+
+      Introduction to A.I., data, models and machine learning algorithms
+
+
+      <https://kim.hfg-karlsruhe.de/>\
+
       research group on artificial intelligence and media philosophy KIM (from German: *Künstliche Intelligenz und Medienphilosophie*) at hfg karlsruhe\
 
-      <https://kim.hfg-karlsruhe.de/>
+      \
 
+      <https://www.lesswrong.com/tag/ai>\
 
       "LessWrong is an online forum and community dedicated to improving human reasoning and decision-making" - about page\
 
-      <https://www.lesswrong.com/tag/ai>
+      \
+
+      <https://www.alignmentforum.org/>\
+
+      AI Alignment Forum
 
 
-      AI Alignment Forum\
+      <https://arxiv.org/list/cs.AI/recent>\
 
-      <https://www.alignmentforum.org/>
+      arXiv® is a curated research-sharing platform
 
 
-      arXiv® is a curated research-sharing platform\
-
-      <https://arxiv.org/list/cs.AI/recent>
-
+      <https://tacticaltech.org/>\
 
       Tactical Tech, Berlin-based non-profit organisation\
 
-      <https://tacticaltech.org/>
+      \
 
+      <https://excavating.ai/>\
 
       Excavating AI - The Politics of Images in Machine Learning Training Sets \
 
       By Kate Crawford and Trevor Paglen   \
 
-      <https://excavating.ai/>
+      \
 
+      <https://www.youtube.com/watch?v=6vMKJPLNfAE&ab_channel=KIMHfG>\
 
-      Machine Unlearning: Decolonial Thinking in the Age of AI\
-
-      <https://www.youtube.com/watch?v=6vMKJPLNfAE&ab_channel=KIMHfG>
+      Machine Unlearning: Decolonial Thinking in the Age of AI
 
 
       ### T﻿echnical Explanations
@@ -130,6 +130,7 @@ variable-content:
       <https://www.youtube.com/watch?v=QEzRxnuaZCk&list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y&index=5>
     column-start: "1"
     column-end: "5"
+    title: ""
   - type: text-section
     text: >-
       ## AI Tools
@@ -165,7 +166,9 @@ variable-content:
       image generator,creates landscapes with the textures you add (glitchy but it makes it funny)
 
 
-      ### M﻿odel Training
+      ### \
+
+      M﻿odel Training
 
 
       <https://ml5js.org/>\
@@ -181,7 +184,9 @@ variable-content:
       <https://www.youtube.com/watch?v=ky5ZB-mqZKM>AI influencers are getting filthy rich... let's build one
 
 
-      ### G﻿ames
+      ### \
+
+      G﻿ames
 
 
       <https://play.aidungeon.io/main/home>\
