@@ -139,6 +139,8 @@ variable-content:
       ### I﻿mage Generation
 
 
+
+
       <https://huggingface.co/spaces/stabilityai/stable-diffusion>\
 
       Stable Diffusion
@@ -168,6 +170,7 @@ variable-content:
 
       ### \
 
+
       M﻿odel Training
 
 
@@ -186,6 +189,7 @@ variable-content:
 
       ### \
 
+
       G﻿ames
 
 
@@ -202,6 +206,8 @@ variable-content:
   - type: text-section
     text: |-
       ## Projects
+
+
 
       Deep Fakes\
       <https://www.youtube.com/watch?v=yyFQPjIrnQE&ab_channel=LoloRick>\
