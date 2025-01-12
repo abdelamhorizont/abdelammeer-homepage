@@ -117,6 +117,7 @@ export const pageQuery = graphql`
           images {
             caption
             type
+            iFrame_link            
             videoFile {
                 publicURL
             }

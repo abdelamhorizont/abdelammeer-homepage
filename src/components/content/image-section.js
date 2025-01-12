@@ -56,7 +56,7 @@ const ImageSection = ({ content, type }) => {
                     <>
                       {
                         image.type == "iFrame" ?
-                          <div className="iFrame">
+                          <div className="website">
                             <iframe src={image?.iFrame_link} frameborder="100px"></iframe>
                             <p className="caption">{image?.caption}</p>
                           </div>
