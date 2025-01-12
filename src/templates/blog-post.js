@@ -8,6 +8,7 @@ import TextSection, { HTMLContent } from "../components/content/text-section";
 import ImageSection from "../components/content/image-section";
 
 import '../styles/blog.scss'
+//hi 
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data;
