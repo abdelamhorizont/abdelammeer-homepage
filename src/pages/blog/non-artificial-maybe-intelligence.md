@@ -134,6 +134,15 @@ variable-content:
       found while leaning against the single leafless tree that stands in the
       middle of the dark link mini boss room from ocarina of time.”* — prompt by
       Lu"
+  - type: image-section
+    images:
+      - type: iFrame
+        caption: "SIGNING SIGNING SIGNING by Anna Katalin Szilágyi "
+        iFrame-link: https://editor.p5js.org/mivankata/full/dLqRQo3Gc
+      - type: iFrame
+        iFrame-link: https://ai-connection.netlify.app/
+        caption: "AI Connection by Kristian Vrhar "
+    title: Student projects
   - type: text-section
     text: >-
       ## Ressources
@@ -293,15 +302,6 @@ variable-content:
     column-start: "9"
     column-end: "13"
     big-size: false
-  - type: image-section
-    images:
-      - type: iFrame
-        caption: "SIGNING SIGNING SIGNING by Anna Katalin Szilágyi "
-        iFrame-link: https://editor.p5js.org/mivankata/full/dLqRQo3Gc
-      - type: iFrame
-        iFrame-link: https://ai-connection.netlify.app/
-        caption: "AI Connection by Kristian Vrhar "
-    title: Student projects
 projectInfos: >-
   \
 
