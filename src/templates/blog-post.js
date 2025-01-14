@@ -43,15 +43,22 @@ const BlogPost = ({ data }) => {
             post.frontmatter?.variable_content?.map((content) => {
               // const gridStyle = {gridColumn: 4 + "/" + 9}
               const gridStyle = { gridColumn: content.column_start ? content.column_start + "/" + content.column_end : "4/11" }
+              
               if (content.type == 'text-section') {
                 return (
                   <div style={{ gridColumn: content.column_start ? content.column_start + "/" + content.column_end : "4/11" }} className={`text-section`}>
+                    {content?.title &&
+                      <h1>{content?.title}</h1>
+                    }
                     <TextSection content={content.text} />
                   </div>
                 )
               } else if (content.type == 'image-section') {
                 return (
                   <div style={{ gridColumn: content.column_start ? content.column_start + "/" + content.column_end : "4/11" }} className={`image-section`}>
+                    {content?.title &&
+                      <h1>{content?.title}</h1>
+                    }
                     <ImageSection content={content} type={"grid"} />
                   </div>
                 )
@@ -100,6 +107,7 @@ export const pageQuery = graphql`
           column_end
           column_start
           text
+          title
           images {
             caption
             type

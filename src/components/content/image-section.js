@@ -40,14 +40,14 @@ const ImageSection = ({ content, type }) => {
                 <source src={content?.videoFile?.publicURL} type="video/mp4" />
               </video>
               {/* <p className="caption">{content?.caption}</p> */}
-             </div>
+            </div>
             :
             // type == "image" ?
             (content?.imageFile != null) ?
               <GatsbyImage image={getImage(content?.imageFile)} alt={''} />
               :
-            // (content?.length > 1 && type == "grid") ?
-            (type == "grid") ?
+              // (content?.length > 1 && type == "grid") ?
+              (type == "grid") ?
                 content?.images?.map((image) => {
                   const myimage = getImage(image?.imageFile)
 
@@ -64,8 +64,8 @@ const ImageSection = ({ content, type }) => {
                           image.type == "video" ?
                             <div className="video-section">
                               <video key={image?.videoFile?.publicURL} autoPlay muted loop controls>
-                              {/* <video key={image?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline> */}
-                                  <source src={image?.videoFile?.publicURL} type="video/mp4" />
+                                {/* <video key={image?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline> */}
+                                <source src={image?.videoFile?.publicURL} type="video/mp4" />
                               </video>
                               <p className="caption">{image?.caption}</p>
                             </div>
@@ -113,9 +113,9 @@ const ImageSection = ({ content, type }) => {
                         image?.videoFile != null ?
                           <SwiperSlide className="swiper-slide" >
                             {/* <div className="video-section"> */}
-                              <video key={image?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline>
-                                <source src={image?.videoFile?.publicURL} type="video/mp4" />
-                              </video>
+                            <video key={image?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline>
+                              <source src={image?.videoFile?.publicURL} type="video/mp4" />
+                            </video>
                             {/* </div> */}
                           </SwiperSlide>
                           :

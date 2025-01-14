@@ -1,7 +1,7 @@
 .image-section {
     // margin-bottom: 3.5rem;
     height: 100%;
-    margin-bottom: 4.5rem;
+    // margin-bottom: 4.5rem;
 
     font-family: Kleukens;
     word-wrap: break-word;
@@ -14,7 +14,20 @@
     gap: 1rem;
 
     .image {
-        flex-basis: 32%;
+        flex-basis: 32.8%;
+
+        img {
+            // height: 80vh;
+            width: 100%;
+        }
+    }
+
+    h1 {
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+        text-align: center;
+        width: 100%;
+        font-weight: bold;
     }
 
     h2 {
@@ -62,9 +75,15 @@
         width: 100%;
     }
 
-    .website{
+    .website {
         width: 100%;
         flex-basis: 100%;
+
+        iframe {
+            width: 100%;
+            height: 65vh;
+
+        }
 
     }
 
@@ -77,7 +96,7 @@
 .text-section {
     // margin-bottom: 3.5rem;
     height: 100%;
-    margin-bottom: 4.5rem;
+    margin: 4.5rem 0rem;
 
     font-family: Kleukens;
     word-wrap: break-word;
@@ -108,11 +127,11 @@
         line-height: 2rem;
         margin-bottom: 1rem;
 
-        strong{
+        strong {
             font-weight: bold;
         }
 
-        em{
+        em {
             line-height: 2.5rem;
         }
     }
@@ -121,10 +140,10 @@
         font-size: 1.5rem;
         line-height: 2rem;
         margin: 3rem 0rem;
-        
-        li{
+
+        li {
             list-style-type: circle;
-            margin: 1rem 0rem;          
+            margin: 1rem 0rem;
         }
     }
 
@@ -139,10 +158,11 @@
 
     a {
         color: grey;
+        font-size: 1.4rem;
         // text-decoration: underline;
         background-color: rgb(117, 117, 117, 0.3);
         padding: 0rem 0.4rem;
-        border-radius: 1rem;  
+        border-radius: 1rem;
     }
 
     // .image-section {
