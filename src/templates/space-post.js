@@ -42,7 +42,7 @@ const SpacePost = ({ data }) => {
             :
             <div className="project-description">
               <h1 className="headline">{post?.frontmatter?.title}</h1>
-              <p>{post?.frontmatter?.Description} </p>
+              {/* <p>{post?.frontmatter?.Description} </p> */}
             </div>
           }
 
@@ -50,7 +50,7 @@ const SpacePost = ({ data }) => {
         </div>
 
         <div className="space-post-content">
-          <div className="description">
+          <div className="description prom-text">
             <TextSection content={post.frontmatter.Description} columns={'2'} />
           </div>
 
@@ -58,11 +58,21 @@ const SpacePost = ({ data }) => {
             post.frontmatter?.variable_content?.map((content) => {
               if (content.type == 'text-section') {
                 return (
-                  <TextSection content={content.text} columnStart={content.column_start} columnEnd={content.column_end} />
+                  <div style={{ gridColumn: content.column_start ? content.column_start + "/" + content.column_end : "4/11" }} className={`text-section`}>
+                    {content?.title &&
+                      <h1>{content?.title}</h1>
+                    }
+                    <TextSection content={content.text} />
+                  </div>
                 )
               } else if (content.type == 'image-section') {
                 return (
-                  <ImageSection content={content} type={"grid"} columnStart={content.column_start} columnEnd={content.column_end} />
+                  <div style={{ gridColumn: content.column_start ? content.column_start + "/" + content.column_end : "4/11" }} className={`image-section`}>
+                    {content?.title &&
+                      <h1>{content?.title}</h1>
+                    }
+                    <ImageSection content={content} type={"grid"} />
+                  </div>
                 )
               }
             })
@@ -89,7 +99,13 @@ export const pageQuery = graphql`
           type
           format
           date(formatString: "YYYY")
-
+          images {
+                imageFile {
+                  childImageSharp {
+                    gatsbyImageData
+                  }
+                }
+              }
         }
         cover_image {
               caption
