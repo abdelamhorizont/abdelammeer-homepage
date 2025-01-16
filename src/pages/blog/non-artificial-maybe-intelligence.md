@@ -138,7 +138,7 @@ variable-content:
     images:
       - type: video
         videoFile: teaser_1.mp4
-        caption: Artificial Femininity by Julia iegler
+        caption: Artificial Femininity by Julia Ziegler
       - type: iFrame
         caption: "SIGNING SIGNING SIGNING by Anna Katalin Szilágyi "
         iFrame-link: https://editor.p5js.org/mivankata/full/dLqRQo3Gc
