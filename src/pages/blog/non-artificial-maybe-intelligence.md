@@ -109,8 +109,8 @@ variable-content:
         imageFile: bildschirmfoto-2023-04-06-um-17.40.33.png
         caption: Object Detection with COCO SD, ml5.js tutorial by Daniel Shiffman
       - type: image
-        imageFile: tmjjw0ap0fr61.webp
-        caption: AI iceberg chart
+        imageFile: bildschirmfoto-2023-04-06-um-17.29.10.png
+        caption: Teachable Machine
     column-start: "1"
     column-end: "13"
   - type: image-section
@@ -138,7 +138,7 @@ variable-content:
     images:
       - type: video
         videoFile: teaser_1.mp4
-        caption: Artificial Femininity by Julia iegler
+        caption: Artificial Femininity by Julia Ziegler
       - type: iFrame
         caption: "SIGNING SIGNING SIGNING by Anna Katalin Szilágyi "
         iFrame-link: https://editor.p5js.org/mivankata/full/dLqRQo3Gc
@@ -323,6 +323,33 @@ variable-content:
     column-start: "9"
     column-end: "13"
     big-size: false
+  - type: text-section
+    big-size: "false"
+    title: Participants
+    text: |-
+      Francesco Perale 
+
+      Till Engelhardt 
+
+      Róza Velkei 
+
+      Louise Windenberger 
+
+      Tim Drekopf 
+
+      Maïmouna Nele Diop 
+
+      Chiara Kern 
+
+      Lu Kellert 
+
+      Joel Luca Sequeira Ferreira 
+
+      Anna Katalin Szilágyi 
+
+      Kimin Han 
+
+      Julia Ziegler
 projectInfos: >-
   \
 
