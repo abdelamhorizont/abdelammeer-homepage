@@ -136,12 +136,33 @@ variable-content:
       Lu"
   - type: image-section
     images:
+      - type: video
+        videoFile: teaser_1.mp4
+        caption: Artificial Femininity by Julia iegler
       - type: iFrame
         caption: "SIGNING SIGNING SIGNING by Anna Katalin Szilágyi "
         iFrame-link: https://editor.p5js.org/mivankata/full/dLqRQo3Gc
+      - type: video
+        videoFile: chiara-teaser_1.mp4
+        caption: Uncanny Valley 700BC by Chiara Kern
       - type: iFrame
         iFrame-link: https://ai-connection.netlify.app/
         caption: "AI Connection by Kristian Vrhar "
+      - type: video
+        videoFile: till_teaser_1.mp4
+        caption: by Till Engelhardt
+      - type: video
+        videoFile: lu-kellert_finalfinal_1.mp4
+        caption: The Future of Creativity by Lu Kellert
+      - type: video
+        videoFile: teaser-final-maimouna-diop_1.mp4
+        caption: Love and AI by Maïmouna Diop
+      - type: video
+        videoFile: róza-velkei_teaser_1.mp4
+        caption: AI for paintings by Róza Velkei
+      - type: video
+        videoFile: louisew_1min.mp4
+        caption: Alternate Creativity by Louise Windenberger
     title: Student projects
   - type: text-section
     text: >-
