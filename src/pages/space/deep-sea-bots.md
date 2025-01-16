@@ -58,6 +58,11 @@ variable-content:
       - type: image
         imageFile: /img/buch-4.-jan.-2024_seite_077.jpg
         caption: reactive illustrations concept
+  - type: image-section
+    images:
+      - type: video
+        videoFile: /img/tiefseebot_preview.mp4
+        caption: teaser
 projectInfos: test
 date: 2023-10-31T15:20:54.876Z
 title: deep sea bots
