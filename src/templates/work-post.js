@@ -46,7 +46,7 @@ const WorkPost = ({ data }) => {
 
           {
             post.frontmatter?.variable_content?.map((content) => {
-              console.log(content.images);
+              // console.log(content.images);
 
               if (content.type == 'text-section') {
                 return (
@@ -118,6 +118,7 @@ export const pageQuery = graphql`
             caption
             type
             iFrame_link            
+            videoFile 
             imageFile {
               childImageSharp {
                 gatsbyImageData

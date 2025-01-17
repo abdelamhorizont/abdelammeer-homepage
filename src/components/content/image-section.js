@@ -58,6 +58,7 @@ const ImageSection = ({ content, type }) => {
                         image.type == "iFrame" ?
                           <div className="website">
                             <iframe src={image?.iFrame_link} frameborder="100px"></iframe>
+                            {/* <iframe width="1434" height="637" src="https://www.youtube.com/embed/ncz9mrj5VHA" title="Deep Sea Bots" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
                             <p className="caption">{image?.caption}</p>
                           </div>
                           :
@@ -65,7 +66,8 @@ const ImageSection = ({ content, type }) => {
                             <div className="video-section">
                               <video key={image?.videoFile?.publicURL} autoPlay muted loop controls>
                                 {/* <video key={image?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline> */}
-                                <source src={image?.videoFile?.publicURL} type="video/mp4" />
+                                {/* <source src={image?.videoFile?.publicURL} type="video/mp4" /> */}
+                                <source src={'../../../static/img/' + image?.videoFile} type="video/mp4" />
                               </video>
                               <p className="caption">{image?.caption}</p>
                             </div>
@@ -108,6 +110,7 @@ const ImageSection = ({ content, type }) => {
                     content?.map((image) => {
                       const myimg = getImage(image.imageFile)
                       // console.log(myimg);
+                      console.log(image?.videoFile);
 
                       return (
                         image?.videoFile != null ?

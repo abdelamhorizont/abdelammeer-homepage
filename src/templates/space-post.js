@@ -125,7 +125,16 @@ export const pageQuery = graphql`
           column_end
           column_start
           text
-
+          images {
+            caption
+            type
+            iFrame_link            
+            imageFile {
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
+          }
         }
       }
     }

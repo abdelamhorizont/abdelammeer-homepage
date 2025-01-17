@@ -40,7 +40,7 @@
             height: fit-content;
             border-radius: 5rem;
             text-align: left;
-            
+
             padding: 0.2rem 0.5rem;
             font-size: 1.5rem;
             font-family: Kleukens;
@@ -183,7 +183,7 @@
             padding: 0.2rem 0.5rem;
 
             border-radius: 5rem;
-            
+
             font-size: 1.5rem;
             font-family: Kleukens;
             text-align: left;
@@ -229,11 +229,11 @@
 
         .collaborators {
             grid-column: 4/10;
-            
+
         }
     }
 
-    .post-content{
+    .post-content {
         padding: 1rem;
 
         // width:100vw;
@@ -245,6 +245,26 @@
             grid-column: 4/11;
             margin-bottom: 4.5rem;
             font-size: 1.5rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+    .work {
+        // width: 50%;
+        grid-column: span 2;
+        height: 45vh;
+
+        .postcover {
+            width: 100vw;
+            height: 45vh;
+
+            .cover-image {                
+                width: 100vw;
+                height: 45vh;
+
+            }
         }
     }
 }
