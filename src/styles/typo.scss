@@ -44,9 +44,10 @@ html {
    }
 }
 
+@media screen and (max-width: 720px) {
 
-// p.caption {
-//    margin-top: 0.2rem;
-//    font-family: Kleukens;
-//    font-size: 1.8rem;
-// }
+   html {
+      font-size: clamp(10px, 1vw, 16px);
+   }
+   
+}

@@ -363,3 +363,49 @@
         // }
     }
 }
+
+
+@media screen and (max-width: 720px) {
+    .blog {
+  
+        .postcover {
+            width: 100%;
+            // flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: auto auto 25vw;
+            overflow: hidden;
+            
+            .cover-image {     
+                width: 100%;      
+                display: flex;
+                justify-content: center;
+                
+                img{
+                    width: 100%;      
+                    
+                }
+            }
+            
+            h2{
+                width: max-content;
+            }
+            
+            .project-description{
+               overflow: hidden;
+                z-index: 2;
+                grid-column: span 3;
+                grid-row: 2;
+                max-width: 96vw;
+
+                h1{
+                    width: fit-content;
+                    word-break:normal;
+                    font-size: 4.5rem;
+                }
+                p{
+                    max-width: 70vw;
+                }
+            }
+        }
+    }
+}

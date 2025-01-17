@@ -402,4 +402,15 @@
        }
    }
 
-   
+   @media screen and (max-width: 720px) {
+    .space {
+        .postcover {
+            height: 40vh;
+
+            .cover-image{
+                position: absolute;
+                width: 90vw;
+            }
+        }
+    }
+}
