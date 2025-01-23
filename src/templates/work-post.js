@@ -118,7 +118,9 @@ export const pageQuery = graphql`
             caption
             type
             iFrame_link            
-            videoFile 
+            videoFile {
+                publicURL
+              }
             imageFile {
               childImageSharp {
                 gatsbyImageData

@@ -53,14 +53,12 @@ const BlogPost = ({ data }) => {
                   </div>
                 )
               } else if (content.type == 'image-section') {
-                console.log(content?.videoFile)
-
                 return (
                   <div style={{ gridColumn: content.column_start ? content.column_start + "/" + content.column_end : "4/11" }} className={`image-section`}>
                     {content?.title &&
                       <h1>{content?.title}</h1>
                     }
-                    <ImageSection content={content} type={"grid"} />
+                    <ImageSection content={content} type={content.column_start ? "grid" : "" } />
                   </div>
                 )
               }
@@ -113,7 +111,9 @@ export const pageQuery = graphql`
             caption
             type
             iFrame_link                        
-            videoFile
+            videoFile {
+                publicURL
+              }
             imageFile {
               childImageSharp {
                 gatsbyImageData

@@ -6,21 +6,25 @@
     font-family: Kleukens;
     word-wrap: break-word;
 
-    display: flex;
-    flex-wrap: wrap;
+    .grid{
+        
+            display: flex;
+            // flex-wrap: wrap;
+        
+            // flex: 1 1 0;
+        
+            gap: 1rem;
 
-    // flex: 1 1 0;
-
-    gap: 1rem;
-
-    .image {
-        flex-basis: 32.8%;
-
-        img {
-            // height: 80vh;
-            width: 100%;
-        }
+            .image {
+                flex-basis: 32.8%;
+        
+                img {
+                    // height: 80vh;
+                    width: 100%;
+                }
+            }
     }
+
 
     h1 {
         margin-bottom: 1.5rem;
