@@ -165,10 +165,34 @@ variable-content:
         caption: Alternate Creativity by Louise Windenberger
     title: Student projects
   - type: text-section
+    big-size: "false"
+    title: Participants
+    text: |-
+      Francesco Perale 
+
+      Till Engelhardt 
+
+      Róza Velkei 
+
+      Louise Windenberger 
+
+      Tim Drekopf 
+
+      Maïmouna Nele Diop 
+
+      Chiara Kern 
+
+      Lu Kellert 
+
+      Joel Luca Sequeira Ferreira 
+
+      Anna Katalin Szilágyi 
+
+      Kimin Han 
+
+      Julia Ziegler
+  - type: text-section
     text: >-
-      ## Ressources
-
-
       ### Readings
 
 
@@ -221,6 +245,8 @@ variable-content:
       ### T﻿echnical Explanations
 
 
+
+
       COCO\
 
       <https://cocodataset.org/#explore>
@@ -236,13 +262,12 @@ variable-content:
       <https://www.youtube.com/watch?v=QEzRxnuaZCk&list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y&index=5>
     column-start: "1"
     column-end: "5"
-    title: ""
+    title: Ressources
   - type: text-section
     text: >-
-      ## AI Tools
-
-
       ## I﻿mage Generation
+
+
 
 
       <https://huggingface.co/spaces/stabilityai/stable-diffusion>\
@@ -272,7 +297,11 @@ variable-content:
       image generator,creates landscapes with the textures you add (glitchy but it makes it funny)
 
 
+
+
       ### M﻿odel Training
+
+
 
 
       <https://ml5js.org/>\
@@ -290,7 +319,11 @@ variable-content:
       AI influencers are getting filthy rich... let's build one
 
 
+
+
       ### G﻿ames
+
+
 
 
       <https://play.aidungeon.io/main/home>\
@@ -304,10 +337,9 @@ variable-content:
     column-start: "5"
     column-end: "9"
     big-size: false
+    title: AI Tools
   - type: text-section
     text: |-
-      ## Projects
-
       Deep Fakes\
       <https://www.youtube.com/watch?v=yyFQPjIrnQE&ab_channel=LoloRick>\
       <https://thisxdoesnotexist.com/>
@@ -323,33 +355,7 @@ variable-content:
     column-start: "9"
     column-end: "13"
     big-size: false
-  - type: text-section
-    big-size: "false"
-    title: Participants
-    text: |-
-      Francesco Perale 
-
-      Till Engelhardt 
-
-      Róza Velkei 
-
-      Louise Windenberger 
-
-      Tim Drekopf 
-
-      Maïmouna Nele Diop 
-
-      Chiara Kern 
-
-      Lu Kellert 
-
-      Joel Luca Sequeira Ferreira 
-
-      Anna Katalin Szilágyi 
-
-      Kimin Han 
-
-      Julia Ziegler
+    title: Projects
 projectInfos: >-
   \
 
