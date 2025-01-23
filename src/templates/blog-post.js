@@ -8,7 +8,6 @@ import TextSection, { HTMLContent } from "../components/content/text-section";
 import ImageSection from "../components/content/image-section";
 
 import '../styles/blog.scss'
-//hi 
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data;
@@ -43,7 +42,7 @@ const BlogPost = ({ data }) => {
             post.frontmatter?.variable_content?.map((content) => {
               // const gridStyle = {gridColumn: 4 + "/" + 9}
               const gridStyle = { gridColumn: content.column_start ? content.column_start + "/" + content.column_end : "4/11" }
-              
+
               if (content.type == 'text-section') {
                 return (
                   <div style={{ gridColumn: content.column_start ? content.column_start + "/" + content.column_end : "4/11" }} className={`text-section`}>
@@ -54,6 +53,8 @@ const BlogPost = ({ data }) => {
                   </div>
                 )
               } else if (content.type == 'image-section') {
+                console.log(content?.videoFile)
+
                 return (
                   <div style={{ gridColumn: content.column_start ? content.column_start + "/" + content.column_end : "4/11" }} className={`image-section`}>
                     {content?.title &&

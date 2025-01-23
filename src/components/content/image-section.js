@@ -34,10 +34,13 @@ const ImageSection = ({ content, type }) => {
           <iframe src={content.iframe_link} frameborder="100px"></iframe>
           :
           // type == "video" ?
-          content?.videoFile != null ?
+          content?.videoFile != null ?          
             <div className="video-section">
               <video key={content?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline>
                 <source src={content?.videoFile?.publicURL} type="video/mp4" />
+              </video>
+              <video key={content?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline>
+                <source src={content?.videoFile} type="video/mp4" />
               </video>
               {/* <p className="caption">{content?.caption}</p> */}
             </div>

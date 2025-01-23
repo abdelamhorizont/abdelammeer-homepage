@@ -267,4 +267,48 @@
             }
         }
     }
+
+    .work-post {
+        .postcover {
+            // display: grid;
+            // grid-template-columns: auto auto 25vw;
+            // flex: 1;
+            // overflow: hidden;
+            // width: 100%;
+
+            h2{
+                // grid-column: span 3;
+
+            }
+
+            .cover-image{
+                // grid-column: span 8;
+                height: 70vh;
+            }
+
+            .project-description {
+                grid-row: 3;
+                grid-column: span 3;
+            }
+
+            .type{
+                grid-column: 10/13;
+            }
+
+            .collaborators{
+                grid-column: 1/12;
+            }
+        }
+
+        .post-content {
+            // width:100vw;
+            // display: grid;
+            // grid-template-columns: repeat(3, 1fr);
+            // gap: 1rem;
+
+            .description {
+                grid-column: 1/12;
+            }
+        }
+    }
 }

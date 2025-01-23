@@ -317,9 +317,9 @@
 
     .blog-post-content {
         // width:100vw;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        gap: 1rem;
+        // display: grid;
+        // grid-template-columns: repeat(12, 1fr);
+        // gap: 1rem;
 
         .description {
             grid-column: 4/11;
@@ -364,48 +364,109 @@
     }
 }
 
+@media screen and (min-width: 720px) {
+    .blog-post {
+        // .postcover {
+        //     display: grid;
+        //     grid-template-columns: auto auto 25vw;
+
+        //     .project-description {
+        //         grid-row: 2;
+        //         grid-column: span 3;
+
+        //     }
+        // }
+
+        .blog-post-content {
+            // width:100vw;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1rem;
+        }
+    }
+}
+
+
 
 @media screen and (max-width: 720px) {
     .blog {
-  
+
         .postcover {
             width: 100%;
             // flex-wrap: wrap;
             display: grid;
             grid-template-columns: auto auto 25vw;
             overflow: hidden;
-            
-            .cover-image {     
-                width: 100%;      
+
+            .cover-image {
+                width: 100%;
                 display: flex;
                 justify-content: center;
-                
-                img{
-                    width: 100%;      
-                    
+
+                img {
+                    width: 100%;
+
                 }
             }
-            
-            h2{
+
+            h2 {
                 width: max-content;
             }
-            
-            .project-description{
-               overflow: hidden;
+
+            .project-description {
+                overflow: hidden;
                 z-index: 2;
                 grid-column: span 3;
                 grid-row: 2;
                 max-width: 96vw;
 
-                h1{
+                h1 {
                     width: fit-content;
-                    word-break:normal;
+                    word-break: normal;
                     font-size: 4.5rem;
                 }
-                p{
+
+                p {
                     max-width: 70vw;
                 }
             }
         }
     }
+
+    .blog-post {
+        .postcover {
+            // display: grid;
+            // grid-template-columns: auto auto 25vw;
+            // flex: 1;
+            // overflow: hidden;
+            // width: 100%;
+
+            h2{
+                grid-column: span 3;
+
+            }
+
+            .cover-image{
+                grid-column: span 8;
+            }
+
+            .project-description {
+                grid-row: 2;
+                grid-column: span 3;
+
+            }
+        }
+
+        .blog-post-content {
+            // width:100vw;
+            // display: grid;
+            // grid-template-columns: repeat(3, 1fr);
+            // gap: 1rem;
+
+            .description {
+                grid-column: 1/12;
+            }
+        }
+    }
+
 }
