@@ -28,6 +28,91 @@ variable-content:
       - type: video
         videoFile: installation.mp4
         caption: Installation
+  - type: text-section
+    big-size: "false"
+    text: "> „If you happen to be in the ocean and you see someone breathing, what
+      do you do? If you see someone like you, a mammal, but unlike you—not bound
+      by boats and masks and land—you might wonder who they are, what they are
+      doing, how do they do it. How do they live in salt and depth and motion?
+      You very well might wonder.“ — Black Feminist Lessons from Marine Mammals
+      by Alexis Pauline Gumbs"
+  - type: text-section
+    big-size: "false"
+    title: Seminar Content
+    text: >-
+      
+
+      * drawing, film, typography and layouting, analogue and digital motion sickness
+
+      * Visualization of Memories and Assosiations in time and space
+
+      * Reading texts, reflecting and listening
+
+      * examining and connecting to global issues through maps and data sources
+
+      * pinpoint a topic for individual or a collective work
+
+      * Excursion, ocean workshop, Les Rencontres d’Arles
+
+      * presentation, installation, projection on materials
+  - type: text-section
+    big-size: "false"
+    title: "## Ressources"
+    text: >-
+      Undrowned - Black Feminist Lessons from Marine Mammals by Alexis Pauline
+      Gumbs
+
+
+      <https://drive.google.com/drive/folders/1L34KxgyAd2I333AekdvBKbl9kYxsdJJC>
+
+
+      Listen to the Deep:
+
+
+      <http://www.listentothedeep.com/acoustics/index.php>
+
+
+      Shipfinder:
+
+
+      <https://shipfinder.co/?timeoutreturn=true>
+
+
+      David Rumsey Map Collection:
+
+
+      <https://www.davidrumsey.com/home>
+
+
+      Forensic Architecture
+
+
+      [https://forensic-architecture.org/investigation/shipwreck-at-the-threshold-of-europe#:~:text=It sank 280m beyond the,reach EU shores by sea](https://forensic-architecture.org/investigation/shipwreck-at-the-threshold-of-europe#:~:text=It%20sank%20280m%20beyond%20the,reach%20EU%20shores%20by%20sea)
+
+
+      (on the topic of migration on the Mediterranean Sea. TW: shipwreck, drowning)
+
+
+      Mediterrenean Local musics
+
+
+      <https://open.spotify.com/playlist/2RzJtMpbEZnSS5rfMt0qtZ?si=coP1wM08Rn6xrQfoNpyVcw&utm_source=copy-link>
+
+
+      <!-- notionvc: 8871b932-59d1-4e5e-a248-cbbd4e29c276 -->
+  - type: image-section
+    column-start: "1"
+    column-end: "13"
+    images:
+      - type: video
+        videoFile: jessica.mp4
+        caption: Work by Jessica
+      - type: video
+        videoFile: matylda.mp4
+        caption: Work by Matylda
+      - type: video
+        videoFile: marc.mp4
+        caption: Work by Marc
 projectInfos: test
 date: 2023-04-01T14:22:36.721Z
 cover_image:
