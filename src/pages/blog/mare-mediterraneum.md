@@ -23,7 +23,7 @@ variable-content:
     title: Overview
   - type: image-section
     column-start: "5"
-    column-end: "11"
+    column-end: "10"
     images:
       - type: video
         videoFile: installation_1.mp4
