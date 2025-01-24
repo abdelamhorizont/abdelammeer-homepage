@@ -22,8 +22,8 @@ variable-content:
       We read texts from ‚Undrowned‘, Black Feminist Lessons from Marine Mammals by Alexis Pauline Gumbs, listened to ‚Saying Water‘, a monologue by Roni Horn, followed investigations of Forensic Architecture and Migrant Journal, browsed through geographic maps, charts and data sources. — and then we went to the beach. I mean, we had to. We travelled to southern france work in Marseille and to visit Les Rencontres d’Arles.
     title: Overview
   - type: image-section
-    column-start: "5"
-    column-end: "10"
+    column-start: null
+    column-end: null
     images:
       - type: video
         videoFile: installation_1.mp4
@@ -101,11 +101,37 @@ variable-content:
         caption: Works by Paula and Eunchae
   - type: text-section
     big-size: "false"
-    title: "#Ressources"
+    text: |-
+      > Nico Dasenbrock 
+      >
+      > Rahel Diederich 
+      >
+      > Matylda Eaton 
+      >
+      > Paula Klotzki 
+      >
+      > Lena Breitmoser 
+      >
+      > Eunchae Won 
+      >
+      > Jessica Kiara Kessler 
+      >
+      > Charlotte Singer 
+      >
+      > Joanne Dietz 
+      >
+      > Xenia Borgardt
+      >
+      >  Paul Boeninger 
+      >
+      > Marc Bendt
+    title: Participants
+  - type: text-section
+    big-size: "false"
+    title: Ressources
     text: >-
-      
-
-      * Roni Horn: (trigger warning: content on suicide and murder) <https://www.youtube.com/watch?v=fkvoe7s1NVg&t=2345s&ab_channel=LouisianaChannel>
+      * Roni Horn: (trigger warning: content on suicide and murder)
+      <https://www.youtube.com/watch?v=fkvoe7s1NVg&t=2345s&ab_channel=LouisianaChannel>
 
       * Undrowned - Black Feminist Lessons from Marine Mammals by Alexis Pauline Gumbs <https://drive.google.com/drive/folders/1L34KxgyAd2I333AekdvBKbl9kYxsdJJC>
 
@@ -120,35 +146,6 @@ variable-content:
       * Mediterrenean Local musics: <https://open.spotify.com/playlist/2RzJtMpbEZnSS5rfMt0qtZ?si=coP1wM08Rn6xrQfoNpyVcw&utm_source=copy-link>
 
       * Circle surfaces sun : from somewhere in the Mediterranean
-
-        *
-  - type: text-section
-    big-size: "false"
-    text: |-
-      Nico Dasenbrock 
-
-      Rahel Diederich 
-
-      Matylda Eaton 
-
-      Paula Klotzki 
-
-      Lena Breitmoser 
-
-      Eunchae Won 
-
-      Jessica Kiara Kessler 
-
-      Charlotte Singer 
-
-      Joanne Dietz 
-
-      Xenia Borgardt
-
-       Paul Boeninger 
-
-      Marc Bendt
-    title: Participants
 projectInfos: test
 date: 2023-04-01T14:22:36.721Z
 cover_image:
