@@ -47,7 +47,7 @@ const BlogPost = ({ data }) => {
                 return (
                   <div style={{ gridColumn: content.column_start ? content.column_start + "/" + content.column_end : "4/11" }} className={`text-section`}>
                     {content?.title &&
-                      <h1>{content?.title}</h1>
+                      <h1 className="content-title">{content?.title}</h1>
                     }
                     <TextSection content={content.text} />
                   </div>
@@ -56,7 +56,7 @@ const BlogPost = ({ data }) => {
                 return (
                   <div style={{ gridColumn: content.column_start ? content.column_start + "/" + content.column_end : "4/11" }} className={`image-section`}>
                     {content?.title &&
-                      <h1>{content?.title}</h1>
+                      <h1 className="content-title">{content?.title}</h1>
                     }
                     <ImageSection content={content} type={content.column_start ? "grid" : "" } />
                   </div>

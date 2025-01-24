@@ -22,7 +22,6 @@ const WorkPost = ({ data }) => {
             <ImageSection type={"carousel"} content={post.frontmatter.cover_image} columnStart={1} columnEnd={12} />
           </div>
 
-          {/* <div><h2> {post.frontmatter.title_section.date} </h2></div> */}
           <h2 className="year"> {post.frontmatter.title_section.date} </h2>
           <div className="project-description">
             <h1 className="headline">{post.frontmatter.title}</h1>

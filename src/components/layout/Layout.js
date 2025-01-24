@@ -29,17 +29,6 @@ const Layout = ({ children, activeSite }) => {
   const [theme, setTheme] = useState(themes[0])
   const [themeCount, setthemeCount] = useState(0)
 
-  // const ThemeIcon = theme == 'light-theme' ? "🌙" : theme == 'color-theme' ? "☀️" : "🌈"
-
-  // const toggleTheme = () => {
-  //   setTheme(themes[themeCount])
-  //   setthemeCount(themeCount + 1)
-
-  //   if (themeCount > 1) {
-  //     setthemeCount(0)
-  //   }
-  // };
-
 
   useMemo(() => themeCount, [theme])
 

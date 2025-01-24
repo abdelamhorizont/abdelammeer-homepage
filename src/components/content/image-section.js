@@ -25,6 +25,8 @@ const ImageSection = ({ content, type }) => {
   const navigationPrevRef = React.useRef(null)
   const navigationNextRef = React.useRef(null)
 
+  // console.log(content);
+
 
   return (
     <div className={type == "grid" && "grid"}>
@@ -32,22 +34,22 @@ const ImageSection = ({ content, type }) => {
         // type == "iframe" ?
         content?.iframe_link != null ?
           <iframe src={content.iframe_link} frameborder="100px"></iframe>
-          :
+        :
           // type == "video" ?
-          content?.videoFile != null ?          
+        content?.videoFile != null ?          
             <div className="video-section">
               <video key={content?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline>
                 <source src={content?.videoFile?.publicURL} type="video/mp4" />
               </video>
               {/* <p className="caption">{content?.caption}</p> */}
             </div>
-            :
+        :
             // type == "image" ?
-            (content?.imageFile != null) ?
-              <GatsbyImage image={getImage(content?.imageFile)} alt={''} />
-              :
+        (content?.imageFile != null) ?
+            <GatsbyImage image={getImage(content?.imageFile)} alt={''} />
+        :
               // (content?.length > 1 && type == "grid") ?
-              (type == "" || "grid") ?
+        (type == ("" || "grid")) ?
                 content?.images?.map((image) => {
                   const myimage = getImage(image?.imageFile)
 
@@ -81,9 +83,9 @@ const ImageSection = ({ content, type }) => {
                     </>
                   )
                 })
-                :
+          :
                 // (content?.length > 1 && type == "carousel") &&
-                (type == "carousel") &&
+          (type == "carousel") &&
                 // <div onClick={() => handleClick(i)}>
                 <Swiper
                   // onSwiper={(swiper) => swiper.slideTo(index)}
@@ -109,8 +111,7 @@ const ImageSection = ({ content, type }) => {
                   {
                     content?.map((image) => {
                       const myimg = getImage(image.imageFile)
-                      // console.log(myimg);
-                      console.log(image?.videoFile);
+                      console.log(content);
 
                       return (
                         image?.videoFile != null ?
