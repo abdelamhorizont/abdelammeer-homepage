@@ -102,29 +102,29 @@ variable-content:
   - type: text-section
     big-size: "false"
     text: |-
-      Nico Dasenbrock 
-
-      Rahel Diederich 
-
-      Matylda Eaton 
-
-      Paula Klotzki 
-
-      Lena Breitmoser 
-
-      Eunchae Won 
-
-      Jessica Kiara Kessler 
-
-      Charlotte Singer 
-
-      Joanne Dietz 
-
-      Xenia Borgardt
-
-       Paul Boeninger 
-
-      Marc Bendt
+      > Nico Dasenbrock 
+      >
+      > Rahel Diederich 
+      >
+      > Matylda Eaton 
+      >
+      > Paula Klotzki 
+      >
+      > Lena Breitmoser 
+      >
+      > Eunchae Won 
+      >
+      > Jessica Kiara Kessler 
+      >
+      > Charlotte Singer 
+      >
+      > Joanne Dietz 
+      >
+      > Xenia Borgardt
+      >
+      >  Paul Boeninger 
+      >
+      > Marc Bendt
     title: Participants
   - type: text-section
     big-size: "false"
