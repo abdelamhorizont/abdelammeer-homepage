@@ -26,6 +26,7 @@ const Layout = ({ children, activeSite }) => {
     'grey-theme',
   ]
 
+  // const [theme, setTheme] = useState(theme ? theme : themes[0])
   const [theme, setTheme] = useState(themes[0])
   const [themeCount, setthemeCount] = useState(0)
 
@@ -74,7 +75,7 @@ const Layout = ({ children, activeSite }) => {
               <li><a href="mailto:hello@abdelammeer.com">@</a></li>
             </ul>
             <ul className="nav-sites">
-              <li className={`blog ${activeSite == 'blog' && 'border'}`}><Link to="/blog">blog</Link></li>
+              <li className={`blog ${activeSite == 'blog' && 'border'}`}><Link theme={theme} to="/blog">blog</Link></li>
               <li className={`space ${activeSite == 'space' && 'border'}`}><Link to="/space">space</Link></li>
               <li className={`work ${activeSite == 'work' && 'border'}`}><Link to="/work">work</Link></li>
             </ul>

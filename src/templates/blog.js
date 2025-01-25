@@ -15,7 +15,7 @@ import '../styles/space.scss'
 import '../styles/blog.scss'
 import '../styles/work.scss'
 
-const BlogPage = ({ data }) => {
+const BlogPage = ({ data, theme }) => {
   const { frontmatter } = data.markdownRemark
   const page = {
     hidden: {
@@ -56,7 +56,7 @@ const BlogPage = ({ data }) => {
   }
 
   return (
-    <Layout>
+    <Layout theme={theme}>
       <div className="index-page">
       <div className="top-space"></div>
         <motion.ul className="section-list"
