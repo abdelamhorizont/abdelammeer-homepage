@@ -12,10 +12,6 @@ cover_image:
   - type: image
     imageFile: typo1.jpeg
     caption: image
-cover:
-  videoFile: ""
-  fallbackImage: typo1.jpeg
-  caption: Letter Tattoos
 Description: Writing letters, drawing letters, to you, to me, to strangers. To
   sharpen our senses, to think with our hands and touch with our minds, we will
   travel to pasts and futures, get in touch with ourselves, with ancestors and
