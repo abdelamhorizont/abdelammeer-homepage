@@ -1,6 +1,5 @@
 ---
 templateKey: blog-post
-cover-image: /img/mare18.jpeg
 title section:
   date: 2023-03-31T22:00:00.000Z
   title: "MARE MEDITERRANEUM "

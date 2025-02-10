@@ -8,10 +8,6 @@ title section:
   location: HfG Karlsruhe
   images: []
   format: Seminar
-cover-image:
-  - type: image
-    imageFile: typo1.jpeg
-    caption: Letter Tattoos
 cover_image:
   - type: image
     imageFile: typo1.jpeg

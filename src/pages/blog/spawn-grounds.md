@@ -1,6 +1,5 @@
 ---
 templateKey: blog-post
-cover-image: /img/mindmap.png
 variable-content:
   - type: image-section
     column-start: "3"
