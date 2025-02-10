@@ -9,7 +9,7 @@ title section:
   format: Seminar
 variable-content:
   - type: text-section
-    big-size: "false"
+    big-size: false
     text: >-
       in this seminar we took time to reflect, to remember, to read and write,
       draw and film, experiment on analogue and digital moving image — on a
@@ -29,7 +29,7 @@ variable-content:
         videoFile: installation_1.mp4
         caption: Scenography by Joanne, Jessica, Marc and Lena
   - type: text-section
-    big-size: "false"
+    big-size: false
     text: "> *„If you happen to be in the ocean and you see someone breathing, what
       do you do? If you see someone like you, a mammal, but unlike you—not bound
       by boats and masks and land—you might wonder who they are, what they are
@@ -37,7 +37,7 @@ variable-content:
       You very well might wonder.“* — Black Feminist Lessons from Marine Mammals
       by Alexis Pauline Gumbs"
   - type: text-section
-    big-size: "false"
+    big-size: false
     title: Seminar Content
     text: >-
       
@@ -100,7 +100,7 @@ variable-content:
         imageFile: mare5.jpeg
         caption: Works by Paula and Eunchae
   - type: text-section
-    big-size: "false"
+    big-size: false
     text: |-
       > Nico Dasenbrock 
       >
@@ -127,7 +127,7 @@ variable-content:
       > Marc Bendt
     title: Participants
   - type: text-section
-    big-size: "false"
+    big-size: false
     title: Ressources
     text: >-
       * Roni Horn: (trigger warning: content on suicide and murder)

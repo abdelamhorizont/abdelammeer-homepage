@@ -28,7 +28,7 @@ Description: Writing letters, drawing letters, to you, to me, to strangers. To
   and draw letters again.
 variable-content:
   - type: text-section
-    big-size: "false"
+    big-size: false
     text: In this seminar we will learn about the history and developments of
       typography, vocabulary to speak about text, typefaces and letters;
       classifications, differences and details, and about arranging letters to

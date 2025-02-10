@@ -46,7 +46,7 @@ variable-content:
         videoFile: /img/14b.mp4
         caption: Design Manual
   - type: text-section
-    big-size: "false"
+    big-size: false
     text: The Design Manual explains design principles, technical details as well as
       guidelines and the handling of the elements, including logo, business
       card, letterhead, templates for Microsoft Word, Excel and PowerPoint,

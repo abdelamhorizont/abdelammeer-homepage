@@ -15,8 +15,6 @@ cover_image:
   - type: image
     imageFile: mindmap.png
     caption: mind map
-cover:
-  fallbackImage: mindmap.png
 type: Workshop
 title section:
   date: 2022-12-31T23:00:00.000Z

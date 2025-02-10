@@ -8,7 +8,7 @@ variable-content:
         iFrame-link: https://www.youtube.com/embed/ncz9mrj5VHA
         caption: Presentation storyline
   - type: text-section
-    big-size: "false"
+    big-size: false
     text: parallel to first thoughts, writing and sketches I was experimenting with
       p5.js, as I would do from time to time just for fun. I had the thought
       that it could be interesting to develop a drawing tool that animetes the
@@ -22,7 +22,7 @@ variable-content:
         videoFile: /img/polydactyl-vertex-mozilla-firefox-2020-12-31-15-17-55_1.mp4
         caption: first experiments with animated drawing tool
   - type: text-section
-    big-size: "false"
+    big-size: false
     text: The association to under water movement was not far here and thus the
       frogfish, not only does it embody a rawness, an alien and mysterious
       creature but also evoked digital associations to me through the electrical

@@ -43,7 +43,7 @@ variable-content:
     column-start: "6"
     column-end: "12"
   - type: text-section
-    big-size: "false"
+    big-size: false
     text: >-
       \
 

@@ -411,7 +411,7 @@ collections:
                       label: "Big Size",
                       name: "big-size",
                       widget: "boolean",
-                      default: "false",
+                      default: false,
                       required: false,
                     },
                     {
@@ -822,7 +822,7 @@ collections:
                       label: "Big Size",
                       name: "big-size",
                       widget: "boolean",
-                      default: "false",
+                      default: false,
                       required: false,
                     },
                     {
@@ -1233,7 +1233,7 @@ collections:
                       label: "Big Size",
                       name: "big-size",
                       widget: "boolean",
-                      default: "false",
+                      default: false,
                       required: false,
                     },
                     {

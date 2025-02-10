@@ -2,7 +2,6 @@
 blog-reference: (Non) Artificial (Maybe) Intelligence
 heading: abdel am meer
 subheading: communication design
-landingvideo: /img/bildschirmfoto-2023-04-30-um-15.18.47.jpg
 templateKey: index-page
 title: abdel am meer
 variable-content:
@@ -52,8 +51,4 @@ variable-content:
       - type: work-reference
         full-width: false
         reference: GleisMediale
-video:
-  fallbackImage: ""
-  videoFile: ""
-image: /img/bildschirmfoto-2023-04-30-um-15.18.47.jpg
 ---

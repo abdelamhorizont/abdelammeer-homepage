@@ -1,6 +1,5 @@
 ---
 templateKey: blog-post
-cover-image: /img/download.png
 variable-content:
   - type: image-section
     column-start: "5"
@@ -10,7 +9,7 @@ variable-content:
         videoFile: non-artificial-maybe-intelligence_intro_low.mp4
         caption: Seminar Trailer
   - type: text-section
-    big-size: "false"
+    big-size: false
     text: >-
       The seminar (Non) Artificial (Maybe) Intelligence was my first one working
       as an academic associate at the Karlsruhe University of Arts and Design in
@@ -127,7 +126,7 @@ variable-content:
     column-start: "1"
     column-end: "13"
   - type: text-section
-    big-size: "false"
+    big-size: false
     text: "> *“In the earliest morning, where the air cools your face and surfaces
       are coated with fine films of dew from the fog rising from the cold water
       on the floor, I hold the tiniest matchbox with the most generic design I
@@ -165,7 +164,7 @@ variable-content:
         caption: Alternate Creativity by Louise Windenberger
     title: Student projects
   - type: text-section
-    big-size: "false"
+    big-size: false
     title: Participants
     text: |-
       Francesco Perale 
@@ -360,8 +359,6 @@ projectInfos: >-
   \
 
   What and who and how and why? We will examine various AI tools, models and training Data, define possibilities, limitations and risks and use these technologies to comment on the very same ones through the lenses of history, politics, society, culture and science. We will approach this with stupidity as a high order maybe-intelligence.
-collaborators: students
-date: 2022-10-01T08:43:10.878Z
 title section:
   date: 2022-09-30T22:00:00.000Z
   title: (Non) Artificial (Maybe) Intelligence
