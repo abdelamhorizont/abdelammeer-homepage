@@ -10,9 +10,6 @@ title section:
   location: Stuttgart Main Station
 type: Exhibition Identity
 date: 2023-12-12T16:24:50.438Z
-cover:
-  videoFile: ""
-  fallbackImage: /img/gm1.jpg
 cover_image:
   - type: image
     imageFile: /img/gleismediale-4.jpg

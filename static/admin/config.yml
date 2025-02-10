@@ -132,7 +132,6 @@ collections:
                             name: "videoFile",
                             widget: "file",
                             required: false,
-                            allow_multiple: true,
                           },
                           {
                             label: "Caption",
@@ -340,7 +339,6 @@ collections:
                                   name: "videoFile",
                                   widget: "file",
                                   required: false,
-                                  allow_multiple: true,
                                 },
                                 {
                                   label: "Caption",
@@ -543,7 +541,6 @@ collections:
                             name: "videoFile",
                             widget: "file",
                             required: false,
-                            allow_multiple: true,
                           },
                           {
                             label: "Caption",
@@ -751,7 +748,6 @@ collections:
                                   name: "videoFile",
                                   widget: "file",
                                   required: false,
-                                  allow_multiple: true,
                                 },
                                 {
                                   label: "Caption",
@@ -954,7 +950,6 @@ collections:
                             name: "videoFile",
                             widget: "file",
                             required: false,
-                            allow_multiple: true,
                           },
                           {
                             label: "Caption",
@@ -1162,7 +1157,6 @@ collections:
                                   name: "videoFile",
                                   widget: "file",
                                   required: false,
-                                  allow_multiple: true,
                                 },
                                 {
                                   label: "Caption",
@@ -1356,7 +1350,6 @@ collections:
                                       name: "videoFile",
                                       widget: "file",
                                       required: false,
-                                      allow_multiple: true,
                                     },
                                     {
                                       label: "Caption",
@@ -1622,7 +1615,6 @@ collections:
                                       name: "videoFile",
                                       widget: "file",
                                       required: false,
-                                      allow_multiple: true,
                                     },
                                     {
                                       label: "Caption",
@@ -1888,7 +1880,6 @@ collections:
                                       name: "videoFile",
                                       widget: "file",
                                       required: false,
-                                      allow_multiple: true,
                                     },
                                     {
                                       label: "Caption",
@@ -2154,7 +2145,6 @@ collections:
                                       name: "videoFile",
                                       widget: "file",
                                       required: false,
-                                      allow_multiple: true,
                                     },
                                     {
                                       label: "Caption",
@@ -2382,7 +2372,6 @@ collections:
                                 name: "videoFile",
                                 widget: "file",
                                 required: false,
-                                allow_multiple: true,
                               },
                               {
                                 label: "Caption",
@@ -2393,32 +2382,6 @@ collections:
                             ],
                         },
                       ],
-                  },
-                ],
-            }
-          - {
-              label: "Cover",
-              name: "cover",
-              widget: "object",
-              fields:
-                [
-                  {
-                    label: "Video File",
-                    name: "videoFile",
-                    widget: file,
-                    required: false,
-                  },
-                  {
-                    label: "Fallback Image",
-                    name: "fallbackImage",
-                    widget: image,
-                    required: false,
-                  },
-                  {
-                    label: "Caption",
-                    name: "caption",
-                    widget: "string",
-                    required: false,
                   },
                 ],
             }

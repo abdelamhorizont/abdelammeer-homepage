@@ -22,11 +22,11 @@ Description: >-
   I studied both communication design as well as fine arts at the Stuttgart State Academy of Arts and Design and at the Tokyo University of the Arts.
 variable-content:
   - type: text-section
-    big-size: "false"
+    big-size: false
     text: hello@abdelammeer.com
     title: C﻿ontact
   - type: text-section
-    big-size: "false"
+    big-size: false
     text: |-
       * Illustration
       * Visual Identity
@@ -36,7 +36,7 @@ variable-content:
       * Seminars & Workshops
     title: "Skills & Services "
   - type: text-section
-    big-size: "false"
+    big-size: false
     text: |-
       * Z﻿KM Karlsruhe
       * H﻿fG Karlsruhe
@@ -49,7 +49,7 @@ variable-content:
       * Stiftung Digitale Spielekultur
     title: "Clients "
   - type: text-section
-    big-size: "false"
+    big-size: false
     text: |-
       * H﻿fG Karlsruhe
       * K﻿unstmuseum Stuttgart
@@ -58,4 +58,3 @@ variable-content:
       * Schülerhaus Schwabschule
     title: Teaching
 ---
-text
