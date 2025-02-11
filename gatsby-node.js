@@ -72,18 +72,37 @@ exports.createPages = ({ actions, graphql }) => {
   })
 }
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
+exports.onCreateNode = ({ node, actions,createNodeId, createContentDigest, getNode }) => {
+  const { createNodeField, createNode, createParentChildLink } = actions
   fmImagesToRelative(node) // convert image paths for gatsby images
 
-  if (node.internal.type === `MarkdownRemark`) {
+  if (node.internal.type === `MarkdownRemark` && node.frontmatter.variable_content) {
     const value = createFilePath({ node, getNode })
+   
     createNodeField({
       name: `slug`,
       node,
       value,
     })
+
     console.log("Netlify Debug - Video File:", node.videoFile);
+
+    node.frontmatter.variable_content.forEach((section, index) => {
+      if (section.images) {
+        section.images.forEach((image, imgIndex) => {
+          if (image.videoFile) {
+            const filePath = path.join(__dirname, "static/img", image.videoFile);
+            const fileNode = getNode(filePath);
+
+            if (fileNode) {
+              createParentChildLink({ parent: node, child: fileNode });
+            } else {
+              console.warn(`File not found: ${filePath}`);
+            }
+          }
+        });
+      }
+    });
   }
 }
 
@@ -106,7 +125,3 @@ exports.createSchemaCustomization = ({ actions }) => {
   `);
 };
 
-exports.onPostBootstrap = ({ getNodes }) => {
-  const markdownNodes = getNodes().filter(node => node.internal.type === "MarkdownRemark");
-  console.log("Netlify Debug - Markdown Nodes:", JSON.stringify(markdownNodes, null, 2));
-};
