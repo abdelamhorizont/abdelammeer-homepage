@@ -72,39 +72,18 @@ exports.createPages = ({ actions, graphql }) => {
   })
 }
 
-exports.onCreateNode = ({ node, actions,createNodeId, createContentDigest, getNode }) => {
-  const { createNodeField, createNode, createParentChildLink } = actions
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
   fmImagesToRelative(node) // convert image paths for gatsby images
 
-  if (node.internal.type === `MarkdownRemark` && node.frontmatter.variable_content) {
+  if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
-
-    console.log("Netlify Debug - Video File:", node.videoFile);
-
     createNodeField({
       name: `slug`,
       node,
       value,
     })
-  }
-
-  if (node.internal.type === `MarkdownRemark` && node.frontmatter.variable_content) {
-    node.frontmatter.variable_content.forEach((section, index) => {
-      if (section.images) {
-        section.images.forEach((image, imgIndex) => {
-          if (image.videoFile) {
-            const filePath = path.join(__dirname, "static/img", image.videoFile);
-            const fileNode = getNode(filePath);
-
-            if (fileNode) {
-              createParentChildLink({ parent: node, child: fileNode });
-            } else {
-              console.warn(`File not found: ${filePath}`);
-            }
-          }
-        });
-      }
-    });
+    console.log("Netlify Debug - Video File:", node.videoFile);
   }
 }
 
