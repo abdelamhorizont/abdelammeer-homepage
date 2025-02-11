@@ -91,8 +91,17 @@ exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
 
   createTypes(`
-    type MarkdownRemark implements Node {
+    type ImageType {
       videoFile: File @link(by: "relativePath")
+    }
+
+    type VariableContent {
+      images: [ImageType]
+    }
+
+    type MarkdownRemark implements Node {
+      cover_image: ImageType
+      variable_content: VariableContent
     }
   `);
 };
