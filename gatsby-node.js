@@ -105,3 +105,8 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
   `);
 };
+
+exports.onPostBootstrap = ({ getNodes }) => {
+  const markdownNodes = getNodes().filter(node => node.internal.type === "MarkdownRemark");
+  console.log("Netlify Debug - Markdown Nodes:", JSON.stringify(markdownNodes, null, 2));
+};
