@@ -83,6 +83,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       value,
     })
+    console.log("Netlify Debug - Video File:", node.videoFile);
   }
 }
 

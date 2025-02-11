@@ -7,4 +7,3 @@
 - backend style
 
 - debug:
-    - problem might come from live backend, try achieving build through remive videoFile (and imageFile) and then updating the backend
