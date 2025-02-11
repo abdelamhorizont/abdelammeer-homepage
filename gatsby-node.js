@@ -78,12 +78,6 @@ exports.onCreateNode = ({ node, actions,createNodeId, createContentDigest, getNo
 
   if (node.internal.type === `MarkdownRemark` && node.frontmatter.variable_content) {
     const value = createFilePath({ node, getNode })
-   
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    })
 
     console.log("Netlify Debug - Video File:", node.videoFile);
 
@@ -103,6 +97,12 @@ exports.onCreateNode = ({ node, actions,createNodeId, createContentDigest, getNo
         });
       }
     });
+
+    createNodeField({
+      name: `slug`,
+      node,
+      value,
+    })
   }
 }
 
