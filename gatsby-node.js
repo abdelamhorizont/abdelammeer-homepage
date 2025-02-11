@@ -81,6 +81,14 @@ exports.onCreateNode = ({ node, actions,createNodeId, createContentDigest, getNo
 
     console.log("Netlify Debug - Video File:", node.videoFile);
 
+    createNodeField({
+      name: `slug`,
+      node,
+      value,
+    })
+  }
+
+  if (node.internal.type === `MarkdownRemark` && node.frontmatter.variable_content) {
     node.frontmatter.variable_content.forEach((section, index) => {
       if (section.images) {
         section.images.forEach((image, imgIndex) => {
@@ -97,12 +105,6 @@ exports.onCreateNode = ({ node, actions,createNodeId, createContentDigest, getNo
         });
       }
     });
-
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    })
   }
 }
 
