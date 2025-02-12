@@ -25,7 +25,6 @@ const ImageSection = ({ content, type }) => {
   const navigationPrevRef = React.useRef(null)
   const navigationNextRef = React.useRef(null)
 
-  // console.log(content);
 
 
   return (
@@ -36,10 +35,10 @@ const ImageSection = ({ content, type }) => {
           <iframe src={content.iframe_link} frameborder="100px"></iframe>
         :
           // type == "video" ?
-        content?.newVideoFile != null ?          
+        ( content?.videoFile) != null ?          
             <div className="video-section">
-              <video key={content?.newVideoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline>
-                <source src={content?.newVideoFile?.publicURL} type="video/mp4" />
+              <video key={content?.newVideoFile?.publicURL || content?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline>
+                <source src={content?.newVideoFile?.publicURL || content?.videoFile?.publicURL} type="video/mp4" />
               </video>
               {/* <p className="caption">{content?.caption}</p> */}
             </div>
@@ -64,11 +63,11 @@ const ImageSection = ({ content, type }) => {
                             <p className="caption">{image?.caption}</p>
                           </div>
                           :
-                          image.type == "newVideo" ?
+                          image.type == ("newVideo" || "video") ?
                             <div className="video-section">
-                              <video key={image?.newVideoFile?.publicURL} autoPlay muted loop controls>
+                              <video key={image?.newVideoFile?.publicURL || image?.videoFile?.publicURL} autoPlay muted loop controls>
                                 {/* <video key={image?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline> */}
-                                <source src={image?.newVideoFile?.publicURL} type="video/mp4" />
+                                <source src={image?.newVideoFile?.publicURL || image?.videoFile?.publicURL} type="video/mp4" />
                                 {/* <source src={image?.videoFile} type="video/mp4" /> */}
                               </video>
                               <p className="caption">{image?.caption}</p>
