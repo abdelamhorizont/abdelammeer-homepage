@@ -1,5 +1,22 @@
 ---
 templateKey: blog-post
+title section:
+  date: 2022-09-30T22:00:00.000Z
+  title: (Non) Artificial (Maybe) Intelligence
+  type: blog
+  location: HfG Karlsruhe
+  images: []
+  format: Seminar
+cover_image:
+  - type: image
+    imageFile: download.png
+    caption: created by Kristian Vrhar on stable diffusion
+title: (Non) Artificial (Maybe) Intelligence
+Description: What and who and how and why? So many questions around AI, tools,
+  models and training Data, possibilities, limitations and risks. Using these
+  technologies to comment on the very same ones through the lenses of history,
+  politics, society, culture and science we approached this with humour as a
+  high order maybe-intelligence.
 variable-content:
   - type: image-section
     column-start: "5"
@@ -355,30 +372,4 @@ variable-content:
     column-end: "13"
     big-size: false
     title: Projects
-projectInfos: >-
-  \
-
-  What and who and how and why? We will examine various AI tools, models and training Data, define possibilities, limitations and risks and use these technologies to comment on the very same ones through the lenses of history, politics, society, culture and science. We will approach this with stupidity as a high order maybe-intelligence.
-title section:
-  date: 2022-09-30T22:00:00.000Z
-  title: (Non) Artificial (Maybe) Intelligence
-  type: blog
-  location: HfG Karlsruhe
-  images: []
-  format: Seminar
-cover_image:
-  - type: image
-    imageFile: download.png
-    caption: created by Kristian Vrhar on stable diffusion
-location: HfG Karlsruhe
-cover:
-  fallbackImage: download.png
-  caption: created by Kristian Vrhar on stable diffusion
-title: (Non) Artificial (Maybe) Intelligence
-type: "Seminar "
-Description: What and who and how and why? So many questions around AI, tools,
-  models and training Data, possibilities, limitations and risks. Using these
-  technologies to comment on the very same ones through the lenses of history,
-  politics, society, culture and science we approached this with humour as a
-  high order maybe-intelligence.
 ---
