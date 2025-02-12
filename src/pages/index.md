@@ -50,28 +50,28 @@ variable-content:
         reference: Deep Sea Bots
     reference-section-type: blog
     references:
+      - type: blog-reference
+        reference: Mare Mediterraneum
+      - type: blog-reference
+        reference: Spawn Grounds
+      - type: blog-reference
+        reference: (Non) Artificial (Maybe) Intelligence
+      - type: space-reference
+        reference: deep sea bots
+      - type: blog-reference
+        reference: "Typography 1: Letters"
       - type: work-reference
         full-width: false
         reference: Five in your Eyes
       - type: work-reference
         full-width: false
         reference: Living Systems
-      - type: blog-reference
-        reference: Mare Mediterraneum
-      - type: blog-reference
-        reference: Spawn Grounds
-      - type: space-reference
-        reference: deep sea bots
-      - type: blog-reference
-        reference: (Non) Artificial (Maybe) Intelligence
       - type: work-reference
         full-width: false
         reference: Narrating Africa
       - type: work-reference
         full-width: false
         reference: ABK Stuttgart
-      - type: blog-reference
-        reference: "Typography 1: Letters"
       - type: space-reference
         reference: Ocean View
       - type: work-reference
