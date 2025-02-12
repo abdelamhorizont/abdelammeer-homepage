@@ -348,6 +348,26 @@ collections:
                                 },
                               ],
                           },
+                          {
+                            label: "NewVideo",
+                            name: "newVideo",
+                            widget: "object",
+                            fields:
+                              [
+                                {
+                                  label: "New Video File",
+                                  name: "newVideoFile",
+                                  widget: "file",
+                                  required: false,
+                                },
+                                {
+                                  label: "Caption",
+                                  name: "caption",
+                                  widget: "string",
+                                  required: false,
+                                },
+                              ],
+                          },
                         ],
                     },
                   ],
@@ -1175,6 +1195,26 @@ collections:
                                 {
                                   label: "Video File",
                                   name: "videoFile",
+                                  widget: "file",
+                                  required: false,
+                                },
+                                {
+                                  label: "Caption",
+                                  name: "caption",
+                                  widget: "string",
+                                  required: false,
+                                },
+                              ],
+                          },
+                          {
+                            label: "NewVideo",
+                            name: "newVideo",
+                            widget: "object",
+                            fields:
+                              [
+                                {
+                                  label: "New Video File",
+                                  name: "newVideoFile",
                                   widget: "file",
                                   required: false,
                                 },
