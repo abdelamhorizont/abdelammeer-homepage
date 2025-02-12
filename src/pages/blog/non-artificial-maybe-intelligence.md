@@ -5,9 +5,9 @@ variable-content:
     column-start: "5"
     column-end: "10"
     images:
-      - type: video
-        videoFile: non-artificial-maybe-intelligence_intro_low.mp4
+      - type: newVideo
         caption: Seminar Trailer
+        newVideoFile: non-artificial-maybe-intelligence_intro_low.mp4
   - type: text-section
     big-size: false
     text: >-
@@ -359,13 +359,6 @@ projectInfos: >-
   \
 
   What and who and how and why? We will examine various AI tools, models and training Data, define possibilities, limitations and risks and use these technologies to comment on the very same ones through the lenses of history, politics, society, culture and science. We will approach this with stupidity as a high order maybe-intelligence.
-title section:
-  date: 2022-09-30T22:00:00.000Z
-  title: (Non) Artificial (Maybe) Intelligence
-  type: blog
-  location: HfG Karlsruhe
-  images: []
-  format: Seminar
 cover_image:
   - type: image
     imageFile: download.png
@@ -376,6 +369,13 @@ cover:
   caption: created by Kristian Vrhar on stable diffusion
 title: (Non) Artificial (Maybe) Intelligence
 type: "Seminar "
+title section:
+  date: 2022-09-30T22:00:00.000Z
+  title: (Non) Artificial (Maybe) Intelligence
+  type: blog
+  location: HfG Karlsruhe
+  images: []
+  format: Seminar
 Description: What and who and how and why? So many questions around AI, tools,
   models and training Data, possibilities, limitations and risks. Using these
   technologies to comment on the very same ones through the lenses of history,
