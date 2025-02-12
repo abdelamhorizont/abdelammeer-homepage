@@ -22,8 +22,8 @@ variable-content:
     column-start: "5"
     column-end: "10"
     images:
-      - type: video
-        videoFile: non-artificial-maybe-intelligence_intro_low.mp4
+      - type: newVideo
+        newVideoFile: non-artificial-maybe-intelligence_intro_low.mp4
         caption: Seminar Trailer
   - type: text-section
     big-size: false
