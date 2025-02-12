@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 
 import Layout from "../components/layout/Layout";
 import { ProjectPreview } from '../components/project/projectPreview';
+import ImageSection from "../components/content/image-section";
 
 import '../styles/reset.css'
 import '../styles/global.scss'
@@ -74,7 +75,7 @@ const IndexPage = ({ data }) => {
                             const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.title == node.reference)[0]
                             // const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.templateKey == ('blog-post' || 'work-post' || 'space-post')).filter(edge => edge.node.frontmatter.title == node.reference)[0]
                             // console.log(project?.node?.frontmatter?.title);
-                            
+
                             return (
                               <motion.div
                                 variants={item}
@@ -95,28 +96,9 @@ const IndexPage = ({ data }) => {
 
               if (content.type == "image-section") {
                 return (
-                  <>
-                    {
-                      content.reference_section_type == ("blog" || "work") ?
-                        <>
-                          {content.references?.map((node) => {
-                            const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.title == node.reference)[0]
-                            
-                            return (
-                              <motion.div
-                                variants={item}
-                                // clasName={'post-link'}
-                                className={project?.node?.frontmatter?.title_section?.type + ' post-link'}
-                              >
-                                <ProjectPreview content={project?.node} />
-                              </motion.div>
-                            )
-                          })}
-                        </>
-                        :
-                        <div></div>
-                    }
-                  </>
+                  <div className="cover-image">
+                    <ImageSection type={"carousel"} content={content.images} columnStart={1} columnEnd={12} />
+                  </div>
                 )
               }
 
