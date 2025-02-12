@@ -9,9 +9,6 @@ title section:
   images: []
   format: Identity
 cover_image:
-  - type: video
-    videoFile: /img/16.mp4
-    caption: ABK Stuttgart Products
   - type: image
     imageFile: /img/1.jpg
     caption: Overview
@@ -42,9 +39,6 @@ variable-content:
   - type: image-section
     title: Design Manual
     images:
-      - type: video
-        videoFile: /img/14b.mp4
-        caption: Design Manual
       - type: newVideo
         newVideoFile: /img/14b.mp4
         caption: Design Manual
