@@ -93,6 +93,33 @@ const IndexPage = ({ data }) => {
                 )
               }
 
+              if (content.type == "image-section") {
+                return (
+                  <>
+                    {
+                      content.reference_section_type == ("blog" || "work") ?
+                        <>
+                          {content.references?.map((node) => {
+                            const project = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.title == node.reference)[0]
+                            
+                            return (
+                              <motion.div
+                                variants={item}
+                                // clasName={'post-link'}
+                                className={project?.node?.frontmatter?.title_section?.type + ' post-link'}
+                              >
+                                <ProjectPreview content={project?.node} />
+                              </motion.div>
+                            )
+                          })}
+                        </>
+                        :
+                        <div></div>
+                    }
+                  </>
+                )
+              }
+
             })
           }
         </motion.ul>
@@ -118,6 +145,18 @@ export const pageQuery = graphql`
           references {
             reference
             type
+          }
+          images {
+            caption
+            type
+            imageFile {
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
+            videoFile {
+              publicURL
+            }
           }
           type
           reference_section_type
