@@ -42,9 +42,6 @@ variable-content:
   - type: image-section
     title: Design Manual
     images:
-      - type: video
-        videoFile: /img/14b.mp4
-        caption: Design Manual
       - type: newVideo
         newVideoFile: /img/14b.mp4
         caption: Design Manual
