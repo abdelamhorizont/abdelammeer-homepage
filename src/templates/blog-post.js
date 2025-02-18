@@ -96,7 +96,9 @@ export const pageQuery = graphql`
                   gatsbyImageData
                 }
               }
-    
+              videoFile {
+                publicURL
+              }
         }
         Description
         variable_content {
