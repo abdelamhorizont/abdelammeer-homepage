@@ -136,7 +136,9 @@ export const pageQuery = graphql`
                 gatsbyImageData
               }
             }
-
+            videoFile {
+              publicURL
+            }
           }
           type
           reference_section_type
