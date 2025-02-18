@@ -23,7 +23,7 @@ variable-content:
         imageFile: /img/collage-3.jpg
         caption: 5 in your eyes Talismans
       - type: video
-        videoFile: /img/tiefseebot_preview.mp4
+        videoFile: ""
         caption: tiefseebot_preview
       - type: video
         videoFile: ""
