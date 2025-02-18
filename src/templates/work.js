@@ -139,9 +139,7 @@ export const pageQuery = graphql`
                   gatsbyImageData
                 }
               }
-              videoFile {
-                publicURL
-              }
+        
             }
             title_section {
               title
