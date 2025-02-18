@@ -26,13 +26,13 @@ variable-content:
         videoFile: /img/tiefseebot_preview.mp4
         caption: tiefseebot_preview
       - type: video
-        videoFile: /img/abdel_butterfly_1.mp4
+        videoFile: ""
         caption: artificial butterfly
       - type: video
-        videoFile: /img/ocean-view-reel-1.mp4
+        videoFile: ""
         caption: ocean-view-reel
       - type: video
-        videoFile: /img/ocean-view-reel-2.mp4
+        videoFile: ""
         caption: ocean-view-reel
   - type: text-section
     column-start: "1"
