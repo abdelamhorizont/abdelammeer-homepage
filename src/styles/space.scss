@@ -1,6 +1,7 @@
    .space {
        grid-column: span 2;
        padding: 0rem 0.5rem;
+       margin-top: 1rem;
 
        h2 {
            background-color: rgb(134, 134, 255);
@@ -92,8 +93,8 @@
        }
 
        .cover-image {
-           height: 40vh;
-           width: 50vw;
+           height: 60vh;
+           width: 70vw;
 
            overflow: hidden;
 
@@ -116,7 +117,7 @@
            }
 
            video{
-            width: 50vw;
+            width: 70vw;
            }
 
        }
@@ -410,7 +411,7 @@
     .deep-sea-bots  {
         .postcover{
             .cover-image{
-                padding-top: 25rem;
+                // padding-top: 25rem;
 
             }
         }

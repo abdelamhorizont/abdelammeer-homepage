@@ -12,9 +12,12 @@
         grid-template-columns: repeat(2, 1fr);
         // gap: 2rem 0rem;
 
-        .post-link {
-            // grid-column: span 1;
-        }
+       .vibes-swiper{
+        width: 100%;
+        overflow: hidden;
+        grid-column: span 2;
+
+       }
  
     }
     

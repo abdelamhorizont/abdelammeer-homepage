@@ -96,7 +96,7 @@ const IndexPage = ({ data }) => {
 
               if (content.type == "image-section") {
                 return (
-                  <div className="cover-image">
+                  <div className="vibes-swiper">
                     <ImageSection type={"carousel"} content={content.images} columnStart={1} columnEnd={12} />
                   </div>
                 )

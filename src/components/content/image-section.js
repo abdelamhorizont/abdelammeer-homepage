@@ -112,7 +112,6 @@ const ImageSection = ({ content, type }) => {
                   {
                     content?.map((image) => {
                       const myimg = getImage(image.imageFile)
-                      console.log(content);
 
                       return (
                         image?.videoFile != null ?
