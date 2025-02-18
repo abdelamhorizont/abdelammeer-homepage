@@ -9,6 +9,9 @@ title section:
   images: []
   format: Identity
 cover_image:
+  - type: video
+    videoFile: /img/16.mp4
+    caption: presentation video
   - type: image
     imageFile: /img/1.jpg
     caption: Overview
