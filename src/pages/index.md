@@ -22,18 +22,6 @@ variable-content:
       - type: image
         imageFile: /img/collage-3.jpg
         caption: 5 in your eyes Talismans
-      - type: video
-        videoFile: ""
-        caption: tiefseebot_preview
-      - type: video
-        videoFile: ""
-        caption: artificial butterfly
-      - type: video
-        videoFile: ""
-        caption: ocean-view-reel
-      - type: video
-        videoFile: ""
-        caption: ocean-view-reel
   - type: text-section
     column-start: "1"
     column-end: "13"
