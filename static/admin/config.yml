@@ -1419,6 +1419,46 @@ collections:
                                     },
                                   ],
                               },
+                              {
+                                label: "iFrame",
+                                name: "iFrame",
+                                widget: "object",
+                                fields:
+                                  [
+                                    {
+                                      label: "iFrame Link",
+                                      name: "iFrame-link",
+                                      widget: "string",
+                                      required: false,
+                                    },
+                                    {
+                                      label: "Caption",
+                                      name: "caption",
+                                      widget: "string",
+                                      required: false,
+                                    },
+                                  ],
+                              },
+                              {
+                                label: "NewVideo",
+                                name: "newVideo",
+                                widget: "object",
+                                fields:
+                                  [
+                                    {
+                                      label: "New Video File",
+                                      name: "newVideoFile",
+                                      widget: "file",
+                                      required: false,
+                                    },
+                                    {
+                                      label: "Caption",
+                                      name: "caption",
+                                      widget: "string",
+                                      required: false,
+                                    },
+                                  ],
+                              },
                             ],
                         },
                       ],
