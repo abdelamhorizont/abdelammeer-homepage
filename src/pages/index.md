@@ -23,7 +23,7 @@ variable-content:
         imageFile: /img/gm1.jpg
         caption: Gleismediale
       - type: image
-        imageFile: /img/narrating-africa-3.jpg
+        imageFile: /img/narrating-africa-4.jpg
         caption: Narrating Africa
       - type: image
         imageFile: /img/img_5149.jpg
