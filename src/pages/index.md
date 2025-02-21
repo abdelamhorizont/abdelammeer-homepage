@@ -26,14 +26,14 @@ variable-content:
         imageFile: /img/narrating-africa-3.jpg
         caption: Narrating Africa
       - type: image
+        imageFile: /img/img_5149.jpg
+        caption: Living Systems
+      - type: image
         imageFile: /img/narrating-namibia-1.jpg
         caption: Narrating Namibia
       - type: video
         videoFile: /img/abdel_butterfly_1.mp4
         caption: New Normal
-      - type: image
-        imageFile: /img/img_5149.jpg
-        caption: Living Systems
       - type: image
         imageFile: /img/dsb_creatures.png
         caption: Deep Sea Bots
