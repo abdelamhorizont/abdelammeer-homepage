@@ -114,11 +114,11 @@ const ImageSection = ({ content, type }) => {
                       const myimg = getImage(image.imageFile)
 
                       return (
-                        image?.videoFile != null ?
+                        (image?.videoFile || image.newVideoFile) != null ?
                           <SwiperSlide className="swiper-slide" >
                             {/* <div className="video-section"> */}
-                            <video key={image?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline>
-                              <source src={image?.videoFile?.publicURL} type="video/mp4" />
+                            <video key={image?.videoFile?.publicURL || image?.newVideoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline>
+                              <source src={image?.videoFile?.publicURL || image?.newVideoFile?.publicURL} type="video/mp4" />
                             </video>
                             {/* </div> */}
                           </SwiperSlide>
