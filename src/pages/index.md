@@ -20,7 +20,7 @@ variable-content:
         imageFile: /img/img_5310.jpg
         caption: Systems Blue Collar Shirt
       - type: image
-        imageFile: /img/gm1.jpg
+        imageFile: /img/gleismediale-4.jpg
         caption: Gleismediale
       - type: image
         imageFile: /img/narrating-africa-4.jpg
