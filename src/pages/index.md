@@ -23,22 +23,22 @@ variable-content:
         imageFile: /img/gm1.jpg
         caption: Gleismediale
       - type: image
-        imageFile: /img/narrating-africa-3.jpg
+        imageFile: /img/narrating-africa-4.jpg
         caption: Narrating Africa
-      - type: image
-        imageFile: /img/narrating-namibia-1.jpg
-        caption: Narrating Namibia
-      - type: video
-        videoFile: /img/abdel_butterfly_1.mp4
-        caption: New Normal
       - type: image
         imageFile: /img/img_5149.jpg
         caption: Living Systems
       - type: image
+        imageFile: /img/narrating-namibia-1.jpg
+        caption: Narrating Namibia
+      - type: newVideo
+        newVideoFile: /img/abdel_butterfly_1.mp4
+        caption: New Normal
+      - type: image
         imageFile: /img/dsb_creatures.png
         caption: Deep Sea Bots
-      - type: video
-        videoFile: /img/tiefseebot_preview.mp4
+      - type: newVideo
+        newVideoFile: /img/tiefseebot_preview.mp4
         caption: Deep Sea Bots teaser
       - type: image
         imageFile: /img/narrating-namibia-10.jpg

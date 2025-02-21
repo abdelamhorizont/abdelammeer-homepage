@@ -8,7 +8,7 @@ title section:
   images: []
 cover_image:
   - type: image
-    imageFile: /img/collage-1.jpg
+    imageFile: /img/pendants-collage2.jpg
     caption: Amulets 1
   - type: image
     imageFile: /img/collage-3.jpg
