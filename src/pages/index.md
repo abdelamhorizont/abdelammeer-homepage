@@ -28,12 +28,12 @@ variable-content:
       - type: image
         imageFile: /img/img_5149.jpg
         caption: Living Systems
-      - type: image
-        imageFile: /img/narrating-namibia-1.jpg
-        caption: Narrating Namibia
       - type: newVideo
         newVideoFile: /img/abdel_butterfly_1.mp4
         caption: New Normal
+      - type: image
+        imageFile: /img/narrating-namibia-1.jpg
+        caption: Narrating Namibia
       - type: image
         imageFile: /img/dsb_creatures.png
         caption: Deep Sea Bots
@@ -73,26 +73,30 @@ variable-content:
         reference: (Non) Artificial (Maybe) Intelligence
       - type: space-reference
         reference: deep sea bots
-      - type: blog-reference
-        reference: "Typography 1: Letters"
       - type: work-reference
         full-width: false
         reference: Five in your Eyes
       - type: work-reference
         full-width: false
-        reference: Living Systems
+        reference: ABK Stuttgart
       - type: work-reference
         full-width: false
         reference: Narrating Africa
       - type: work-reference
         full-width: false
-        reference: ABK Stuttgart
-      - type: space-reference
-        reference: Ocean View
+        reference: Living Systems
+      - type: blog-reference
+        reference: "Typography 1: Letters"
+      - type: blog-reference
+        reference: "Typography 2: Instruction Manuals for Natural Phenomena"
+      - type: blog-reference
+        reference: Stronger with Games
       - type: work-reference
         full-width: false
         reference: Narrating Namibia
       - type: work-reference
         full-width: false
         reference: GleisMediale
+      - type: space-reference
+        reference: Ocean View
 ---
