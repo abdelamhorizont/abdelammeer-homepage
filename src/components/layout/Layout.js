@@ -20,9 +20,9 @@ const Layout = ({ children, activeSite }) => {
   // const [aboutOpen, setAboutOpen] = useState(false)
 
   const themes = [
+    'light-theme',
     'dark-theme',
     'color-theme',
-    'light-theme',
     'grey-theme',
   ]
 
