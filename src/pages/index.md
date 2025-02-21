@@ -8,20 +8,47 @@ variable-content:
   - type: image-section
     images:
       - type: image
-        imageFile: /img/collage-1.jpg
+        imageFile: /img/pendants-collage2.jpg
         caption: Amulets
+      - type: newVideo
+        newVideoFile: /img/16.mp4
+        caption: ABK Stuttgart Trailer
       - type: image
         imageFile: /img/cover-wide.jpg
         caption: Systems Screenprint
       - type: image
-        imageFile: /img/chain-cropped.jpg
-        caption: 5 in Your Eyes Necklace
-      - type: image
         imageFile: /img/img_5310.jpg
         caption: Systems Blue Collar Shirt
       - type: image
-        imageFile: /img/collage-3.jpg
-        caption: 5 in your eyes Talismans
+        imageFile: /img/gm1.jpg
+        caption: Gleismediale
+      - type: image
+        imageFile: /img/narrating-africa-3.jpg
+        caption: Narrating Africa
+      - type: image
+        imageFile: /img/narrating-namibia-1.jpg
+        caption: Narrating Namibia
+      - type: video
+        videoFile: /img/abdel_butterfly_1.mp4
+        caption: New Normal
+      - type: image
+        imageFile: /img/img_5149.jpg
+        caption: Living Systems
+      - type: image
+        imageFile: /img/dsb_creatures.png
+        caption: Deep Sea Bots
+      - type: video
+        videoFile: /img/tiefseebot_preview.mp4
+        caption: Deep Sea Bots teaser
+      - type: image
+        imageFile: /img/narrating-namibia-10.jpg
+        caption: Narrating Namibia 2
+      - type: image
+        imageFile: /img/narrating-africa-1.jpg
+        caption: Narrating Africa 2
+      - type: image
+        imageFile: /img/1.jpg
+        caption: ABK Stuttgart 2
   - type: text-section
     column-start: "1"
     column-end: "13"
