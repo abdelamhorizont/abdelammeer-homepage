@@ -17,9 +17,9 @@ body {
 .dark-theme {
    background-color: #232323;
    transition: all 1s ease;
-   color: #e8e6e6;
+   // color: #e8e6e6;
 
-   .work-page, .work-post, .blog-page, .blog-post, .space-page, .space-post, .work-section, .blog-section, .space-section{
+   .index-page, .work-page, .work-post, .blog-page, .blog-post, .space-page, .space-post, .work-section, .blog-section, .space-section{
       // background-image: linear-gradient(#232323);
    
       color: #e8e6e6;
@@ -30,13 +30,13 @@ body {
          color: #000000;
       }
 
+      a {
+         color: #e8e6e6;
+         transition: all 1s ease;
+      }
    
    }
    
-   a {
-      color: #e8e6e6;
-      transition: all 1s ease;
-   }
    
    .work-page {
       h1,
@@ -54,22 +54,20 @@ body {
 .grey-theme {
    background-color: #0d00ff;
    transition: all 1s ease;
-   a {
-      color: #4bbaff;
-      transition: all 1s ease;
-
-   }
    
-   .work-page, .work-post, .blog-page, .blog-post, .space-page, .space-post{
+   .work, .work-post, .blog, .blog-post, .space, .space-post{
       // background-image: linear-gradient(#6f6f6f00, #6f6f6f00);
-   
-      color: #4bbaff;
-      transition: all 1s ease;
-   
-      a {
+      
+      h1, h3, p{
          color: #4bbaff;
          transition: all 1s ease;
+         
       }
+
+      // a {
+      //    color: #4bbaff;
+      //    transition: all 1s ease;
+      // }
    }
    
    .work-page {
