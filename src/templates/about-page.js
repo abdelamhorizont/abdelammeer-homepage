@@ -14,6 +14,7 @@ import ImageSection from "../components/content/image-section";
 // import '../styles/typo.scss'
 
 import '../styles/about.scss'
+// import './content.scss'
 
 const AboutPage = ({ data }) => {
   const { frontmatter: post } = data.markdownRemark

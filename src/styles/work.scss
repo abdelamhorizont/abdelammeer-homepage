@@ -291,7 +291,7 @@
     .work-post {
         .postcover {
             // display: grid;
-            // grid-template-columns: auto auto 25vw;
+            grid-template-columns: auto auto 25vw;
             // flex: 1;
             // overflow: hidden;
             // width: 100%;
@@ -308,7 +308,7 @@
 
             .project-description {
                 grid-row: 3;
-                grid-column: span 3;
+                grid-column: span 6;
             }
 
             .type{

@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import { graphql, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-
 import Layout from "../components/layout/Layout";
 import TextSection, { HTMLContent } from "../components/content/text-section";
 import ImageSection from "../components/content/image-section";
+import { ProjectPreview } from '../components/project/projectPreview';
 
 import '../styles/blog.scss'
 
@@ -20,10 +20,13 @@ const BlogPost = ({ data }) => {
         <div className='postcover'>
           <h2 className="year"> {post.frontmatter.title_section.date} </h2>
           <div className="cover-image">
-            <GatsbyImage
+            {/* <GatsbyImage
               image={myimage}
               alt={''}
-            />
+            /> */}
+            {/* <ImageSection content={post.frontmatter?.cover_image[0]} /> */}
+            <ImageSection content={post.frontmatter?.cover_image[0]} columnStart={1} columnEnd={12} />
+
             <p className="caption">{post.frontmatter.cover_image[0]?.caption}</p>
           </div>
           <div className="project-description">
@@ -58,7 +61,7 @@ const BlogPost = ({ data }) => {
                     {content?.title &&
                       <h1 className="content-title">{content?.title}</h1>
                     }
-                    <ImageSection content={content} type={content.column_start ? "grid" : "" } />
+                    <ImageSection content={content} type={content.column_start ? "grid" : ""} />
                   </div>
                 )
               }
