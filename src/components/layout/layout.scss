@@ -170,3 +170,12 @@
 
 
 }
+
+@media screen and (max-width: 720px) {
+
+    #sun{
+        position: fixed;
+        top: 0.5rem;
+        left: 80vw;
+    }
+}

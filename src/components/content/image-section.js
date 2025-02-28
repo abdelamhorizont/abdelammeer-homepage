@@ -28,7 +28,7 @@ const ImageSection = ({ content, type }) => {
 
 
   return (
-    <div className={type == "grid" && "grid"}>
+    <div className={type == "grid" ? "grid" : "image-content"}>
       {
         // type == "iframe" ?
         content?.iframe_link != null ?
@@ -50,9 +50,7 @@ const ImageSection = ({ content, type }) => {
               // (content?.length > 1 && type == "grid") ?
         (type == ("" || "grid")) ?
                 content?.images?.map((image) => {
-                  const myimage = getImage(image?.imageFile)
-                  console.log(image);
-                  
+                  const myimage = getImage(image?.imageFile)                  
 
                   return (
                     // <div onClick={() => handleClick(i)}>
@@ -104,7 +102,7 @@ const ImageSection = ({ content, type }) => {
                   // initialSlide={0}
                   spaceBetween={0}
                   slidesPerView={'auto'}
-                  // centeredSlides
+                  centeredSlides
                   className="swiper"
                 // onClick={() => setimgClick(false)}
                 >
