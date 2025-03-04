@@ -67,7 +67,7 @@ const BlogPost = ({ data, location }) => {
                     {content?.title &&
                       <h1 className="content-title">{content?.title}</h1>
                     }
-                    <ImageSection content={content} type={content.column_start ? "grid" : "block"} />
+                    <ImageSection content={content} type={content.layout ? content.layout : "block"} />
                   </div>
                 )
               }
@@ -116,6 +116,7 @@ export const pageQuery = graphql`
           column_start
           text
           title
+          layout
           images {
             caption
             type
