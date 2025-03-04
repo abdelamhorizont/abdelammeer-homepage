@@ -50,16 +50,16 @@ const ImageSection = ({ content, type }) => {
                 {/* <p className="caption">{content?.caption}</p> */}
               </div>
               :
-              (content?.images.length == 1) && (content?.images[0]?.newVideoFile) != null ?
+              (content?.images?.length == 1) && (content?.images[0]?.newVideoFile) != null ?
               <div className="video-section">
-                <video key={content?.newVideoFile?.publicURL || content?.images[0]?.newVideoFile?.publicURL } muted autoPlay loop webkit-playsinline="true" playsInline>
+                <video key={content?.newVideoFile?.publicURL || content?.images[0]?.newVideoFile?.publicURL } autoPlay muted loop controls>
                   <source src={content?.newVideoFile?.publicURL || content?.images[0]?.newVideoFile?.publicURL } type="video/mp4" />
                 </video>
                 <p className="caption">{content?.images[0]?.caption}</p>
               </div>
               :
               // (content?.length > 1 && type == "grid") ?
-              (type == ( "grid")) ?
+              (type == ( "grid")) || (content?.images?.length > 1) ?
                 content?.images?.map((image) => {
                   const myimage = getImage(image?.imageFile)
 
