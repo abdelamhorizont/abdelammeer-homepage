@@ -36,14 +36,9 @@ variable-content:
       - type: image
         imageFile: bildschirmfoto-2023-04-06-um-17.33.16.png
         caption: COCO Common Objects in Contex
-    column-start: "1"
-    column-end: "4"
-    layout: block
-  - type: image-section
-    images:
       - type: image
-        imageFile: ai-questions.png
         caption: Questions to AI
+        imageFile: ai-questions.png
       - type: image
         imageFile: bildschirmfoto-2023-04-06-um-17.50.35.png
         caption: "Kimin : An image of sound as seen by a person with the ability to see
@@ -51,7 +46,6 @@ variable-content:
       - type: image
         imageFile: bildschirmfoto-2023-04-06-um-17.54.38.png
         caption: AI Visualisation by Rosa and Louise
-    title: ""
     column-start: "1"
     column-end: "4"
     layout: block
