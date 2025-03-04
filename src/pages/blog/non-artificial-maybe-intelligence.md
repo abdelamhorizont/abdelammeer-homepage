@@ -100,7 +100,8 @@ variable-content:
         imageFile: bildschirmfoto-2023-04-06-um-17.33.16.png
         caption: COCO Common Objects in Contex
     column-start: "1"
-    column-end: "13"
+    column-end: "4"
+    layout: block
   - type: image-section
     images:
       - type: image
@@ -115,7 +116,8 @@ variable-content:
         caption: AI Visualisation by Rosa and Louise
     title: ""
     column-start: "1"
-    column-end: "13"
+    column-end: "4"
+    layout: block
   - type: image-section
     images:
       - type: image
