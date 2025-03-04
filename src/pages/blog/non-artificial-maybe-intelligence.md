@@ -158,27 +158,27 @@ variable-content:
       - type: iFrame
         caption: "SIGNING SIGNING SIGNING by Anna Katalin Szilágyi "
         iFrame-link: https://editor.p5js.org/mivankata/full/dLqRQo3Gc
-      - type: video
-        videoFile: chiara-teaser_1.mp4
+      - type: newVideo
         caption: Uncanny Valley 700BC by Chiara Kern
+        newVideoFile: chiara-teaser_1.mp4
       - type: iFrame
         iFrame-link: https://ai-connection.netlify.app/
         caption: "AI Connection by Kristian Vrhar "
-      - type: video
-        videoFile: till_teaser_1.mp4
+      - type: newVideo
         caption: by Till Engelhardt
-      - type: video
-        videoFile: lu-kellert_finalfinal_1.mp4
+        newVideoFile: till_teaser_1.mp4
+      - type: newVideo
         caption: The Future of Creativity by Lu Kellert
-      - type: video
-        videoFile: teaser-final-maimouna-diop_1.mp4
+        newVideoFile: lu-kellert_finalfinal_1.mp4
+      - type: newVideo
         caption: Love and AI by Maïmouna Diop
-      - type: video
-        videoFile: róza-velkei_teaser_1.mp4
+        newVideoFile: teaser-final-maimouna-diop_1.mp4
+      - type: newVideo
         caption: AI for paintings by Róza Velkei
-      - type: video
-        videoFile: louisew_1min.mp4
+        newVideoFile: róza-velkei_teaser_1.mp4
+      - type: newVideo
         caption: Alternate Creativity by Louise Windenberger
+        newVideoFile: louisew_1min.mp4
     title: Student projects
   - type: text-section
     big-size: false
