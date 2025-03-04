@@ -15,12 +15,16 @@ variable-content:
       We read texts from ‚Undrowned‘, Black Feminist Lessons from Marine Mammals by Alexis Pauline Gumbs, listened to ‚Saying Water‘, a monologue by Roni Horn, followed investigations of Forensic Architecture and Migrant Journal, browsed through geographic maps, charts and data sources. — and then we went to the beach. I mean, we had to. We travelled to southern france work in Marseille and to visit Les Rencontres d’Arles.
     title: Overview
   - type: image-section
-    column-start: null
-    column-end: null
+    column-start: "3"
+    column-end: "12"
     images:
       - type: newVideo
         newVideoFile: installation_1.mp4
         caption: Scenography by Joanne, Jessica, Marc and Lena
+      - type: newVideo
+        caption: Seminar Documentation by Xenia, Charlotte, Maty , Eunchae and Rahel
+        newVideoFile: mare-mediterraneum_dokumentation_final-_1_1.mp4
+    title: ""
   - type: text-section
     big-size: false
     text: "> *„If you happen to be in the ocean and you see someone breathing, what
@@ -48,11 +52,6 @@ variable-content:
       * Excursion, ocean workshop, Les Rencontres d’Arles
 
       * presentation, installation, projection on materials
-  - type: image-section
-    images:
-      - type: newVideo
-        newVideoFile: mare-mediterraneum_dokumentation_final-_1_1.mp4
-        caption: Seminar Documentation by Xenia, Charlotte, Maty , Eunchae and Rahel
   - type: image-section
     column-start: "1"
     column-end: "13"
@@ -119,6 +118,8 @@ variable-content:
       >
       > Marc Bendt
     title: Participants
+    column-start: "1"
+    column-end: "7"
   - type: text-section
     big-size: false
     title: Ressources
@@ -140,6 +141,8 @@ variable-content:
       * [Mediterrenean Local musics (Spotify)](https://open.spotify.com/playlist/2RzJtMpbEZnSS5rfMt0qtZ?si=coP1wM08Rn6xrQfoNpyVcw&utm_source=copy-link)
 
       * Circle surfaces sun : from somewhere in the Mediterranean
+    column-start: "7"
+    column-end: "13"
 projectInfos: test
 date: 2023-04-01T14:22:36.721Z
 cover_image:
