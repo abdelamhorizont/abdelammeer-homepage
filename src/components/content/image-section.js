@@ -27,7 +27,7 @@ const ImageSection = ({ content, type }) => {
 
 
   return (
-    // <div className={type == "grid" ? "grid" : "image-content"}>
+    // <div className={type == "grid" ? "grid" : "block"}>
     <div className={type}>
       {/* <div className={"grid"}> */}
       {
