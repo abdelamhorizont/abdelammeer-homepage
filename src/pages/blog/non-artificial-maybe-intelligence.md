@@ -25,6 +25,36 @@ variable-content:
       - type: newVideo
         newVideoFile: non-artificial-maybe-intelligence_intro_low.mp4
         caption: Seminar Trailer
+  - type: image-section
+    images:
+      - type: image
+        imageFile: ai-dungeon.png
+        caption: AI Dungeon
+      - type: image
+        imageFile: bildschirmfoto-2023-04-06-um-17.26.17.png
+        caption: Google's Quickdraw
+      - type: image
+        imageFile: bildschirmfoto-2023-04-06-um-17.33.16.png
+        caption: COCO Common Objects in Contex
+    column-start: "1"
+    column-end: "4"
+    layout: block
+  - type: image-section
+    images:
+      - type: image
+        imageFile: ai-questions.png
+        caption: Questions to AI
+      - type: image
+        imageFile: bildschirmfoto-2023-04-06-um-17.50.35.png
+        caption: "Kimin : An image of sound as seen by a person with the ability to see
+          sound visually."
+      - type: image
+        imageFile: bildschirmfoto-2023-04-06-um-17.54.38.png
+        caption: AI Visualisation by Rosa and Louise
+    title: ""
+    column-start: "1"
+    column-end: "4"
+    layout: block
   - type: text-section
     big-size: false
     text: >-
@@ -88,36 +118,6 @@ variable-content:
     title: ""
     column-start: null
     column-end: null
-  - type: image-section
-    images:
-      - type: image
-        imageFile: ai-dungeon.png
-        caption: AI Dungeon
-      - type: image
-        imageFile: bildschirmfoto-2023-04-06-um-17.26.17.png
-        caption: Google's Quickdraw
-      - type: image
-        imageFile: bildschirmfoto-2023-04-06-um-17.33.16.png
-        caption: COCO Common Objects in Contex
-    column-start: "1"
-    column-end: "4"
-    layout: block
-  - type: image-section
-    images:
-      - type: image
-        imageFile: ai-questions.png
-        caption: Questions to AI
-      - type: image
-        imageFile: bildschirmfoto-2023-04-06-um-17.50.35.png
-        caption: "Kimin : An image of sound as seen by a person with the ability to see
-          sound visually."
-      - type: image
-        imageFile: bildschirmfoto-2023-04-06-um-17.54.38.png
-        caption: AI Visualisation by Rosa and Louise
-    title: ""
-    column-start: "1"
-    column-end: "4"
-    layout: block
   - type: image-section
     images:
       - type: image
