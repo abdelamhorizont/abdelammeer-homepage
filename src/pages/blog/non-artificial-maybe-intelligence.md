@@ -110,8 +110,8 @@ variable-content:
 
       **Day 7** Presentations
     title: ""
-    column-start: null
-    column-end: null
+    column-start: "5"
+    column-end: "11"
   - type: image-section
     images:
       - type: image
