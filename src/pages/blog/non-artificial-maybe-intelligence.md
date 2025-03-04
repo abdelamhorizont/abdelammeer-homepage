@@ -116,7 +116,8 @@ variable-content:
         caption: AI Visualisation by Rosa and Louise
     title: ""
     column-start: "1"
-    column-end: "13"
+    column-end: "4"
+    layout: block
   - type: image-section
     images:
       - type: image
