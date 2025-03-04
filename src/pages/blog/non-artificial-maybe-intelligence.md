@@ -101,6 +101,7 @@ variable-content:
         caption: COCO Common Objects in Contex
     column-start: "1"
     column-end: "13"
+    layout: block
   - type: image-section
     images:
       - type: image
