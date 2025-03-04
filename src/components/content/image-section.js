@@ -24,7 +24,6 @@ const ImageSection = ({ content, type }) => {
 
   const navigationPrevRef = React.useRef(null)
   const navigationNextRef = React.useRef(null)
-  console.log(content);
 
 
   return (

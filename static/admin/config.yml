@@ -240,6 +240,18 @@ collections:
                       required: false,
                     },
                     {
+                      label: "Layout",
+                      name: "layout",
+                      widget: "select",
+                      required: false,
+                      options:
+                        [
+                          "block",
+                          "grid",
+                          "carousel"
+                        ],
+                    },
+                    {
                       label: "Column Start",
                       name: "column-start",
                       widget: "select",
