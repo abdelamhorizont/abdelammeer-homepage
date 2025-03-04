@@ -38,7 +38,7 @@ variable-content:
         imageFile: /img/dsb_creatures.png
         caption: Deep Sea Bots
       - type: newVideo
-        newVideoFile: /img/tiefseebot_preview.mp4
+        newVideoFile: /img/tiefseebot_preview_cropped.mp4
         caption: Deep Sea Bots teaser
       - type: image
         imageFile: /img/narrating-namibia-10.jpg
