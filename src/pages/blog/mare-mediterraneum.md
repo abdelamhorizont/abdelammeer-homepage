@@ -25,6 +25,7 @@ variable-content:
         caption: Seminar Documentation by Xenia, Charlotte, Maty , Eunchae and Rahel
         newVideoFile: mare-mediterraneum_dokumentation_final-_1_1.mp4
     title: ""
+    layout: grid
   - type: text-section
     big-size: false
     text: "> *„If you happen to be in the ocean and you see someone breathing, what
@@ -65,6 +66,7 @@ variable-content:
       - type: newVideo
         newVideoFile: jessica.mp4
         caption: Work by Jessica
+    layout: grid
   - type: image-section
     column-start: "1"
     column-end: "13"
@@ -78,6 +80,7 @@ variable-content:
       - type: image
         imageFile: mare12.jpeg
         caption: Work by Lena
+    layout: grid
   - type: image-section
     column-start: "1"
     column-end: "13"
@@ -91,6 +94,7 @@ variable-content:
       - type: image
         imageFile: mare5.jpeg
         caption: Works by Paula and Eunchae
+    layout: grid
   - type: text-section
     big-size: false
     text: |-
