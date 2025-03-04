@@ -24,33 +24,44 @@ const ImageSection = ({ content, type }) => {
 
   const navigationPrevRef = React.useRef(null)
   const navigationNextRef = React.useRef(null)
-
+  console.log(content);
 
 
   return (
-    <div className={type == "grid" ? "grid" : "image-content"}>
+    // <div className={type == "grid" ? "grid" : "image-content"}>
+    <div className={type}>
+      {/* <div className={"grid"}> */}
       {
         // type == "iframe" ?
+        
         content?.iframe_link != null ?
           <iframe src={content.iframe_link} frameborder="100px"></iframe>
-        :
-          // type == "video" ?
-        ( content?.videoFile || content?.newVideoFile) != null ?          
-            <div className="video-section">
-              <video key={content?.newVideoFile?.publicURL || content?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline>
-                <source src={content?.newVideoFile?.publicURL || content?.videoFile?.publicURL} type="video/mp4" />
-              </video>
-              {/* <p className="caption">{content?.caption}</p> */}
-            </div>
-        :
-            // type == "image" ?
-        (content?.imageFile != null) ?
+          :
+          // type == "image" ?
+          (content?.imageFile != null) ?
             <GatsbyImage image={getImage(content?.imageFile)} alt={''} />
-        :
+            :
+            // type == "video" ?
+            (content?.videoFile) != null ?
+              <div className="video-section">
+                <video key={content?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline>
+                  <source src={content?.videoFile?.publicURL} type="video/mp4" />
+                </video>
+                {/* <p className="caption">{content?.caption}</p> */}
+              </div>
+              :
+              (content?.images.length == 1) && (content?.images[0]?.newVideoFile) != null ?
+              <div className="video-section">
+                <video key={content?.newVideoFile?.publicURL || content?.images[0]?.newVideoFile?.publicURL } muted autoPlay loop webkit-playsinline="true" playsInline>
+                  <source src={content?.newVideoFile?.publicURL || content?.images[0]?.newVideoFile?.publicURL } type="video/mp4" />
+                </video>
+                <p className="caption">{content?.images[0]?.caption}</p>
+              </div>
+              :
               // (content?.length > 1 && type == "grid") ?
-        (type == ("" || "grid")) ?
+              (type == ( "grid")) ?
                 content?.images?.map((image) => {
-                  const myimage = getImage(image?.imageFile)                  
+                  const myimage = getImage(image?.imageFile)
 
                   return (
                     // <div onClick={() => handleClick(i)}>
@@ -82,9 +93,9 @@ const ImageSection = ({ content, type }) => {
                     </>
                   )
                 })
-          :
+                :
                 // (content?.length > 1 && type == "carousel") &&
-          (type == "carousel") &&
+                (type == "carousel") &&
                 // <div onClick={() => handleClick(i)}>
                 <Swiper
                   // onSwiper={(swiper) => swiper.slideTo(index)}

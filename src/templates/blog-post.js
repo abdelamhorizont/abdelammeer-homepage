@@ -67,7 +67,7 @@ const BlogPost = ({ data, location }) => {
                     {content?.title &&
                       <h1 className="content-title">{content?.title}</h1>
                     }
-                    <ImageSection content={content} type={content.column_start ? "grid" : ""} />
+                    <ImageSection content={content} type={content.column_start ? "grid" : "image-content"} />
                   </div>
                 )
               }
