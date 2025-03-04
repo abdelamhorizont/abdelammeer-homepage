@@ -1,11 +1,5 @@
 ---
 templateKey: blog-post
-title section:
-  date: 2023-03-31T22:00:00.000Z
-  title: "MARE MEDITERRANEUM "
-  type: blog
-  images: []
-  format: Seminar
 variable-content:
   - type: text-section
     big-size: false
@@ -24,8 +18,8 @@ variable-content:
     column-start: null
     column-end: null
     images:
-      - type: video
-        videoFile: installation_1.mp4
+      - type: newVideo
+        newVideoFile: installation_1.mp4
         caption: Scenography by Joanne, Jessica, Marc and Lena
   - type: text-section
     big-size: false
@@ -158,6 +152,12 @@ title: Mare Mediterraneum
 tags:
   - All
 type: Seminar
+title section:
+  date: 2023-03-31T22:00:00.000Z
+  title: "MARE MEDITERRANEUM "
+  type: blog
+  images: []
+  format: Seminar
 Description: The Mediterranean Sea as a border, as a place, as a space - for
   wind, waves and ground, for journeys, for escape, for sea dwellers, cargo
   ships and narratives, for longing, for memories, for stagnation, for movement
