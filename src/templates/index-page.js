@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import { Link, graphql } from "gatsby";
 import { getImage, GatsbyImage } from "gatsby-plugin-image";
 import { motion } from "framer-motion"
@@ -16,7 +16,7 @@ import '../styles/space.scss'
 import '../styles/blog.scss'
 import '../styles/work.scss'
 
-const IndexPage = ({ data }) => {
+const IndexPage = ({ data, location }) => {
   const { frontmatter } = data.markdownRemark
   const page = {
     hidden: {
@@ -55,9 +55,21 @@ const IndexPage = ({ data }) => {
     visible: { scale: 1 },
     transition: { duration: 1 },
   }
+  const [theme, setTheme] = useState(location.state?.theme || 'light-theme')
+
+  const passTheme = (theme) => {
+    setTheme(theme)
+  }
+
+  useEffect(() => {
+    setTheme(theme)
+  }, [])
+
+    useMemo(() => theme, [theme])
+
 
   return (
-    <Layout>
+    <Layout colorTheme={theme} passTheme={passTheme}>
       <div className="index-page">
         <motion.ul className="section-list"
           initial="hidden"
@@ -82,7 +94,7 @@ const IndexPage = ({ data }) => {
                                 // clasName={'post-link'}
                                 className={project?.node?.frontmatter?.title_section?.type + ' post-link'}
                               >
-                                <ProjectPreview content={project?.node} />
+                                <ProjectPreview colorTheme={theme} content={project?.node} />
                               </motion.div>
                             )
                           })}

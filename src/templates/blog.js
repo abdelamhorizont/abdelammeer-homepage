@@ -15,7 +15,7 @@ import '../styles/space.scss'
 import '../styles/blog.scss'
 import '../styles/work.scss'
 
-const BlogPage = ({ data, theme }) => {
+const BlogPage = ({ data, location }) => {
   const { frontmatter } = data.markdownRemark
   const page = {
     hidden: {
@@ -55,8 +55,14 @@ const BlogPage = ({ data, theme }) => {
     transition: { duration: 1 },
   }
 
+  const [theme, setTheme] = useState(location.state?.theme || 'light-theme')
+
+  const passTheme = (theme) => {
+    setTheme(theme)
+  }
+
   return (
-    <Layout theme={theme}>
+    <Layout colorTheme={theme} passTheme={passTheme}>
       <div className="index-page">
       <div className="top-space"></div>
         <motion.ul className="section-list"
@@ -82,7 +88,7 @@ const BlogPage = ({ data, theme }) => {
                                 // clasName={'post-link'}
                                 className={project?.node?.frontmatter?.title_section?.type + ' post-link'}
                               >
-                                <ProjectPreview content={project?.node} />
+                                <ProjectPreview colorTheme={theme} content={project?.node} />
                               </motion.div>
                             )
                           })}

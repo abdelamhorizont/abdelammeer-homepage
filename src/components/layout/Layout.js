@@ -15,7 +15,7 @@ import Feuer from '../../assets/img/SVG/flame.png'
 
 import './layout.scss'
 
-const Layout = ({ children, activeSite }) => {
+const Layout = ({ children, activeSite, colorTheme, passTheme, location }) => {
   const { title, description } = useSiteMetadata();
   // const [aboutOpen, setAboutOpen] = useState(false)
 
@@ -27,15 +27,19 @@ const Layout = ({ children, activeSite }) => {
   ]
 
   // const [theme, setTheme] = useState(theme ? theme : themes[0])
-  const [theme, setTheme] = useState(themes[0])
+  const [theme, setTheme] = useState(colorTheme ? colorTheme : 'light-theme')
   const [themeCount, setthemeCount] = useState(0)
 
+  const handleTheme = (theme) => {
+    setTheme(theme)
+    passTheme(theme)
+  }
 
-  useMemo(() => themeCount, [theme])
+  // useMemo(() => themeCount, [theme])
 
-  useEffect(() => {
-    setTheme(themes[themeCount])
-  }, [themeCount])
+  // useEffect(() => {
+  //   setTheme(themes[themeCount])
+  // }, [themeCount])
 
 
   const variants = {
@@ -70,14 +74,14 @@ const Layout = ({ children, activeSite }) => {
         <nav className="nav-header">
           <div className="nav-group" >
             <ul className="nav-meta">
-              <li id='logo'><Link to="/">abdelammeer</Link></li>
-              <li><Link to="/about">about</Link></li>
+              <li id='logo'><Link state={{theme}} to="/">abdelammeer</Link></li>
+              <li><Link state={{theme}} to="/about">about</Link></li>
               <li><a href="mailto:hello@abdelammeer.com">@</a></li>
             </ul>
             <ul className="nav-sites">
-              <li className={`blog ${activeSite == 'blog' && 'border'}`}><Link theme={theme} to="/blog">blog</Link></li>
-              <li className={`space ${activeSite == 'space' && 'border'}`}><Link to="/space">space</Link></li>
-              <li className={`work ${activeSite == 'work' && 'border'}`}><Link to="/work">work</Link></li>
+              <li className={`blog ${activeSite == 'blog' && 'border'}`}><Link state={{theme}} to="/blog">blog</Link></li>
+              <li className={`space ${activeSite == 'space' && 'border'}`}><Link state={{theme}} to="/space">space</Link></li>
+              <li className={`work ${activeSite == 'work' && 'border'}`}><Link state={{theme}} to="/work">work</Link></li>
             </ul>
           </div>
 
@@ -89,23 +93,35 @@ const Layout = ({ children, activeSite }) => {
               // className={theme == 'dark-theme' && 'active-button'}
               animate={theme == 'dark-theme' ? "hover" : "default"}
               variants={ulHover}
-            ><button onClick={() => setTheme('dark-theme')}><img id="star" src={Star} alt="Dark Theme" /></button></motion.li>
+            ><button onClick={() => {
+              setTheme('dark-theme')
+              handleTheme('dark-theme')
+              }}><img id="star" src={Star} alt="Dark Theme" /></button></motion.li>
             <motion.li
               // className={theme == 'light-theme' && 'active-button'}
               animate={theme == 'light-theme' ? "hover" : "default"}
               variants={ulHover}
-            ><button onClick={() => setTheme('light-theme')}><img id="sun" src={Sun} alt="Light Theme" /></button></motion.li>
+            ><button onClick={() => {
+              setTheme('light-theme')
+              handleTheme('light-theme')
+              }}><img id="sun" src={Sun} alt="Light Theme" /></button></motion.li>
               <motion.li
                 // className={theme == 'grey-theme' && 'active-button'}
                 animate={theme == 'grey-theme' ? "hover" : "default"}
                 variants={ulHover}
-              ><button onClick={() => setTheme('grey-theme')}><img id="cloud" src={Cloud} alt="Grey Theme" /></button></motion.li>
+              ><button onClick={() => {
+                setTheme('grey-theme')
+                handleTheme('grey-theme')
+                }}><img id="cloud" src={Cloud} alt="Grey Theme" /></button></motion.li>
             <motion.li
               // className={theme == 'color-theme' && 'active-button'}
               animate={theme == 'color-theme' ? "hover" : "default"}
               variants={ulHover}
             >
-              <button onClick={() => setTheme('color-theme')}><img id="rainbow" src={Rainbow} alt="Color Theme" /></button>
+              <button onClick={() => {
+              setTheme('color-theme')
+              handleTheme('color-theme')
+              }}><img id="rainbow" src={Rainbow} alt="Color Theme" /></button>
             </motion.li>
           </motion.ul>
         </nav>
@@ -122,8 +138,8 @@ const Layout = ({ children, activeSite }) => {
         {/* </div> */}
 
         {/* <div className="nav-links-footer"> */}
-         <li> <Link to="/imprint">Imprint</Link></li>
-          <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+         <li> <Link state={{theme}} to="/imprint">Imprint</Link></li>
+          <li><Link state={{theme}} to="/privacy-policy">Privacy Policy</Link></li>
         {/* </div> */}
         </ul>
       </nav>

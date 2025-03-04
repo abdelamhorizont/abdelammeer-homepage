@@ -9,12 +9,18 @@ import { ProjectPreview } from '../components/project/projectPreview';
 
 import '../styles/blog.scss'
 
-const BlogPost = ({ data }) => {
+const BlogPost = ({ data, location }) => {
   const { markdownRemark: post } = data;
   const myimage = getImage(post.frontmatter?.cover_image[0]?.imageFile)
+  const [theme, setTheme] = useState(location.state?.theme || 'light-theme')
+
+  const passTheme = (theme) => {
+    setTheme(theme)
+  }
 
   return (
-    <Layout activeSite={'blog'}>
+    <Layout colorTheme={theme} passTheme={passTheme} activeSite={'blog'}>
+    {/* <Layout activeSite={'blog'}> */}
       <div className="blog-post">
 
         <div className='postcover'>

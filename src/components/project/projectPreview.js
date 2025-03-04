@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ImageSection from "../content/image-section";
 import { Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
@@ -11,9 +11,15 @@ import '../../styles/blog.scss'
 import '../../styles/space.scss'
 
 
-export function ProjectPreview({ content, type }) {
+export function ProjectPreview({ content, type, colorTheme }) {
+  const [theme, setTheme] = useState(colorTheme || 'light-theme')
+
+  const passTheme = (theme) => {
+    setTheme(theme)
+  }
+
   return (
-    <Link to={content?.fields?.slug} className={`${_.kebabCase(content?.frontmatter?.title)} project-preview`}>
+    <Link state={{theme}} to={content?.fields?.slug} className={`${_.kebabCase(content?.frontmatter?.title)} project-preview`}>
       <div className={"postcover"}>
         <h2 className="year">{content?.frontmatter?.title_section?.date}</h2>
 

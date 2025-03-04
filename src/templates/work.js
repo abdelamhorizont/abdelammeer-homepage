@@ -15,7 +15,7 @@ import '../styles/space.scss'
 import '../styles/blog.scss'
 import '../styles/work.scss'
 
-const WorkPage = ({ data }) => {
+const WorkPage = ({ data, location }) => {
   const { frontmatter } = data.markdownRemark
   const page = {
     hidden: {
@@ -55,8 +55,14 @@ const WorkPage = ({ data }) => {
     transition: { duration: 1 },
   }
 
+  const [theme, setTheme] = useState(location.state?.theme || 'light-theme')
+
+  const passTheme = (theme) => {
+    setTheme(theme)
+  }
+
   return (
-    <Layout>
+    <Layout colorTheme={theme} passTheme={passTheme}>
       <div className="index-page">
         <motion.ul className="section-list"
           initial="hidden"
