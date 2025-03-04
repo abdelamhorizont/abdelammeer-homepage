@@ -63,9 +63,6 @@ variable-content:
       - type: newVideo
         newVideoFile: marc.mp4
         caption: Work by Marc
-      - type: video
-        videoFile: jessica.mp4
-        caption: Work by Jessica
       - type: newVideo
         newVideoFile: jessica.mp4
         caption: Work by Jessica
