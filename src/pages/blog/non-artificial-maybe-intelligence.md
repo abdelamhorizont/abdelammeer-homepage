@@ -182,29 +182,29 @@ variable-content:
     big-size: false
     title: Participants
     text: |-
-      Francesco Perale 
-
-      Till Engelhardt 
-
-      Róza Velkei 
-
-      Louise Windenberger 
-
-      Tim Drekopf 
-
-      Maïmouna Nele Diop 
-
-      Chiara Kern 
-
-      Lu Kellert 
-
-      Joel Luca Sequeira Ferreira 
-
-      Anna Katalin Szilágyi 
-
-      Kimin Han 
-
-      Julia Ziegler
+      > Francesco Perale 
+      >
+      > Till Engelhardt 
+      >
+      > Róza Velkei 
+      >
+      > Louise Windenberger 
+      >
+      > Tim Drekopf 
+      >
+      > Maïmouna Nele Diop 
+      >
+      > Chiara Kern 
+      >
+      > Lu Kellert 
+      >
+      > Joel Luca Sequeira Ferreira 
+      >
+      > Anna Katalin Szilágyi 
+      >
+      > Kimin Han 
+      >
+      > Julia Ziegler
   - type: text-section
     text: >-
       ### Readings
