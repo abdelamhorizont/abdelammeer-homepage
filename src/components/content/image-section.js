@@ -35,7 +35,7 @@ const ImageSection = ({ content, type }) => {
           <iframe src={content.iframe_link} frameborder="100px"></iframe>
         :
           // type == "video" ?
-        ( content?.videoFile) != null ?          
+        ( content?.videoFile || content?.newVideoFile) != null ?          
             <div className="video-section">
               <video key={content?.newVideoFile?.publicURL || content?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline>
                 <source src={content?.newVideoFile?.publicURL || content?.videoFile?.publicURL} type="video/mp4" />
