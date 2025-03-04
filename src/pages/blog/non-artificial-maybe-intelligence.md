@@ -47,7 +47,7 @@ variable-content:
         imageFile: bildschirmfoto-2023-04-06-um-17.54.38.png
         caption: AI Visualisation by Rosa and Louise
     column-start: "1"
-    column-end: "4"
+    column-end: "5"
     layout: block
   - type: text-section
     big-size: false
@@ -224,7 +224,7 @@ variable-content:
 
       <https://www.lesswrong.com/tag/ai>\
 
-      "LessWrong is an online forum and community dedicated to improving human reasoning and decision-making" - about page
+      "LessWrong is an online forum and community dedicated to improving human reasoning and decision-making"
 
 
       <https://www.alignmentforum.org/>\
@@ -246,19 +246,17 @@ variable-content:
 
       Excavating AI - The Politics of Images in Machine Learning Training Sets \
 
-      By Kate Crawford and Trevor Paglen   
+      By Kate Crawford and Trevor Paglen   \
+
+      \
+
+      [Machine Unlearning: Decolonial Thinking in the Age of AI](https://www.youtube.com/watch?v=6vMKJPLNfAE&ab_channel=KIMHfG)
 
 
-      <https://www.youtube.com/watch?v=6vMKJPLNfAE&ab_channel=KIMHfG>\
-
-      Machine Unlearning: Decolonial Thinking in the Age of AI
-
-
+      [](https://www.youtube.com/watch?v=6vMKJPLNfAE&ab_channel=KIMHfG)
 
 
       ### T﻿echnical Explanations
-
-
 
 
       COCO\
@@ -266,47 +264,39 @@ variable-content:
       <https://cocodataset.org/#explore>
 
 
-      Neural Networks, mathematical explanation\
-
-      <https://www.youtube.com/watch?v=aircAruvnKk&list=RDCMUCYO_jab_esuFRV4b17AJtAw&start_radio=1&rv=aircAruvnKk&t=0>
+      [3Blue1Brown: But what is a neural network?](https://www.youtube.com/watch?v=aircAruvnKk&list=RDCMUCYO_jab_esuFRV4b17AJtAw&start_radio=1&rv=aircAruvnKk&t=0)
 
 
-      Image Classification with ml5 \
-
-      <https://www.youtube.com/watch?v=QEzRxnuaZCk&list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y&index=5>
+      [Image Classification with ml5 ](https://www.youtube.com/watch?v=QEzRxnuaZCk&list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y&index=5)
     column-start: "1"
     column-end: "5"
     title: Ressources
   - type: text-section
     text: >-
-      ## I﻿mage Generation
+      ### I﻿mage Generation
 
 
+      [Stable Diffusion](https://huggingface.co/spaces/stabilityai/stable-diffusion)
 
 
-      <https://huggingface.co/spaces/stabilityai/stable-diffusion>\
-
-      Stable Diffusion
-
-
-      <https://www.midjourney.com/home/>\
+      [M﻿idjourney](https://www.midjourney.com/home/)\
 
       text to image AI; Free Trial, Paid Subscription/Credit System afterwards (Discord Account required)
 
 
-      <https://www.craiyon.com/>\
+      [www.craiyon.com](https://www.craiyon.com/)\
 
       text to image AI; Free to use directly in the browser, kind of scuffed, more like a budget version of image AI 
 
 
-      <https://openai.com/dall-e-2/>\
+      [openai.com/dall-e-2/](https://openai.com/dall-e-2/)\
 
       creates an image based on your description, style of painting / colors / artistic movement, etc \
 
       (you must sign up and you receive 50 free credits)
 
 
-      <http://gaugan.org/gaugan2/>\
+      [gaugan.org/gaugan2/](http://gaugan.org/gaugan2/)\
 
       image generator,creates landscapes with the textures you add (glitchy but it makes it funny)
 
@@ -314,8 +304,6 @@ variable-content:
 
 
       ### M﻿odel Training
-
-
 
 
       <https://ml5js.org/>\
@@ -328,7 +316,7 @@ variable-content:
       Teachable Machine
 
 
-      <https://www.youtube.com/watch?v=ky5ZB-mqZKM>\
+      [www.youtube.com/watch?v=ky5ZB-mqZKM](https://www.youtube.com/watch?v=ky5ZB-mqZKM)\
 
       AI influencers are getting filthy rich... let's build one
 
@@ -336,8 +324,6 @@ variable-content:
 
 
       ### G﻿ames
-
-
 
 
       <https://play.aidungeon.io/main/home>\
@@ -353,19 +339,20 @@ variable-content:
     big-size: false
     title: AI Tools
   - type: text-section
-    text: |-
-      Deep Fakes\
-      <https://www.youtube.com/watch?v=yyFQPjIrnQE&ab_channel=LoloRick>\
-      <https://thisxdoesnotexist.com/>
+    text: >-
+      [Deepfake Queen 2020 Alternative Christmas Message
+      1](<https://www.youtube.com/watch?v=yyFQPjIrnQE&ab_channel=LoloRick>\
 
-      Eyeo 2018 - Rebecca Fiebrink:\
-      <https://vimeo.com/287094397>
+      <https://thisxdoesnotexist.com/>)[](https://www.youtube.com/@lolorick5885)
 
-      HYPERFACE\
-      <https://ahprojects.com/hyperface/>
 
-      Forensic Architecture\
-      <https://forensic-architecture.org/investigation/model-zoo>
+      [Eyeo 2018 - Rebecca Fiebrink](<https://vimeo.com/287094397>)
+
+
+      [HYPERFACE](https://ahprojects.com/hyperface/)
+
+
+      [](https://forensic-architecture.org/investigation/model-zoo)Forensic Architecture: Model Zoo
     column-start: "9"
     column-end: "13"
     big-size: false
