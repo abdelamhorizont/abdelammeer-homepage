@@ -47,7 +47,7 @@ variable-content:
         imageFile: bildschirmfoto-2023-04-06-um-17.54.38.png
         caption: AI Visualisation by Rosa and Louise
     column-start: "1"
-    column-end: "4"
+    column-end: "5"
     layout: block
   - type: text-section
     big-size: false
