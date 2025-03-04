@@ -1,5 +1,6 @@
 ---
 templateKey: blog-post
+title: (Non) Artificial (Maybe) Intelligence
 title section:
   date: 2022-09-30T22:00:00.000Z
   title: (Non) Artificial (Maybe) Intelligence
@@ -11,7 +12,6 @@ cover_image:
   - type: image
     imageFile: download.png
     caption: created by Kristian Vrhar on stable diffusion
-title: (Non) Artificial (Maybe) Intelligence
 Description: What and who and how and why? So many questions around AI, tools,
   models and training Data, possibilities, limitations and risks. Using these
   technologies to comment on the very same ones through the lenses of history,
@@ -152,9 +152,9 @@ variable-content:
       Lu"
   - type: image-section
     images:
-      - type: video
-        videoFile: teaser_1.mp4
+      - type: newVideo
         caption: Artificial Femininity by Julia Ziegler
+        newVideoFile: teaser_1.mp4
       - type: iFrame
         caption: "SIGNING SIGNING SIGNING by Anna Katalin Szilágyi "
         iFrame-link: https://editor.p5js.org/mivankata/full/dLqRQo3Gc
