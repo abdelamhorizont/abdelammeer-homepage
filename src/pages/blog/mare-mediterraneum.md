@@ -50,21 +50,21 @@ variable-content:
       * presentation, installation, projection on materials
   - type: image-section
     images:
-      - type: video
-        videoFile: mare-mediterraneum_dokumentation_final-_1_1.mp4
+      - type: newVideo
+        newVideoFile: mare-mediterraneum_dokumentation_final-_1_1.mp4
         caption: Seminar Documentation by Xenia, Charlotte, Maty , Eunchae and Rahel
   - type: image-section
     column-start: "1"
     column-end: "13"
     images:
-      - type: video
-        videoFile: matylda.mp4
+      - type: newVideo
+        newVideoFile: matylda.mp4
         caption: Work by Matylda
-      - type: video
-        videoFile: marc.mp4
+      - type: newVideo
+        newVideoFile: marc.mp4
         caption: Work by Marc
-      - type: video
-        videoFile: jessica.mp4
+      - type: newVideo
+        newVideoFile: jessica.mp4
         caption: Work by Jessica
   - type: image-section
     column-start: "1"
@@ -83,9 +83,9 @@ variable-content:
     column-start: "1"
     column-end: "13"
     images:
-      - type: video
-        videoFile: rahe-charlotte.mp4
+      - type: newVideo
         caption: Work by Charlotte & Rahel
+        newVideoFile: rahe-charlotte.mp4
       - type: image
         imageFile: mare4.jpeg
         caption: Work by Charlotte & Rahel
@@ -123,20 +123,21 @@ variable-content:
     big-size: false
     title: Ressources
     text: >-
-      * Roni Horn: (trigger warning: content on suicide and murder)
-      <https://www.youtube.com/watch?v=fkvoe7s1NVg&t=2345s&ab_channel=LouisianaChannel>
+      * [Roni Horn: Saying
+      Water](https://www.youtube.com/watch?v=fkvoe7s1NVg&t=2345s&ab_channel=LouisianaChannel)
+      (trigger warning: content on suicide and murder)
 
-      * Undrowned - Black Feminist Lessons from Marine Mammals by Alexis Pauline Gumbs <https://drive.google.com/drive/folders/1L34KxgyAd2I333AekdvBKbl9kYxsdJJC>
+      * Undrowned - Black Feminist Lessons from Marine Mammals by Alexis Pauline Gumbs [](https://drive.google.com/drive/folders/1L34KxgyAd2I333AekdvBKbl9kYxsdJJC)
 
-      * Forensic Architecture: [https://forensic-architecture.org/investigation/shipwreck-at-the-threshold-of-europe#:~:text=It sank 280m beyond the,reach EU shores by sea](https://forensic-architecture.org/investigation/shipwreck-at-the-threshold-of-europe#:~:text=It%20sank%20280m%20beyond%20the,reach%20EU%20shores%20by%20sea) (on the topic of migration on the Mediterranean Sea. TW: shipwreck, drowning)
+      * [Forensic Architecture: Shipwreck at the threshhold of europe](https://forensic-architecture.org/investigation/shipwreck-at-the-threshold-of-europe) (on the topic of migration on the Mediterranean Sea. TW: shipwreck, drowning) 
 
-      * Listen to the Deep: <http://www.listentothedeep.com/acoustics/index.php>
+      * [Listen to the Deep](http://www.listentothedeep.com/acoustics/index.php)
 
-      * Shipfinder: <https://shipfinder.co/?timeoutreturn=true>
+      * [Shipfinder](https://shipfinder.co/?timeoutreturn=true)
 
-      * David Rumsey Map Collection: <https://www.davidrumsey.com/home>
+      * [David Rumsey Map Collection](https://www.davidrumsey.com/home)
 
-      * Mediterrenean Local musics: <https://open.spotify.com/playlist/2RzJtMpbEZnSS5rfMt0qtZ?si=coP1wM08Rn6xrQfoNpyVcw&utm_source=copy-link>
+      * [Mediterrenean Local musics (Spotify)](https://open.spotify.com/playlist/2RzJtMpbEZnSS5rfMt0qtZ?si=coP1wM08Rn6xrQfoNpyVcw&utm_source=copy-link)
 
       * Circle surfaces sun : from somewhere in the Mediterranean
 projectInfos: test
