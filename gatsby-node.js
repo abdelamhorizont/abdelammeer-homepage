@@ -83,7 +83,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       value,
     })
-    console.log("Netlify Debug - Video File:", node.videoFile);
   }
 }
 
@@ -93,6 +92,10 @@ exports.createSchemaCustomization = ({ actions }) => {
   createTypes(`
     type ImageType {
       videoFile: File @link(by: "relativePath")
+    }
+
+    type GalleryImage {
+      imageFile: File @link(by: "relativePath")
     }
 
     type VariableContent {
