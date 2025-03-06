@@ -7,7 +7,7 @@ title section:
   format: Interactive Installation
 cover_image:
   - type: video
-    videoFile: /img/tiefseebot_preview.mp4
+    videoFile: /img/tiefseebot_preview_cropped.mp4
     caption: Deep sea bots preview
 Description: >-
   This installation is an interactive exploration of what kind of an appearance
@@ -29,6 +29,29 @@ variable-content:
     title: video
     images:
       - type: newVideo
+        newVideoFile: /img/anglerfisch.mp4
+        caption: Anglerfisch
+      - type: newVideo
         newVideoFile: /img/legehenne.mp4
         caption: legehenne
+      - type: newVideo
+        newVideoFile: /img/schneeeule.mp4
+        caption: Schneeeule
+    layout: grid
+    column-start: "1"
+    column-end: "13"
+  - type: image-section
+    layout: block
+    images:
+      - type: iFrame
+        iFrame-link: https://www.youtube.com/embed/ncz9mrj5VHA
+        caption: Presentation storyline
+  - type: image-section
+    layout: block
+    images:
+      - type: iFrame
+        iFrame-link: https://deep-sea-bots.netlify.app/
+        caption: the application, try it out!
+    column-start: "3"
+    column-end: "12"
 ---
