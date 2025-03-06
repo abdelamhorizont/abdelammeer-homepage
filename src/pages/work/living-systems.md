@@ -53,13 +53,18 @@ variable-content:
       - type: newVideo
         newVideoFile: /img/illus_2.mp4
         caption: Illustrations
+    title: Exhibition
+    layout: grid
+  - type: image-section
+    images:
       - type: image
-        imageFile: /img/img_5310.jpg
-        caption: Prints on shirt
+        imageFile: /img/dsc080574.jpg
+        caption: Screenprint during Residency at La Maldita Estampa in Barcelona
       - type: image
-        imageFile: /img/dsc080563.jpg
-        caption: Prints on shirt
+        imageFile: /img/img_4620.jpg
+        caption: Screenprints
     title: Residency
+    layout: grid
   - type: text-section
     big-size: false
     text: |-
@@ -70,9 +75,10 @@ variable-content:
   - type: image-section
     images:
       - type: image
-        imageFile: /img/dsc080574.jpg
-        caption: Screenprint during Residency at La Maldita Estampa in Barcelona
+        imageFile: /img/img_5310.jpg
+        caption: System Prints on Shirt
       - type: image
-        imageFile: /img/img_4620.jpg
-        caption: Screenprints
+        imageFile: /img/dsc080563.jpg
+        caption: System Prints on Shirt
+    layout: grid
 ---
