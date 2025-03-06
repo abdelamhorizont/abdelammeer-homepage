@@ -16,7 +16,7 @@ cover_image:
     imageFile: /img/1.jpg
     caption: Overview
   - type: image
-    imageFile: /img/img_0307.jpg
+    imageFile: /img/flags.jpg
     caption: Flags
   - type: image
     imageFile: /img/11.jpg
@@ -51,17 +51,4 @@ variable-content:
       guidelines and the handling of the elements, including logo, business
       card, letterhead, templates for Microsoft Word, Excel and PowerPoint,
       certificate, folder, stamp, as well as flags and janitorial clothing.
-  - type: image-section
-    column-start: "1"
-    column-end: "13"
-    images:
-      - type: image
-        imageFile: /img/11.jpg
-        caption: Logo Stamp
-      - type: image
-        imageFile: /img/7.jpg
-        caption: Logo positioning and letter paper layout
-      - type: image
-        imageFile: /img/4.jpg
-        caption: business cards
 ---
