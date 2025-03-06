@@ -18,15 +18,51 @@ variable-content:
       much of the natural feel to the movement.
   - type: image-section
     images:
-      - type: video
-        videoFile: /img/polydactyl-vertex-mozilla-firefox-2020-12-31-15-17-55_1.mp4
+      - type: newVideo
         caption: first experiments with animated drawing tool
+        newVideoFile: /img/polydactyl-vertex-mozilla-firefox-2020-12-31-15-17-55_1.mp4
   - type: text-section
     big-size: false
     text: The association to under water movement was not far here and thus the
       frogfish, not only does it embody a rawness, an alien and mysterious
       creature but also evoked digital associations to me through the electrical
       seeming lamp in the vast darkness of the deep sea.
+  - type: image-section
+    images:
+      - type: image
+        imageFile: /img/fisch-3000-moodboard.png
+        caption: first sketch
+  - type: image-section
+    column-start: "1"
+    column-end: "13"
+    images:
+      - type: image
+        imageFile: /img/wüste.png
+        caption: dessert
+      - type: image
+        imageFile: /img/pferd.png
+        caption: unicorn maybe?
+      - type: image
+        imageFile: /img/ozean.png
+        caption: ocean
+  - type: image-section
+    column-start: "1"
+    column-end: "13"
+    images:
+      - type: image
+        imageFile: /img/buch-4.-jan.-2024_seite_011.jpg
+        caption: deep sea sketches
+      - type: image
+        imageFile: /img/buch-4.-jan.-2024_seite_090.jpg
+        caption: character sketches
+      - type: image
+        imageFile: /img/buch-4.-jan.-2024_seite_077.jpg
+        caption: reactive illustrations concept
+  - type: image-section
+    images:
+      - type: newVideo
+        caption: teaser
+        newVideoFile: /img/tiefseebot_preview.mp4
   - type: text-section
     big-size: false
     text: >-
@@ -418,42 +454,6 @@ variable-content:
 
       > Dabei habe ich mich gefreut endlich mit jemandem zu reden.
     title: deep thoughts
-  - type: image-section
-    images:
-      - type: image
-        imageFile: /img/fisch-3000-moodboard.png
-        caption: first sketch
-  - type: image-section
-    column-start: "1"
-    column-end: "13"
-    images:
-      - type: image
-        imageFile: /img/wüste.png
-        caption: dessert
-      - type: image
-        imageFile: /img/pferd.png
-        caption: unicorn maybe?
-      - type: image
-        imageFile: /img/ozean.png
-        caption: ocean
-  - type: image-section
-    column-start: "1"
-    column-end: "13"
-    images:
-      - type: image
-        imageFile: /img/buch-4.-jan.-2024_seite_011.jpg
-        caption: deep sea sketches
-      - type: image
-        imageFile: /img/buch-4.-jan.-2024_seite_090.jpg
-        caption: character sketches
-      - type: image
-        imageFile: /img/buch-4.-jan.-2024_seite_077.jpg
-        caption: reactive illustrations concept
-  - type: image-section
-    images:
-      - type: video
-        videoFile: /img/tiefseebot_preview.mp4
-        caption: teaser
 projectInfos: test
 date: 2023-10-31T15:20:54.876Z
 title: deep sea bots
