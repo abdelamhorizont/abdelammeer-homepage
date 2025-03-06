@@ -279,11 +279,25 @@
         .postcover {
             width: 100vw;
             height: 45vh;
+            // display: grid;
+            // grid-template-columns: 1fr auto 1fr;
 
             .cover-image {                
                 width: 100vw;
                 height: 45vh;
+            }
 
+            .project-description {
+                h1{
+                    word-wrap: break-word;
+                }
+            }
+            
+            .type{
+                z-index: 2;
+                overflow: visible;
+                word-wrap: break-word;
+                width: 100vw;
             }
         }
     }

@@ -722,6 +722,18 @@ collections:
                         ],
                     },
                     {
+                      label: "Layout",
+                      name: "layout",
+                      widget: "select",
+                      required: false,
+                      options:
+                        [
+                          "block",
+                          "grid",
+                          "carousel"
+                        ],
+                    },
+                    {
                       label: "Images",
                       name: "images",
                       widget: "list",
@@ -1108,6 +1120,18 @@ collections:
                       name: "title",
                       widget: "string",
                       required: false,
+                    },
+                    {
+                      label: "Layout",
+                      name: "layout",
+                      widget: "select",
+                      required: false,
+                      options:
+                        [
+                          "block",
+                          "grid",
+                          "carousel"
+                        ],
                     },
                     {
                       label: "Column Start",

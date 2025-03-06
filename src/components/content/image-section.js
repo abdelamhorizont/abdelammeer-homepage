@@ -22,6 +22,13 @@ const ImageSection = ({ content, type }) => {
   // const [swiper, setSwiper] = useState(null);
   // const slideTo = (index) => swiper.slideTo(index);
 
+  const [mobile, setMobile] = useState(false)
+  React.useEffect(() => {
+    const isBrowser = () => typeof window !== `undefined`
+    window.addEventListener('resize', setMobile(isBrowser() && window.screen.width < 768))
+  }, [])
+
+
   const navigationPrevRef = React.useRef(null)
   const navigationNextRef = React.useRef(null)
 
@@ -112,7 +119,7 @@ const ImageSection = ({ content, type }) => {
                   // initialSlide={0}
                   spaceBetween={0}
                   slidesPerView={'auto'}
-                  centeredSlides
+                  centeredSlides={mobile}
                   className="swiper"
                 // onClick={() => setimgClick(false)}
                 >

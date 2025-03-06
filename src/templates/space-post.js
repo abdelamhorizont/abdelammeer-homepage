@@ -134,6 +134,9 @@ export const pageQuery = graphql`
                 gatsbyImageData
               }
             }
+            newVideoFile {
+              publicURL
+            }
           }
         }
       }

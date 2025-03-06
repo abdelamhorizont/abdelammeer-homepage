@@ -12,6 +12,7 @@ import '../styles/blog.scss'
 const BlogPost = ({ data, location }) => {
   const { markdownRemark: post } = data;
   const myimage = getImage(post.frontmatter?.cover_image[0]?.imageFile)
+  
   const [theme, setTheme] = useState(location.state?.theme || 'light-theme')
 
   const passTheme = (theme) => {
