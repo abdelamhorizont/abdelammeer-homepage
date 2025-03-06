@@ -35,4 +35,12 @@ Description: >-
   With music by @smerz_ @socialcontainer @hhy_and_tku Will Guthrie, @alpha_maid @_m.sayyid , @levingoeslightly @freybenedikt @leifmueller @zweilaster @yung_0bama @jlowrose @pumakuma @djtheory @sirousalex, Mati, @michel_oder_michael Diana Müller mit Markus Götze, Menja Stevenson
 
   with @jukus.stuttgart
+variable-content:
+  - type: image-section
+    layout: block
+    title: Artificial Butterfly
+    images:
+      - type: newVideo
+        newVideoFile: /img/abdel_butterfly_2.mp4
+        caption: Artificial Butterfly
 ---
