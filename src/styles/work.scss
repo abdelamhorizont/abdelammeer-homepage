@@ -227,7 +227,8 @@
             img,
             video {
                 // width: min-content;
-                height: 80vh;
+                // height: 70vh;
+                object-fit: contain;
                 // border-radius: 1rem;
             }
 
@@ -265,6 +266,19 @@
             grid-column: 4/11;
             margin-bottom: 4.5rem;
             font-size: 1.5rem;
+
+            ol {
+                font-size: 1.5rem;
+                line-height: 2rem;
+                margin: 3rem 0rem;
+                font-family: Kleukens;
+        
+                li {
+                    list-style-type: circle;
+                    list-style-position: inside;
+                    margin: 1rem 0rem;
+                }
+            }
         }
     }
 }
@@ -318,6 +332,14 @@
             .cover-image{
                 // grid-column: span 8;
                 height: 70vh;
+
+                img, video{
+                    height: 70vh;
+                }
+
+                .carousel{
+                    height: 100%;
+                }
             }
 
             .project-description {

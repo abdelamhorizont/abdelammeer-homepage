@@ -4,6 +4,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, A11y } from 'swiper';
+import Arrow from '../../assets/img/SVG/arrow.png'
 
 import './content.scss'
 import 'swiper/css'
@@ -151,8 +152,8 @@ const ImageSection = ({ content, type }) => {
                   }
 
                   <div className="swiper-buttons">
-                    <div ref={navigationPrevRef} className="swiper-button-prev">  </div>
-                    <div ref={navigationNextRef} className="swiper-button-next">  </div>
+                    <div ref={navigationPrevRef} className="swiper-button-prev"> <img id="arrow-left" src={Arrow} alt="Arrow" /> </div>
+                    <div ref={navigationNextRef} className="swiper-button-next"> <img id="arrow-right" src={Arrow} alt="Arrow" /> </div>
                   </div>
                 </Swiper>
       }
