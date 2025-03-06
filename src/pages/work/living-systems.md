@@ -11,6 +11,9 @@ cover_image:
   - type: image
     imageFile: /img/cover-wide.jpg
     caption: Monoprints
+  - type: image
+    imageFile: /img/img_5149.jpg
+    caption: Interactive Installation
   - type: video
     videoFile: /img/reel.mp4
     caption: Exhibition
@@ -26,9 +29,6 @@ cover_image:
   - type: image
     imageFile: /img/img_5310.jpg
     caption: screen printed shirt
-  - type: image
-    imageFile: /img/img_5149.jpg
-    caption: Interactive Installation
 Description: >-
   Living Systems, a simultion based on Conway‘s Game of Life for Kunstmuseum
   Stuttgart 
@@ -44,19 +44,35 @@ Description: >-
   3. every system with more than three neighbors disappears, as in the case of overpopulation.
 
   4. a new system is created with exactly three neighbors, as in reproduction.
-
-
-  feedback from Laura Wünsche and Stefan Stegmaier.
-
-  Technical installation and code support by Stefan Avramescu  
-
-
-  Currently on display in Studio 11 at the Kunstmuseum Stuttgart
 variable-content:
+  - type: image-section
+    images:
+      - type: newVideo
+        newVideoFile: /img/reel.mp4
+        caption: Exhibition view
+      - type: newVideo
+        newVideoFile: /img/illus_2.mp4
+        caption: Illustrations
+      - type: image
+        imageFile: /img/img_5310.jpg
+        caption: Prints on shirt
+      - type: image
+        imageFile: /img/dsc080563.jpg
+        caption: Prints on shirt
+    title: Residency
+  - type: text-section
+    big-size: false
+    text: |-
+      feedback from Laura Wünsche and Stefan Stegmaier.
+      Technical installation and code support by Stefan Avramescu  
+
+      Currently on display in Studio 11 at the Kunstmuseum Stuttgart
   - type: image-section
     images:
       - type: image
         imageFile: /img/dsc080574.jpg
-        caption: screen print
-    title: Residency
+        caption: Screenprint during Residency at La Maldita Estampa in Barcelona
+      - type: image
+        imageFile: /img/img_4620.jpg
+        caption: Screenprints
 ---
