@@ -9,6 +9,14 @@ cover_image:
   - type: video
     videoFile: /img/tiefseebot_preview_cropped.mp4
     caption: Deep sea bots preview
+  - type: image
+    imageFile: /img/dsb_creatures.png
+    caption: Overview
+  - type: video
+    videoFile: /img/dromedar_extra.mp4
+    caption: Dromedar
+  - type: video
+    videoFile: /img/dissolve.mp4
 Description: >-
   This installation is an interactive exploration of what kind of an appearance
   an artificial intelligence might choose, what questions it might ask and
