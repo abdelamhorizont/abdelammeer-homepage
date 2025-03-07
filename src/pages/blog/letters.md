@@ -79,4 +79,146 @@ variable-content:
       - type: image
         imageFile: img_0553.jpg
     title: ""
+  - type: text-section
+    big-size: false
+    text: >-
+      
+
+      1. **signatures** write your signature big scale
+
+      2. **Deconstruction** do copies and cut out each letter
+
+      3. **Variation** arrange the letters differently to make anagrams
+
+      4. **Derivation** derive the whole alphabet from the letters of your signature
+
+      5. letters to yourself write a letter to yourself on A1 with the letters you have
+    title: "Day 2: Letters to yourself"
+  - type: image-section
+    column-start: "1"
+    column-end: "13"
+    layout: grid
+    images:
+      - type: image
+        imageFile: img_0578.jpg.jpg
+      - type: image
+        imageFile: img_0575.jpg
+      - type: image
+        imageFile: img_0565.jpg.jpg
+      - type: image
+        imageFile: img_0568.jpg.jpg
+      - type: image
+        imageFile: pxl_20231108_135627230.jpg
+  - type: text-section
+    big-size: false
+    title: "Day 3: Letters to Birds"
+    text: >-
+      For this seminar day please bring with you at least one:
+
+
+      * TOOL such as, a Brush, Ketschup, Crayon, Hammer, Pencil, Broom, Eraser, Scissors, Fork, Marker, Spray, Toothbrush, Printer, Drill, Vegetable,...
+
+      * MEDIUM such as, Ink, Sand, Paint, Water, Paper, Light, Foil, Pixel, Thread,...
+
+      * OBJECT such as, Paper, Planet, Box, Hand, Book, Tennisball, Bottle, Tree,...
+
+
+
+
+      **instructions**
+
+
+      1. what does the Tool want?
+
+      2. Your “weak” arm is the Tool
+
+      3. reverse flow
+
+      4. introduce a rule
+
+      5. combine Tools
+
+      6. what does the Material want?
+
+      7. Letters touch an Object
+
+      8. introduce your letters to the space around you
+
+      9. use another person as a tool
+
+      10. use the scanner as a Tool
+
+      11. introduce Nature to Typography
+
+      12. each Letter different Tool
+
+      13. Geometry
+  - type: image-section
+    layout: grid
+    column-start: "1"
+    column-end: "13"
+    images:
+      - type: image
+        imageFile: img_0800.jpg
+      - type: image
+        imageFile: img_0820.jpeg
+      - type: image
+        imageFile: img_0823.jpeg
+      - type: image
+        imageFile: img_0789.jpeg
+  - type: text-section
+    big-size: false
+    title: "Day 4: Letters to Strangers"
+    text: >-
+      Q: what are conditions for readability?
+
+
+      literacy, ability, language, culture, person, inclusivity
+
+
+      **Gestalt Principles**
+
+
+      * Figure-ground
+
+      * Proximity
+
+      * Similarity
+
+      * Continuity
+
+      * Closure
+
+      * Symmetry
+
+      * Uniform connectedness
+
+      * Parallelism
+
+      * Common fate
+
+      * Focal points
+
+      * Past experience
+
+      * Reification
+
+
+      <https://youtu.be/okhDIkfvtt4>
+
+
+      A Critical Look at Adolf Loos' Ornament and Crime with Dr. Jennifer Salahub
+  - type: image-section
+    layout: grid
+    column-start: "1"
+    column-end: "13"
+    images:
+      - type: image
+        imageFile: img_0895.jpg
+      - type: image
+        imageFile: img_0911.jpg
+      - type: image
+        imageFile: img_0909.jpg
+      - type: image
+        imageFile: img_0902.jpg
 ---
