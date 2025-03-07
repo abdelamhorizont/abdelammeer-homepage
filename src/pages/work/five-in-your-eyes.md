@@ -68,4 +68,6 @@ variable-content:
           purpose is to extend the ritual performer's life beyond 100 years.
     title: Research
     layout: grid
+    column-start: "1"
+    column-end: "13"
 ---
