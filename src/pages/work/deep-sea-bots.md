@@ -29,7 +29,7 @@ Description: >-
   Questions that the bot asks are randomly generated. Not only linguistic elements are thrown together, but also visual ones. For this purpose, a tool was programmed that can be used to illustrate, animate and tag the result with terms that evoke them. Thus, depending on the content of the conversation, different compositions result.
 variable-content:
   - type: image-section
-    title: video
+    title: Creatures
     images:
       - type: newVideo
         newVideoFile: /img/legehenne.mp4
@@ -41,6 +41,8 @@ variable-content:
         newVideoFile: /img/schneeeule.mp4
         caption: Schneeeule
     layout: grid
+    column-start: "1"
+    column-end: "13"
   - type: image-section
     layout: block
     images:
