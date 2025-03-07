@@ -7,8 +7,11 @@ title section:
   format: Interactive Installation
 cover_image:
   - type: video
-    videoFile: /img/tiefseebot_preview.mp4
+    videoFile: /img/tiefseebot_preview_cropped.mp4
     caption: Deep sea bots preview
+  - type: image
+    imageFile: /img/dsb_creatures.png
+    caption: Overview
 Description: >-
   This installation is an interactive exploration of what kind of an appearance
   an artificial intelligence might choose, what questions it might ask and
@@ -26,9 +29,30 @@ Description: >-
   Questions that the bot asks are randomly generated. Not only linguistic elements are thrown together, but also visual ones. For this purpose, a tool was programmed that can be used to illustrate, animate and tag the result with terms that evoke them. Thus, depending on the content of the conversation, different compositions result.
 variable-content:
   - type: image-section
-    title: video
+    title: Creatures
     images:
       - type: newVideo
         newVideoFile: /img/legehenne.mp4
         caption: legehenne
+      - type: newVideo
+        newVideoFile: /img/anglerfisch.mp4
+        caption: Anglerfisch
+      - type: newVideo
+        newVideoFile: /img/schneeeule.mp4
+        caption: Schneeeule
+    layout: grid
+    column-start: "1"
+    column-end: "13"
+  - type: image-section
+    layout: block
+    images:
+      - type: iFrame
+        iFrame-link: https://www.youtube.com/embed/ncz9mrj5VHA
+        caption: Presentation storyline
+  - type: image-section
+    layout: block
+    images:
+      - type: newVideo
+        newVideoFile: /img/dissolve.mp4
+        caption: dissolving
 ---

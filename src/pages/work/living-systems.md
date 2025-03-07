@@ -55,8 +55,32 @@ Description: >-
 variable-content:
   - type: image-section
     images:
+      - type: newVideo
+        newVideoFile: /img/reel.mp4
+        caption: Exhibition Reel
+      - type: newVideo
+        newVideoFile: /img/illus_2.mp4
+        caption: Systems Element Illustrations
+    title: Exhibition
+    layout: grid
+  - type: image-section
+    title: Residency
+    layout: grid
+    images:
       - type: image
         imageFile: /img/dsc080574.jpg
-        caption: screen print
-    title: Residency
+        caption: Screen Printing during Residency at La Maldita Estampa, Barcelona
+      - type: image
+        imageFile: /img/img_4605.jpg
+        caption: Original Monoprint Experiments
+  - type: image-section
+    layout: grid
+    title: Shirts
+    images:
+      - type: image
+        imageFile: /img/img_5310.jpg
+        caption: Prints on Second Hand Shirt
+      - type: image
+        imageFile: /img/dsc080563.jpg
+        caption: Prints on Second Hand Shirt
 ---

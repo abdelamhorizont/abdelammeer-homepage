@@ -49,5 +49,25 @@ variable-content:
       - type: image
         imageFile: /img/img_4948.jpg
         caption: Pendants from my sister
+      - type: image
+        imageFile: /img/image.png
+        caption: Emblem on Algerian passport
+      - type: image
+        imageFile: /img/image-1-.png
+        caption: Collar of Esses
+      - type: image
+        imageFile: /img/image-3-.png
+        caption: The Gnostics and their remains
+      - type: image
+        imageFile: /img/image-5-.png
+        caption: Variations of the German egale
+      - type: image
+        imageFile: /img/image-4-.png
+        caption: Silver talisman from the Triangular Book by Count of St. Germain.
+          Volund Jewelry made the only known version of this artifact. Its
+          purpose is to extend the ritual performer's life beyond 100 years.
     title: Research
+    layout: grid
+    column-start: "1"
+    column-end: "13"
 ---
