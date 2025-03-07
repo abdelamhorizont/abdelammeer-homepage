@@ -44,4 +44,14 @@ Description: >-
   \
 
   STEPTHREE focuses on literary texts and cultural objects that narrate Namibia. The selection of texts portrays the multilingual Namibian society. Together, texts and objects represent snapshots of Namibian literature and culture. Scholars and writers discuss and contextualise their meaning and narration, but also raise further questions. Come and see for yourself.
+variable-content:
+  - type: image-section
+    layout: grid
+    images:
+      - type: image
+        imageFile: /img/narrating-namibia-bts-2.jpeg
+        caption: Workplace
+      - type: image
+        imageFile: /img/narrating-namibia-bts-1.jpeg
+        caption: Printed reader
 ---
