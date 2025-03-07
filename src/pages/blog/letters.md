@@ -9,9 +9,9 @@ title section:
   images: []
   format: Seminar
 cover_image:
-  - type: image
-    imageFile: typo1.jpeg
-    caption: image
+  - type: video
+    videoFile: img_1488_1.mp4
+    caption: how does your type move?
 Description: Writing letters, drawing letters, to you, to me, to strangers. To
   sharpen our senses, to think with our hands and touch with our minds, we will
   travel to pasts and futures, get in touch with ourselves, with ancestors and
@@ -29,6 +29,11 @@ variable-content:
       ressources and ecology related to typography. We did this very hand-on,
       with an emphasis on critical discussions, extensive experimentation and
       funnnnn.
+  - type: image-section
+    images:
+      - type: image
+        imageFile: typo1.jpeg
+        caption: Original Letter Tattoos for our Christmas Party
   - type: text-section
     big-size: false
     title: Schedule
@@ -221,4 +226,170 @@ variable-content:
         imageFile: img_0909.jpg
       - type: image
         imageFile: img_0902.jpg
+  - type: text-section
+    big-size: false
+    title: "Day 5: Letters for Accomplices"
+    text: >-
+      grid walk, reading “Gloassary of Undisciplned Design”
+
+
+      ! choose words that describe your work values, whats important to you? draw the letters of one word into the grid
+
+
+      - - -
+
+
+      ! have the word interact with the space threedimonsionally
+  - type: image-section
+    layout: grid
+    column-start: "1"
+    column-end: "13"
+    images:
+      - type: image
+        imageFile: img_0993.jpg
+      - type: image
+        imageFile: img_1006.jpg
+      - type: image
+        imageFile: img_1001.jpg
+      - type: image
+        imageFile: img_1002.jpg
+      - type: image
+        imageFile: img_0735.jpeg
+  - type: text-section
+    big-size: false
+    title: "Day 6: Letters to Idols"
+    text: |-
+      T﻿ypeface Presentations and Font Sightseeing at Kaiserstraße
+
+      Eunsoo	Helvetica
+      Lena	Adobe Garamond
+      Levi	Futura
+      Max	Bodoni
+      Helena	Rockwell
+      Jinhyung	Comic Sans
+      Kaya	Arial
+      Jiaxuan	Caslon
+      Finn	Times New Roman
+      Nayeon	Impact
+      Veronika	Roboto
+      Min Jung	Baskerville
+      Alice	Univers
+      Abdel	Papyrus
+  - type: image-section
+    layout: grid
+    column-start: "1"
+    column-end: "13"
+    images:
+      - type: image
+        imageFile: img_1074.jpg
+      - type: image
+        imageFile: img_0933.jpeg
+      - type: image
+        imageFile: img_1048.jpg
+      - type: image
+        imageFile: img_1085.png
+      - type: image
+        imageFile: img_1100.png
+  - type: text-section
+    big-size: false
+    title: "DAY 7: Letters to a new Year"
+    text: NoFoundry Presentation and Glyphs Clementine Workshop with [Timothee
+      Charon](http://timotheecharon.eu/)
+  - type: image-section
+    layout: grid
+    column-start: "1"
+    column-end: "13"
+    images:
+      - type: image
+        imageFile: s.jpeg
+      - type: image
+        imageFile: img_1111.jpg
+      - type: image
+        imageFile: img_1116.jpg
+      - type: image
+        imageFile: img_1113.jpg
+      - type: image
+        imageFile: img_1118.jpg
+  - type: text-section
+    big-size: false
+    title: "DAY 8:  Letters to the Printer "
+    text: >-
+      ! pick a random book, random page and scan
+
+
+      ! Rearrange the text of the page on A3 either to support the topic of the book, or to contradict it, print several versions
+  - type: image-section
+    layout: grid
+    column-start: "1"
+    column-end: "13"
+    images:
+      - type: image
+        imageFile: img_1440.jpg
+      - type: image
+        imageFile: bowie-print-large.jpeg
+      - type: image
+        imageFile: img_1437.jpg
+  - type: text-section
+    big-size: false
+    title: "DAY 9: Letters to Aliens "
+    text: >-
+      ! Ceramics model making Workshop
+
+
+      Close your eyes, You are in a different place in a different time. In fact you don’t know what year it is, the concept of periodic time tracking has not been invented yet. Nor has been actually anything else. You find yourself standing on soft ground, the soil slightly wet from rain, some smaller and some bigger stones scattered around, accompanied be bushes and trees here and there, but no sight of houses or people, just distant sounds of some yet unknown creatures. Many years later this era will be known as the stone age.
+
+
+      Without much thinking you kneel down to pick a handful of the soil, press it together between your hands to give it structure and slowly realize that you just time traveled from a seemingly advanced civilization that is still struggling with basic crises to a time where language has not yet developed. what information will you leave behind for the humans to come, and how? what are the signs and symbols that one will understand without the luxury of alphabets?
+
+
+      you have 45 minutes until a hungry T-Rex will find and eat you.
+
+
+      → extra task: invent your first word
+  - type: image-section
+    layout: grid
+    column-start: "1"
+    column-end: "13"
+    images:
+      - type: image
+        imageFile: img_1450.jpg
+      - type: image
+        imageFile: img_2956-large.jpeg
+      - type: image
+        imageFile: img_1460.jpg
+      - type: image
+        imageFile: img_1459.jpg
+  - type: text-section
+    big-size: false
+    title: "DAY 10: breathing Letters"
+    text: |-
+      what sound does your typeface make?
+
+      - - -
+
+      how does your type move?
+
+      <!-- notionvc: 91e45549-7d16-4aad-ba5f-458415b2f6fc -->
+  - type: image-section
+    layout: grid
+    column-start: "1"
+    column-end: "13"
+    images:
+      - type: image
+        imageFile: img_1494.jpg
+      - type: image
+        imageFile: img_1492.jpg
+      - type: image
+        imageFile: img_1498.jpg
+      - type: image
+        imageFile: img_1499.jpg
+      - type: image
+        imageFile: img_1496.jpg
+  - type: image-section
+    images:
+      - type: image
+        imageFile: img_1491.jpg
+      - type: newVideo
+        newVideoFile: img_1488.mp4
+    layout: block
 ---
