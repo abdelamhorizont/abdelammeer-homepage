@@ -7,8 +7,11 @@ title section:
   format: Interactive Installation
 cover_image:
   - type: video
-    videoFile: /img/tiefseebot_preview.mp4
+    videoFile: /img/tiefseebot_preview_cropped.mp4
     caption: Deep sea bots preview
+  - type: image
+    imageFile: /img/dsb_creatures.png
+    caption: Overview
 Description: >-
   This installation is an interactive exploration of what kind of an appearance
   an artificial intelligence might choose, what questions it might ask and
@@ -31,4 +34,23 @@ variable-content:
       - type: newVideo
         newVideoFile: /img/legehenne.mp4
         caption: legehenne
+      - type: newVideo
+        newVideoFile: /img/anglerfisch.mp4
+        caption: Anglerfisch
+      - type: newVideo
+        newVideoFile: /img/schneeeule.mp4
+        caption: Schneeeule
+    layout: grid
+  - type: image-section
+    layout: block
+    images:
+      - type: iFrame
+        iFrame-link: https://www.youtube.com/embed/ncz9mrj5VHA
+        caption: Presentation storyline
+  - type: image-section
+    layout: block
+    images:
+      - type: newVideo
+        newVideoFile: /img/dissolve.mp4
+        caption: dissolving
 ---
