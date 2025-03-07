@@ -293,6 +293,7 @@
         .postcover {
             width: 100vw;
             height: 45vh;
+            justify-content: flex-start;
             // display: grid;
             // grid-template-columns: 1fr auto 1fr;
 
@@ -303,15 +304,18 @@
 
             .project-description {
                 h1{
+                    width: 40vw;
                     word-wrap: break-word;
                 }
             }
             
             .type{
+                position: absolute;
+                right: 0.5rem;
                 z-index: 2;
                 overflow: visible;
                 word-wrap: break-word;
-                width: 100vw;
+                // width: 100vw;
             }
         }
     }
