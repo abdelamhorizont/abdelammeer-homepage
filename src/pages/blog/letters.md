@@ -71,7 +71,7 @@ variable-content:
   - type: image-section
     column-start: "1"
     column-end: "13"
-    layout: grid
+    layout: carousel
     images:
       - type: image
         imageFile: f03e3fd9-e943-4ae9-a5fe-7d0430f6509c_1_105_c.jpeg
