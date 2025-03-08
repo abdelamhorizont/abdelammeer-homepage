@@ -1,10 +1,9 @@
 - imprint, privacy policy
-- hover effects
-- video player
-- site transitions
-- mobile lol
 
 - backend style
 
 - debug:
-    - try new videoFile in backend
+    - videos open automatically on mobile
+    - images in swiper too big
+    - title-img deep sea bots too big
+    - content img are cropped

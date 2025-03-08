@@ -66,7 +66,7 @@ const ImageSection = ({ content, type }) => {
               </div>
               :
               // (content?.length > 1 && type == "grid") ?
-              (type == ( "grid")) || (content?.images?.length > 1) ?
+              (type == ( "grid")) && (content?.images?.length > 1) ?
                 content?.images?.map((image) => {
                   const myimage = getImage(image?.imageFile)
 

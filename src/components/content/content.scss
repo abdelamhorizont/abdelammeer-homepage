@@ -38,12 +38,14 @@
         .image {
             // flex-basis: 32.8%;
             width: 100%;
+            // height: 100%;
 
             img {
                 // height: 80vh;
-                width: 100%;
+                // width: auto;
                 height: 100%;
-                object-fit: cover;
+                object-fit: contain;
+                overflow: visible;
             }
         }
 
