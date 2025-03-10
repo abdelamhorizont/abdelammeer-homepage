@@ -74,14 +74,14 @@ const Layout = ({ children, activeSite, colorTheme, passTheme, location }) => {
         <nav className="nav-header">
           <div className="nav-group" >
             <ul className="nav-meta">
-              <li id='logo'><Link state={{theme}} to="/">abdelammeer</Link></li>
-              <li><Link state={{theme}} to="/about">about</Link></li>
-              <li><a href="mailto:hello@abdelammeer.com">@</a></li>
+              <Link state={{theme}} to="/"><li id='logo'>abdelammeer</li></Link>
+              <Link state={{theme}} to="/about"><li>about</li></Link>
+              <a href="mailto:hello@abdelammeer.com"><li>@</li></a>
             </ul>
             <ul className="nav-sites">
-              <li className={`blog ${activeSite == 'blog' && 'border'}`}><Link state={{theme}} to="/blog">blog</Link></li>
-              <li className={`space ${activeSite == 'space' && 'border'}`}><Link state={{theme}} to="/space">space</Link></li>
-              <li className={`work ${activeSite == 'work' && 'border'}`}><Link state={{theme}} to="/work">work</Link></li>
+            <Link state={{theme}} to="/blog"><li className={`blog ${activeSite == 'blog' && 'border'}`}>blog</li></Link>
+            <Link state={{theme}} to="/space"><li className={`space ${activeSite == 'space' && 'border'}`}>space</li></Link>
+              <Link state={{theme}} to="/work"><li className={`work ${activeSite == 'work' && 'border'}`}>work</li></Link>
             </ul>
           </div>
 

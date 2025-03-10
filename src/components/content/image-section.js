@@ -33,20 +33,25 @@ const ImageSection = ({ content, type }) => {
   const navigationPrevRef = React.useRef(null)
   const navigationNextRef = React.useRef(null)
 
+  // console.log(content);
+
 
   return (
     // <div className={type == "grid" ? "grid" : "block"}>
     <div className={type}>
-      {/* <div className={"grid"}> */}
-      {
-        // type == "iframe" ?
-        
+      {        
         content?.iframe_link != null ?
           <iframe src={content.iframe_link} frameborder="100px"></iframe>
           :
           // type == "image" ?
           (content?.imageFile != null) ?
             <GatsbyImage image={getImage(content?.imageFile)} alt={''} />
+            :
+          (content?.images?.length == 1) && (content?.images[0]?.imageFile != null) ?
+          <div className="image">
+            <GatsbyImage image={getImage(content?.images[0]?.imageFile)} alt={''} />
+            <p className="caption">{content?.images[0]?.caption}</p>
+            </div>
             :
             // type == "video" ?
             (content?.videoFile) != null ?
@@ -66,12 +71,11 @@ const ImageSection = ({ content, type }) => {
               </div>
               :
               // (content?.length > 1 && type == "grid") ?
-              (type == ( "grid")) && (content?.images?.length > 1) ?
-                content?.images?.map((image) => {
+              (type == ("block") || type == ("grid") ) ?
+               (content?.images?.length > 1) &&  content?.images?.map((image) => {
                   const myimage = getImage(image?.imageFile)
 
                   return (
-                    // <div onClick={() => handleClick(i)}>
                     <>
                       {
                         image.type == "iFrame" ?
@@ -102,7 +106,7 @@ const ImageSection = ({ content, type }) => {
                 })
                 :
                 // (content?.length > 1 && type == "carousel") &&
-                (type == "carousel") &&
+                (type == "work-carousel") ?
                 // <div onClick={() => handleClick(i)}>
                 <Swiper
                   // onSwiper={(swiper) => swiper.slideTo(index)}
@@ -127,6 +131,60 @@ const ImageSection = ({ content, type }) => {
 
                   {
                     content?.map((image) => {
+                      const myimg = getImage(image.imageFile)
+
+                      return (
+                        (image?.videoFile || image.newVideoFile) != null ?
+                          <SwiperSlide className="swiper-slide" >
+                            {/* <div className="video-section"> */}
+                            <video key={image?.videoFile?.publicURL || image?.newVideoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline>
+                              <source src={image?.videoFile?.publicURL || image?.newVideoFile?.publicURL} type="video/mp4" />
+                            </video>
+                            {/* </div> */}
+                          </SwiperSlide>
+                          :
+                          <SwiperSlide className="swiper-slide" >
+                            <GatsbyImage
+                              image={myimg}
+                              alt={''}
+                            // style={{ height: '100%' }}
+                            // className="swiper-img"
+                            />
+                          </SwiperSlide>
+                      )
+                    })
+                  }
+
+                  <div className="swiper-buttons">
+                    <div ref={navigationPrevRef} className="swiper-button-prev"> <img id="arrow-left" src={Arrow} alt="Arrow" /> </div>
+                    <div ref={navigationNextRef} className="swiper-button-next"> <img id="arrow-right" src={Arrow} alt="Arrow" /> </div>
+                  </div>
+                </Swiper>
+                :
+                (type == "carousel") && (content?.images?.length > 1) &&
+                <Swiper
+                  // onSwiper={(swiper) => swiper.slideTo(index)}
+                  modules={[Navigation]}
+                  // navigation
+                  navigation={{
+                    nextEl: navigationNextRef.current,
+                    prevEl: navigationPrevRef.current
+                  }}
+                  onBeforeInit={(swiper) => {
+                    swiper.params.navigation.nextEl = navigationNextRef.current;
+                    swiper.params.navigation.prevEl = navigationPrevRef.current;
+                  }}
+                  loop
+                  // initialSlide={0}
+                  spaceBetween={'10px'}
+                  slidesPerView={'auto'}
+                  centeredSlides={mobile}
+                  className="blog-swiper"
+                // onClick={() => setimgClick(false)}
+                >
+
+                  {
+                    content?.images?.map((image) => {
                       const myimg = getImage(image.imageFile)
 
                       return (

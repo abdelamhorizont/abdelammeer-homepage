@@ -21,6 +21,14 @@
             color: #000000;
         }
 
+        a:hover {
+            // font-weight: 500;
+            // font-stretch: 275%;
+            li{
+                margin-top: 0.75rem;
+            }
+        }
+
         ul {
             display: flex;
 
@@ -28,7 +36,7 @@
                 border-radius: 1rem;
                 padding: 0.2rem 0.5rem;
                 height: 5rem;
-
+                transition: all 0.5s ease;
                 // background-color: rgb(255, 255, 255);
 
             }
@@ -49,7 +57,7 @@
         // display: flex;
         // flex-direction: column;
         // position: fixed;
-        // right: 0rem;
+        margin-left: 10rem;
         // justify-content: center;
         // margin-right: 2rem;
 
@@ -138,9 +146,12 @@
             border-color: black;
         }
 
-        li:hover {
-            font-weight: 500;
+        a:hover {
+            // font-weight: 500;
             // font-stretch: 275%;
+            li{
+                margin-top: 0.75rem;
+            }
         }
 
 
