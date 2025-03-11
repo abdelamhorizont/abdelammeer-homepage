@@ -10,17 +10,13 @@ cover_image:
   - type: video
     videoFile: pubs.mp4
     caption: student publications
-Description: >-
-  “what binds the universe together at its core?”, Faust asks. “what binds
-  Typography together at its core?”, you ask back. — how do you kern a word ?
-  how do you collect clouds? use a grid? chase rainbows? justify text? sort
-  through rain? use punctuation marks? listen to dust? build information
+Description: “what binds the universe together at its core?”, Faust asks. “what
+  binds Typography together at its core?”, you ask back. — how do you kern a
+  word ? how do you collect clouds? use a grid? chase rainbows? justify text?
+  sort through rain? use punctuation marks? listen to dust? build information
   hierarchies? wait for sand? format footnotes? turn to air? — we will work on
   publications as instruction manuals for natural phenomena, in order to explore
   micro- and macrotypography, research and performance.
-
-
-  f﻿rom the course catalogue
 variable-content:
   - type: text-section
     big-size: false
@@ -28,15 +24,11 @@ variable-content:
       ## Goals
 
 
-      Ability to design a publication from start to finish, including research, original content and production.
+      * Ability to design a publication from start to finish, including research, original content and production.
 
+      * Filtering, Organization and Composition of complex Information and Ressources.
 
-      Filtering, Organization and Composition of complex Information and Ressources.
-
-
-      Awareness for aesthetic choices and clear readability.
-
-
+      * Awareness for aesthetic choices and clear readability.
 
 
       ## Publication
@@ -65,29 +57,68 @@ variable-content:
       ## Schedule
 
 
+      **DAY 1 Natural Phenomena** \
+
+      Introduction, Identity, kerning
 
 
-      | DAY 1  | Natural Phenomena        | Introduction, Identity, kerning                                                                                                                                                                                     |
+      **DAY 2 Instructing Instructions** \
 
-      | ------ | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+      Workshop with Sonja Schwarz: Figures & Figurations \
 
-      | DAY 2  | Instructing Instructions | Workshop with [Sonja Schwarz](https://www.instagram.com/soennecken/): Figures & Figurations Macrotypography, Fontsize, Lineheight                                                                                   |
+      Macrotypography, Fontsize, Lineheight
 
-      | DAY 3  | Justice                  | Grid Systems, Text Alignment and Justification: Rag, justified                                                                                                                                                      |
 
-      | DAY 4  | Baseline                 | Baseline Grid, grid preferences, alignment, text alignment, margin alignment/ calculation  Hierarchies, Title, Author, Subtitle, Paragraph, Subtitle, Quote, Margin, Footnotes  paragraph styles, Character Styles  |
+      **DAY 3 Justice** \
 
-      | DAY 5  | Types of Reading         | Layout, Types of Reading, Lesetypografie, Examples,  Headline lineheight, Margin Text, Footnotes  Page Number (parent page), Chapter Info, Use of Columns  Caption, Quote                                           |
+      Grid Systems, Text Alignment and Justification: Rag, justified
 
-      | DAY 6  | Microtypography          | Microtypography, minus, divis/hyphen, en dash, em dash numerals, quotation marks, spaces                                                                                                                            |
 
-      | DAY 7  | Research, Storytelling   | Gutter, Images Links,Tab, Export, Cover, Table of Contents, Index, Imprint  Reseach Methods: Observing, Recording, Comparing, Analysing, Evaluating, Proposing, Experimenting, Documenting,                         |
+      **DAY 4 Baseline** \
 
-      | DAY 8  | Content                  | Dramaturgy, Chapters, file checks                                                                                                                                                                                   |
+      Baseline Grid, grid preferences, alignment, text alignment, margin alignment/ calculation Hierarchies, Title, Author, Subtitle, Paragraph, Subtitle, Quote, Margin, Footnotes paragraph styles, Character Styles
 
-      | DAY 9  | AGBs                     | Working Groups: Deadline: Production, Bookbinding  on working conditions, money, project managment                                                                                                                  |
 
-      | DAY 10 | presentations            | Finalizing, Presentations, Seminar feedback                                                                                                                                                                         |
+      **DAY 5 Types of Reading** \
+
+      Layout, Types of Reading, Lesetypografie, Examples, Headline lineheight, Margin Text, Footnotes
+
+
+      Page Number (parent page), Chapter Info, Use of Columns
+
+
+      Caption, Quote
+
+
+      **DAY 6 Microtypography** \
+
+      Microtypography, minus, divis/hyphen, en dash, em dash numerals, quotation marks, spaces
+
+
+      **DAY 7 Research** \
+
+      Storytelling Gutter, Images Links,Tab, Export, Cover, Table of Contents, Index, Imprint
+
+
+      Reseach Methods: Observing, Recording, Comparing, Analysing, Evaluating, Proposing, Experimenting, Documenting,
+
+
+      **DAY 8 Content** \
+
+      Dramaturgy, Chapters, file checks
+
+
+      **DAY 9 AGBs** \
+
+      Working Groups: Deadline: Production, Bookbinding
+
+
+      on working conditions, money, project managment
+
+
+      **DAY 10 Presentations** \
+
+      Finalizing, Presentations, Seminar feedback
   - type: image-section
     title: Figures & Figurations, Workshop with Sonja Schwarz
     images:
@@ -101,6 +132,7 @@ variable-content:
         imageFile: img_2019.jpg
     column-start: "1"
     column-end: "13"
+    layout: grid
   - type: image-section
     images:
       - type: iFrame
@@ -136,6 +168,7 @@ variable-content:
         imageFile: img_2242-2-large.jpeg
       - type: image
         imageFile: img_2339-2-large.jpeg
+    layout: carousel
   - type: image-section
     images:
       - type: image
@@ -172,9 +205,9 @@ variable-content:
       - type: newVideo
         newVideoFile: pubs.mp4
         caption: A few pages of each publication cut together
-    title: Publication
-    column-start: "3"
-    column-end: "11"
+    title: Publications
+    column-start: "2"
+    column-end: "12"
   - type: text-section
     big-size: false
     title: A few Ressources
@@ -199,29 +232,29 @@ variable-content:
     big-size: false
     title: Participants
     text: |-
-      > Eunsoo	Choi\
+      > Eunsoo	Choi
       >
-      > Lena	Klevenow\
+      > Lena	Klevenow
       >
-      > Levi	Zimmermann\
+      > Levi	Zimmermann
       >
-      > Max	Beller\
+      > Max	Beller
       >
-      > Helena	Bänsch\
+      > Helena	Bänsch
       >
-      > Jinhyung	Hur\
+      > Jinhyung	Hur
       >
-      > Kaya	Männel\
+      > Kaya	Männel
       >
-      > Jiaxuan	He\
+      > Jiaxuan	He
       >
-      > Finn	Milbrandt\
+      > Finn	Milbrandt
       >
-      > Nayeon	Park\
+      > Nayeon	Park
       >
-      > Veronika	Baghdyan\
+      > Veronika	Baghdyan
       >
-      > Min Jung	Kim\
+      > Min Jung	Kim
       >
       > Alice	Seefried
 ---
