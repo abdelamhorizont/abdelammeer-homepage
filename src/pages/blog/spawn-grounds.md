@@ -10,8 +10,9 @@ title section:
   images: []
   format: Workshop
 cover_image:
-  - type: video
-    videoFile: fox_1.mp4
+  - type: image
+    imageFile: mingomaze.png
+    caption: mingo maze by Anouk
 Description: Umfeld, Spielfeld; Ziel und Zufall; Augen zu, Augen auf; Auf Los
   geht's los! Aufbrechen, Auflösen, Auf den Kopf stellen! Spielbrett, Pausenhof,
   Gameshow, Triple A Open World MMORPG. Game-Engine, Kreide und Würfel, choose
