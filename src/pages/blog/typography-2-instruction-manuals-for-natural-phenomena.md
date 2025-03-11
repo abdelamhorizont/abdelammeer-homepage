@@ -54,6 +54,8 @@ variable-content:
 
 
 
+
+
       ## Schedule
 
 
@@ -132,7 +134,7 @@ variable-content:
         imageFile: img_2019.jpg
     column-start: "1"
     column-end: "13"
-    layout: grid
+    layout: carousel
   - type: image-section
     images:
       - type: iFrame
@@ -177,7 +179,7 @@ variable-content:
           superiority of the grid and the supposed neutrality from Grid Systems
           from Josef Müller-Brockmann, still a very important book in graphic
           design education
-    title: Grid Systems
+    title: ""
   - type: image-section
     title: Presentation
     column-start: "1"
