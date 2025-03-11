@@ -90,8 +90,9 @@
 
     h2 {
         margin-bottom: 1.5rem;
-        font-size: 1.8rem;
+        font-size: 2.5rem;
         // font-weight: bold;
+        justify-self: center;
     }
 
     h3 {
@@ -214,6 +215,24 @@
             margin: 1rem 0rem;
         }
     }
+
+    table {
+        width: 80%;
+        border-collapse: collapse;
+        text-align: center;
+        margin: auto;
+      }
+      
+      table, th, td {
+        border: .1rem solid #999;
+        padding: .2em;
+      
+      }
+      
+      th {
+        background-color: #555;
+      }
+       
 
     p.caption {
         font-size: 1rem;

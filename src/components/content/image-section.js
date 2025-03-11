@@ -33,7 +33,7 @@ const ImageSection = ({ content, type }) => {
   const navigationPrevRef = React.useRef(null)
   const navigationNextRef = React.useRef(null)
 
-  // console.log(content);
+  console.log(content);
 
 
   return (
@@ -72,7 +72,8 @@ const ImageSection = ({ content, type }) => {
               :
               // (content?.length > 1 && type == "grid") ?
               (type == ("block") || type == ("grid") ) ?
-               (content?.images?.length > 1) &&  content?.images?.map((image) => {
+              //  (content?.images?.length > 1) &&  content?.images?.map((image) => {
+               content?.images?.map((image) => {
                   const myimage = getImage(image?.imageFile)
 
                   return (
