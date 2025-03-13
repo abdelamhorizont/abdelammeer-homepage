@@ -12,7 +12,7 @@ import '../styles/blog.scss'
 const BlogPost = ({ data, location }) => {
   const { markdownRemark: post } = data;
   const myimage = getImage(post.frontmatter?.cover_image[0]?.imageFile)
-  
+
   const [theme, setTheme] = useState(location.state?.theme || 'light-theme')
 
   const passTheme = (theme) => {
@@ -21,7 +21,7 @@ const BlogPost = ({ data, location }) => {
 
   return (
     <Layout colorTheme={theme} passTheme={passTheme} activeSite={'blog'}>
-    {/* <Layout activeSite={'blog'}> */}
+      {/* <Layout activeSite={'blog'}> */}
       <div className="blog-post">
 
         <div className='postcover'>
@@ -38,6 +38,9 @@ const BlogPost = ({ data, location }) => {
           </div>
           <div className="project-description">
             <h1 className="headline">{post.frontmatter.title}</h1>
+            {post.frontmatter?.title_section.collaborators &&
+              <div className="collaborators"><h3>with {post.frontmatter?.title_section.collaborators} </h3></div>
+            }
           </div>
           <h2 className="type"> {post.frontmatter.title_section.format} </h2>
         </div>
@@ -95,6 +98,7 @@ export const pageQuery = graphql`
           type
           format
           date(formatString: "YYYY")
+          collaborators
         }
         title
         templateKey

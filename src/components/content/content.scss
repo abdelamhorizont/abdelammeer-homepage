@@ -384,6 +384,29 @@
         grid-column: 1/13 !important;
     }
 
+    .swiper {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    
+        .swiper-slide {
+            // width:fit-content;
+            width: auto;
+            height: 100%;
+    
+            img,
+            video {
+                // width: min-content;
+                // height: 80vh;
+                height: max-content;
+                max-height: max-content;
+                border-radius: 0rem;
+                display: inline;
+            }
+    
+        }
+    }
+
     .swiper-button-prev,
     .swiper-button-next {
 

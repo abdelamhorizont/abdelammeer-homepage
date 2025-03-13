@@ -64,6 +64,8 @@ const Layout = ({ children, activeSite, colorTheme, passTheme, location }) => {
         <meta property="og:type" content="business.business" />
         <meta property="og:title" content={title} />
         <meta property="og:url" content="/" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
         <meta
           property="og:image"
           content={`${withPrefix("/")}img/og-image.jpg`}

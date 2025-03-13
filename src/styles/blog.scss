@@ -168,11 +168,22 @@
             grid-column: span 8;
             font-family: Kleukens;
 
+            // display: flex;
+            // flex-direction: column;
+
             h1 {
                 font-size: 5rem;
+                width: 100%;
+            }
+
+            .collaborators{
+                // grid-column: 4 / 11;
+                align-self: flex-end;
+                margin-top: 7.5rem;
 
             }
         }
+
 
         h2 {
             display: inline;
@@ -346,6 +357,7 @@
                     word-wrap: break-word;
                     font-size: 4rem;
                     line-height: 4rem;
+                    margin-bottom: 0.5rem;
 
                     overflow-wrap: break-word;
                     word-wrap: break-word;
