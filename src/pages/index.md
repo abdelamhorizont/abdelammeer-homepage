@@ -14,6 +14,8 @@ variable-content:
         newVideoFile: /img/16.mp4
         caption: ABK Stuttgart Trailer
       - type: image
+        imageFile: /img/zeichenfläche-3.jpg
+      - type: image
         imageFile: /img/cover-wide.jpg
         caption: Systems Screenprint
       - type: image
