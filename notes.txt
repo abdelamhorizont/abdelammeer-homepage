@@ -3,7 +3,6 @@
 - backend style
 
 - debug:
-    - videos open automatically on mobile
     - images in swiper too big
     - title-img deep sea bots too big
     - content img are cropped

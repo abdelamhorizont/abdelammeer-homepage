@@ -75,12 +75,14 @@
         }
 
         .cover-image {
-
+            // width: fit-content;
             img,
             video {
-                width: min-content;
+                width: auto;
+                // width: min-content;
                 height: 15vh;
                 border-radius: 1rem;
+                display: block;
             }
 
             iframe {

@@ -2,7 +2,7 @@
     // width: 100vw;
     // padding-top: 6rem; 
 
-    .top-space{
+    .top-space {
         height: 8vh;
     }
 
@@ -12,16 +12,18 @@
         grid-template-columns: repeat(2, 1fr);
         // gap: 2rem 0rem;
 
-       .vibes-swiper{
-        width: 100%;
-        overflow: hidden;
-        grid-column: span 2;
-        // background-color: black;
+        .vibes-swiper {
+            width: 100%;
+            // height: 60vh;
+            overflow: hidden;
+            grid-column: span 2;
+            background-color: black;
 
-       }
- 
+
+        }
+
     }
-    
+
 
     .hero {
         grid-column: span 4;
@@ -31,18 +33,20 @@
 
 @media screen and (max-width: 720px) {
 
-    .vibes-swiper{
+    .vibes-swiper {
         // height: 60vh;
-        
-        .swiper{
-            height: 100%;
+
+        .swiper {
+            height: auto;
+
             // height: 60vh;
-            .swiper-slide{
+            .swiper-slide {
                 justify-content: center;
-                
-                img, video{
+
+                img,
+                video {
+                    height: 60vh;
                     // height:max-content;
-                    height: 70vh;
 
                 }
             }
@@ -51,4 +55,3 @@
 
     }
 }
-

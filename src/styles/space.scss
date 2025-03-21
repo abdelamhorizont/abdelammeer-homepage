@@ -212,7 +212,8 @@
 
                img,
                video {
-                   width: min-content;
+                //    width: min-content;
+                   width: auto;
                    height: 100%;
                    border-radius: 1rem;
                }
@@ -507,25 +508,29 @@
                    justify-content: flex-end;
                    margin-top: auto;
                    grid-column: 2;
+
                    //    margin-top: 25rem;
+                   img {
+                       height: max-content;
+                   }
                }
 
                .cover-image {
                    position: absolute;
                    height: 60vh;
-                //    width: 100%;
+                   //    width: 100%;
                    width: 95vw;
                    //    margin-left: 5vw;
                    //    padding-top: 1rem;
-                //    display: flex;
+                   //    display: flex;
                    justify-content: center;
                    //    margin-top: 10vh;
                    border-radius: 20rem;
                    overflow: hidden;
 
-                   iframe{
-                    width: 100vw;
-                }
+                   iframe {
+                       width: 100vw;
+                   }
 
                    .image-content {
                        //    width: 90vw;
@@ -556,14 +561,14 @@
 
            .space-post-content {
 
-            .description {
-                grid-column: 1/12;
-            }
+               .description {
+                   grid-column: 1/12;
+               }
 
-            .grid{
-                display: block;
-            }
-        }
+               .grid {
+                   display: block;
+               }
+           }
        }
 
        .deep-sea-bots {
@@ -582,26 +587,26 @@
 
                    video {
                        width: 130vw !important;
-                       height: 40vh;
+                       height: 40vh !important;
                    }
 
                    iframe {
-                    // overflow: visible;
-                    width: calc(100% * 2.2);
-                    height: calc(100% * 2);
-                    zoom: 0.3;
- 
-                    -ms-zoom: 0.5;
-                    transform: scale(0.5) translateX(-200px);
- 
-                    -moz-transform: scale(0.5);
-                    -moz-transform-origin: -200px 0;
-                    -o-transform: scale(0.5);
-                    -o-transform-origin: -200px 0;
-                    -webkit-transform: scale(0.60);
-                    -webkit-transform-origin: -20% -20%;
- 
-                }
+                       // overflow: visible;
+                       width: calc(100% * 2.2);
+                       height: calc(100% * 2);
+                       zoom: 0.3;
+
+                       -ms-zoom: 0.5;
+                       transform: scale(0.5) translateX(-200px);
+
+                       -moz-transform: scale(0.5);
+                       -moz-transform-origin: -200px 0;
+                       -o-transform: scale(0.5);
+                       -o-transform-origin: -200px 0;
+                       -webkit-transform: scale(0.60);
+                       -webkit-transform-origin: -20% -20%;
+
+                   }
                }
            }
        }

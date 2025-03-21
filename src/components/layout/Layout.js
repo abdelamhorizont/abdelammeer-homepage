@@ -68,7 +68,8 @@ const Layout = ({ children, activeSite, colorTheme, passTheme, location }) => {
 
         <meta
           property="og:image"
-          content={`${withPrefix("/")}img/og-image.jpg`}
+          content={'🐌'}
+          // content={`${withPrefix("/")}img/og-image.jpg`}
         />
       </Helmet>
 
@@ -76,7 +77,7 @@ const Layout = ({ children, activeSite, colorTheme, passTheme, location }) => {
         <nav className="nav-header">
           <div className="nav-group" >
             <ul className="nav-meta">
-              <Link state={{theme}} to="/"><li id='logo'>abdelammeer</li></Link>
+              <Link state={{theme}} to="/"><li id='logo'><span id="studio">studio</span> abdelammeer</li></Link>
               <Link state={{theme}} to="/about"><li>about</li></Link>
               <a href="mailto:hello@abdelammeer.com"><li>@</li></a>
             </ul>

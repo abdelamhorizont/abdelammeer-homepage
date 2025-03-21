@@ -37,6 +37,7 @@
                 padding: 0.2rem 0.5rem;
                 height: 5rem;
                 transition: all 0.5s ease;
+                
                 // background-color: rgb(255, 255, 255);
 
             }
@@ -50,6 +51,17 @@
     .nav-meta, .nav-footer {
         li {
             background-color: rgb(255, 255, 255);
+            font-family: PangramRoundedBold;
+
+        }
+
+        #logo{
+            font-size: 2rem;
+            font-family: PangramRoundedBold;
+        }
+        
+        #studio{
+            font-family: PangramRoundedBoldItalic;
         }
     }
 
@@ -90,7 +102,7 @@
 
             #cloud{
                 position: fixed;
-                top: 10rem;
+                top: 20rem;
                 right: 1vw;
             }
         }
@@ -130,7 +142,7 @@
 
 
     .nav-sites {
-        text-transform: uppercase;
+        // text-transform: uppercase;
         display: flex;
 
         li {
@@ -138,6 +150,10 @@
             font-style: italic;
             font-synthesis: none;
             font-stretch: 175%;
+
+            font-family: PangramRoundedNarrowSemibold;
+            font-size: 1.7rem;
+
             text-align: center;
             transition: all 0.5s ease;
             margin: 0px -1px;
@@ -184,9 +200,30 @@
 
 @media screen and (max-width: 720px) {
 
+
+    #logo{
+        width: fit-content;
+        display: flex;
+        gap: 0.5rem;
+    }
+
     #sun{
         position: fixed;
-        top: 0.5rem;
+        margin-top: 3rem;
         left: 80vw;
+    }
+
+
+    #star{
+        position: fixed;
+        left: 1rem;
+        top: 60vh;
+    }
+
+    #cloud{
+        position: fixed;
+        top: 20vh;
+        bottom: 50vh;
+        right: 1vw;
     }
 }

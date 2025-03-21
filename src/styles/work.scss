@@ -73,6 +73,7 @@
             z-index: 1;
             // display: inline-flex;
             // width: fit-content;
+            font-family: PangramRoundedBold;
 
         }
     }
@@ -95,6 +96,7 @@
         video {
             object-fit: cover;
             min-width: 50vw;
+            // min-width: 50vw;
             min-height: 55vh;
 
             // width: 100%;
@@ -115,12 +117,14 @@
         h1 {
             // left: 12.5%;
             font-family: Kleukens;
+            font-family: PangramRoundedBold;
 
             // font-size: 3rem;
             font-size: 1.75rem;
+            font-size: 2rem;
             line-height: 2.15rem;
 
-            margin-top: 0.4rem;
+            margin-top: 0.6rem;
             // margin-left: -1rem;
 
             border-radius: 5rem;
@@ -185,6 +189,7 @@
             h1 {
                 font-size: 5rem;
                 font-family: Kleukens;
+                font-family: PangramRoundedBold;
 
             }
         }
@@ -198,13 +203,15 @@
             width: max-content;
             height: fit-content;
 
-            margin: 0rem 0.5rem;
+            // margin: 0rem 0.5rem;
             padding: 0.2rem 0.5rem;
 
             border-radius: 5rem;
 
             font-size: 1.5rem;
             font-family: Kleukens;
+            font-family: PangramRoundedBold;
+
             text-align: left;
             background-color: rgb(254, 214, 54);
 
@@ -322,10 +329,11 @@
 
     .work-post {
         .postcover {
-            grid-template-columns: auto auto 25vw;
+            grid-template-columns: auto auto 30vw;
             // flex: 1;
             // overflow: hidden;
-            // width: 100%;
+            width: 100vw;
+            overflow: hidden;
 
             h2{
                 // grid-column: span 3;
@@ -348,11 +356,25 @@
             .project-description {
                 grid-row: 3;
                 grid-column: span 6;
+                width: 110%;
+
+                h1{
+                    width: 110%;
+                    overflow-wrap: break-word;
+                    word-wrap: break-word;
+                    -ms-word-break: break-all;
+                    word-break: break-word;
+                    -ms-hyphens: auto;
+                    -moz-hyphens: auto;
+                    -webkit-hyphens: auto;
+                    hyphens: auto;
+                }
             }
 
             .type{
-                grid-column: 6/13;
+                grid-column: 3/13;
                 margin-left: auto;
+                // margin-right: 1rem;
             }
 
             .collaborators{

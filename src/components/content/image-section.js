@@ -149,7 +149,7 @@ const ImageSection = ({ content, type }) => {
                               image={myimg}
                               alt={''}
                             // style={{ height: '100%' }}
-                            // className="swiper-img"
+                            className="swiper-img"
                             />
                           </SwiperSlide>
                       )
@@ -203,7 +203,7 @@ const ImageSection = ({ content, type }) => {
                               image={myimg}
                               alt={''}
                             // style={{ height: '100%' }}
-                            // className="swiper-img"
+                            className="swiper-img"
                             />
                           </SwiperSlide>
                       )
