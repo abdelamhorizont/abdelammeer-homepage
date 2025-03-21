@@ -32,4 +32,7 @@ variable-content:
       - type: work-reference
         full-width: false
         reference: GleisMediale
+      - type: work-reference
+        full-width: false
+        reference: offshoot*berlin
 ---
