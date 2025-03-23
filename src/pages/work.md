@@ -16,16 +16,16 @@ variable-content:
         reference: ABK Stuttgart
       - type: work-reference
         full-width: false
-        reference: NEW NORMAL
-      - type: work-reference
-        full-width: false
         reference: Narrating Namibia
       - type: work-reference
         full-width: false
-        reference: Deep Sea Bots
+        reference: NEW NORMAL
       - type: work-reference
         full-width: false
         reference: GleisMediale
+      - type: work-reference
+        full-width: false
+        reference: Deep Sea Bots
       - type: work-reference
         full-width: false
         reference: Narrating Africa
