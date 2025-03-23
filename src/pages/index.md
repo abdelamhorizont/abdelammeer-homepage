@@ -19,8 +19,8 @@ variable-content:
         imageFile: /img/cover-wide.jpg
         caption: Systems Screenprint
       - type: image
-        imageFile: /img/img_5310.jpg
-        caption: Systems Blue Collar Shirt
+        imageFile: /img/dsc080563.jpg
+        caption: Systems Collar Shirt
       - type: image
         imageFile: /img/gleismediale-4.jpg
         caption: Gleismediale
