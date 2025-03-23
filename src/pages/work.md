@@ -37,11 +37,17 @@ variable-content:
         reference: offshoot*berlin
       - type: work-reference
         full-width: false
-        reference: Melton Prior Institute
-      - type: work-reference
-        full-width: false
         reference: Silencium
       - type: work-reference
         full-width: false
-        reference: Odds without E
+        reference: Melton Prior Institute
+      - type: work-reference
+        full-width: false
+        reference: Sonne & Trabanten
+      - type: work-reference
+        full-width: false
+        reference: Odds without Ends
+      - type: work-reference
+        full-width: false
+        reference: Philosophie des Designs
 ---
