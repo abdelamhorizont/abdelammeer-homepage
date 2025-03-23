@@ -79,7 +79,7 @@ const Layout = ({ children, activeSite, colorTheme, passTheme, location }) => {
             <ul className="nav-meta">
               <Link state={{theme}} to="/"><li id='logo'><span id="studio">studio</span> abdelammeer</li></Link>
               <Link state={{theme}} to="/about"><li>about</li></Link>
-              <a href="mailto:hello@abdelammeer.com"><li>@</li></a>
+              <a href="mailto:hello@abdelammeer.com"><li id="contact">@</li></a>
             </ul>
             <ul className="nav-sites">
             <Link state={{theme}} to="/blog"><li className={`blog ${activeSite == 'blog' && 'border'}`}>blog</li></Link>

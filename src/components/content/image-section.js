@@ -56,7 +56,7 @@ const ImageSection = ({ content, type }) => {
             // type == "video" ?
             (content?.videoFile) != null ?
               <div className="video-section">
-                <video key={content?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline>
+                <video key={content?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline playsInline>
                   <source src={content?.videoFile?.publicURL} type="video/mp4" />
                 </video>
                 {/* <p className="caption">{content?.caption}</p> */}
@@ -138,7 +138,7 @@ const ImageSection = ({ content, type }) => {
                         (image?.videoFile || image.newVideoFile) != null ?
                           <SwiperSlide className="swiper-slide" >
                             {/* <div className="video-section"> */}
-                            <video key={image?.videoFile?.publicURL || image?.newVideoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline>
+                            <video key={image?.videoFile?.publicURL || image?.newVideoFile?.publicURL} muted autoPlay loop webkit-playsinline playsInline>
                               <source src={image?.videoFile?.publicURL || image?.newVideoFile?.publicURL} type="video/mp4" />
                             </video>
                             {/* </div> */}
@@ -192,7 +192,7 @@ const ImageSection = ({ content, type }) => {
                         (image?.videoFile || image.newVideoFile) != null ?
                           <SwiperSlide className="swiper-slide" >
                             {/* <div className="video-section"> */}
-                            <video key={image?.videoFile?.publicURL || image?.newVideoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline>
+                            <video key={image?.videoFile?.publicURL || image?.newVideoFile?.publicURL} muted autoPlay loop webkit-playsinline playsInline>
                               <source src={image?.videoFile?.publicURL || image?.newVideoFile?.publicURL} type="video/mp4" />
                             </video>
                             {/* </div> */}

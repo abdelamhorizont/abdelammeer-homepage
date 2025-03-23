@@ -38,8 +38,9 @@
 
 
     li {
-        list-style-type: circle;
+        // list-style-type: circle;
         margin: 1rem 0rem;
+        list-style-type: disc;
 
     }
 
@@ -102,13 +103,12 @@
                 li{
                     font-size: 3rem;
                     line-height: 4rem;
-                    list-style-type: disc;
                 }
             }
         }
 
         .description {
-            grid-column: 4/12;
+            grid-column: 4/11;
 
             p {
                 font-size: 4rem;
@@ -124,6 +124,7 @@
         a {
             font-size: 3rem;
             line-height: 3.5rem;
+            margin-bottom: 4rem;
         }
     }
 
