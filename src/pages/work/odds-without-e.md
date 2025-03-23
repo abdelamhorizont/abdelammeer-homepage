@@ -9,14 +9,14 @@ title section:
   images: []
 cover_image:
   - type: video
-    caption: Landing page
-    videoFile: /img/1.mp4
+    videoFile: /img/3.mp4
+    caption: Website Navigation
   - type: video
     videoFile: /img/2.mp4
     caption: Landing page mobile
   - type: video
-    videoFile: /img/3.mp4
-    caption: Website Navigation
+    caption: Landing page
+    videoFile: /img/1.mp4
 Description: >-
   For most, digital networking has become a lifeline during the period of
   curfews. In addition, many have decluttered their homes and offered discarded
