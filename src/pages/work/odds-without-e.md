@@ -1,6 +1,6 @@
 ---
 templateKey: work-post
-title: Odds without E
+title: Odds without Ends
 title section:
   date: 2025-03-23T14:44:33.304Z
   type: work
