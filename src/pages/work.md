@@ -28,10 +28,10 @@ variable-content:
         reference: Deep Sea Bots
       - type: work-reference
         full-width: false
-        reference: Narrating Africa
+        reference: Five in your Eyes
       - type: work-reference
         full-width: false
-        reference: Five in your Eyes
+        reference: Narrating Africa
       - type: work-reference
         full-width: false
         reference: offshoot*berlin
