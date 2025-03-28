@@ -16,7 +16,7 @@ variable-content:
       - type: image
         imageFile: /img/zeichenfläche-3.jpg
       - type: image
-        imageFile: /img/cover-wide.jpg
+        imageFile: /img/fun-2.png
         caption: Systems Screenprint
       - type: image
         imageFile: /img/dsc080563.jpg
@@ -46,11 +46,14 @@ variable-content:
         imageFile: /img/narrating-namibia-10.jpg
         caption: Narrating Namibia 2
       - type: image
-        imageFile: /img/narrating-africa-1.jpg
-        caption: Narrating Africa 2
+        imageFile: /img/narrating-namibia-poster-19.jpg
+        caption: Narrating Namibia
       - type: image
         imageFile: /img/1.jpg
         caption: ABK Stuttgart 2
+      - type: image
+        imageFile: /img/narrating-africa-1.jpg
+        caption: Narrating Africa 2
   - type: text-section
     column-start: "1"
     column-end: "13"
