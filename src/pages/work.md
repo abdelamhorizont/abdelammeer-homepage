@@ -16,32 +16,38 @@ variable-content:
         reference: ABK Stuttgart
       - type: work-reference
         full-width: false
-        reference: NEW NORMAL
-      - type: work-reference
-        full-width: false
         reference: Narrating Namibia
       - type: work-reference
         full-width: false
-        reference: Deep Sea Bots
+        reference: NEW NORMAL
       - type: work-reference
         full-width: false
         reference: GleisMediale
       - type: work-reference
         full-width: false
-        reference: Narrating Africa
+        reference: Deep Sea Bots
       - type: work-reference
         full-width: false
         reference: Five in your Eyes
       - type: work-reference
         full-width: false
-        reference: offshoot*berlin
+        reference: Narrating Africa
       - type: work-reference
         full-width: false
-        reference: Melton Prior Institute
+        reference: offshoot*berlin
       - type: work-reference
         full-width: false
         reference: Silencium
       - type: work-reference
         full-width: false
-        reference: Odds without E
+        reference: Melton Prior Institute
+      - type: work-reference
+        full-width: false
+        reference: Sonne & Trabanten
+      - type: work-reference
+        full-width: false
+        reference: Odds without Ends
+      - type: work-reference
+        full-width: false
+        reference: Philosophie des Designs
 ---

@@ -6,7 +6,7 @@ title section:
   type: work
   format: Exhibition
   location: Kunstmuseum Stuttgart
-  collaborators: Stefan Avra
+  collaborators: ""
 cover_image:
   - type: image
     imageFile: /img/cover-wide.jpg
