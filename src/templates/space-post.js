@@ -7,6 +7,7 @@ import Layout from "../components/layout/Layout";
 import TextSection, { HTMLContent } from "../components/content/text-section";
 import ImageSection from "../components/content/image-section";
 import { ProjectPreview } from '../components/project/projectPreview';
+import Hand from '../assets/img/SVG/hand.png'
 
 import '../styles/space.scss'
 
@@ -28,6 +29,7 @@ const SpacePost = ({ data }) => {
               alt={''}
             />
             <iframe src={post.frontmatter.cover_image[iframeIndex]?.iframe_link} frameborder="100px"></iframe>
+             <img src={Hand} alt="interactive symbol" id="hand" />
 
             <p className="caption">{post.frontmatter.cover_image?.caption}</p>
           </div>

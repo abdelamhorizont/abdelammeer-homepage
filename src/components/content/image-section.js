@@ -5,6 +5,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, A11y } from 'swiper';
 import Arrow from '../../assets/img/SVG/arrow.png'
+import Hand from '../../assets/img/SVG/hand.png'
 
 import './content.scss'
 import 'swiper/css'
@@ -41,7 +42,10 @@ const ImageSection = ({ content, type }) => {
     <div className={type}>
       {        
         content?.iframe_link != null ?
+        <>
           <iframe src={content.iframe_link} frameborder="100px"></iframe>
+          <img src={Hand} alt="interactive symbol" />
+        </>
           :
           // type == "image" ?
           (content?.imageFile != null) ?
@@ -84,6 +88,7 @@ const ImageSection = ({ content, type }) => {
                             <iframe src={image?.iFrame_link} frameborder="100px"></iframe>
                             {/* <iframe width="1434" height="637" src="https://www.youtube.com/embed/ncz9mrj5VHA" title="Deep Sea Bots" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
                             <p className="caption">{image?.caption}</p>
+                            <img src={Hand} alt="interactive symbol" />
                           </div>
                           :
                           image.type == ("newVideo" || "video") ?
@@ -123,7 +128,7 @@ const ImageSection = ({ content, type }) => {
                   }}
                   loop
                   // initialSlide={0}
-                  spaceBetween={0}
+                  spaceBetween={'-1px'}
                   slidesPerView={'auto'}
                   centeredSlides={mobile}
                   className="swiper"

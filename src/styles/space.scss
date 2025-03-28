@@ -21,7 +21,9 @@
            grid-column: span 2;
 
            width: auto;
-           display: flex;
+           //    display: flex;
+           display: grid;
+           grid-template-columns: auto 60vw auto auto;
 
            transition: all 0.3s ease;
 
@@ -46,6 +48,7 @@
                font-size: 1.5rem;
                font-family: Kleukens;
                height: fit-content;
+               width: fit-content;
                border-radius: 5rem;
                text-align: left;
 
@@ -58,11 +61,13 @@
            .title-img {
                // transform: scale(0.5);
                height: fit-content;
+            //    max-width: 30vw;
                // margin-top: 3rem;
                overflow: visible;
 
                img {
                    // height: 20vh;
+                //    width: 100%;
                    object-fit: contain;
                }
            }
@@ -207,12 +212,10 @@
                grid-column: span 8;
                height: 80vh;
                width: 80%;
-               border-radius: 25vw;
-               overflow: hidden;
 
                img,
                video {
-                //    width: min-content;
+                   //    width: min-content;
                    width: auto;
                    height: 100%;
                    border-radius: 1rem;
@@ -221,8 +224,15 @@
                iframe {
                    height: 100%;
                    width: 100%;
+                   border-radius: 25vw;
+                   overflow: hidden;
                }
 
+               #hand {
+                   position: absolute;
+                   width: 70px;
+                   height: auto;
+               }
 
                p.caption {
                    margin: 0.5rem;
@@ -326,7 +336,10 @@
 
                // overflow: visible;
                iframe {
+                   border-radius: 25vw;
+                   overflow: hidden;
                    // overflow: visible;
+
                    width: calc(100% * 2.2);
                    height: calc(100% * 2);
                    zoom: 1;
@@ -430,6 +443,32 @@
                }
            }
        }
+
+       .space-post {
+           .postcover {
+                .title-img{
+                    max-width: 30vw;
+                }
+
+               .cover-image {
+
+                   #hand {
+                       bottom: 10rem;
+                       left: 60vw;
+                   }
+               }
+           }
+       }
+
+       .deep-sea-bots {
+           .postcover {
+               .cover-image {
+                   border-radius: 25vw;
+                   overflow: hidden;
+
+               }
+           }
+       }
    }
 
    @media screen and (max-width: 720px) {
@@ -444,13 +483,18 @@
                    // max-width: 40vw;
                    // max-height: 10vh;
                    grid-row: 2;
+
                    display: flex;
                    align-items: flex-end;
                    justify-content: flex-end;
+                   
                    margin-top: auto;
                    grid-column: 2;
                    width: auto;
                    //    margin-top: 25rem;
+                   img {
+                    width: auto;
+                }
                }
 
                .cover-image {
@@ -478,7 +522,6 @@
                            }
                        }
                    }
-
 
                }
 
@@ -512,7 +555,7 @@
 
                    //    margin-top: 25rem;
                    img {
-                       height: max-content;
+                       //    height: max-content;
                        width: auto;
                    }
                }
@@ -527,11 +570,11 @@
                    //    display: flex;
                    justify-content: center;
                    //    margin-top: 10vh;
-                   border-radius: 20rem;
-                   overflow: hidden;
 
                    iframe {
-                       width: 100vw;
+                       border-radius: 20rem;
+                       overflow: hidden;
+                       //    width: 100vw;
                    }
 
                    .image-content {
@@ -548,6 +591,12 @@
                        }
                    }
 
+                   #hand {
+                       position: absolute;
+                       bottom: 0rem;
+                       left: 70vw;
+                       z-index: 10;
+                   }
 
                }
 
@@ -591,6 +640,14 @@
                        width: 130vw !important;
                        height: 40vh !important;
                    }
+
+                   border-radius: 25vw;
+                   overflow: hidden;
+                   
+                   #hand {
+                    bottom: 2rem;
+                    left: 70vw;
+                }
 
                    iframe {
                        // overflow: visible;

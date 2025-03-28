@@ -9,6 +9,11 @@
     .nav-header{
         position: fixed;
     }
+    .nav-footer{
+        position: absolute;
+        // bottom: -1rem;
+        margin-top: -6rem;
+    }
 
     nav {
         display: flex;
@@ -54,6 +59,11 @@
             font-family: PangramRoundedBold;
 
         }
+
+        // a{
+        //     filter: drop-shadow(0px 0px 3px rgb(0, 0, 0));
+
+        // }
 
         #logo{
             font-size: 2rem;

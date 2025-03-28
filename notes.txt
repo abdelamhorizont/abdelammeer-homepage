@@ -3,6 +3,6 @@
 - backend style
 
 - debug:
-    - images in swiper too big
-    - title-img deep sea bots too big
+    - title-img ocean view too big
+    - swiper background-color blog transparent
     - content img are cropped

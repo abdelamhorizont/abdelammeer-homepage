@@ -293,6 +293,7 @@
         // width:fit-content;
         width: auto;
         height: 100%;
+        overflow: hidden;
 
         img,
         video {
@@ -424,7 +425,7 @@
         height: 100%;
         width: 100%;
         overflow: hidden;
-        background-color: black;
+        // background-color: black;
         // display: flex;
         // align-items: center;
         

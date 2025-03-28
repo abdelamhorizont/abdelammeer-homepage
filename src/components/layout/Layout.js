@@ -137,12 +137,12 @@ const Layout = ({ children, activeSite, colorTheme, passTheme, location }) => {
       <nav className="nav-footer">
         <ul>
         {/* <div className="contact"> */}
-          <li className="insta-link"><a href='https://www.instagram.com/' target="blank">Instagram</a></li>
+          <li className="insta-link"><a href='https://www.instagram.com/abdelammeer/' target="blank">Instagram</a></li>
         {/* </div> */}
 
         {/* <div className="nav-links-footer"> */}
-         <li> <Link state={{theme}} to="/imprint">Imprint</Link></li>
-          <li><Link state={{theme}} to="/privacy-policy">Privacy Policy</Link></li>
+         {/* <li> <Link state={{theme}} to="/imprint">Imprint</Link></li>
+          <li><Link state={{theme}} to="/privacy-policy">Privacy Policy</Link></li> */}
         {/* </div> */}
         </ul>
       </nav>
