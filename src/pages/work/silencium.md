@@ -21,6 +21,9 @@ cover_image:
   - type: video
     videoFile: /img/silencium-3.mp4
     caption: Sleep
+  - type: video
+    videoFile: /img/silencium-5.mp4
+    caption: diamond
 Description: Digitaler Raum, elektronischer Traum, widerwillige Stille,
   wankelmütiger Wille, Tick-Tack Tick-Tack, Luftschleier steht, Windhauch weht,
   wandelt, wendet, klickt, Auge blinzelt und blickt, wabert, wandert, wundert,
