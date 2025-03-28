@@ -26,24 +26,17 @@ variable-content:
       My work is grounded in thorough *research* and personal *exchange* with all participants through *clear*, direct communication. I begin each project with *collaborative* workshops to establish a strong *conceptual* foundation. From concept to completion, I guide the entire *process*, drawing on my network of other creatives, coders, and printers when needed.
 
 
-      Through workshops, artist residencies, and teaching, I explore my *interests*, such as *experiment* and speculation in drawing, AI embodiment and demystification, *accessibility* of illustration, and *empowerment* in video games. I document this research, *work-in-progress*, and results on my blog on this website.
-
-
-      As an academic associate at the HfG Karlsruhe, I teach typography to first-year students, covering foundational skills in type design, history, vocabulary, and qualitative evaluation, as well as macro- and microtypography, information hierarchies, layout, and composition. The school's *interdisciplinary* environment has allowed me to lead seminars and workshops on AI demystification, Mediterranean Ocean media representation, video game platforms, and even a ping-pong tournament.
-
-
       I studied communication design at the Stuttgart State Academy of Arts and Design and at the Tokyo University of the Arts.
   - type: text-section
     big-size: false
+    text: "[hello@abdelammeer.com](mailto:hello@abdelammeer.com)"
+    title: C﻿ontact
+  - type: text-section
+    big-size: false
     text: |-
-      [hello@abdelammeer.com](mailto:hello@abdelammeer.com)
-
-
-
-      Abdel Ameur \
+      Abdelhamid Ameur \
       Stuttgart Süd \
       9:00—17:00
-    title: C﻿ontact
   - type: text-section
     big-size: false
     text: |-
@@ -56,19 +49,16 @@ variable-content:
     title: "Services "
   - type: text-section
     big-size: false
-    text: |-
-      * K﻿unstmuseum Stuttgart
-      * Z﻿KM Karlsruhe
-      * M﻿elton Prior Institute
-      * Staatliche Akademie der\
-        Bildenden Künste Stuttgart
-      * Deutsches Literaturarchiv Marbach
-      * Stadtpalais Stuttgart
-      * N﻿EW NORMAL Festival
-      * Ooffshoot*berlin
-      * Fraunhofer Institut
-      * Stiftung Digitale Spielekultur
-    title: "Clients "
+    text: >-
+      Through workshops, artist residencies, and teaching, I explore my
+      *interests*, such as *experiment* and speculation with drawing, AI
+      embodiment and demystification, *accessibility* of illustration, and
+      *empowerment* in video games. I document this research,
+      *work-in-progress*, and results on my blog on this website.
+
+
+      As an academic associate at the HfG Karlsruhe, I teach typography to first-year students, covering foundational skills in type design, history, vocabulary, and qualitative evaluation, as well as macro- and microtypography, information hierarchies, layout, and composition. The school's *interdisciplinary* environment has allowed me to lead seminars and workshops on AI demystification, Mediterranean Ocean media representation, video game platforms, and even a ping-pong tournament.
+    title: Interests
   - type: text-section
     big-size: false
     text: >-
@@ -87,4 +77,19 @@ variable-content:
 
       * [S﻿tronger with Games](https://abdelammeer.netlify.app/blog/stronger-with-games/)
     title: Teaching
+  - type: text-section
+    big-size: false
+    text: |-
+      * K﻿unstmuseum Stuttgart
+      * Z﻿KM Karlsruhe
+      * M﻿elton Prior Institute
+      * Staatliche Akademie der\
+        Bildenden Künste Stuttgart
+      * Deutsches Literaturarchiv Marbach
+      * Stadtpalais Stuttgart
+      * N﻿EW NORMAL Festival
+      * Ooffshoot*berlin
+      * Fraunhofer Institut
+      * Stiftung Digitale Spielekultur
+    title: "Clients "
 ---
