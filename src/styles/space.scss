@@ -446,11 +446,16 @@
 
        .space-post {
            .postcover {
+            grid-template-columns: auto 60vw auto auto;
+
                 .title-img{
-                    max-width: 30vw;
+                    max-width: 20vw;
                 }
 
                .cover-image {
+                iframe {
+                    border-radius: 15vw;
+                }
 
                    #hand {
                        bottom: 10rem;
