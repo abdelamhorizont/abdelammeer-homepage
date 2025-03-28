@@ -10,6 +10,9 @@ title section:
   type: space
   format: Simulation
 cover_image:
+  - type: video
+    videoFile: /img/living-systems-app-recording.mp4
+    caption: living. systems recording
   - type: iframe
     iframe-link: https://abdelamhorizont.github.io/living-systems/
     caption: Living Systems
