@@ -160,7 +160,21 @@
             height: 65vh;
 
         }
+    }
 
+    #hand{
+        position: relative;
+        right: -42vw;
+        justify-self: flex-end;
+        margin-right: auto;
+        
+        width: 70px;
+        height: 70px;
+        
+        img{
+            margin-top: -4rem;
+            width: 70px;
+        }
     }
 
     // width: 30vw;

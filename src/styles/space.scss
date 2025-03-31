@@ -61,13 +61,13 @@
            .title-img {
                // transform: scale(0.5);
                height: fit-content;
-            //    max-width: 30vw;
+               //    max-width: 30vw;
                // margin-top: 3rem;
                overflow: visible;
 
                img {
                    // height: 20vh;
-                //    width: 100%;
+                   //    width: 100%;
                    object-fit: contain;
                }
            }
@@ -132,9 +132,7 @@
                width: 100%;
            }
 
-           video {
-               width: 70vw;
-           }
+
 
        }
 
@@ -434,6 +432,14 @@
 
    @media screen and (min-width: 720px) {
        .space {
+           .postcover {
+               .cover-image {
+                   video {
+                       width: 70vw;
+                   }
+               }
+           }
+
            .deep-sea-bots {
                .postcover {
                    .cover-image {
@@ -446,16 +452,17 @@
 
        .space-post {
            .postcover {
-            grid-template-columns: auto 60vw auto auto;
+               grid-template-columns: auto 60vw auto auto;
 
-                .title-img{
-                    max-width: 20vw;
-                }
+               .title-img {
+                   max-width: 20vw;
+               }
 
                .cover-image {
-                iframe {
-                    border-radius: 15vw;
-                }
+
+                   iframe {
+                       border-radius: 25vw;
+                   }
 
                    #hand {
                        bottom: 10rem;
@@ -492,14 +499,20 @@
                    display: flex;
                    align-items: flex-end;
                    justify-content: flex-end;
-                   
+
                    margin-top: auto;
                    grid-column: 2;
                    width: auto;
+
                    //    margin-top: 25rem;
                    img {
-                    width: auto;
-                }
+                       height: fit-content;
+                    //    width: max-content;
+                       max-height: 10rem;
+                       max-width: 60vw;
+                    //    width: auto;
+                       // height: auto;
+                   }
                }
 
                .cover-image {
@@ -511,18 +524,25 @@
                    display: flex;
                    justify-content: center;
                    //    margin-top: 10vh;
-                   border-radius: 20rem;
+                      border-radius: 25rem;
                    overflow: hidden;
+
+                   video {
+                       height: 55vh;
+                       width: 100vw;
+                       //    width: 80vw !important;
+                   }
 
                    .image-content {
                        //    width: 90vw;
 
                        .video-section {
                            //    width: 80vw;
+                           padding: 1rem;
 
                            video {
                                height: 55vh;
-                               width: auto;
+                               width: 100vw;
                                //    width: 80vw !important;
                            }
                        }
@@ -562,6 +582,7 @@
                    img {
                        //    height: max-content;
                        width: auto;
+                       height: auto;
                    }
                }
 
@@ -577,7 +598,7 @@
                    //    margin-top: 10vh;
 
                    iframe {
-                       border-radius: 20rem;
+                       border-radius: 25rem;
                        overflow: hidden;
                        //    width: 100vw;
                    }
@@ -646,13 +667,13 @@
                        height: 40vh !important;
                    }
 
-                   border-radius: 25vw;
+                   border-radius: 55vw;
                    overflow: hidden;
-                   
+
                    #hand {
-                    bottom: 2rem;
-                    left: 70vw;
-                }
+                       bottom: 2rem;
+                       left: 70vw;
+                   }
 
                    iframe {
                        // overflow: visible;

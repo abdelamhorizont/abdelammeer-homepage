@@ -29,7 +29,9 @@ const SpacePost = ({ data }) => {
               alt={''}
             />
             <iframe src={post.frontmatter.cover_image[iframeIndex]?.iframe_link} frameborder="100px"></iframe>
+             <a target="_blank" href={post.frontmatter.cover_image[iframeIndex]?.iframe_link}>
              <img src={Hand} alt="interactive symbol" id="hand" />
+              </a>
 
             <p className="caption">{post.frontmatter.cover_image?.caption}</p>
           </div>

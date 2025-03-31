@@ -44,7 +44,7 @@ const ImageSection = ({ content, type }) => {
         content?.iframe_link != null ?
         <>
           <iframe src={content.iframe_link} frameborder="100px"></iframe>
-          <img src={Hand} alt="interactive symbol" />
+          {/* <img src={Hand} alt="interactive symbol" /> */}
         </>
           :
           // type == "image" ?
@@ -68,7 +68,7 @@ const ImageSection = ({ content, type }) => {
               :
               (content?.images?.length == 1) && (content?.images[0]?.newVideoFile) != null ?
               <div className="video-section">
-                <video key={content?.newVideoFile?.publicURL || content?.images[0]?.newVideoFile?.publicURL } playsinline webkit-playsinline autoPlay muted loop controls>
+                <video key={content?.newVideoFile?.publicURL || content?.images[0]?.newVideoFile?.publicURL } playsinline webkit-playsinline autoPlay muted controls>
                   <source src={content?.newVideoFile?.publicURL || content?.images[0]?.newVideoFile?.publicURL } type="video/mp4" />
                 </video>
                 <p className="caption">{content?.images[0]?.caption}</p>
@@ -88,12 +88,14 @@ const ImageSection = ({ content, type }) => {
                             <iframe src={image?.iFrame_link} frameborder="100px"></iframe>
                             {/* <iframe width="1434" height="637" src="https://www.youtube.com/embed/ncz9mrj5VHA" title="Deep Sea Bots" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
                             <p className="caption">{image?.caption}</p>
-                            <img src={Hand} alt="interactive symbol" />
+                            <a id="hand" target="_blank" href={image?.iFrame_link}>
+                              <img src={Hand} alt="interactive symbol" />
+                            </a>
                           </div>
                           :
                           image.type == ("newVideo" || "video") ?
                             <div className="video-section">
-                              <video key={image?.newVideoFile?.publicURL || image?.videoFile?.publicURL} autoPlay muted loop controls playsinline webkit-playsinline>
+                              <video key={image?.newVideoFile?.publicURL || image?.videoFile?.publicURL} autoPlay muted controls playsinline webkit-playsinline>
                                 {/* <video key={image?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline> */}
                                 <source src={image?.newVideoFile?.publicURL || image?.videoFile?.publicURL} type="video/mp4" />
                                 {/* <source src={image?.videoFile} type="video/mp4" /> */}
@@ -197,7 +199,7 @@ const ImageSection = ({ content, type }) => {
                         (image?.videoFile || image.newVideoFile) != null ?
                           <SwiperSlide className="swiper-slide" >
                             {/* <div className="video-section"> */}
-                            <video key={image?.videoFile?.publicURL || image?.newVideoFile?.publicURL} muted autoPlay loop webkit-playsinline playsInline>
+                            <video key={image?.videoFile?.publicURL || image?.newVideoFile?.publicURL} muted autoPlay webkit-playsinline playsInline controls>
                               <source src={image?.videoFile?.publicURL || image?.newVideoFile?.publicURL} type="video/mp4" />
                             </video>
                             {/* </div> */}
