@@ -4,8 +4,8 @@ templateKey: about-page
 title: "about "
 title section:
   date: 2024-03-25T10:02:48.381Z
-Description: I'm Abdel Ameur, and I create engaging, visually captivating works
-  through *Graphic Design* and *Illustration*.
+Description: I'm Abdel Ameur, and I create engaging and visually captivating
+  works through *Graphic Design* and *Illustration*.
 variable-content:
   - type: text-section
     big-size: false
