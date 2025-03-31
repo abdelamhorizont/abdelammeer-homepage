@@ -31,7 +31,7 @@ variable-content:
         imageFile: /img/img_5149.jpg
         caption: Living Systems
       - type: newVideo
-        newVideoFile: /img/abdel_butterfly_1.mp4
+        newVideoFile: /img/abdel_butterfly_1_2.mp4
         caption: New Normal
       - type: image
         imageFile: /img/narrating-namibia-1.jpg
