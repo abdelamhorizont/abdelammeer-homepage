@@ -68,7 +68,7 @@ const ImageSection = ({ content, type }) => {
               :
               (content?.images?.length == 1) && (content?.images[0]?.newVideoFile) != null ?
               <div className="video-section">
-                <video key={content?.newVideoFile?.publicURL || content?.images[0]?.newVideoFile?.publicURL } playsinline webkit-playsinline autoPlay muted controls>
+                <video key={content?.newVideoFile?.publicURL || content?.images[0]?.newVideoFile?.publicURL } playsinline webkit-playsinline autoPlay muted loop controls>
                   <source src={content?.newVideoFile?.publicURL || content?.images[0]?.newVideoFile?.publicURL } type="video/mp4" />
                 </video>
                 <p className="caption">{content?.images[0]?.caption}</p>
@@ -95,7 +95,7 @@ const ImageSection = ({ content, type }) => {
                           :
                           image.type == ("newVideo" || "video") ?
                             <div className="video-section">
-                              <video key={image?.newVideoFile?.publicURL || image?.videoFile?.publicURL} autoPlay muted controls playsinline webkit-playsinline>
+                              <video key={image?.newVideoFile?.publicURL || image?.videoFile?.publicURL} muted loop playsinline webkit-playsinline controls>
                                 {/* <video key={image?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline> */}
                                 <source src={image?.newVideoFile?.publicURL || image?.videoFile?.publicURL} type="video/mp4" />
                                 {/* <source src={image?.videoFile} type="video/mp4" /> */}
@@ -199,7 +199,7 @@ const ImageSection = ({ content, type }) => {
                         (image?.videoFile || image.newVideoFile) != null ?
                           <SwiperSlide className="swiper-slide" >
                             {/* <div className="video-section"> */}
-                            <video key={image?.videoFile?.publicURL || image?.newVideoFile?.publicURL} muted autoPlay webkit-playsinline playsInline controls>
+                            <video key={image?.videoFile?.publicURL || image?.newVideoFile?.publicURL} muted autoPlay loop webkit-playsinline playsInline>
                               <source src={image?.videoFile?.publicURL || image?.newVideoFile?.publicURL} type="video/mp4" />
                             </video>
                             {/* </div> */}
