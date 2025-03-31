@@ -31,7 +31,7 @@ variable-content:
         imageFile: /img/img_5149.jpg
         caption: Living Systems
       - type: newVideo
-        newVideoFile: /img/abdel_butterfly_1.mp4
+        newVideoFile: /img/abdel_butterfly_1_2.mp4
         caption: New Normal
       - type: image
         imageFile: /img/narrating-namibia-1.jpg
@@ -94,6 +94,8 @@ variable-content:
         reference: "Typography 1: Letters"
       - type: blog-reference
         reference: "Typography 2: Instruction Manuals for Natural Phenomena"
+      - type: space-reference
+        reference: "Living Systems "
       - type: blog-reference
         reference: Stronger with Games
       - type: work-reference
@@ -102,6 +104,12 @@ variable-content:
       - type: work-reference
         full-width: false
         reference: GleisMediale
+      - type: work-reference
+        full-width: false
+        reference: offshoot*berlin
+      - type: work-reference
+        full-width: false
+        reference: Odds without Ends
       - type: space-reference
         reference: Ocean View
 ---
