@@ -94,14 +94,14 @@
             // gap: 0rem;
             margin: 0rem -1.5rem;
             // margin-bottom: 2rem;
-            font-size: 2rem;
+            font-size: 3rem;
 
             transition: all ease 0.5s;   
 
             #star{
                 position: fixed;
                 left: 1rem;
-                bottom: 20vh;
+                bottom: 22vh;
             }
             #sun{
                 position: fixed;
@@ -134,10 +134,10 @@
 
         button{
             img{
-                // max-height: 5.25rem;
-                // max-width: 6.5rem;
-                max-height: 4.25rem;
-                max-width: 5.5rem;
+                max-height: 5.25rem;
+                max-width: 6.5rem;
+                // max-height: 4.25rem;
+                // max-width: 5.5rem;
                 transition: all ease 0.5s;   
 
             }
@@ -145,7 +145,9 @@
 
         li:hover{
             img{
-                transform: scale(1.2);
+                // transform: scale(2);
+                max-height: 10.25rem;
+                max-width: 10.5rem;
                 // transition: all ease 0.5s;   
 
             }
@@ -216,7 +218,8 @@
 
 
     #logo{
-        width: fit-content;
+        white-space: nowrap;
+
         display: flex;
         gap: 0.5rem;
     }
@@ -224,7 +227,7 @@
     #sun{
         position: fixed;
         margin-top: 3rem;
-        left: 80vw;
+        left: 70vw;
     }
 
 

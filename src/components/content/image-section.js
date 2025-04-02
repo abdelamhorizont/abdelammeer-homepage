@@ -95,7 +95,7 @@ const ImageSection = ({ content, type }) => {
                           :
                           image.type == ("newVideo" || "video") ?
                             <div className="video-section">
-                              <video key={image?.newVideoFile?.publicURL || image?.videoFile?.publicURL} muted loop playsinline webkit-playsinline controls>
+                              <video key={image?.newVideoFile?.publicURL || image?.videoFile?.publicURL} autoPlay={!mobile} muted loop playsinline webkit-playsinline controls>
                                 {/* <video key={image?.videoFile?.publicURL} muted autoPlay loop webkit-playsinline="true" playsInline> */}
                                 <source src={image?.newVideoFile?.publicURL || image?.videoFile?.publicURL} type="video/mp4" />
                                 {/* <source src={image?.videoFile} type="video/mp4" /> */}

@@ -5,11 +5,11 @@ import useSiteMetadata from "../SiteMetadata";
 import { withPrefix, Link } from "gatsby";
 import { motion } from "framer-motion"
 
-import Sun from '../../assets/img/SVG/sun.png'
+import Sun from '../../assets/img/SVG/book.png'
 import Moon from '../../assets/img/SVG/moon.svg'
-import Cloud from '../../assets/img/SVG/cloud.png'
-import Rainbow from '../../assets/img/SVG/rainbow.png'
-import Star from '../../assets/img/SVG/star.png'
+import Cloud from '../../assets/img/SVG/person.png'
+import Rainbow from '../../assets/img/SVG/galaxy.png'
+import Star from '../../assets/img/SVG/anglerfish.png'
 import Diamond from '../../assets/img/SVG/diamond.png'
 import Feuer from '../../assets/img/SVG/flame.png'
 
@@ -77,7 +77,7 @@ const Layout = ({ children, activeSite, colorTheme, passTheme, location }) => {
         <nav className="nav-header">
           <div className="nav-group" >
             <ul className="nav-meta">
-              <Link state={{theme}} to="/"><li id='logo'><span id="studio">studio</span> abdelammeer</li></Link>
+              <Link state={{theme}} to="/"><li id='logo'><span>studio</span> abdel am <span id="studio">meer</span></li></Link>
               <Link state={{theme}} to="/about"><li>about</li></Link>
               <a href="mailto:hello@abdelammeer.com"><li id="contact">@</li></a>
             </ul>
