@@ -14,7 +14,7 @@ variable-content:
     text: >-
       With *drawing* as a relatable and *personal* tool, colorful shapes and
       textures, I create objects, characters, and lettering that blend with
-      *typography* and *layout* across various *formats*—like visual identities,
+      *typography* and *layout* across various *formats*— visual identities,
       books, spatial, interactive, and animated platforms. My portfolio includes
       works such as "Living Systems," an illustrated and interactive simulation
       for the Kunstmuseum Stuttgart, the comprehensive corporate design of the
