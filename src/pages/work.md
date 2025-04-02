@@ -10,6 +10,9 @@ variable-content:
     references:
       - type: work-reference
         full-width: false
+        reference: KD Newsletter
+      - type: work-reference
+        full-width: false
         reference: Living Systems
       - type: work-reference
         full-width: false
