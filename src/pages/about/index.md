@@ -4,23 +4,22 @@ templateKey: about-page
 title: "about "
 title section:
   date: 2024-03-25T10:02:48.381Z
-Description: I'm Abdel Ameur, and I create engaging and visually captivating
-  works through *Graphic Design* and *Illustration*.
+Description: studio abdel am meer specializes in bringing *illustrative* ideas
+  to life through drawing, *typography* and *material* to create captivating,
+  *engaging* and tailored aesthetics that resonate with *diverse* audiences.
 variable-content:
   - type: text-section
     big-size: false
     title: ""
     text: >-
-      I specialize in bringing illustrative *ideas* to life through graphic
-      design, using *drawing* as a relatable and *personal* tool for exploring
-      compelling and tailored *aesthetics* that resonate with diverse audiences.
-      Through colorful shapes and textures, I create objects, characters, and
-      lettering that blend with *typography* and *layout* across various
-      *formats*—like visual identities, books, spatial, interactive, and
-      animated platforms. My portfolio includes works such as "Living Systems,"
-      an illustrated and interactive simulation for the Kunstmuseum Stuttgart,
-      the comprehensive corporate design of the ABK Stuttgart, or the exhibition
-      design for Narrating Africa at the German Literature Archive in Marbach.
+      With *drawing* as a relatable and *personal* tool, colorful shapes and
+      textures, I create objects, characters, and lettering that blend with
+      *typography* and *layout* across various *formats*— visual identities,
+      books, spatial, interactive, and animated platforms. My portfolio includes
+      works such as "Living Systems," an illustrated and interactive simulation
+      for the Kunstmuseum Stuttgart, the comprehensive corporate design of the
+      ABK Stuttgart, or the exhibition design for Narrating Africa at the German
+      Literature Archive in Marbach.
 
 
       My work is grounded in thorough *research* and personal *exchange* with all participants through *clear*, direct communication. I begin each project with *collaborative* workshops to establish a strong *conceptual* foundation. From concept to completion, I guide the entire *process*, drawing on my network of other creatives, coders, and printers when needed.

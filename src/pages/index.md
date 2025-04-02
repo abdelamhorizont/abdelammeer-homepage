@@ -48,6 +48,9 @@ variable-content:
       - type: image
         imageFile: /img/narrating-namibia-poster-19.jpg
         caption: Narrating Namibia
+      - type: newVideo
+        newVideoFile: /img/os-b-website_comp.mp4
+        caption: offshoot berlin
       - type: image
         imageFile: /img/1.jpg
         caption: ABK Stuttgart 2
@@ -83,13 +86,13 @@ variable-content:
         reference: Five in your Eyes
       - type: work-reference
         full-width: false
+        reference: KD Newsletter
+      - type: work-reference
+        full-width: false
         reference: ABK Stuttgart
       - type: work-reference
         full-width: false
         reference: Narrating Africa
-      - type: work-reference
-        full-width: false
-        reference: Living Systems
       - type: blog-reference
         reference: "Typography 1: Letters"
       - type: blog-reference
@@ -109,7 +112,7 @@ variable-content:
         reference: offshoot*berlin
       - type: work-reference
         full-width: false
-        reference: Odds without Ends
+        reference: Living Systems
       - type: space-reference
         reference: Ocean View
 ---
