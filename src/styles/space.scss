@@ -329,6 +329,8 @@
            .cover-image {
                background-color: rgba(255, 255, 255, 0.5);
                overflow: hidden;
+               border-radius: 55vw;
+
                //    padding-top: 10rem;
 
 
@@ -472,11 +474,11 @@
            }
        }
 
-       .space{
+       .space, .space-post{
            .deep-sea-bots {
                .postcover {
                    .cover-image {
-                       border-radius: 25vw;
+                       border-radius: 55vw;
                        overflow: hidden;
     
                    }
