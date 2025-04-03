@@ -12,6 +12,7 @@ import Rainbow from '../../assets/img/SVG/galaxy.png'
 import Star from '../../assets/img/SVG/anglerfish.png'
 import Diamond from '../../assets/img/SVG/diamond.png'
 import Feuer from '../../assets/img/SVG/flame.png'
+import Logo from '../../assets/img/SVG/logo.png'
 
 import './layout.scss'
 
@@ -77,7 +78,8 @@ const Layout = ({ children, activeSite, colorTheme, passTheme, location }) => {
         <nav className="nav-header">
           <div className="nav-group" >
             <ul className="nav-meta">
-              <Link state={{theme}} to="/"><li id='logo'><span>studio</span> abdel am <span id="studio">meer</span></li></Link>
+              {/* <Link state={{theme}} to="/"><li id='logo'><span>studio</span> abdel am <span id="studio">meer</span></li></Link> */}
+              <Link state={{theme}} to="/"><li id='logo'><img src={Logo} alt="studio abdel am meer" /></li></Link>
               <Link state={{theme}} to="/about"><li>about</li></Link>
               <a href="mailto:hello@abdelammeer.com"><li id="contact">@</li></a>
             </ul>

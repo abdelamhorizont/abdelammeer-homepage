@@ -4,7 +4,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, A11y } from 'swiper';
-import Arrow from '../../assets/img/SVG/arrow.png'
+import Arrow from '../../assets/img/SVG/arrow-right.png'
 import Hand from '../../assets/img/SVG/hand.png'
 
 import './content.scss'

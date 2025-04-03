@@ -68,6 +68,10 @@
         #logo{
             font-size: 2rem;
             font-family: PangramRoundedBold;
+
+            img{
+                height: 5rem;
+            }
         }
         
         #studio{
@@ -173,6 +177,7 @@
             text-align: center;
             transition: all 0.5s ease;
             margin: 0px -1px;
+            padding-top: 0.7rem;
             border-style: solid;
             border-width: 1px;
             border-color: black;
