@@ -226,18 +226,21 @@
                    overflow: hidden;
                }
 
-               #hand {
-                   position: absolute;
-                   width: 70px;
-                   height: auto;
-               }
-
+               
                p.caption {
                    margin: 0.5rem;
                    line-height: 1.2rem;
                    font-weight: 300;
-               }
-           }
+                }
+            }
+            
+            #hand {
+                position: absolute;
+                top: 80vh;
+                left: 60vw;
+                width: 70px;
+                height: auto;
+            }
 
            .title-img {
                // transform: scale(0.5);
@@ -624,15 +627,15 @@
                            }
                        }
                    }
+                   
+                }
 
-                   #hand {
-                       position: absolute;
-                       bottom: 0rem;
-                       left: 70vw;
-                       z-index: 10;
-                   }
-
-               }
+                #hand {
+                    position: absolute;
+                    top: 60vh;
+                    left: 75vw;
+                    z-index: 10;
+                }
 
                h2 {
                    z-index: 2;
