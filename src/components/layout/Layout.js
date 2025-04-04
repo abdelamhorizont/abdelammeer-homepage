@@ -66,11 +66,12 @@ const Layout = ({ children, activeSite, colorTheme, passTheme, location }) => {
         <meta property="og:title" content={title} />
         <meta property="og:url" content="/" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/x-icon" href={Rainbow} />
 
         <meta
           property="og:image"
           content={'🐌'}
-          // content={`${withPrefix("/")}img/og-image.jpg`}
+        // content={`${withPrefix("/")}img/og-image.jpg`}
         />
       </Helmet>
 
@@ -79,14 +80,14 @@ const Layout = ({ children, activeSite, colorTheme, passTheme, location }) => {
           <div className="nav-group" >
             <ul className="nav-meta">
               {/* <Link state={{theme}} to="/"><li id='logo'><span>studio</span> abdel am <span id="studio">meer</span></li></Link> */}
-              <Link state={{theme}} to="/"><li id='logo'><img src={Logo} alt="studio abdel am meer" /></li></Link>
-              <Link state={{theme}} to="/about"><li>about</li></Link>
+              <Link state={{ theme }} to="/"><li id='logo'><img src={Logo} alt="studio abdel am meer" /></li></Link>
+              <Link state={{ theme }} to="/about"><li>about</li></Link>
               <a href="mailto:hello@abdelammeer.com"><li id="contact">@</li></a>
             </ul>
             <ul className="nav-sites">
-            <Link state={{theme}} to="/blog"><li className={`blog ${activeSite == 'blog' && 'border'}`}>blog</li></Link>
-            <Link state={{theme}} to="/space"><li className={`space ${activeSite == 'space' && 'border'}`}>space</li></Link>
-              <Link state={{theme}} to="/work"><li className={`work ${activeSite == 'work' && 'border'}`}>work</li></Link>
+              <Link state={{ theme }} to="/blog"><li className={`blog ${activeSite == 'blog' && 'border'}`}>blog</li></Link>
+              <Link state={{ theme }} to="/space"><li className={`space ${activeSite == 'space' && 'border'}`}>space</li></Link>
+              <Link state={{ theme }} to="/work"><li className={`work ${activeSite == 'work' && 'border'}`}>work</li></Link>
             </ul>
           </div>
 
@@ -101,7 +102,7 @@ const Layout = ({ children, activeSite, colorTheme, passTheme, location }) => {
             ><button onClick={() => {
               setTheme('dark-theme')
               handleTheme('dark-theme')
-              }}><img id="star" src={Star} alt="Dark Theme" /></button></motion.li>
+            }}><img id="star" src={Star} alt="Dark Theme" /></button></motion.li>
             <motion.li
               // className={theme == 'light-theme' && 'active-button'}
               animate={theme == 'light-theme' ? "hover" : "default"}
@@ -109,23 +110,23 @@ const Layout = ({ children, activeSite, colorTheme, passTheme, location }) => {
             ><button onClick={() => {
               setTheme('light-theme')
               handleTheme('light-theme')
-              }}><img id="sun" src={Sun} alt="Light Theme" /></button></motion.li>
-              <motion.li
-                // className={theme == 'grey-theme' && 'active-button'}
-                animate={theme == 'grey-theme' ? "hover" : "default"}
-                variants={ulHover}
-              ><button onClick={() => {
-                setTheme('grey-theme')
-                handleTheme('grey-theme')
-                }}><img id="cloud" src={Cloud} alt="Grey Theme" /></button></motion.li>
+            }}><img id="sun" src={Sun} alt="Light Theme" /></button></motion.li>
+            <motion.li
+              // className={theme == 'grey-theme' && 'active-button'}
+              animate={theme == 'grey-theme' ? "hover" : "default"}
+              variants={ulHover}
+            ><button onClick={() => {
+              setTheme('grey-theme')
+              handleTheme('grey-theme')
+            }}><img id="cloud" src={Cloud} alt="Grey Theme" /></button></motion.li>
             <motion.li
               // className={theme == 'color-theme' && 'active-button'}
               animate={theme == 'color-theme' ? "hover" : "default"}
               variants={ulHover}
             >
               <button onClick={() => {
-              setTheme('color-theme')
-              handleTheme('color-theme')
+                setTheme('color-theme')
+                handleTheme('color-theme')
               }}><img id="rainbow" src={Rainbow} alt="Color Theme" /></button>
             </motion.li>
           </motion.ul>
@@ -138,14 +139,14 @@ const Layout = ({ children, activeSite, colorTheme, passTheme, location }) => {
 
       <nav className="nav-footer">
         <ul>
-        {/* <div className="contact"> */}
+          {/* <div className="contact"> */}
           <li className="insta-link"><a href='https://www.instagram.com/abdelammeer/' target="blank">Instagram</a></li>
-        {/* </div> */}
+          {/* </div> */}
 
-        {/* <div className="nav-links-footer"> */}
-         {/* <li> <Link state={{theme}} to="/imprint">Imprint</Link></li>
+          {/* <div className="nav-links-footer"> */}
+          {/* <li> <Link state={{theme}} to="/imprint">Imprint</Link></li>
           <li><Link state={{theme}} to="/privacy-policy">Privacy Policy</Link></li> */}
-        {/* </div> */}
+          {/* </div> */}
         </ul>
       </nav>
 
