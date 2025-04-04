@@ -4,17 +4,18 @@ templateKey: about-page
 title: "about "
 title section:
   date: 2024-03-25T10:02:48.381Z
-Description: studio abdel am meer specializes in bringing *illustrative* ideas
-  to life through drawing, *typography* and *material* to create captivating,
+Description: studio abdel am *meer* specializes in bringing *illustrative* ideas
+  to life through drawing, *typography* and *material*  to create captivating,
   *engaging* and tailored aesthetics that resonate with *diverse* audiences.
+  Both for *digital* and *physical* spaces.
 variable-content:
   - type: text-section
     big-size: false
     title: ""
     text: >-
-      With *drawing* as a relatable and *personal* tool, colorful shapes and
+      With *drawing* as a relatable and *personal*  tool, colorful shapes and
       textures, I create objects, characters, and lettering that blend with
-      *typography* and *layout* across various *formats*— visual identities,
+      *typography* and *layout* across various *formats* — visual identities,
       books, spatial, interactive, and animated platforms. My portfolio includes
       works such as "Living Systems," an illustrated and interactive simulation
       for the Kunstmuseum Stuttgart, the comprehensive corporate design of the
