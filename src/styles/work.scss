@@ -160,6 +160,14 @@
         // left: 25%;
         // text-align: end;
     }
+
+    .deep-sea-bots{
+        .postcover{
+            .cover-image{
+                border-radius: 0rem;
+            }
+        }
+    }
 }
 
 .work-post {

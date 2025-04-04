@@ -585,8 +585,12 @@
                    //    margin-top: 25rem;
                    img {
                        //    height: max-content;
-                       width: auto;
-                       height: auto;
+                    //    width: auto;
+                    //    height: auto;
+                    height: fit-content;
+
+                       max-height: 10rem;
+                       max-width: 60vw;
                    }
                }
 
