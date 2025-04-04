@@ -57,6 +57,14 @@ variable-content:
     images:
       - type: image
         imageFile: /img/dsc080574.jpg
-        caption: screen print
+        caption: screenprint
+      - type: image
+        imageFile: /img/dsc080563.jpg
+        caption: printed on shirt
     title: Residency
+  - type: image-section
+    images:
+      - type: image
+        imageFile: /img/living-systems-logo.png
+        caption: living systems logo
 ---
