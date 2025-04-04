@@ -5,7 +5,7 @@ title section:
   date: 2025-03-28T10:23:08.614Z
   images:
     - type: image
-      imageFile: /img/living-systems-title-v2.png
+      imageFile: /img/living-systems-logo.png
       caption: Living Systems Title
   type: space
   format: Simulation
