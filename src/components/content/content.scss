@@ -173,10 +173,19 @@
         
         width: 70px;
         height: 70px;
+
         
         img{
             margin-top: -4rem;
             width: 70px;
+            transition: all 0.5s ease;
+        }
+    }
+
+    #hand:hover{
+        img{
+            transform: rotate(100deg);
+            // transform: scale(2);
         }
     }
 

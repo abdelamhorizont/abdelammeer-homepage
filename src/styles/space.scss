@@ -226,21 +226,27 @@
                    overflow: hidden;
                }
 
-               
+
                p.caption {
                    margin: 0.5rem;
                    line-height: 1.2rem;
                    font-weight: 300;
-                }
-            }
-            
-            #hand {
-                position: absolute;
-                top: 80vh;
-                left: 60vw;
-                width: 70px;
-                height: auto;
-            }
+               }
+           }
+
+           #hand {
+               position: absolute;
+               top: 80vh;
+               left: 60vw;
+               width: 70px;
+               height: auto;
+               transition: all 0.5s ease;
+           }
+
+           #hand:hover {
+               transform: rotate(100deg);
+
+           }
 
            .title-img {
                // transform: scale(0.5);
@@ -477,13 +483,14 @@
            }
        }
 
-       .space, .space-post{
+       .space,
+       .space-post {
            .deep-sea-bots {
                .postcover {
                    .cover-image {
                        border-radius: 55vw;
                        overflow: hidden;
-    
+
                    }
                }
            }
@@ -514,10 +521,10 @@
                    //    margin-top: 25rem;
                    img {
                        height: fit-content;
-                    //    width: max-content;
+                       //    width: max-content;
                        max-height: 10rem;
                        max-width: 60vw;
-                    //    width: auto;
+                       //    width: auto;
                        // height: auto;
                    }
                }
@@ -531,7 +538,7 @@
                    display: flex;
                    justify-content: center;
                    //    margin-top: 10vh;
-                      border-radius: 25rem;
+                   border-radius: 25rem;
                    overflow: hidden;
 
                    video {
@@ -588,9 +595,9 @@
                    //    margin-top: 25rem;
                    img {
                        //    height: max-content;
-                    //    width: auto;
-                    //    height: auto;
-                    height: fit-content;
+                       //    width: auto;
+                       //    height: auto;
+                       height: fit-content;
 
                        max-height: 10rem;
                        max-width: 60vw;
@@ -627,15 +634,15 @@
                            }
                        }
                    }
-                   
-                }
 
-                #hand {
-                    position: absolute;
-                    top: 60vh;
-                    left: 75vw;
-                    z-index: 10;
-                }
+               }
+
+               #hand {
+                   position: absolute;
+                   top: 60vh;
+                   left: 75vw;
+                   z-index: 10;
+               }
 
                h2 {
                    z-index: 2;
