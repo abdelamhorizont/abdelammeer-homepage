@@ -107,6 +107,9 @@
         font-size: 1.5rem;
         // font-weight: bold;
         justify-self: center;
+        text-align: center;
+        font-family: PangramRoundedNarrowSemibold;
+        font-size: 3rem;
         
     }
 
@@ -201,10 +204,12 @@
 
     h2 {
         margin-bottom: 1.5rem;
-        font-size: 1rem;
+        font-family: PangramRoundedNarrowSemibold;
+        font-size: 3rem;
         font-weight: bold;
         // font-family: PangramRoundedNarrowSemibold;
         letter-spacing: 1px;
+        text-align: center;
 
     }
 
@@ -220,6 +225,7 @@
         margin-bottom: 1rem;
         // white-space: pre;
         // text-indent: 2rem;
+        // font-family: PangramSansRegular;
 
         strong {
             font-weight: bold;

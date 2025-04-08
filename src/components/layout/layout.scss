@@ -8,7 +8,10 @@
 
     .nav-header{
         position: fixed;
+        z-index: 10;
+
     }
+    
     .nav-footer{
         position: absolute;
         // bottom: -1rem;
@@ -18,7 +21,6 @@
     nav {
         display: flex;
         // justify-content: space-between;
-        z-index: 10;
         padding: 0.3rem;
         width: calc(100vw - 0.6rem);
 

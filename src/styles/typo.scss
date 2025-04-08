@@ -34,6 +34,11 @@
 }
 
 @font-face {
+   font-family: PangramSansRegular;
+   src: url('../assets/fonts/PPPangram/PPPangramSans-Medium.woff2');
+}
+
+@font-face {
    font-family: "PPAgrandir";
    src: url('../assets/fonts/PPAgrandir/PPAgrandir-Variable.woff2') format("woff2-variations"),
         url('../assets/fonts/PPAgrandir/PPAgrandir-Variable.woff2') format("woff2 supports variations");
