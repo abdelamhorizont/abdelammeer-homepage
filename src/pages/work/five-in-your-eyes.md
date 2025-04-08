@@ -8,14 +8,14 @@ title section:
   images: []
 cover_image:
   - type: image
+    imageFile: /img/chain-cropped.jpg
+    caption: chain
+  - type: image
     imageFile: /img/pendants-collage2.jpg
     caption: Amulets 1
   - type: image
     imageFile: /img/collage-3.jpg
     caption: Amulets 2
-  - type: image
-    imageFile: /img/chain-cropped.jpg
-    caption: chain
   - type: image
     imageFile: /img/collage-2.jpg
     caption: Amukets 3
