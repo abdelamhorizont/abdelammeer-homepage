@@ -77,11 +77,13 @@ variable-content:
       - type: blog-reference
         reference: Mare Mediterraneum
       - type: blog-reference
-        reference: Spawn Grounds
-      - type: blog-reference
         reference: (Non) Artificial (Maybe) Intelligence
       - type: space-reference
         reference: deep sea bots
+      - type: blog-reference
+        reference: Spawn Grounds
+      - type: blog-reference
+        reference: Stronger with Games
       - type: work-reference
         full-width: false
         reference: Five in your Eyes
@@ -100,8 +102,6 @@ variable-content:
         reference: "Typography 2: Instruction Manuals for Natural Phenomena"
       - type: space-reference
         reference: "Living Systems "
-      - type: blog-reference
-        reference: Stronger with Games
       - type: work-reference
         full-width: false
         reference: Narrating Namibia
