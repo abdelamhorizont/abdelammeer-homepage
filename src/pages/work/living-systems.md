@@ -9,14 +9,14 @@ title section:
   collaborators: ""
 cover_image:
   - type: image
-    imageFile: /img/cover-wide.jpg
-    caption: Monoprints
+    imageFile: /img/img_5149.jpg
+    caption: Interactive Installation
   - type: video
     videoFile: /img/reel.mp4
     caption: Exhibition
   - type: image
-    imageFile: /img/img_4503-2.jpg
-    caption: Exhibition view
+    imageFile: /img/cover-wide.jpg
+    caption: Monoprints
   - type: video
     videoFile: /img/illus_2.mp4
     caption: Illustrations
@@ -24,11 +24,11 @@ cover_image:
     imageFile: /img/dsc080574.jpg
     caption: Screen printing
   - type: image
-    imageFile: /img/img_5310.jpg
+    imageFile: /img/dsc080563.jpg
     caption: screen printed shirt
   - type: image
-    imageFile: /img/img_5149.jpg
-    caption: Interactive Installation
+    imageFile: /img/img_4503-2.jpg
+    caption: Exhibition view
 Description: >-
   Living Systems, a simultion based on Conway‘s Game of Life for Kunstmuseum
   Stuttgart 

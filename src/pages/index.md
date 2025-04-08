@@ -92,10 +92,10 @@ variable-content:
         reference: KD Newsletter
       - type: work-reference
         full-width: false
-        reference: ABK Stuttgart
+        reference: Living Systems
       - type: work-reference
         full-width: false
-        reference: Narrating Africa
+        reference: ABK Stuttgart
       - type: blog-reference
         reference: "Typography 1: Letters"
       - type: blog-reference
@@ -113,7 +113,7 @@ variable-content:
         reference: offshoot*berlin
       - type: work-reference
         full-width: false
-        reference: Living Systems
+        reference: Narrating Africa
       - type: space-reference
         reference: Ocean View
 ---
