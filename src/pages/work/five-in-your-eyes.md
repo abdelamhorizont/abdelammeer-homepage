@@ -8,23 +8,38 @@ title section:
   images: []
 cover_image:
   - type: image
-    imageFile: /img/collage-3.jpg
-    caption: Amulets 2
+    imageFile: /img/five_cover.jpg
+    caption: Five in Your Eyes Cover
   - type: image
     imageFile: /img/chain-cropped.jpg
     caption: chain
   - type: image
+    imageFile: /img/khamsa2.jpg
+    caption: khamsa middle finger
+  - type: image
+    imageFile: /img/collage-3.jpg
+    caption: Amulets 2
+  - type: image
     imageFile: /img/pendants-collage2.jpg
     caption: Amulets 1
-  - type: image
-    imageFile: /img/collage-2.jpg
-    caption: Amukets 3
   - type: image
     imageFile: /img/collage-5.jpg
     caption: Amukets 4
   - type: image
+    imageFile: /img/scorpio-love.jpg
+    caption: scorpio love
+  - type: image
+    imageFile: /img/collage-2.jpg
+    caption: Amukets 3
+  - type: image
+    imageFile: /img/mediterranean.jpg
+    caption: mediterranean ocean
+  - type: image
     imageFile: /img/collage-4.jpg
     caption: Amukets 5
+  - type: image
+    imageFile: /img/potrait-cropped.jpg
+    caption: wearing the chain
 Description: >-
   *‘Sensla fi sensla, Sensla metkessla, fiha khouk, fiha bouk w fiha soultan
   elmoulouk’*
@@ -47,7 +62,19 @@ variable-content:
   - type: image-section
     images:
       - type: image
-        imageFile: /img/img_4948.jpg
-        caption: Pendants from my sister
+        imageFile: /img/five_research_passport.jpg
+        caption: stamps and other collagued elements on passport
+      - type: image
+        imageFile: /img/five_research_eyes_b.jpg
+        caption: Collar of Esses and Eye-of-Nazaar-Chains seen in market
+      - type: image
+        imageFile: /img/five_research_passport2.jpg
+        caption: Algerian and German passport elements
+      - type: image
+        imageFile: /img/five_research_chains.jpg
+        caption: Chains from my sister and my mother, Talisman on Count of St. Germain
     title: Research
+    layout: grid
+    column-start: "1"
+    column-end: "13"
 ---
