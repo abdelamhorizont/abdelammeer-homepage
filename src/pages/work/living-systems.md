@@ -54,17 +54,15 @@ Description: >-
   Currently on display in Studio 11 at the Kunstmuseum Stuttgart
 variable-content:
   - type: image-section
+    column-start: "2"
+    column-end: "12"
     images:
-      - type: image
-        imageFile: /img/dsc080574.jpg
-        caption: screenprint
-      - type: image
-        imageFile: /img/dsc080563.jpg
-        caption: printed on shirt
-    title: Residency
+      - type: iFrame
+        iFrame-link: https://abdelamhorizont.github.io/living-systems/
+        caption: Living Systems
   - type: image-section
     images:
       - type: image
-        imageFile: /img/living-systems-logo.png
+        imageFile: /img/logo-big.png
         caption: living systems logo
 ---
