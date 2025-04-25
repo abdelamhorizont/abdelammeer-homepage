@@ -31,25 +31,24 @@ variable-content:
       * Awareness for aesthetic choices and clear readability.
 
 
+
+
+
+
       ## Publication
 
 
-      Printed and bound Book/ Magazine
+      * Printed and bound Book/ Magazine
 
+      * format: 19x25cm
 
-      format: 19x25cm
+      * min 40 pages
 
+      * fetaturing Instructions as well as structured Research
 
-      min 40 pages
+      * Research in scientific, ecological, cultural, social, economical, political, juristic, ethical contexts (min 3)
 
-
-      fetaturing Instructions as well as structured Research
-
-
-      Research in scientific, ecological, cultural, social, economical, political, juristic, ethical contexts (min 3)
-
-
-      various chapters with different styles
+      * various chapters with different styles
 
 
 
@@ -99,7 +98,7 @@ variable-content:
 
       **DAY 7 Research** \
 
-      Storytelling Gutter, Images Links,Tab, Export, Cover, Table of Contents, Index, Imprint
+      Storytelling Gutter, Images Links, Tab, Export, Cover, Table of Contents, Index, Imprint
 
 
       Reseach Methods: Observing, Recording, Comparing, Analysing, Evaluating, Proposing, Experimenting, Documenting,
@@ -115,30 +114,65 @@ variable-content:
       Working Groups: Deadline: Production, Bookbinding
 
 
-      on working conditions, money, project managment
+      on working conditions, bills, project managment
 
 
       **DAY 10 Presentations** \
 
       Finalizing, Presentations, Seminar feedback
+  - type: text-section
+    big-size: false
+    text: >-
+      Summer Semester 2024, Typography 2: Instruction Manuals for Natural
+      Phenomena. 2nd Semester communication design students at the HfG Karlsruhe
+      created publications, learning the basics in typography.
+
+
+      ## Phenomena
+
+
+      > * Tornado
+
+      > * Rain
+
+      > * Rainbow
+
+      > * Erosion
+
+      > * thunder
+
+      > * horizon
+
+      > * Fire
+
+      > * Clouds
+
+      > * Air
+
+      > * moon phases
+
+      > * swamp
+
+      > * Vulcano
   - type: image-section
     title: Figures & Figurations, Workshop with Sonja Schwarz
     images:
       - type: image
         imageFile: img_2017.jpg
+        caption: ""
       - type: image
         imageFile: img_2023.jpg
       - type: image
-        imageFile: img_2018.jpg
-      - type: image
         imageFile: img_2019.jpg
+      - type: image
+        imageFile: img_2018.jpg
     column-start: "1"
     column-end: "13"
     layout: carousel
   - type: image-section
     images:
       - type: iFrame
-        iFrame-link: https://archive.org/details/pet_rock_manual_original/page/n19/mode/2up
+        iFrame-link: https://archive.org/details/pet_rock_manual_original/mode/2up
         caption: The care and training of your pet rock by Gary Dahl
     title: "Instructing Instructions "
   - type: image-section
@@ -175,11 +209,16 @@ variable-content:
     images:
       - type: image
         imageFile: grid-systems.png
-        caption: Quite the weird and maybe even problematic quote about the (cultural)
-          superiority of the grid and the supposed neutrality from Grid Systems
-          from Josef Müller-Brockmann, still a very important book in graphic
-          design education
-    title: ""
+        caption: Section from  Grid Systems in Graphic Design by Josef Müller-Brockmann
+    title: Grid Systems
+  - type: text-section
+    big-size: false
+    text: Quite the weird and maybe even problematic quote about in my opinion the
+      (cultural) superiority of the grid and the supposed neutrality from Grid
+      Systems from Josef Müller-Brockmann. Still a very common book in graphic
+      design education and nevertheless working with grids can be very useful
+      und helpful to structure and follow information for both designer and
+      reader.
   - type: image-section
     title: Presentation
     column-start: "1"
@@ -210,6 +249,11 @@ variable-content:
     title: Publications
     column-start: "2"
     column-end: "12"
+  - type: text-section
+    big-size: false
+    text: The publications include research, instruction manuals and the results of
+      these. Most books were printed and bound in the school with the great help
+      of the KD Plottis and Tjark Schönfeld.
   - type: text-section
     big-size: false
     title: A few Ressources
