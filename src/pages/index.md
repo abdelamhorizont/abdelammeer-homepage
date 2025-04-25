@@ -8,7 +8,7 @@ variable-content:
   - type: image-section
     images:
       - type: image
-        imageFile: /img/chain-1.jpg
+        imageFile: /img/pendants-collage.jpg
         caption: Amulets
       - type: newVideo
         newVideoFile: /img/16.mp4
