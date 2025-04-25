@@ -165,14 +165,16 @@ variable-content:
       - type: image
         imageFile: img_2019.jpg
       - type: image
-        imageFile: img_2018.jpg
+        imageFile: img_2003.jpg
+      - type: image
+        imageFile: img_2009.jpg
     column-start: "1"
     column-end: "13"
     layout: carousel
   - type: image-section
     images:
       - type: iFrame
-        iFrame-link: https://archive.org/details/pet_rock_manual_original/mode/2up
+        iFrame-link: https://archive.org/details/pet_rock_manual_original/mode/2up?view=theater
         caption: The care and training of your pet rock by Gary Dahl
     title: "Instructing Instructions "
   - type: image-section
