@@ -21,40 +21,6 @@ variable-content:
   - type: text-section
     big-size: false
     text: >-
-      ## Goals
-
-
-      * Ability to design a publication from start to finish, including research, original content and production.
-
-      * Filtering, Organization and Composition of complex Information and Ressources.
-
-      * Awareness for aesthetic choices and clear readability.
-
-
-
-
-
-
-      ## Publication
-
-
-      * Printed and bound Book/ Magazine
-
-      * format: 19x25cm
-
-      * min 40 pages
-
-      * fetaturing Instructions as well as structured Research
-
-      * Research in scientific, ecological, cultural, social, economical, political, juristic, ethical contexts (min 3)
-
-      * various chapters with different styles
-
-
-
-
-
-
       ## Schedule
 
 
@@ -120,12 +86,44 @@ variable-content:
       **DAY 10 Presentations** \
 
       Finalizing, Presentations, Seminar feedback
+
+
+
+
+      ## Goals
+
+
+      * Ability to design a publication from start to finish, including research, original content and production.
+
+      * Filtering, Organization and Composition of complex Information and Ressources.
+
+      * Awareness for aesthetic choices and clear readability.
+
+
+
+
+      ## Publication
+
+
+      * Printed and bound Book/ Magazine
+
+      * format: 19x25cm
+
+      * min 40 pages
+
+      * fetaturing Instructions as well as structured Research
+
+      * Research in scientific, ecological, cultural, social, economical, political, juristic, ethical contexts (min 3)
+
+      * various chapters with different styles
   - type: text-section
     big-size: false
     text: >-
-      Summer Semester 2024, Typography 2: Instruction Manuals for Natural
-      Phenomena. 2nd Semester communication design students at the HfG Karlsruhe
-      created publications, learning the basics in typography.
+      Inspired by the work of friend and colleague Sonja Schwarz on Instruction
+      Manuals for water I was very excited on the format of instruction manuals,
+      not only as means to work with typography but also as a medium to interact
+      and to perform. I expanded the idea to other natural phenomena, one for
+      every student:
 
 
       ## Phenomena
