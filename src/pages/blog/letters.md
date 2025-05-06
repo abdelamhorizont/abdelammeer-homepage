@@ -85,8 +85,8 @@ variable-content:
     title: "Day 1: Get Well Letters "
     text: >-
       Unfortunately I got sick on the very first seminar day, so I made a virtue
-      out of necessity and the class to write me get well letters. So nice to
-      not find bills in your mail box!
+      out of necessity and asked the class to write me get well letters. So nice
+      to not find bills in your mail box!
 
 
       *! Task: Take the day to work on 1 Letter each und send it to me per post by the end of the day. Write me an encouraging message and think about how you write it! embrace the quirks and specialities in your handwriting and show off your signature! Pay attention to the pen you use, the paper and the envelope! You can also add other elements to the letter.*
@@ -109,17 +109,25 @@ variable-content:
   - type: text-section
     big-size: false
     text: >-
-      
+      The letters led me to thinking about handwriting, especially the signature
+      as a highly individualized token, where not only is a drawing performed
+      using the hand and wrist that leads to more or less illegible flowing
+      curves and angles — defined by fast motion and pressure to get things done
+      — but also by family history, repetition, and the social construct to
+      trust this drawing.
 
-      1. *write your signature big scale*
 
-      2. *Deconstruction: make copies and cut out each letter*
 
-      3. *Variation: arrange the letters differently to make anagrams*
 
-      4. *Derivation: derive the whole alphabet from the letters of your signature*
+      1. write your signature big scale
 
-      5. *letters to yourself write a letter to yourself on A1 with the letters you have*
+      2. Deconstruction: make copies and cut out each letter
+
+      3. Variation: arrange the letters differently to make anagrams
+
+      4. Derivation: derive the whole alphabet from the letters of your signature
+
+      5. letters to yourself write a letter to yourself on A1 with the letters you have
     title: "Day 2: Letters to yourself"
   - type: image-section
     column-start: "1"
@@ -206,14 +214,14 @@ variable-content:
   - type: image-section
     images:
       - type: iFrame
-        iFrame-link: https://www.youtube.com/watch?v=1qLKu3R8no4
+        iFrame-link: https://www.youtube.com/embed/1qLKu3R8no4?si=vGfuugyny2AhpzAT
         caption: "Intermission 1:  Kurt Schwitters Ursonate 1932"
       - type: iFrame
         caption: "Intermission 2:\tBad and boujee ad libs only"
-        iFrame-link: https://www.youtube.com/watch?v=99piZPeouAI
+        iFrame-link: https://www.youtube.com/embed/99piZPeouAI?si=imDEtqIB6rNH7WoM
       - type: iFrame
         caption: "Intermission 3:\tVögel - Namen und Laute - Vogelarten "
-        iFrame-link: https://www.youtube.com/watch?v=WhRpW0cVmds
+        iFrame-link: https://www.youtube.com/embed/WhRpW0cVmds?si=NLYhswJNJbMbRlK7
     layout: grid
     column-start: "1"
     column-end: "13"
@@ -264,17 +272,17 @@ variable-content:
     column-end: "13"
     images:
       - type: image
+        imageFile: img_0909.jpg
+      - type: image
         imageFile: img_0895.jpg
       - type: image
         imageFile: img_0911.jpg
-      - type: image
-        imageFile: img_0909.jpg
       - type: image
         imageFile: img_0902.jpg
   - type: image-section
     images:
       - type: iFrame
-        iFrame-link: https://youtu.be/okhDIkfvtt4
+        iFrame-link: https://www.youtube.com/embed/okhDIkfvtt4?si=NJqcRq81zb3TIckU
         caption: A Critical Look at Adolf Loos' Ornament and Crime with Dr. Jennifer
           Salahub
   - type: text-section
