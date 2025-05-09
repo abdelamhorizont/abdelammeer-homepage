@@ -280,13 +280,13 @@ variable-content:
     column-end: "13"
     images:
       - type: image
-        imageFile: img_0911.jpg
+        imageFile: img_0895-large.jpeg
       - type: image
-        imageFile: img_0909.jpg
+        imageFile: img_0902-large.jpeg
       - type: image
-        imageFile: img_0895.jpg
+        imageFile: img_0909-large.jpeg
       - type: image
-        imageFile: img_0902.jpg
+        imageFile: img_0911-large.jpeg
   - type: image-section
     images:
       - type: iFrame
