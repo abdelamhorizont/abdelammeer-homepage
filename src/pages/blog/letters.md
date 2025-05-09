@@ -144,6 +144,10 @@ variable-content:
         imageFile: img_0568.jpg.jpg
       - type: image
         imageFile: pxl_20231108_135627230.jpg
+      - type: image
+        imageFile: img_0587.jpg
+      - type: image
+        imageFile: photo_2024-02-07_16-57-04.jpg
   - type: text-section
     big-size: false
     title: "Day 3: Letters to Birds"
@@ -206,19 +210,23 @@ variable-content:
       - type: image
         imageFile: img_0800.jpg
       - type: image
-        imageFile: img_0820.jpeg
+        imageFile: img_0762.jpg
+      - type: image
+        imageFile: img_0820.jpg
       - type: image
         imageFile: img_0823.jpeg
       - type: image
         imageFile: img_0789.jpeg
+      - type: image
+        imageFile: img_0765.jpg
   - type: image-section
     images:
       - type: iFrame
-        iFrame-link: https://www.youtube.com/embed/1qLKu3R8no4?si=vGfuugyny2AhpzAT
+        iFrame-link: https://www.youtube.com/embed/1qLKu3R8no4?si=E1eFAaqjazIoIteb
         caption: "Intermission 1:  Kurt Schwitters Ursonate 1932"
       - type: iFrame
         caption: "Intermission 2:\tBad and boujee ad libs only"
-        iFrame-link: https://www.youtube.com/embed/99piZPeouAI?si=imDEtqIB6rNH7WoM
+        iFrame-link: https://www.youtube.com/embed/99piZPeouAI?si=cWZC6pRfqInn4bcB
       - type: iFrame
         caption: "Intermission 3:\tVögel - Namen und Laute - Vogelarten "
         iFrame-link: https://www.youtube.com/embed/WhRpW0cVmds?si=NLYhswJNJbMbRlK7
@@ -272,11 +280,11 @@ variable-content:
     column-end: "13"
     images:
       - type: image
+        imageFile: img_0911.jpg
+      - type: image
         imageFile: img_0909.jpg
       - type: image
         imageFile: img_0895.jpg
-      - type: image
-        imageFile: img_0911.jpg
       - type: image
         imageFile: img_0902.jpg
   - type: image-section
