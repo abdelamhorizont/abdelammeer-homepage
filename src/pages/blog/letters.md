@@ -28,27 +28,47 @@ variable-content:
       image, semiotics, vernacular typography and appropriation, the labour,
       ressources and ecology related to typography. We did this very hand-on,
       with an emphasis on critical discussions, extensive experimentation and
-      funnnnn.
+      fun.
   - type: image-section
     images:
       - type: image
         imageFile: typo1.jpeg
-        caption: Original Letter Tattoos for our Christmas Party
+        caption: Original Letter Tattoos for our KD Christmas Party
   - type: text-section
     big-size: false
     title: Schedule
     text: |-
-      DAY 1	Get Well Letters 	Signature
-      DAY 2	Letters to yourself	Line, Shape, Body
-      DAY 3	Letters to Birds	Type Tools
-      DAY 4	Letters to Strangers	Legibility and Expression
-      DAY 5	Letters for Accomplices	grids grids grids
-      DAY 6	Letters to Idols	popular typefaces
-      DAY 7	Letters to a new Year	Glyphs Workshop
-      DAY 8	Letters to the Printer	Copyshop
-      DAY 9	Letters to Aliens	Signs & Symbols
-      DAY 10	breathing Letters	shake your letters
-      DAY 11	Letters to closure	Presenting
+      DAY 1:  	Get Well Letters 	(Signatures).  
+
+
+      DAY 2:	Letters to yourself	(Line, Shape, Body)
+
+
+      DAY 3:	Letters to Birds	(Type Tools)
+
+
+      DAY 4:	Letters to Strangers	(Legibility and Expression)
+
+
+      DAY 5:	Letters for Accomplices	(grids grids grids)
+
+
+      DAY 6:	Letters to Idols	(popular typefaces)
+
+
+      DAY 7:	Letters to a new Year	(Glyphs Workshop)
+
+
+      DAY 8:	Letters to the Printer	(Copyshop)
+
+
+      DAY 9:	Letters to Aliens	(Signs & Symbols)
+
+
+      DAY 10:	breathing Letters	(shake your letters)
+
+
+      DAY 11:	Letters to closure	(Presenting)
   - type: text-section
     big-size: false
     text: >-
@@ -63,11 +83,13 @@ variable-content:
   - type: text-section
     big-size: false
     title: "Day 1: Get Well Letters "
-    text: Task: Take the day to work on 1 Letter each und send it to me per post by
-      the end of the day. Write me an encouraging message and think about how
-      you write it! embrace the quirks and specialities in your handwriting and
-      show off your signature! Pay attention to the pen you use, the paper and
-      the envelope! You can also add other elements to the letter.
+    text: >-
+      Unfortunately I got sick on the very first seminar day, so I made a virtue
+      out of necessity and asked the class to write me get well letters. So nice
+      to not find bills in your mail box!
+
+
+      *! Task: Take the day to work on 1 Letter each und send it to me per post by the end of the day. Write me an encouraging message and think about how you write it! embrace the quirks and specialities in your handwriting and show off your signature! Pay attention to the pen you use, the paper and the envelope! You can also add other elements to the letter.*
   - type: image-section
     column-start: "1"
     column-end: "13"
@@ -87,22 +109,30 @@ variable-content:
   - type: text-section
     big-size: false
     text: >-
-      
+      The letters led me to thinking about handwriting, especially the signature
+      as a highly individualized token, where not only is a drawing performed
+      using the hand and wrist that leads to more or less illegible flowing
+      curves and angles — defined by fast motion and pressure to get things done
+      — but also by family history, repetition, and the social construct to
+      trust this drawing.
 
-      1. **signatures** write your signature big scale
 
-      2. **Deconstruction** do copies and cut out each letter
 
-      3. **Variation** arrange the letters differently to make anagrams
 
-      4. **Derivation** derive the whole alphabet from the letters of your signature
+      1. write your signature big scale
+
+      2. Deconstruction: make copies and cut out each letter
+
+      3. Variation: arrange the letters differently to make anagrams
+
+      4. Derivation: derive the whole alphabet from the letters of your signature
 
       5. letters to yourself write a letter to yourself on A1 with the letters you have
     title: "Day 2: Letters to yourself"
   - type: image-section
     column-start: "1"
     column-end: "13"
-    layout: grid
+    layout: carousel
     images:
       - type: image
         imageFile: img_0578.jpg.jpg
@@ -126,6 +156,11 @@ variable-content:
       * MEDIUM such as, Ink, Sand, Paint, Water, Paper, Light, Foil, Pixel, Thread,...
 
       * OBJECT such as, Paper, Planet, Box, Hand, Book, Tennisball, Bottle, Tree,...
+
+
+
+
+      *! Task: Everyone will start creating the letter forms of the latin alphabet. You have 20 minutes to draw 6 Letters, 3 lowercase, then 3 Uppercase. Move to the next station and proceed with the next 6 Letters*
 
 
 
@@ -158,8 +193,13 @@ variable-content:
       12. each Letter different Tool
 
       13. Geometry
+
+
+
+
+      The class and me were actually quite surprised and impressed by the results of this intense hands on day. Every student went through each instruction creating 13 alphabets in upper and lower case. 13 x 26 x 2 = approx. 600 Letters, 600 A4 Pages!
   - type: image-section
-    layout: grid
+    layout: carousel
     column-start: "1"
     column-end: "13"
     images:
@@ -171,13 +211,27 @@ variable-content:
         imageFile: img_0823.jpeg
       - type: image
         imageFile: img_0789.jpeg
+  - type: image-section
+    images:
+      - type: iFrame
+        iFrame-link: https://www.youtube.com/embed/1qLKu3R8no4?si=vGfuugyny2AhpzAT
+        caption: "Intermission 1:  Kurt Schwitters Ursonate 1932"
+      - type: iFrame
+        caption: "Intermission 2:\tBad and boujee ad libs only"
+        iFrame-link: https://www.youtube.com/embed/99piZPeouAI?si=imDEtqIB6rNH7WoM
+      - type: iFrame
+        caption: "Intermission 3:\tVögel - Namen und Laute - Vogelarten "
+        iFrame-link: https://www.youtube.com/embed/WhRpW0cVmds?si=NLYhswJNJbMbRlK7
+    layout: grid
+    column-start: "1"
+    column-end: "13"
+    title: Intermissions
   - type: text-section
     big-size: false
     title: "Day 4: Letters to Strangers"
     text: >-
-      Q: what are conditions for readability?
-
-
+      What are conditions for readability? We read parts from The politics of
+      design by Ruben Pater and discussed what makes readability including:
       literacy, ability, language, culture, person, inclusivity
 
 
@@ -207,41 +261,51 @@ variable-content:
       * Past experience
 
       * Reification
-
-
-      <https://youtu.be/okhDIkfvtt4>
-
-
-      A Critical Look at Adolf Loos' Ornament and Crime with Dr. Jennifer Salahub
   - type: image-section
-    layout: grid
+    images:
+      - type: image
+        imageFile: image-20.png
+        caption: El HOPANESS ROMTIC
+  - type: image-section
+    layout: carousel
     column-start: "1"
     column-end: "13"
     images:
+      - type: image
+        imageFile: img_0909.jpg
       - type: image
         imageFile: img_0895.jpg
       - type: image
         imageFile: img_0911.jpg
       - type: image
-        imageFile: img_0909.jpg
-      - type: image
         imageFile: img_0902.jpg
+  - type: image-section
+    images:
+      - type: iFrame
+        iFrame-link: https://www.youtube.com/embed/okhDIkfvtt4?si=NJqcRq81zb3TIckU
+        caption: A Critical Look at Adolf Loos' Ornament and Crime with Dr. Jennifer
+          Salahub
   - type: text-section
     big-size: false
     title: "Day 5: Letters for Accomplices"
     text: >-
-      grid walk, reading “Gloassary of Undisciplned Design”
+      Grid walk, reading “Gloassary of Undisciplned Design” we walked around the
+      school and looked for grids in the architecture. The students handed me
+      the book at the part where I had to quote Britney Spears.
 
 
-      ! choose words that describe your work values, whats important to you? draw the letters of one word into the grid
+      *! choose words that describe your work values, whats important to you?*
 
 
-      - - -
+      *! draw a grid based on the arcitecture of the school*
 
 
-      ! have the word interact with the space threedimonsionally
+      *! exchange the grid with some one, draw the letters of your values into the grid*
+
+
+      *! have the word interact with the space threedimonsionally*
   - type: image-section
-    layout: grid
+    layout: carousel
     column-start: "1"
     column-end: "13"
     images:
@@ -258,25 +322,43 @@ variable-content:
   - type: text-section
     big-size: false
     title: "Day 6: Letters to Idols"
-    text: |-
-      T﻿ypeface Presentations and Font Sightseeing at Kaiserstraße
+    text: >-
+      This day the students prepared presentations on popular typefaces using
+      specific vocabulary to describe the letterforms (from Anatomie der
+      Buchstaben) as well as historic context. Afterwards we went to the
+      Kaiserstraße in Karlsruhe to look for these typefaces in their natural
+      habitat.
 
-      Eunsoo	Helvetica
-      Lena	Adobe Garamond
-      Levi	Futura
-      Max	Bodoni
-      Helena	Rockwell
-      Jinhyung	Comic Sans
-      Kaya	Arial
-      Jiaxuan	Caslon
-      Finn	Times New Roman
-      Nayeon	Impact
-      Veronika	Roboto
-      Min Jung	Baskerville
-      Alice	Univers
-      Abdel	Papyrus
+
+      * Eunsoo: Helvetica
+
+      * Lena: Adobe Garamond
+
+      * Levi: Futura
+
+      * Max: Bodoni
+
+      * Helena: Rockwell
+
+      * Jinhyung: Comic Sans
+
+      * Kaya: Arial
+
+      * Jiaxuan: Caslon
+
+      * Finn: Times New Roman
+
+      * Nayeon: Impact
+
+      * Veronika: Roboto
+
+      * Min Jung: Baskerville
+
+      * Alice: Univers
+
+      * Abdel: Papyrus
   - type: image-section
-    layout: grid
+    layout: carousel
     column-start: "1"
     column-end: "13"
     images:
@@ -290,13 +372,15 @@ variable-content:
         imageFile: img_1085.png
       - type: image
         imageFile: img_1100.png
+    title: "Font Sightseeing "
   - type: text-section
     big-size: false
     title: "DAY 7: Letters to a new Year"
     text: NoFoundry Presentation and Glyphs Clementine Workshop with [Timothee
-      Charon](http://timotheecharon.eu/)
+      Charon](http://timotheecharon.eu/). We created our first typeface in
+      Glyphs called **Enitnemelc**
   - type: image-section
-    layout: grid
+    layout: carousel
     column-start: "1"
     column-end: "13"
     images:
@@ -314,10 +398,10 @@ variable-content:
     big-size: false
     title: "DAY 8:  Letters to the Printer "
     text: >-
-      ! pick a random book, random page and scan
+      *! pick a random book, random page and scan*
 
 
-      ! Rearrange the text of the page on A3 either to support the topic of the book, or to contradict it, print several versions
+      *! Rearrange the text of the page on A3 either to support the topic of the book, or to contradict it, print several versions*
   - type: image-section
     layout: grid
     column-start: "1"
@@ -333,21 +417,27 @@ variable-content:
     big-size: false
     title: "DAY 9: Letters to Aliens "
     text: >-
-      ! Ceramics model making Workshop
+      > Close your eyes, You are in a different place in a different time. In
+      fact you don’t know what year it is, the concept of periodic time tracking
+      has not been invented yet. Nor has been actually anything else. You find
+      yourself standing on soft ground, the soil slightly wet from rain, some
+      smaller and some bigger stones scattered around, accompanied be bushes and
+      trees here and there, but no sight of houses or people, just distant
+      sounds of some yet unknown creatures. Many years later this era will be
+      known as the stone age.
+
+      >
+
+      > Without much thinking you kneel down to pick a handful of the soil, press it together between your hands to give it structure and slowly realize that you just time traveled from a seemingly advanced civilization that is still struggling with basic crises to a time where language has not yet developed. what information will you leave behind for the humans to come, and how? what are the signs and symbols that one will understand without the luxury of alphabets?
+
+      >
+
+      > you have 45 minutes until a hungry T-Rex will find and eat you.
 
 
-      Close your eyes, You are in a different place in a different time. In fact you don’t know what year it is, the concept of periodic time tracking has not been invented yet. Nor has been actually anything else. You find yourself standing on soft ground, the soil slightly wet from rain, some smaller and some bigger stones scattered around, accompanied be bushes and trees here and there, but no sight of houses or people, just distant sounds of some yet unknown creatures. Many years later this era will be known as the stone age.
-
-
-      Without much thinking you kneel down to pick a handful of the soil, press it together between your hands to give it structure and slowly realize that you just time traveled from a seemingly advanced civilization that is still struggling with basic crises to a time where language has not yet developed. what information will you leave behind for the humans to come, and how? what are the signs and symbols that one will understand without the luxury of alphabets?
-
-
-      you have 45 minutes until a hungry T-Rex will find and eat you.
-
-
-      → extra task: invent your first word
+      *→ extra task: invent your first word*
   - type: image-section
-    layout: grid
+    layout: carousel
     column-start: "1"
     column-end: "13"
     images:
@@ -363,15 +453,18 @@ variable-content:
     big-size: false
     title: "DAY 10: breathing Letters"
     text: |-
-      what sound does your typeface make?
+      *! what sound does your typeface make? Record the sound*
 
-      - - -
-
-      how does your type move?
-
-      <!-- notionvc: 91e45549-7d16-4aad-ba5f-458415b2f6fc -->
+      *! how does your type move? Animate your typeface for your phone*
   - type: image-section
-    layout: grid
+    images:
+      - type: newVideo
+        newVideoFile: img_1488.mp4
+      - type: image
+        imageFile: img_1491.jpg
+    layout: block
+  - type: image-section
+    layout: carousel
     column-start: "1"
     column-end: "13"
     images:
@@ -385,11 +478,33 @@ variable-content:
         imageFile: img_1499.jpg
       - type: image
         imageFile: img_1496.jpg
-  - type: image-section
-    images:
-      - type: image
-        imageFile: img_1491.jpg
-      - type: newVideo
-        newVideoFile: img_1488.mp4
-    layout: block
+  - type: text-section
+    big-size: false
+    title: Participants
+    text: |-
+      > Eunsoo Choi
+      >
+      > Lena Klevenow
+      >
+      > Levi Zimmermann
+      >
+      > Max Beller
+      >
+      > Helena Bänsch
+      >
+      > Jinhyung Hur
+      >
+      > Kaya Männel
+      >
+      > Jiaxuan He
+      >
+      > Finn Milbrandt
+      >
+      > Nayeon Park
+      >
+      > Veronika Baghdyan
+      >
+      > Min Jung Kim
+      >
+      > Alice Seefried
 ---
