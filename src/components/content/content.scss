@@ -108,7 +108,8 @@
         // font-weight: bold;
         justify-self: center;
         text-align: center;
-        font-family: PangramRoundedNarrowSemibold;
+        // font-family: PangramRoundedNarrowSemibold;
+        font-family: Kleukens;
         font-size: 3rem;
         
     }
@@ -210,12 +211,13 @@
 
     h2 {
         margin-bottom: 1.5rem;
-        font-family: PangramRoundedNarrowSemibold;
-        font-size: 3rem;
-        font-weight: bold;
+        // font-family: PangramRoundedNarrowSemibold;
+        font-family: Kleukens;
+        font-size: 3.5rem;
+        // font-weight: bold;
         // font-family: PangramRoundedNarrowSemibold;
         letter-spacing: 1px;
-        text-align: center;
+        // text-align: center;
 
     }
 
@@ -258,6 +260,7 @@
             list-style-type: circle;
             list-style-position: inside;
             font-family: Kleukens;
+            
             margin: 1rem 0rem;
         }
     }
