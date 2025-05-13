@@ -232,11 +232,11 @@ variable-content:
   - type: image-section
     images:
       - type: iFrame
-        iFrame-link: https://www.youtube.com/embed/1qLKu3R8no4?si=E1eFAaqjazIoIteb
+        iFrame-link: https://www.youtube.com/embed/1qLKu3R8no4?si=q0Xp6UIMw_0jksGy
         caption: "Intermission 1:  Kurt Schwitters Ursonate 1932"
       - type: iFrame
         caption: "Intermission 2:\tBad and boujee ad libs only"
-        iFrame-link: https://www.youtube.com/embed/99piZPeouAI?si=cWZC6pRfqInn4bcB
+        iFrame-link: https://www.youtube.com/embed/99piZPeouAI?si=V4p3YhY2_3kMkaR5
       - type: iFrame
         caption: "Intermission 3:\tVögel - Namen und Laute - Vogelarten "
         iFrame-link: https://www.youtube.com/embed/WhRpW0cVmds?si=NLYhswJNJbMbRlK7
