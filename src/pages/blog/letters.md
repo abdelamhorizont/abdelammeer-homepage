@@ -521,8 +521,6 @@ variable-content:
       - type: image
         imageFile: img_1498.jpg
       - type: image
-        imageFile: img_1499.jpg
-      - type: image
         imageFile: img_1496.jpg
       - type: image
         imageFile: img_1500-large.jpeg
