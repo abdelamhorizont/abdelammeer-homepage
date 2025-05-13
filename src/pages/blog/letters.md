@@ -439,7 +439,7 @@ variable-content:
 
       *! Rearrange the text of the page on A3 either to support the topic of the book, or to contradict it, print several versions*
   - type: image-section
-    layout: grid
+    layout: carousel
     column-start: "1"
     column-end: "13"
     images:
