@@ -86,7 +86,7 @@ variable-content:
       **DAY 10 Presentations** \
 
       Finalizing, Presentations, Seminar feedback
-    column-start: "1"
+    column-start: "2"
     column-end: "7"
   - type: text-section
     big-size: false
@@ -116,7 +116,7 @@ variable-content:
 
       * various chapters with different styles
     column-start: "7"
-    column-end: "13"
+    column-end: "12"
   - type: text-section
     big-size: false
     text: >-
