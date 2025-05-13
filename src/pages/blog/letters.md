@@ -96,15 +96,21 @@ variable-content:
     layout: carousel
     images:
       - type: image
-        imageFile: f03e3fd9-e943-4ae9-a5fe-7d0430f6509c_1_105_c.jpeg
+        imageFile: img_0536-large.jpeg
       - type: image
-        imageFile: img_0538.jpg
-      - type: image
-        imageFile: img_0545.jpg
+        imageFile: img_0537-large.jpeg
       - type: image
         imageFile: img_0548.jpg
       - type: image
-        imageFile: img_0553.jpg
+        imageFile: img_0546-large.jpeg
+      - type: image
+        imageFile: img_0532-large.jpeg
+      - type: image
+        imageFile: img_0553-large.jpeg
+      - type: image
+        imageFile: img_0549-large.jpeg
+      - type: image
+        imageFile: img_0554-large.jpeg
     title: ""
   - type: text-section
     big-size: false
@@ -144,6 +150,10 @@ variable-content:
         imageFile: img_0568.jpg.jpg
       - type: image
         imageFile: pxl_20231108_135627230.jpg
+      - type: image
+        imageFile: img_0587.jpg
+      - type: image
+        imageFile: photo_2024-02-07_16-57-04.jpg
   - type: text-section
     big-size: false
     title: "Day 3: Letters to Birds"
@@ -206,19 +216,27 @@ variable-content:
       - type: image
         imageFile: img_0800.jpg
       - type: image
-        imageFile: img_0820.jpeg
+        imageFile: img_0820-large.jpeg
       - type: image
         imageFile: img_0823.jpeg
       - type: image
         imageFile: img_0789.jpeg
+      - type: image
+        imageFile: img_0765.jpg
+      - type: image
+        imageFile: img_0762.jpg
+      - type: image
+        imageFile: img_0766-large.jpeg
+      - type: image
+        imageFile: photo_2024-02-07_16-56-51-large.jpeg
   - type: image-section
     images:
       - type: iFrame
-        iFrame-link: https://www.youtube.com/embed/1qLKu3R8no4?si=vGfuugyny2AhpzAT
+        iFrame-link: https://www.youtube.com/embed/1qLKu3R8no4?si=q0Xp6UIMw_0jksGy
         caption: "Intermission 1:  Kurt Schwitters Ursonate 1932"
       - type: iFrame
         caption: "Intermission 2:\tBad and boujee ad libs only"
-        iFrame-link: https://www.youtube.com/embed/99piZPeouAI?si=imDEtqIB6rNH7WoM
+        iFrame-link: https://www.youtube.com/embed/99piZPeouAI?si=V4p3YhY2_3kMkaR5
       - type: iFrame
         caption: "Intermission 3:\tVögel - Namen und Laute - Vogelarten "
         iFrame-link: https://www.youtube.com/embed/WhRpW0cVmds?si=NLYhswJNJbMbRlK7
@@ -272,13 +290,13 @@ variable-content:
     column-end: "13"
     images:
       - type: image
-        imageFile: img_0909.jpg
+        imageFile: img_0895-large.jpeg
       - type: image
-        imageFile: img_0895.jpg
+        imageFile: img_0902-large.jpeg
       - type: image
-        imageFile: img_0911.jpg
+        imageFile: img_0909-large.jpeg
       - type: image
-        imageFile: img_0902.jpg
+        imageFile: img_0911-large.jpeg
   - type: image-section
     images:
       - type: iFrame
@@ -310,15 +328,19 @@ variable-content:
     column-end: "13"
     images:
       - type: image
-        imageFile: img_0993.jpg
+        imageFile: img_0994-large.jpeg
       - type: image
-        imageFile: img_1006.jpg
+        imageFile: img_0993-large.jpeg
       - type: image
-        imageFile: img_1001.jpg
+        imageFile: img_6825-large-large.jpeg
       - type: image
-        imageFile: img_1002.jpg
+        imageFile: img_0735-large.jpeg
       - type: image
-        imageFile: img_0735.jpeg
+        imageFile: img_1004-large.jpeg
+      - type: image
+        imageFile: img_1006-large.jpeg
+      - type: image
+        imageFile: img_2087-large.jpeg
   - type: text-section
     big-size: false
     title: "Day 6: Letters to Idols"
@@ -369,9 +391,15 @@ variable-content:
       - type: image
         imageFile: img_1048.jpg
       - type: image
-        imageFile: img_1085.png
+        imageFile: img_1082-large.jpeg
       - type: image
         imageFile: img_1100.png
+      - type: image
+        imageFile: img_1053-large.jpeg
+      - type: image
+        imageFile: img_7282-large.jpeg
+      - type: image
+        imageFile: img_7283-large.jpeg
     title: "Font Sightseeing "
   - type: text-section
     big-size: false
@@ -394,6 +422,14 @@ variable-content:
         imageFile: img_1113.jpg
       - type: image
         imageFile: img_1118.jpg
+      - type: image
+        imageFile: img_7345-large.jpeg
+      - type: image
+        imageFile: img_1114-large.jpeg
+      - type: image
+        imageFile: img_1117-large.jpeg
+      - type: image
+        imageFile: img_1045-large.jpeg
   - type: text-section
     big-size: false
     title: "DAY 8:  Letters to the Printer "
@@ -403,16 +439,22 @@ variable-content:
 
       *! Rearrange the text of the page on A3 either to support the topic of the book, or to contradict it, print several versions*
   - type: image-section
-    layout: grid
+    layout: carousel
     column-start: "1"
     column-end: "13"
     images:
       - type: image
-        imageFile: img_1440.jpg
+        imageFile: img_1434-large.jpeg
       - type: image
         imageFile: bowie-print-large.jpeg
       - type: image
-        imageFile: img_1437.jpg
+        imageFile: img_1437-large.jpeg
+      - type: image
+        imageFile: img_1440-large.jpeg
+      - type: image
+        imageFile: img_1442-large.jpeg
+      - type: image
+        imageFile: img_1438-large.jpeg
   - type: text-section
     big-size: false
     title: "DAY 9: Letters to Aliens "
@@ -444,9 +486,15 @@ variable-content:
       - type: image
         imageFile: img_1450.jpg
       - type: image
+        imageFile: img_1462-large.jpeg
+      - type: image
         imageFile: img_2956-large.jpeg
       - type: image
+        imageFile: img_1463-large.jpeg
+      - type: image
         imageFile: img_1460.jpg
+      - type: image
+        imageFile: img_1465-large.jpeg
       - type: image
         imageFile: img_1459.jpg
   - type: text-section
@@ -460,8 +508,6 @@ variable-content:
     images:
       - type: newVideo
         newVideoFile: img_1488.mp4
-      - type: image
-        imageFile: img_1491.jpg
     layout: block
   - type: image-section
     layout: carousel
@@ -475,9 +521,19 @@ variable-content:
       - type: image
         imageFile: img_1498.jpg
       - type: image
-        imageFile: img_1499.jpg
-      - type: image
         imageFile: img_1496.jpg
+      - type: image
+        imageFile: img_1500-large.jpeg
+      - type: image
+        imageFile: img_4678-large.jpeg
+      - type: image
+        imageFile: img_1497-large.jpeg
+  - type: image-section
+    images:
+      - type: image
+        imageFile: img_1491-large.jpeg
+    column-start: "2"
+    column-end: "12"
   - type: text-section
     big-size: false
     title: Participants

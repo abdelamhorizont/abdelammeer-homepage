@@ -86,10 +86,11 @@ variable-content:
       **DAY 10 Presentations** \
 
       Finalizing, Presentations, Seminar feedback
-
-
-
-
+    column-start: "1"
+    column-end: "7"
+  - type: text-section
+    big-size: false
+    text: >-
       ## Goals
 
 
@@ -98,8 +99,6 @@ variable-content:
       * Filtering, Organization and Composition of complex Information and Ressources.
 
       * Awareness for aesthetic choices and clear readability.
-
-
 
 
       ## Publication
@@ -116,6 +115,8 @@ variable-content:
       * Research in scientific, ecological, cultural, social, economical, political, juristic, ethical contexts (min 3)
 
       * various chapters with different styles
+    column-start: "7"
+    column-end: "13"
   - type: text-section
     big-size: false
     text: >-
@@ -124,6 +125,8 @@ variable-content:
       not only as means to work with typography but also as a medium to interact
       and to perform. I expanded the idea to other natural phenomena, one for
       every student:
+
+
 
 
       ## Phenomena
@@ -274,6 +277,8 @@ variable-content:
 
 
       [History of Information](https://www.historyofinformation.com/)
+    column-start: "1"
+    column-end: "7"
   - type: text-section
     big-size: false
     title: Participants
@@ -303,4 +308,6 @@ variable-content:
       > Min Jung	Kim
       >
       > Alice	Seefried
+    column-start: "7"
+    column-end: "13"
 ---
